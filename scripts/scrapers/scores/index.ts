@@ -3,7 +3,7 @@ import path from 'node:path'
 import { HttpClient } from '../shared/http'
 import { createLogger } from '../shared/logger'
 import { loadColleges, verifyCollegeId } from '../shared/colleges_loader'
-import { parseScores, buildScoreUrl } from './gaokao_score'
+import { parseScores } from './gaokao_score'
 import { validateScoreRecord } from './validate'
 import {
   SCRAPER_VERSION,
@@ -75,8 +75,20 @@ async function main() {
   let processed = 0
   for (const [collegeId, college] of colleges) {
     processed++
+
+    // 跳过没有阳光高考 URL 的院校
+    if (!college.gaokaoUrl || college.gaokaoUrl.length === 0) {
+      warnings.push({
+        collegeId,
+        collegeName: college.name,
+        type: 'missing_data',
+        detail: '该院校无阳光高考 URL，跳过分数线采集',
+      })
+      continue
+    }
+
     try {
-      const url = buildScoreUrl(collegeId)
+      const url = college.gaokaoUrl
       const result = await http.fetch(url, {
         cacheKey: `score_${collegeId}`,
         forceRefresh: args.force,
@@ -110,7 +122,7 @@ async function main() {
       }
     } catch (error) {
       failed.push({
-        url: buildScoreUrl(collegeId),
+        url: college.gaokaoUrl,
         error: (error as Error).message,
         retryCount: 3,
         context: `collegeId=${collegeId}, name=${college.name}`,
