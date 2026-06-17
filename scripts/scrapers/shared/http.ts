@@ -7,7 +7,7 @@ import {
   HTTP_RETRY_BASE_DELAY,
   USER_AGENT,
 } from '../config'
-import type { FetchOptions, FetchResult } from '../types'
+import type { FetchOptions, FetchResult, FetchBinaryResult } from '../types'
 
 const logger = createLogger('http')
 
