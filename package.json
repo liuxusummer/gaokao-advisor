@@ -11,6 +11,11 @@
     "scrape:colleges": "tsx scripts/scrapers/colleges/index.ts",
     "scrape:colleges:force": "tsx scripts/scrapers/colleges/index.ts --force",
     "scrape:colleges:dry": "tsx scripts/scrapers/colleges/index.ts --dry-run",
+    "scrape:scores": "tsx scripts/scrapers/scores/index.ts",
+    "scrape:scores:force": "tsx scripts/scrapers/scores/index.ts --force",
+    "scrape:rank_tables": "tsx scripts/scrapers/rank_tables/index.ts",
+    "scrape:rank_tables:force": "tsx scripts/scrapers/rank_tables/index.ts --force",
+    "scrape:all": "npm run scrape:colleges && npm run scrape:scores && npm run scrape:rank_tables",
     "test:scrapers": "vitest run scripts/scrapers",
     "test:scrapers:watch": "vitest scripts/scrapers"
   },
