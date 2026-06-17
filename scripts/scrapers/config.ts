@@ -34,3 +34,29 @@ export const LOGS_DIR = path.join(ROOT_DIR, 'logs')
 // User-Agent
 export const USER_AGENT =
   'VolunteerAssistant/1.0 (educational project; +https://github.com/your-org/volunteer-assistant)'
+
+// === 分数线与一分一段表采集配置 ===
+
+export const TARGET_YEARS = [2023, 2024, 2025]
+export const TARGET_PROVINCES = ['浙江', '江苏']
+
+// 阳光高考详情页 URL 模板
+export const GAOKAO_SCHOOL_DETAIL_URL = 'https://gaokao.chsi.com.cn/sch/schoolInfo-{collegeId}.dhtml'
+
+// 浙江省考试院一分一段表 URL（年度更新时维护，实现时确认实际发布页路径）
+export const ZJ_RANK_TABLE_URLS: Record<number, string> = {
+  2023: '',
+  2024: '',
+  2025: '',
+}
+
+// 江苏省考试院一分一段表 URL（年度更新时维护，实现时确认实际发布页路径）
+export const JS_RANK_TABLE_URLS: Record<number, Record<string, string>> = {
+  2023: { '物理类': '', '历史类': '' },
+  2024: { '物理类': '', '历史类': '' },
+  2025: { '物理类': '', '历史类': '' },
+}
+
+// 产出路径
+export const SCORES_OUTPUT_DIR = path.join(ROOT_DIR, 'public', 'data', 'scores')
+export const SCORES_REPORTS_DIR = path.join(SCORES_OUTPUT_DIR, 'reports')

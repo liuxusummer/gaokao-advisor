@@ -112,3 +112,106 @@ export interface FetchBinaryResult {
   fetchedAt: string
   url: string
 }
+
+// === 分数线采集类型 ===
+
+export interface ScoreRecord {
+  collegeId: string
+  collegeName: string
+  year: number
+  majorName: string
+  majorCode?: string
+  majorGroup?: string
+  majorGroupName?: string
+  province: string
+  category: string
+  batch: string
+  minScore: number
+  minRank: number
+  avgScore?: number
+  maxScore?: number
+  planCount?: number
+  actualCount?: number
+  _meta: ScoreRecordMeta
+}
+
+export interface ScoreRecordMeta {
+  source: 'gaokao'
+  sourceUrl: string
+  fetchedAt: string
+  scraperVersion: string
+  verified: boolean
+}
+
+// === 一分一段表采集类型 ===
+
+export interface RankTableRecord {
+  province: string
+  year: number
+  category: string
+  score: number
+  rank: number
+  count: number
+  cumulativeCount: number
+  _meta: RankTableRecordMeta
+}
+
+export interface RankTableRecordMeta {
+  source: 'zjzs' | 'jseea'
+  sourceUrl: string
+  fetchedAt: string
+  scraperVersion: string
+  verified: boolean
+}
+
+export interface RankTableFile {
+  province: string
+  year: number
+  categories: Record<string, RankTableRecord[]>
+  _meta: {
+    generatedAt: string
+    scraperVersion: string
+    source: string
+    sourceUrl: string
+    recordCount: number
+  }
+}
+
+// === 分数线采集元信息 ===
+
+export interface ScoresMeta {
+  provinces: Array<{
+    name: string
+    years: number[]
+    scoreRecordCount: Record<number, number>
+    rankTableRecordCount: Record<number, number>
+  }>
+  generatedAt: string
+  scraperVersion: string
+  schemaVersion: string
+  sources: Array<{
+    name: string
+    url: string
+    coverage: string
+  }>
+}
+
+// === 校验结果 ===
+
+export interface ScoreValidationResult {
+  valid: boolean
+  reason?: string
+}
+
+export interface RankTableValidationResult {
+  valid: boolean
+  reason?: string
+}
+
+// 扩展 WarningRecord 以支持分数线场景
+export interface ScoreWarningRecord {
+  collegeId: string
+  collegeName: string
+  type: 'missing_data' | 'parse_error' | 'year_missing'
+  detail: string
+}
