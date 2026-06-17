@@ -1,0 +1,50 @@
+{
+  "provinces": [
+    {
+      "name": "浙江",
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "scoreRecordCount": {
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "rankTableRecordCount": {
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      }
+    },
+    {
+      "name": "江苏",
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "scoreRecordCount": {
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "rankTableRecordCount": {
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      }
+    }
+  ],
+  "generatedAt": "2026-06-17T16:10:12.042Z",
+  "scraperVersion": "1.0.0",
+  "schemaVersion": "1.0.0",
+  "sources": [
+    {
+      "name": "阳光高考",
+      "url": "https://gaokao.chsi.com.cn",
+      "coverage": "分数线"
+    }
+  ]
+}
