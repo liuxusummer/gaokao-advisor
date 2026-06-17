@@ -4,8 +4,9 @@ export const SCRAPER_VERSION = '1.0.0'
 export const SCHEMA_VERSION = '1.0.0'
 
 // 数据源 URL（年度更新时维护此处）
+// 2025 年度全国高等学校名单发布页（含 Excel 附件）
 export const MOE_LIST_URL =
-  'https://www.moe.gov.cn/jyb_xxgk/s5743/s5744/A03/202406/t20240619_1135406.html'
+  'https://hudong.moe.gov.cn/jyb_xxgk/s5743/s5744/A03/202506/t20250627_1195683.html'
 
 export const GAOKAO_BASE_URL = 'https://gaokao.chsi.com.cn'
 

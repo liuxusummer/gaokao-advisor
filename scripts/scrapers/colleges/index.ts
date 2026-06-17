@@ -2,14 +2,13 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { HttpClient } from '../shared/http'
 import { createLogger } from '../shared/logger'
-import { parseMoeList } from './moe_list'
+import { parseMoeList, parseMoeExcel, extractMoeExcelUrl } from './moe_list'
 import { parseGaokaoList, buildGaokaoUrl } from './gaokao_detail'
 import { matchAndMerge, validateRecord } from './merge'
 import {
   SCRAPER_VERSION,
   SCHEMA_VERSION,
   MOE_LIST_URL,
-  PROVINCES,
   GAOKAO_QPS,
   RAW_DIR,
   OUTPUT_DIR,
@@ -20,7 +19,6 @@ import type {
   CollegeRecord,
   CollegesMeta,
   FailedRecord,
-  WarningRecord,
   RejectedRecord,
   GaokaoRecord,
 } from '../types'
@@ -57,13 +55,30 @@ async function main() {
 
   const http = new HttpClient(path.join(RAW_DIR, 'colleges'))
 
-  // Step 1: 教育部名单
+  // Step 1: 教育部名单（2025 年度起以 Excel 附件形式发布）
   logger.info('Step 1: 抓取教育部名单', { url: MOE_LIST_URL })
   const moeResult = await http.fetch(MOE_LIST_URL, {
     cacheKey: 'moe_list',
     forceRefresh: args.force,
   })
-  const moeRecords = parseMoeList(moeResult.html, MOE_LIST_URL)
+
+  // 尝试从发布页提取 Excel 附件 URL
+  const excelUrl = extractMoeExcelUrl(moeResult.html, MOE_LIST_URL)
+  let moeRecords: import('../types').MoeRecord[]
+
+  if (excelUrl) {
+    logger.info('检测到 Excel 附件，下载并解析', { excelUrl })
+    const excelResult = await http.fetchBinary(excelUrl, {
+      cacheKey: 'moe_list_excel',
+      forceRefresh: args.force,
+    })
+    moeRecords = parseMoeExcel(excelResult.buffer, MOE_LIST_URL)
+  } else {
+    // 回退到 HTML 表格解析（旧版兼容）
+    logger.info('未检测到 Excel 附件，回退到 HTML 表格解析')
+    moeRecords = parseMoeList(moeResult.html, MOE_LIST_URL)
+  }
+
   logger.info('教育部名单解析完成', { count: moeRecords.length })
 
   if (moeRecords.length === 0) {
@@ -72,49 +87,60 @@ async function main() {
   }
 
   // Step 2: 阳光高考列表
-  logger.info('Step 2: 抓取阳光高考院校列表')
+  // 注：阳光高考站点的 province URL 参数不会过滤结果，而是返回全局列表。
+  // 因此改为直接分页抓取全局列表，通过 schId 去重检测终止。
+  logger.info('Step 2: 抓取阳光高考院校列表（全局分页）')
   const gaokaoRecords: GaokaoRecord[] = []
   const failed: FailedRecord[] = []
   const requestInterval = 1000 / GAOKAO_QPS
+  const seenGaokaoIds = new Set<string>()
+  const MAX_GAOKAO_PAGES = 200 // 安全上限：200 页 × 20 条 = 4000
 
-  for (const province of PROVINCES) {
-    let page = 1
-    let hasMore = true
-
-    while (hasMore) {
-      const url = buildGaokaoUrl(province, page)
-      try {
-        const result = await http.fetch(url, {
-          cacheKey: `gaokao_${province}_${page}`,
-          forceRefresh: args.force,
-        })
-        const records = parseGaokaoList(result.html, url)
-
-        if (records.length === 0) {
-          hasMore = false
-        } else {
-          gaokaoRecords.push(...records)
-          // 简单分页判断：不足 20 条说明是最后一页
-          if (records.length < 20) hasMore = false
-          page++
-          await sleep(requestInterval)
-        }
-      } catch (error) {
-        failed.push({
-          url,
-          error: (error as Error).message,
-          retryCount: 3,
-          context: `province=${province}, page=${page}`,
-        })
-        hasMore = false
-      }
-    }
-
-    if (gaokaoRecords.length % 200 < 20) {
-      logger.info('省份抓取进度', {
-        province,
-        total: gaokaoRecords.length,
+  for (let page = 1; page <= MAX_GAOKAO_PAGES; page++) {
+    const url = buildGaokaoUrl('', page)
+    try {
+      const result = await http.fetch(url, {
+        cacheKey: `gaokao_global_${page}`,
+        forceRefresh: args.force,
       })
+      const records = parseGaokaoList(result.html, url)
+
+      if (records.length === 0) {
+        logger.info('阳光高考分页结束：0 条记录', { page })
+        break
+      }
+
+      // 检测重复：如果本页所有 schId 都已见过，说明已到达末尾
+      const newRecords = records.filter((r) => !seenGaokaoIds.has(r.gaokaoId))
+      if (newRecords.length === 0) {
+        logger.info('阳光高考分页结束：全部为重复记录', { page })
+        break
+      }
+
+      for (const r of newRecords) {
+        seenGaokaoIds.add(r.gaokaoId)
+        gaokaoRecords.push(r)
+      }
+
+      if (page % 20 === 0) {
+        logger.info('阳光高考抓取进度', { page, total: gaokaoRecords.length })
+      }
+
+      // 不足 20 条说明是最后一页
+      if (records.length < 20) {
+        logger.info('阳光高考分页结束：不足 20 条', { page, count: records.length })
+        break
+      }
+
+      await sleep(requestInterval)
+    } catch (error) {
+      failed.push({
+        url,
+        error: (error as Error).message,
+        retryCount: 3,
+        context: `global page=${page}`,
+      })
+      break
     }
   }
 

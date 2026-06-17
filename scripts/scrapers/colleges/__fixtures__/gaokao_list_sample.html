@@ -1,42 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><title>院校列表</title></head>
+<head><meta charset="utf-8"><title>院校信息库_阳光高考</title></head>
 <body>
-<div class="search-result-list">
-  <div class="item">
-    <div class="school-name">
-      <a href="/sch/schoolInfo-10001.dhtml" data-school-id="10001">北京大学</a>
+<div class="app-yxk-sch-list">
+  <div class="sch-list-container">
+    <div class="sch-item" @click="window.open('/sch/schoolInfo--schId-1.dhtml', '_blank')">
+      <a target="_blank" href="/sch/schoolInfo--schId-1.dhtml">
+        <img src="https://t1.chei.com.cn/common/xh/10001.jpg">
+      </a>
+      <div class="info-box">
+        <div class="sch-title">
+          <a class="name js-yxk-yxmc text-decoration-none" target="_blank" href="/sch/schoolInfo--schId-1.dhtml">
+            北京大学
+          </a>
+        </div>
+        <a class="sch-department text-decoration-none" target="_blank" href="/sch/schoolInfo--schId-1.dhtml">
+          <i class="iconfont cursor-pointer">&#xe6a4;</i>北京<span class="col-line">|</span><span class="item-depart-title">主管部门：</span>教育部
+        </a>
+        <a class="sch-level text-decoration-none" target="_blank" href="/sch/schoolInfo--schId-1.dhtml">
+          <div class="sch-level-tag">本科</div>
+          <div class="sch-level-tag">“双一流”建设高校</div>
+        </a>
+      </div>
+      <div class="manyidu-star-box js-alert-myd" data-id="99617187">
+        <span style="margin-right:6px;color: #666666;">满意度</span>
+        <a class="num text-decoration-none" href="###">4.6</a>
+      </div>
     </div>
-    <div class="school-info">
-      <span class="province">北京</span>
-      <span class="level">985</span>
-      <a href="https://www.pku.edu.cn" class="school-website">官网</a>
+    <div class="sch-item" @click="window.open('/sch/schoolInfo--schId-3.dhtml', '_blank')">
+      <a target="_blank" href="/sch/schoolInfo--schId-3.dhtml">
+        <img src="https://t1.chei.com.cn/common/xh/10003.jpg">
+      </a>
+      <div class="info-box">
+        <div class="sch-title">
+          <a class="name js-yxk-yxmc text-decoration-none" target="_blank" href="/sch/schoolInfo--schId-3.dhtml">
+            浙江大学
+          </a>
+        </div>
+        <a class="sch-department text-decoration-none" target="_blank" href="/sch/schoolInfo--schId-3.dhtml">
+          <i class="iconfont cursor-pointer">&#xe6a4;</i>浙江<span class="col-line">|</span><span class="item-depart-title">主管部门：</span>教育部
+        </a>
+        <a class="sch-level text-decoration-none" target="_blank" href="/sch/schoolInfo--schId-3.dhtml">
+          <div class="sch-level-tag">本科</div>
+          <div class="sch-level-tag">“双一流”建设高校</div>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="item">
-    <div class="school-name">
-      <a href="/sch/schoolInfo-10003.dhtml" data-school-id="10003">浙江大学</a>
-    </div>
-    <div class="school-info">
-      <span class="province">浙江</span>
-      <span class="level">985</span>
-      <a href="https://www.zju.edu.cn" class="school-website">官网</a>
-    </div>
-  </div>
-  <div class="item">
-    <div class="school-name">
-      <a href="/sch/schoolInfo-10005.dhtml" data-school-id="10005">某学院</a>
-    </div>
-    <div class="school-info">
-      <span class="province">浙江</span>
-      <span class="level">普通本科</span>
+    <div class="sch-item" @click="window.open('/sch/schoolInfo--schId-5.dhtml', '_blank')">
+      <a target="_blank" href="/sch/schoolInfo--schId-5.dhtml">
+        <img src="https://t1.chei.com.cn/common/xh/10005.jpg">
+      </a>
+      <div class="info-box">
+        <div class="sch-title">
+          <a class="name js-yxk-yxmc text-decoration-none" target="_blank" href="/sch/schoolInfo--schId-5.dhtml">
+            某学院
+          </a>
+        </div>
+        <a class="sch-department text-decoration-none" target="_blank" href="/sch/schoolInfo--schId-5.dhtml">
+          <i class="iconfont cursor-pointer">&#xe6a4;</i>浙江<span class="col-line">|</span><span class="item-depart-title">主管部门：</span>浙江省
+        </a>
+        <a class="sch-level text-decoration-none" target="_blank" href="/sch/schoolInfo--schId-5.dhtml">
+          <div class="sch-level-tag">本科</div>
+        </a>
+      </div>
     </div>
   </div>
 </div>
-<div class="pagination">
-  <span class="current">1</span>
-  <a href="/sch/search.do?province=浙江&page=2">2</a>
-  <a href="/sch/search.do?province=浙江&page=3">3</a>
-</div>
+<script type="text/javascript">
+function gotopage(obj){
+    var PN = obj.page.value;
+    var Num = parseInt(PN);
+    if (Num > 148) {
+        window.alert("没有那么多页");
+        return false;
+    }
+    pagenum = (Num - 1) * 20;
+    var actionStr = "https://gaokao.chsi.com.cn/sch/search--province-%E6%B5%99%E6%B1%9F,start-0.dhtml";
+    actionStr = actionStr.replace(/start-\d+/, "start-" + pagenum);
+    obj.action= encodeURI(actionStr);
+    return true;
+}
+</script>
 </body>
 </html>

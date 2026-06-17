@@ -26,7 +26,7 @@ describe('端到端冒烟测试', () => {
     expect(gaokaoRecords.length).toBeGreaterThan(0)
 
     // Step 3-4: 匹配与合并
-    const { records, warnings } = matchAndMerge(moeRecords, gaokaoRecords)
+    const { records } = matchAndMerge(moeRecords, gaokaoRecords)
     expect(records.length).toBeGreaterThan(0)
 
     // Step 5: 校验

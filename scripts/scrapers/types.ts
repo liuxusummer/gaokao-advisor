@@ -105,3 +105,10 @@ export interface FetchResult {
   fetchedAt: string
   url: string
 }
+
+export interface FetchBinaryResult {
+  buffer: Buffer
+  fromCache: boolean
+  fetchedAt: string
+  url: string
+}

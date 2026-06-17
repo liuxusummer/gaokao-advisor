@@ -16,10 +16,11 @@ describe('parseGaokaoList', () => {
     const records = parseGaokaoList(fixtureHtml, 'https://gaokao.chsi.com.cn/test')
     const pku = records.find((r) => r.name === '北京大学')!
 
-    expect(pku.gaokaoId).toBe('10001')
+    expect(pku.gaokaoId).toBe('1')
     expect(pku.name).toBe('北京大学')
-    expect(pku.officialWebsite).toBe('https://www.pku.edu.cn')
-    expect(pku.gaokaoUrl).toBe('https://gaokao.chsi.com.cn/sch/schoolInfo-10001.dhtml')
+    // 列表页不提供官网链接，留空
+    expect(pku.officialWebsite).toBe('')
+    expect(pku.gaokaoUrl).toBe('https://gaokao.chsi.com.cn/sch/schoolInfo--schId-1.dhtml')
     expect(pku.province).toBe('北京')
   })
 
@@ -34,7 +35,7 @@ describe('parseGaokaoList', () => {
     const records = parseGaokaoList(fixtureHtml, 'https://gaokao.chsi.com.cn/test')
     const zju = records.find((r) => r.name === '浙江大学')!
 
-    expect(zju.gaokaoUrl).toBe('https://gaokao.chsi.com.cn/sch/schoolInfo-10003.dhtml')
+    expect(zju.gaokaoUrl).toBe('https://gaokao.chsi.com.cn/sch/schoolInfo--schId-3.dhtml')
   })
 
   it('空 HTML 返回空数组', () => {
@@ -44,10 +45,20 @@ describe('parseGaokaoList', () => {
 })
 
 describe('buildGaokaoUrl', () => {
-  it('构造分页 URL', () => {
-    const url = buildGaokaoUrl('浙江', 2)
-    expect(url).toContain('province=')
-    expect(url).toContain('page=2')
+  it('构造分页 URL（start 偏移格式）', () => {
+    const url = buildGaokaoUrl('浙江', 1)
+    expect(url).toContain('search--province-')
+    expect(url).toContain('start-0')
     expect(url).toContain('gaokao.chsi.com.cn')
+  })
+
+  it('第 2 页 start 偏移为 20', () => {
+    const url = buildGaokaoUrl('浙江', 2)
+    expect(url).toContain('start-20')
+  })
+
+  it('省份被 URL 编码', () => {
+    const url = buildGaokaoUrl('浙江', 1)
+    expect(url).toContain(encodeURIComponent('浙江'))
   })
 })
