@@ -1,4 +1,4 @@
-import { ThemeConfig } from 'antd'
+import type { ThemeConfig } from 'antd'
 
 export const antdTheme: ThemeConfig = {
   token: {
@@ -23,7 +23,6 @@ export const antdTheme: ThemeConfig = {
       controlHeight: 44,
     },
     Steps: {
-      controlItemWidth: 32,
       colorPrimary: '#059669',
     },
   },

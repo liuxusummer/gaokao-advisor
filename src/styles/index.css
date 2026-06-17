@@ -41,3 +41,102 @@
     --bg-hover: #064e3b;
   }
 }
+
+@layer components {
+  .ant-btn-primary {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light)) !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3) !important;
+  }
+
+  .ant-btn-primary:hover {
+    filter: brightness(1.05);
+  }
+
+  .ant-card {
+    border-radius: 10px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06) !important;
+  }
+
+  .ant-steps .ant-steps-item-process .ant-steps-item-icon {
+    background: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+  }
+
+  .ant-steps .ant-steps-item-finish .ant-steps-item-icon {
+    background: var(--color-primary-bg) !important;
+    border-color: var(--color-primary) !important;
+    color: var(--color-primary) !important;
+  }
+
+  .ant-tabs-nav {
+    margin-bottom: 16px !important;
+  }
+
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: var(--color-primary) !important;
+  }
+
+  .ant-tabs-ink-bar {
+    background: var(--color-primary) !important;
+  }
+
+  .ant-switch-checked {
+    background: var(--color-primary) !important;
+  }
+
+  .ant-radio-button-wrapper-checked {
+    border-color: var(--color-primary) !important;
+    color: var(--color-primary) !important;
+  }
+
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+    background-color: var(--color-primary) !important;
+  }
+
+  .dark .ant-table {
+    background: var(--bg-card);
+    color: var(--text-body);
+  }
+
+  .dark .ant-table-thead > tr > th {
+    background: var(--bg-page);
+    color: var(--text-primary);
+    border-bottom-color: var(--border-color);
+  }
+
+  .dark .ant-table-tbody > tr > td {
+    border-bottom-color: var(--border-color);
+  }
+
+  .dark .ant-table-tbody > tr:hover > td {
+    background: var(--bg-hover);
+  }
+
+  .dark .ant-pagination-item-active {
+    border-color: var(--color-primary);
+  }
+
+  .dark .ant-pagination-item-active a {
+    color: var(--color-primary);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-placeholder);
+}
