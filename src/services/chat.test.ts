@@ -1,6 +1,6 @@
-import { describe, it, expect } from 'vitest'
-import { buildSystemPrompt, trimMessages } from './chat'
-import type { ChatMessage, UserProfile, VolunteerItem } from '../store'
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
+import { buildSystemPrompt, trimMessages, streamChat } from './chat'
+import type { ChatMessage, UserProfile, VolunteerItem, AiConfig } from '../store'
 import type { College, Major } from '../data/mock'
 
 const profile: UserProfile = {
@@ -99,5 +99,115 @@ describe('trimMessages', () => {
     expect(result[0]).toEqual({ role: 'user', content: '问题' })
     expect(result[0]).not.toHaveProperty('id')
     expect(result[0]).not.toHaveProperty('timestamp')
+  })
+})
+
+const aiConfig: AiConfig = {
+  baseUrl: 'https://api.example.com/v1',
+  apiKey: 'sk-test',
+  model: 'gpt-test',
+}
+
+function makeSseStream(chunks: string[]): ReadableStream<Uint8Array> {
+  const encoder = new TextEncoder()
+  return new ReadableStream({
+    start(controller) {
+      for (const chunk of chunks) {
+        controller.enqueue(encoder.encode(chunk))
+      }
+      controller.close()
+    },
+  })
+}
+
+function makeSseResponse(stream: ReadableStream<Uint8Array>): Response {
+  return new Response(stream, {
+    status: 200,
+    headers: { 'Content-Type': 'text/event-stream' },
+  })
+}
+
+describe('streamChat 成功路径', () => {
+  beforeEach(() => {
+    vi.stubGlobal('fetch', vi.fn())
+  })
+
+  afterEach(() => {
+    vi.unstubAllGlobals()
+    vi.restoreAllMocks()
+  })
+
+  it('流式接收多个 chunk 并拼接完整文本', async () => {
+    const sseChunks = [
+      'data: {"choices":[{"delta":{"content":"你好"}}]}\n\n',
+      'data: {"choices":[{"delta":{"content":"，世界"}}]}\n\n',
+      'data: {"choices":[{"delta":{"content":"！"}}]}\n\n',
+      'data: [DONE]\n\n',
+    ]
+    ;(global.fetch as ReturnType<typeof vi.fn>).mockResolvedValueOnce(
+      makeSseResponse(makeSseStream(sseChunks))
+    )
+
+    const receivedChunks: string[] = []
+    const messages: ChatMessage[] = [
+      { id: 'u1', role: 'user', content: '你好', timestamp: 1 },
+    ]
+    const result = await streamChat({
+      messages,
+      aiConfig,
+      profile,
+      volunteerList: [],
+      onChunk: (text) => receivedChunks.push(text),
+    })
+
+    expect(result).toBe('你好，世界！')
+    expect(receivedChunks).toEqual(['你好', '，世界', '！'])
+  })
+
+  it('调用 fetch 时使用正确的 URL、headers、body', async () => {
+    ;(global.fetch as ReturnType<typeof vi.fn>).mockResolvedValueOnce(
+      makeSseResponse(makeSseStream(['data: {"choices":[{"delta":{"content":"x"}}]}\n\n', 'data: [DONE]\n\n']))
+    )
+
+    await streamChat({
+      messages: [{ id: 'u1', role: 'user', content: '问', timestamp: 1 }],
+      aiConfig,
+      profile,
+      volunteerList: [],
+      onChunk: () => {},
+    })
+
+    expect(global.fetch).toHaveBeenCalledWith(
+      'https://api.example.com/v1/chat/completions',
+      expect.objectContaining({
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: 'Bearer sk-test',
+        },
+      })
+    )
+    const callArgs = (global.fetch as ReturnType<typeof vi.fn>).mock.calls[0][1] as RequestInit
+    const body = JSON.parse(callArgs.body as string)
+    expect(body.model).toBe('gpt-test')
+    expect(body.stream).toBe(true)
+    expect(body.messages[0].role).toBe('system')
+    expect(body.messages[1].role).toBe('user')
+  })
+
+  it('空回复返回空字符串', async () => {
+    ;(global.fetch as ReturnType<typeof vi.fn>).mockResolvedValueOnce(
+      makeSseResponse(makeSseStream(['data: [DONE]\n\n']))
+    )
+
+    const result = await streamChat({
+      messages: [{ id: 'u1', role: 'user', content: '问', timestamp: 1 }],
+      aiConfig,
+      profile,
+      volunteerList: [],
+      onChunk: () => {},
+    })
+
+    expect(result).toBe('')
   })
 })

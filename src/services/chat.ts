@@ -48,3 +48,101 @@ export function trimMessages(messages: ChatMessage[]): Array<{ role: ChatMessage
   const recent = filtered.slice(-20)
   return recent.map((m) => ({ role: m.role, content: m.content }))
 }
+
+export interface ChatParams {
+  messages: ChatMessage[]
+  aiConfig: { baseUrl: string; apiKey: string; model: string }
+  profile: UserProfile
+  volunteerList: VolunteerItem[]
+  onChunk: (text: string) => void
+  signal?: AbortSignal
+}
+
+/**
+ * 自定义错误类，携带 HTTP 状态码便于上层分类处理
+ */
+export class ChatError extends Error {
+  status?: number
+  constructor(message: string, status?: number) {
+    super(message)
+    this.name = 'ChatError'
+    this.status = status
+  }
+}
+
+async function safeReadError(response: Response): Promise<{ message: string }> {
+  try {
+    const text = await response.text()
+    const parsed = JSON.parse(text)
+    return { message: parsed.error?.message || `HTTP ${response.status}` }
+  } catch {
+    return { message: `HTTP ${response.status}` }
+  }
+}
+
+/**
+ * 调用 OpenAI 兼容的 /chat/completions 接口，流式接收回复
+ * @returns 完整拼接的文本
+ */
+export async function streamChat(params: ChatParams): Promise<string> {
+  const { messages, aiConfig, profile, volunteerList, onChunk, signal } = params
+  const systemPrompt = buildSystemPrompt(profile, volunteerList)
+  const trimmed = trimMessages(messages)
+
+  const url = `${aiConfig.baseUrl.replace(/\/$/, '')}/chat/completions`
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${aiConfig.apiKey}`,
+    },
+    body: JSON.stringify({
+      model: aiConfig.model,
+      messages: [{ role: 'system', content: systemPrompt }, ...trimmed],
+      stream: true,
+    }),
+    signal,
+  })
+
+  if (!response.ok) {
+    const errBody = await safeReadError(response)
+    throw new ChatError(errBody.message, response.status)
+  }
+
+  if (!response.body) {
+    throw new ChatError('响应没有 body', response.status)
+  }
+
+  const reader = response.body.getReader()
+  const decoder = new TextDecoder()
+  let buffer = ''
+  let accumulated = ''
+
+  while (true) {
+    const { done, value } = await reader.read()
+    if (done) break
+    buffer += decoder.decode(value, { stream: true })
+    const lines = buffer.split('\n')
+    buffer = lines.pop() ?? ''
+    for (const line of lines) {
+      const trimmedLine = line.trim()
+      if (!trimmedLine || !trimmedLine.startsWith('data:')) continue
+      const data = trimmedLine.slice(5).trim()
+      if (data === '[DONE]') {
+        return accumulated
+      }
+      try {
+        const parsed = JSON.parse(data)
+        const delta = parsed.choices?.[0]?.delta?.content
+        if (typeof delta === 'string' && delta) {
+          accumulated += delta
+          onChunk(delta)
+        }
+      } catch {
+        // 跳过无法解析的行（心跳等）
+      }
+    }
+  }
+
+  return accumulated
+}
