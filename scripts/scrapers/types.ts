@@ -283,3 +283,71 @@ export interface SubjectMeta {
   scraperVersion: string
   verified: boolean
 }
+
+// ===== Phase D: 详细专业目录 =====
+
+export interface DetailedMajorRecord {
+  // 基础目录字段
+  majorCode: string
+  majorName: string
+  category: string
+  subCategory: string
+  educationLevel: string
+
+  // 详细字段
+  introduction: string
+  careerDirections: string[]
+  mainCourses: string
+  durationAndDegree: {
+    studentScale: string
+    boyPercent: number
+    girlPercent: number
+    year: string
+  }
+
+  // 扩展字段
+  satisfaction: Array<{
+    type: string
+    typeDesc: string
+    rank: number
+    count: number
+  }>
+  graduateMajors: Array<{
+    majorCode: string
+    majorName: string
+  }>
+  recommendedColleges: Array<{
+    collegeName: string
+    count: number
+    rank: number
+  }>
+  similarMajors: Array<{
+    majorCode: string
+    majorName: string
+  }>
+
+  // 可追溯性
+  specId: string
+  _meta: DetailedCatalogMeta
+}
+
+export interface DetailedCatalogMeta {
+  source: 'gaokao_chsi'
+  sourceUrl: string
+  fetchedAt: string
+  scraperVersion: string
+  verified: boolean
+}
+
+export interface DetailedCatalogFileMeta {
+  totalCount: number
+  undergraduateCount: number
+  vocationalCount: number
+  generatedAt: string
+  scraperVersion: string
+  sources: Array<{
+    name: string
+    url: string
+    recordCount: number
+  }>
+}
