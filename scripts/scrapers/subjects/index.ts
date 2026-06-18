@@ -196,7 +196,9 @@ async function collectJiangsu(
 
   logger.info('Excel 解析完成', { rows: rows.length })
 
-  const records = parseJsSubjects(rows, JS_SUBJECTS_PAGE_URL)
+  const records = parseJsSubjects(rows, JS_SUBJECTS_PAGE_URL).filter(
+    (r) => r.collegeName !== '院校名称' && r.collegeId !== '院校代码'
+  )
 
   // 匹配 colleges.json（按院校名）
   const collegesByName = new Map<string, CollegeRecord>()

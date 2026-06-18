@@ -12,6 +12,8 @@
     "scrape:colleges:force": "tsx scripts/scrapers/colleges/index.ts --force",
     "scrape:colleges:dry": "tsx scripts/scrapers/colleges/index.ts --dry-run",
     "scrape:colleges:websites": "tsx scripts/scrapers/colleges/website_enricher.ts",
+    "scrape:majors": "tsx scripts/scrapers/majors/index.ts",
+    "scrape:subjects": "tsx scripts/scrapers/subjects/index.ts",
     "scrape:scores": "tsx scripts/scrapers/scores/index.ts",
     "scrape:scores:force": "tsx scripts/scrapers/scores/index.ts --force",
     "scrape:rank_tables": "tsx scripts/scrapers/rank_tables/index.ts",

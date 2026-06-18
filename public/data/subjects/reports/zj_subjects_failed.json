@@ -1,0 +1,5787 @@
+[
+  {
+    "collegeId": "4111010009",
+    "collegeName": "北方工业大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111014019",
+    "collegeName": "北京警察学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111014596",
+    "collegeName": "中国社会科学院大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111010853",
+    "collegeName": "北京工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111010857",
+    "collegeName": "北京信息职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111011090",
+    "collegeName": "北京京北职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111011092",
+    "collegeName": "北京交通职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111011626",
+    "collegeName": "北京青年政治学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111012448",
+    "collegeName": "北京农业职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111012451",
+    "collegeName": "北京政法职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111012561",
+    "collegeName": "北京财贸职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111012566",
+    "collegeName": "北京经济技术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111014073",
+    "collegeName": "北京经济管理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111014075",
+    "collegeName": "北京劳动保障职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111014140",
+    "collegeName": "北京艺术传媒职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111014279",
+    "collegeName": "北京交通运输职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111014395",
+    "collegeName": "北京卫生职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111014588",
+    "collegeName": "北京网络职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4112012105",
+    "collegeName": "天津中德应用技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4112013659",
+    "collegeName": "天津传媒学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4112012719",
+    "collegeName": "天津渤海职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4112012880",
+    "collegeName": "天津医学高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4112013701",
+    "collegeName": "天津石油职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4112014600",
+    "collegeName": "天津滨海汽车工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113010085",
+    "collegeName": "河北水利电力学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113010086",
+    "collegeName": "河北农业大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113010096",
+    "collegeName": "保定学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113010098",
+    "collegeName": "河北民族师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113010099",
+    "collegeName": "唐山师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113010102",
+    "collegeName": "石家庄学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113011033",
+    "collegeName": "唐山学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113012784",
+    "collegeName": "河北传媒学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113012796",
+    "collegeName": "河北工程技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013075",
+    "collegeName": "河北美术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013408",
+    "collegeName": "华北理工大学轻工学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113016204",
+    "collegeName": "河北工业职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013411",
+    "collegeName": "河北师范大学汇华学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113016203",
+    "collegeName": "河北科技工程职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113016202",
+    "collegeName": "河北石油职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013594",
+    "collegeName": "河北地质大学华信学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013595",
+    "collegeName": "河北农业大学现代科技学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014225",
+    "collegeName": "河北东方学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113012787",
+    "collegeName": "唐山工业职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113012884",
+    "collegeName": "邢台医学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113011238",
+    "collegeName": "石家庄职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113011423",
+    "collegeName": "张家口职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113012352",
+    "collegeName": "河北软件职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113012367",
+    "collegeName": "河北石油职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113012389",
+    "collegeName": "河北建材职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113012415",
+    "collegeName": "沧州职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113012418",
+    "collegeName": "河北能源职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113012424",
+    "collegeName": "石家庄铁路职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113012543",
+    "collegeName": "保定职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113012783",
+    "collegeName": "石家庄城市经济职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113012785",
+    "collegeName": "唐山职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113012786",
+    "collegeName": "衡水职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113012885",
+    "collegeName": "河北艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113012887",
+    "collegeName": "河北旅游职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013070",
+    "collegeName": "石家庄财经职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013072",
+    "collegeName": "河北化工医药职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013073",
+    "collegeName": "石家庄信息工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013395",
+    "collegeName": "廊坊职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013396",
+    "collegeName": "唐山科技职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013398",
+    "collegeName": "河北公安警察职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013399",
+    "collegeName": "石家庄工商职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013400",
+    "collegeName": "石家庄理工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013403",
+    "collegeName": "石家庄科技信息职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013690",
+    "collegeName": "河北司法警官职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014047",
+    "collegeName": "石家庄经济职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014103",
+    "collegeName": "冀中职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014158",
+    "collegeName": "石家庄人民医学高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014185",
+    "collegeName": "河北正定师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014208",
+    "collegeName": "河北劳动关系职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014213",
+    "collegeName": "石家庄科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014259",
+    "collegeName": "沧州幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014260",
+    "collegeName": "宣化科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014280",
+    "collegeName": "廊坊燕京职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014281",
+    "collegeName": "承德护理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014328",
+    "collegeName": "石家庄幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014335",
+    "collegeName": "廊坊卫生职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014396",
+    "collegeName": "河北轨道运输职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014460",
+    "collegeName": "保定幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014471",
+    "collegeName": "河北工艺美术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014472",
+    "collegeName": "渤海理工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014632",
+    "collegeName": "承德应用技术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4213050139",
+    "collegeName": "河北资源环境职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014785",
+    "collegeName": "衡水健康科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014786",
+    "collegeName": "沧州航空职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014787",
+    "collegeName": "邯郸应用技术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014788",
+    "collegeName": "秦皇岛工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014852",
+    "collegeName": "邢台新能源职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014908",
+    "collegeName": "石家庄金融职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113014909",
+    "collegeName": "石家庄农林职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114010117",
+    "collegeName": "长治医学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114010122",
+    "collegeName": "长治学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114012111",
+    "collegeName": "山西警察学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114016201",
+    "collegeName": "山西工程科技职业大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114013537",
+    "collegeName": "山西电子科技学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114013691",
+    "collegeName": "山西工商学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114014226",
+    "collegeName": "运城职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114014898",
+    "collegeName": "山西医药学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114013696",
+    "collegeName": "山西文化旅游职业大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114011630",
+    "collegeName": "山西省财政税务专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114012388",
+    "collegeName": "长治职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114012774",
+    "collegeName": "晋城职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114012780",
+    "collegeName": "大同煤炭职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114012888",
+    "collegeName": "山西机电职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114012890",
+    "collegeName": "山西财贸职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114012891",
+    "collegeName": "山西林业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114012892",
+    "collegeName": "山西水利职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114013171",
+    "collegeName": "临汾职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114013528",
+    "collegeName": "山西职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114013532",
+    "collegeName": "太原城市职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114013692",
+    "collegeName": "山西体育职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114013694",
+    "collegeName": "山西国际商务职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114013698",
+    "collegeName": "山西管理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114013914",
+    "collegeName": "山西华澳商贸职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114013934",
+    "collegeName": "山西运城农业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114014093",
+    "collegeName": "运城幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114014177",
+    "collegeName": "山西经贸职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114014186",
+    "collegeName": "朔州职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114014247",
+    "collegeName": "山西铁道职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114014270",
+    "collegeName": "晋中师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114014397",
+    "collegeName": "运城护理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114014461",
+    "collegeName": "运城师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114014462",
+    "collegeName": "朔州师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114014681",
+    "collegeName": "山西工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114014687",
+    "collegeName": "长治幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114014697",
+    "collegeName": "山西通用航空职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114014777",
+    "collegeName": "吕梁师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114014901",
+    "collegeName": "大同数据科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115010138",
+    "collegeName": "赤峰学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115011427",
+    "collegeName": "集宁师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115011631",
+    "collegeName": "河套学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115011709",
+    "collegeName": "呼和浩特民族学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014199",
+    "collegeName": "内蒙古大学创业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014205",
+    "collegeName": "内蒙古鸿德文理学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014531",
+    "collegeName": "内蒙古艺术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014532",
+    "collegeName": "鄂尔多斯应用技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115012797",
+    "collegeName": "内蒙古警察学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115010871",
+    "collegeName": "内蒙古建筑职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115012443",
+    "collegeName": "兴安职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115011429",
+    "collegeName": "内蒙古丰州职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115012057",
+    "collegeName": "包头职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115012671",
+    "collegeName": "包头轻工职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115012673",
+    "collegeName": "内蒙古电子信息职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115012674",
+    "collegeName": "内蒙古机电职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115012675",
+    "collegeName": "内蒙古化工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115012676",
+    "collegeName": "内蒙古商贸职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115012677",
+    "collegeName": "锡林郭勒职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115012894",
+    "collegeName": "内蒙古体育职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115013699",
+    "collegeName": "乌兰察布职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115013740",
+    "collegeName": "通辽职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115013741",
+    "collegeName": "科尔沁艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115013824",
+    "collegeName": "内蒙古交通职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115013864",
+    "collegeName": "包头钢铁职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115013915",
+    "collegeName": "乌海职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014048",
+    "collegeName": "内蒙古科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014049",
+    "collegeName": "内蒙古北方职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014187",
+    "collegeName": "包头铁道职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014219",
+    "collegeName": "乌兰察布医学高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014248",
+    "collegeName": "鄂尔多斯职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014283",
+    "collegeName": "呼伦贝尔职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014285",
+    "collegeName": "满洲里俄语职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014337",
+    "collegeName": "内蒙古能源职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014338",
+    "collegeName": "赤峰工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014339",
+    "collegeName": "阿拉善职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014387",
+    "collegeName": "内蒙古美术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014463",
+    "collegeName": "内蒙古民族幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014501",
+    "collegeName": "鄂尔多斯生态环境职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014539",
+    "collegeName": "扎兰屯职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014699",
+    "collegeName": "赤峰应用技术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121011430",
+    "collegeName": "辽宁科技学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121011432",
+    "collegeName": "辽宁警察学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121011779",
+    "collegeName": "辽东学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121012595",
+    "collegeName": "辽宁理工职业大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121013203",
+    "collegeName": "大连工业大学艺术与信息工程学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121013217",
+    "collegeName": "辽宁理工学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121013610",
+    "collegeName": "辽宁何氏医学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121013621",
+    "collegeName": "沈阳科技学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121013957",
+    "collegeName": "辽宁传媒学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014435",
+    "collegeName": "营口理工学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121010171",
+    "collegeName": "朝阳师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121010179",
+    "collegeName": "抚顺师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121010180",
+    "collegeName": "锦州师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121010181",
+    "collegeName": "营口职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121010182",
+    "collegeName": "铁岭师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121010845",
+    "collegeName": "大连职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121010957",
+    "collegeName": "辽宁农业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121011037",
+    "collegeName": "抚顺职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121011249",
+    "collegeName": "辽阳职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121011250",
+    "collegeName": "阜新高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121012063",
+    "collegeName": "盘锦职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121012592",
+    "collegeName": "辽宁职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121012593",
+    "collegeName": "辽宁生态工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121012594",
+    "collegeName": "沈阳职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121012896",
+    "collegeName": "辽宁轨道交通职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121012897",
+    "collegeName": "辽宁广告职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121012898",
+    "collegeName": "辽宁机电职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121012900",
+    "collegeName": "辽宁石化职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121013958",
+    "collegeName": "大连软件职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121013961",
+    "collegeName": "大连枫叶职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014077",
+    "collegeName": "辽河石油职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014106",
+    "collegeName": "辽宁地质工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014188",
+    "collegeName": "辽宁铁道职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014189",
+    "collegeName": "辽宁建筑职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014209",
+    "collegeName": "大连航运职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014228",
+    "collegeName": "大连汽车职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014240",
+    "collegeName": "辽宁现代服务职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014286",
+    "collegeName": "辽宁冶金职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014287",
+    "collegeName": "辽宁工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014290",
+    "collegeName": "铁岭卫生职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014385",
+    "collegeName": "沈阳北软信息职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014464",
+    "collegeName": "辽宁民族师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014473",
+    "collegeName": "辽宁轻工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014526",
+    "collegeName": "辽宁特殊教育师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014662",
+    "collegeName": "辽宁师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014700",
+    "collegeName": "鞍山职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4122011441",
+    "collegeName": "吉林警察学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "3622000335",
+    "collegeName": "长春师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4122011044",
+    "collegeName": "四平职业大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4122012904",
+    "collegeName": "吉林工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4122013743",
+    "collegeName": "白城医学高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4122013917",
+    "collegeName": "松原职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4122014107",
+    "collegeName": "白城职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4122014291",
+    "collegeName": "吉林科技职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4122014340",
+    "collegeName": "延边职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4122014602",
+    "collegeName": "吉林水利电力职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4122014894",
+    "collegeName": "长春数字科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4122014910",
+    "collegeName": "四平现代职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123011445",
+    "collegeName": "黑龙江工业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123011635",
+    "collegeName": "哈尔滨信息工程学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123012729",
+    "collegeName": "齐齐哈尔工程学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123013299",
+    "collegeName": "哈尔滨石油学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123013301",
+    "collegeName": "哈尔滨远东理工学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123013303",
+    "collegeName": "哈尔滨剑桥学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123013304",
+    "collegeName": "黑龙江工程学院昆仑旅游学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123013306",
+    "collegeName": "哈尔滨广厦学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123012911",
+    "collegeName": "哈尔滨职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123010238",
+    "collegeName": "齐齐哈尔高等师范专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123010872",
+    "collegeName": "伊春职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123011449",
+    "collegeName": "黑龙江职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123012490",
+    "collegeName": "黑龙江艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123012718",
+    "collegeName": "大庆职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123012724",
+    "collegeName": "黑龙江林业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123012725",
+    "collegeName": "黑龙江农业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123012728",
+    "collegeName": "黑龙江司法警官职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123012905",
+    "collegeName": "鹤岗师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123012908",
+    "collegeName": "大兴安岭职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123012910",
+    "collegeName": "黑龙江农业经济职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123013302",
+    "collegeName": "哈尔滨传媒职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123013448",
+    "collegeName": "黑龙江商业职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123013449",
+    "collegeName": "黑龙江公安警官职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123013451",
+    "collegeName": "哈尔滨城市职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123013729",
+    "collegeName": "黑龙江旅游职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123013730",
+    "collegeName": "黑龙江三江美术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123013732",
+    "collegeName": "黑龙江能源职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123013918",
+    "collegeName": "七台河职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123013935",
+    "collegeName": "黑龙江民族职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123014053",
+    "collegeName": "黑龙江交通职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123014055",
+    "collegeName": "哈尔滨应用职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123014095",
+    "collegeName": "黑龙江幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123014108",
+    "collegeName": "哈尔滨科学技术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123014633",
+    "collegeName": "哈尔滨北方航空职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123014911",
+    "collegeName": "哈尔滨商贸职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123014912",
+    "collegeName": "齐齐哈尔立德健康职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4131010262",
+    "collegeName": "上海健康医学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4131010275",
+    "collegeName": "上海旅游高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4131013907",
+    "collegeName": "上海中华职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4131014745",
+    "collegeName": "上海南湖职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4131014778",
+    "collegeName": "上海科创职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4131014779",
+    "collegeName": "上海闵行职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4131014780",
+    "collegeName": "上海现代化工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4131014781",
+    "collegeName": "上海建设管理职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4131014895",
+    "collegeName": "上海浦东职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132011998",
+    "collegeName": "徐州工程学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132012213",
+    "collegeName": "南京警察学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132012917",
+    "collegeName": "泰州学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132013573",
+    "collegeName": "金陵科技学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132013579",
+    "collegeName": "中国矿业大学徐海学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132013992",
+    "collegeName": "常州大学怀德学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132014160",
+    "collegeName": "宿迁学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132014436",
+    "collegeName": "江苏第二师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132016403",
+    "collegeName": "西交利物浦大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132011585",
+    "collegeName": "连云港师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132010848",
+    "collegeName": "无锡职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "3632000466",
+    "collegeName": "盐城幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "3632000583",
+    "collegeName": "苏州幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132010958",
+    "collegeName": "江苏工程职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132012680",
+    "collegeName": "应天职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132012681",
+    "collegeName": "无锡科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132012682",
+    "collegeName": "江苏医药职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132012686",
+    "collegeName": "苏州工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132013102",
+    "collegeName": "常州工程职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132013107",
+    "collegeName": "徐州工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132013752",
+    "collegeName": "盐城工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132014000",
+    "collegeName": "江苏城市职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132014001",
+    "collegeName": "南京城市职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132014329",
+    "collegeName": "徐州幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132014475",
+    "collegeName": "江苏商贸职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132014493",
+    "collegeName": "南通师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132014542",
+    "collegeName": "江苏财会职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132014773",
+    "collegeName": "常州幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132014841",
+    "collegeName": "江苏司法警官职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132014853",
+    "collegeName": "盐城农业科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132014854",
+    "collegeName": "宿迁幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132014855",
+    "collegeName": "无锡师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132014913",
+    "collegeName": "常州铁道职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132014914",
+    "collegeName": "苏州旅游职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132014915",
+    "collegeName": "南通卫生健康职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4111011625",
+    "collegeName": "中国青年政治学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4112013663",
+    "collegeName": "南开大学滨海学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4112012487",
+    "collegeName": "天津工程职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4112012881",
+    "collegeName": "天津开发区职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4112014102",
+    "collegeName": "天津广播影视职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013404",
+    "collegeName": "河北大学工商学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4113013394",
+    "collegeName": "渤海石油职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4114013608",
+    "collegeName": "山西财经大学华商学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014050",
+    "collegeName": "赤峰职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014051",
+    "collegeName": "内蒙古经贸外语职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4115014282",
+    "collegeName": "内蒙古工业职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121013199",
+    "collegeName": "沈阳工业大学工程学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121013200",
+    "collegeName": "沈阳航空航天大学北方科技学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121011735",
+    "collegeName": "辽宁税务高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121012590",
+    "collegeName": "沈阳航空职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121012591",
+    "collegeName": "辽宁体育运动职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121012730",
+    "collegeName": "大连商务职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121013959",
+    "collegeName": "大连翻译职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121013960",
+    "collegeName": "辽宁商贸职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4121014398",
+    "collegeName": "辽宁政法职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4123012726",
+    "collegeName": "黑龙江农业工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4131010283",
+    "collegeName": "上海公安学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4131012585",
+    "collegeName": "上海欧华职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4131014023",
+    "collegeName": "上海工会管理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132013646",
+    "collegeName": "南京大学金陵学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132013981",
+    "collegeName": "南京中医药大学翰林学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132012678",
+    "collegeName": "江苏联合职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4132012683",
+    "collegeName": "扬州环境资源职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4133013286",
+    "collegeName": "杭州师范大学钱江学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4133014206",
+    "collegeName": "同济大学浙江学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4133016207",
+    "collegeName": "浙江药科职业大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4133014943",
+    "collegeName": "宁波东方理工大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4133012646",
+    "collegeName": "浙江电力职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4133012862",
+    "collegeName": "浙江建设职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4133013854",
+    "collegeName": "浙江体育职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4133014916",
+    "collegeName": "湖州健康职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134010379",
+    "collegeName": "宿州学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134010959",
+    "collegeName": "安徽三联学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134012810",
+    "collegeName": "安徽文达信息工程学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134012926",
+    "collegeName": "亳州学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134013616",
+    "collegeName": "合肥经济学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134014098",
+    "collegeName": "合肥师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134014840",
+    "collegeName": "安徽公安学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134012925",
+    "collegeName": "安徽第二医学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134012073",
+    "collegeName": "安徽水利水电职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134012074",
+    "collegeName": "阜阳职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134012220",
+    "collegeName": "淮南职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134012813",
+    "collegeName": "六安职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134012814",
+    "collegeName": "安徽电子信息职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134012816",
+    "collegeName": "安徽交通职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134012817",
+    "collegeName": "安徽体育运动职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134012924",
+    "collegeName": "安徽中医药高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134013064",
+    "collegeName": "民办合肥滨湖职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134013341",
+    "collegeName": "安徽中澳科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134013342",
+    "collegeName": "阜阳科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134013343",
+    "collegeName": "亳州职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134013345",
+    "collegeName": "安庆职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134013346",
+    "collegeName": "安徽艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134013847",
+    "collegeName": "安徽公安职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134013848",
+    "collegeName": "安徽林业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134013851",
+    "collegeName": "安徽邮电职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134013852",
+    "collegeName": "安徽工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134014132",
+    "collegeName": "安徽涉外经济职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134014165",
+    "collegeName": "民办安徽旅游职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134014229",
+    "collegeName": "安徽矿业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134014230",
+    "collegeName": "合肥信息技术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134014273",
+    "collegeName": "桐城师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134014378",
+    "collegeName": "安徽黄梅戏艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134014536",
+    "collegeName": "阜阳幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134014842",
+    "collegeName": "芜湖医药健康职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134014843",
+    "collegeName": "芜湖航空职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134014844",
+    "collegeName": "蚌埠城市轨道交通职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4134014917",
+    "collegeName": "六安应用科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135010398",
+    "collegeName": "宁德师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135011495",
+    "collegeName": "福建警察学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135011498",
+    "collegeName": "莆田学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135012631",
+    "collegeName": "厦门医学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135013115",
+    "collegeName": "厦门工学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135014046",
+    "collegeName": "福建农林大学金山学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135014896",
+    "collegeName": "福建福耀科技大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135011317",
+    "collegeName": "黎明职业大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135011314",
+    "collegeName": "漳州职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135011499",
+    "collegeName": "福建华南女子职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135012625",
+    "collegeName": "福建林业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135012708",
+    "collegeName": "福州英华职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135012927",
+    "collegeName": "泉州华光职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135013769",
+    "collegeName": "福州科技职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135013770",
+    "collegeName": "泉州经贸职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135013772",
+    "collegeName": "湄洲湾职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135013970",
+    "collegeName": "福建艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135013976",
+    "collegeName": "三明医学科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135013978",
+    "collegeName": "福州软件职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135014060",
+    "collegeName": "福建体育职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135014113",
+    "collegeName": "漳州科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135014116",
+    "collegeName": "武夷山职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135014257",
+    "collegeName": "厦门安防科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135014331",
+    "collegeName": "泉州幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135014490",
+    "collegeName": "闽江师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135016411",
+    "collegeName": "福州墨尔本理工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4135014918",
+    "collegeName": "集美工业职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136010419",
+    "collegeName": "井冈山大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136014839",
+    "collegeName": "江西飞行学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "3636000312",
+    "collegeName": "上饶幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "3636000519",
+    "collegeName": "抚州幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136010839",
+    "collegeName": "江西工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136012933",
+    "collegeName": "江西电力职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136013419",
+    "collegeName": "江西科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136013427",
+    "collegeName": "江西建设职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136013428",
+    "collegeName": "抚州职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136013866",
+    "collegeName": "江西经济管理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136013872",
+    "collegeName": "江西农业工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136013965",
+    "collegeName": "江西卫生职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136014167",
+    "collegeName": "江西枫林涉外经贸职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136014249",
+    "collegeName": "江西管理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136014250",
+    "collegeName": "江西传媒职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136014705",
+    "collegeName": "南昌健康职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136014748",
+    "collegeName": "和君职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136014807",
+    "collegeName": "吉安幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136014808",
+    "collegeName": "上饶卫生健康职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136014837",
+    "collegeName": "江西樟树中医药职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136014856",
+    "collegeName": "赣东职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136014906",
+    "collegeName": "江西电子信息职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136014907",
+    "collegeName": "鹰潭卫生职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136014919",
+    "collegeName": "九江卫生健康职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136014920",
+    "collegeName": "新余职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136014921",
+    "collegeName": "赣州起元职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4136014922",
+    "collegeName": "赣州远恒佳职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137010454",
+    "collegeName": "济宁学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137010457",
+    "collegeName": "山东体育学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137011324",
+    "collegeName": "山东警察学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137012331",
+    "collegeName": "山东女子学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137012843",
+    "collegeName": "潍坊科技学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013359",
+    "collegeName": "烟台理工学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013373",
+    "collegeName": "聊城大学东昌学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013379",
+    "collegeName": "潍坊理工学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013387",
+    "collegeName": "山东外国语职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013857",
+    "collegeName": "山东华宇工学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014100",
+    "collegeName": "山东政法学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014276",
+    "collegeName": "齐鲁师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014438",
+    "collegeName": "山东管理学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014439",
+    "collegeName": "山东农业工程学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014878",
+    "collegeName": "康复大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013009",
+    "collegeName": "淄博职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137010444",
+    "collegeName": "菏泽医学专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137012326",
+    "collegeName": "威海职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137012329",
+    "collegeName": "山东劳动职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137012330",
+    "collegeName": "莱芜职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137012335",
+    "collegeName": "济宁职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137012391",
+    "collegeName": "潍坊职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137012396",
+    "collegeName": "烟台职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137012441",
+    "collegeName": "聊城职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137012818",
+    "collegeName": "滨州职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137012819",
+    "collegeName": "山东科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137012841",
+    "collegeName": "山东服装职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137012842",
+    "collegeName": "德州科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137012946",
+    "collegeName": "山东水利职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013005",
+    "collegeName": "青岛飞洋职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013007",
+    "collegeName": "东营科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013008",
+    "collegeName": "山东交通职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013012",
+    "collegeName": "山东信息职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013317",
+    "collegeName": "山东经贸职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013318",
+    "collegeName": "山东工业职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013323",
+    "collegeName": "济南职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013355",
+    "collegeName": "烟台工程职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013388",
+    "collegeName": "潍坊工商职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013389",
+    "collegeName": "德州职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013390",
+    "collegeName": "枣庄科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013777",
+    "collegeName": "淄博师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013856",
+    "collegeName": "山东电子职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013858",
+    "collegeName": "山东旅游职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013859",
+    "collegeName": "山东铝业职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013860",
+    "collegeName": "山东杏林科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013861",
+    "collegeName": "泰山职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137013966",
+    "collegeName": "山东药品食品职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014078",
+    "collegeName": "山东商务职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014079",
+    "collegeName": "山东轻工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014081",
+    "collegeName": "烟台汽车工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014082",
+    "collegeName": "山东司法警官职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014118",
+    "collegeName": "菏泽家政职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014193",
+    "collegeName": "山东传媒职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014195",
+    "collegeName": "临沂职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014242",
+    "collegeName": "山东理工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014261",
+    "collegeName": "山东文化产业职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014320",
+    "collegeName": "青岛远洋船员职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014332",
+    "collegeName": "济南幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014343",
+    "collegeName": "济南护理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014345",
+    "collegeName": "泰山护理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014346",
+    "collegeName": "山东海事职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014347",
+    "collegeName": "潍坊护理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014379",
+    "collegeName": "潍坊工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014477",
+    "collegeName": "菏泽职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014507",
+    "collegeName": "威海海洋职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014605",
+    "collegeName": "日照航海工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014666",
+    "collegeName": "青岛工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014688",
+    "collegeName": "青岛幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014689",
+    "collegeName": "烟台幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014707",
+    "collegeName": "烟台文化旅游职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014710",
+    "collegeName": "潍坊环境工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014809",
+    "collegeName": "山东城市服务职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014810",
+    "collegeName": "潍坊食品科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014811",
+    "collegeName": "烟台城市科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014857",
+    "collegeName": "德州工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014858",
+    "collegeName": "日照康养职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014859",
+    "collegeName": "烟台卫生健康职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014860",
+    "collegeName": "山东文化艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014923",
+    "collegeName": "聊城科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014924",
+    "collegeName": "济宁汽车工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014925",
+    "collegeName": "日照科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014926",
+    "collegeName": "枣庄应用技术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014927",
+    "collegeName": "临沂城市职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4137014928",
+    "collegeName": "菏泽生物医药职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141011652",
+    "collegeName": "河南财政金融学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141011788",
+    "collegeName": "河南警察学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141012949",
+    "collegeName": "郑州师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141013498",
+    "collegeName": "黄河交通学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141013502",
+    "collegeName": "中原科技学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141013503",
+    "collegeName": "信阳学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141013504",
+    "collegeName": "安阳学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014003",
+    "collegeName": "商丘学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014040",
+    "collegeName": "郑州商学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014169",
+    "collegeName": "河南科技职业大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014333",
+    "collegeName": "郑州升达经贸管理学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014831",
+    "collegeName": "郑州美术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014879",
+    "collegeName": "河南体育学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141012948",
+    "collegeName": "郑州健康学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141010824",
+    "collegeName": "河南职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141010842",
+    "collegeName": "三门峡职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141010843",
+    "collegeName": "郑州铁路职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141011787",
+    "collegeName": "濮阳职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141012067",
+    "collegeName": "许昌职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141012582",
+    "collegeName": "河南水利与环境职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141012745",
+    "collegeName": "商丘职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141012748",
+    "collegeName": "平顶山工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141012781",
+    "collegeName": "河南司法警官职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141012794",
+    "collegeName": "河南工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141012950",
+    "collegeName": "焦作师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141013564",
+    "collegeName": "河南质量工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141013565",
+    "collegeName": "郑州信息科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141013781",
+    "collegeName": "南阳医学高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141013783",
+    "collegeName": "郑州电子信息职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141013786",
+    "collegeName": "郑州工业安全职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141013790",
+    "collegeName": "河南农业职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141013792",
+    "collegeName": "郑州职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141013885",
+    "collegeName": "河南信息统计职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141013889",
+    "collegeName": "河南林业职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141013936",
+    "collegeName": "河南工业贸易职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014062",
+    "collegeName": "郑州电力职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014181",
+    "collegeName": "河南建筑职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014235",
+    "collegeName": "郑州城市职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014245",
+    "collegeName": "新乡职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014251",
+    "collegeName": "驻马店职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014300",
+    "collegeName": "焦作工贸职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014301",
+    "collegeName": "许昌陶瓷职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014302",
+    "collegeName": "郑州理工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014303",
+    "collegeName": "郑州信息工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014306",
+    "collegeName": "开封文化艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014307",
+    "collegeName": "河南应用技术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014348",
+    "collegeName": "河南机电职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014349",
+    "collegeName": "河南护理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014350",
+    "collegeName": "许昌电气职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014351",
+    "collegeName": "信阳涉外职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014380",
+    "collegeName": "郑州商贸旅游职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014382",
+    "collegeName": "河南推拿职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014391",
+    "collegeName": "郑州幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014392",
+    "collegeName": "安阳幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014405",
+    "collegeName": "郑州黄河护理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014478",
+    "collegeName": "郑州财税金融职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014479",
+    "collegeName": "南阳农业职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014529",
+    "collegeName": "鹤壁能源化工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014530",
+    "collegeName": "平顶山文化艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014597",
+    "collegeName": "濮阳医学高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014598",
+    "collegeName": "驻马店幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014606",
+    "collegeName": "三门峡社会管理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014607",
+    "collegeName": "河南轻工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014634",
+    "collegeName": "信阳航空职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014636",
+    "collegeName": "河南物流职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014637",
+    "collegeName": "河南地矿职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014685",
+    "collegeName": "郑州亚欧交通职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014711",
+    "collegeName": "河南女子职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014712",
+    "collegeName": "河南对外经济贸易职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014714",
+    "collegeName": "南阳科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014715",
+    "collegeName": "兰考三农职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014718",
+    "collegeName": "郑州电子商务职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014720",
+    "collegeName": "郑州体育职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014750",
+    "collegeName": "洛阳文化旅游职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014752",
+    "collegeName": "信阳艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014753",
+    "collegeName": "郑州城建职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4241050709",
+    "collegeName": "平顶山职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014789",
+    "collegeName": "南阳工艺美术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014790",
+    "collegeName": "濮阳科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014791",
+    "collegeName": "商丘幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014792",
+    "collegeName": "周口理工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014793",
+    "collegeName": "焦作新材料职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014794",
+    "collegeName": "开封职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014795",
+    "collegeName": "洛阳商业职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014796",
+    "collegeName": "郑州软件职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014797",
+    "collegeName": "郑州智能科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014812",
+    "collegeName": "郑州食品工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014813",
+    "collegeName": "郑州汽车工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014861",
+    "collegeName": "驻马店农业工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014862",
+    "collegeName": "信阳科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014863",
+    "collegeName": "信阳工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014864",
+    "collegeName": "周口城市职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014865",
+    "collegeName": "河南新乡工商职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014929",
+    "collegeName": "开封工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014930",
+    "collegeName": "开封智慧健康职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014931",
+    "collegeName": "周口智慧能源职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4141014932",
+    "collegeName": "平顶山科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142013245",
+    "collegeName": "荆州学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142013256",
+    "collegeName": "湖北师范大学文理学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142013257",
+    "collegeName": "湖北文理学院理工学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142014899",
+    "collegeName": "湖北三峡航空学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142012951",
+    "collegeName": "湖北中医药高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142012981",
+    "collegeName": "武汉电力职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142012986",
+    "collegeName": "湖北开放职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142014119",
+    "collegeName": "湖北科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142014120",
+    "collegeName": "湖北青年职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142014197",
+    "collegeName": "湖北工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142014258",
+    "collegeName": "三峡旅游职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142014355",
+    "collegeName": "天门职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142014356",
+    "collegeName": "湖北体育职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142014467",
+    "collegeName": "湖北幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142014590",
+    "collegeName": "武汉铁路桥梁职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142014832",
+    "collegeName": "襄阳科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142014833",
+    "collegeName": "宜昌科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4142014866",
+    "collegeName": "荆门通用航空职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143011534",
+    "collegeName": "湖南警察学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143012214",
+    "collegeName": "湖南医药学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143012652",
+    "collegeName": "长沙工业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143012653",
+    "collegeName": "湖南农业大学东方科技学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143012659",
+    "collegeName": "衡阳师范学院南岳学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014900",
+    "collegeName": "长沙科技学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "3643000496",
+    "collegeName": "湘中幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143010836",
+    "collegeName": "株洲师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143011601",
+    "collegeName": "湖南税务高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143011604",
+    "collegeName": "湖南冶金职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143012304",
+    "collegeName": "湖南科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143012598",
+    "collegeName": "湖南网络工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143012849",
+    "collegeName": "张家界航空工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143013033",
+    "collegeName": "湖南机电职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143013037",
+    "collegeName": "怀化职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143013038",
+    "collegeName": "岳阳职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143013039",
+    "collegeName": "常德职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143013041",
+    "collegeName": "长沙南方职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143013805",
+    "collegeName": "湘西民族职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143013807",
+    "collegeName": "湖南财经工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143013923",
+    "collegeName": "湖南理工职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143013940",
+    "collegeName": "湖南现代物流职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014071",
+    "collegeName": "湖南电气职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014072",
+    "collegeName": "湖南外国语职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014097",
+    "collegeName": "益阳医学高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014122",
+    "collegeName": "湖南电子科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014495",
+    "collegeName": "湘南幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014774",
+    "collegeName": "益阳师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014775",
+    "collegeName": "娄底幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014814",
+    "collegeName": "常德科技职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014815",
+    "collegeName": "邵阳工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014816",
+    "collegeName": "长沙轨道交通职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014817",
+    "collegeName": "长沙文创艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014818",
+    "collegeName": "岳阳现代服务职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014819",
+    "collegeName": "郴州思科职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014820",
+    "collegeName": "衡阳科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014867",
+    "collegeName": "怀化工商职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4243050812",
+    "collegeName": "湘潭科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014892",
+    "collegeName": "长沙医药健康职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014902",
+    "collegeName": "长沙科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014903",
+    "collegeName": "株洲科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014904",
+    "collegeName": "衡阳理工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014905",
+    "collegeName": "郴州智能科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014933",
+    "collegeName": "岳阳科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4143014934",
+    "collegeName": "邵阳通航职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144010577",
+    "collegeName": "惠州学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144010582",
+    "collegeName": "嘉应学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144011078",
+    "collegeName": "广州大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144011110",
+    "collegeName": "广东警官学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144011349",
+    "collegeName": "五邑大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144011847",
+    "collegeName": "佛山大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012574",
+    "collegeName": "广东东软学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012619",
+    "collegeName": "广州南方学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012620",
+    "collegeName": "广东外语外贸大学南国商学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012621",
+    "collegeName": "广州华商学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012622",
+    "collegeName": "湛江科技学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012668",
+    "collegeName": "广州理工学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013177",
+    "collegeName": "北京师范大学珠海分校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013656",
+    "collegeName": "广州华立学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013667",
+    "collegeName": "广州商学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013719",
+    "collegeName": "广东科技学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013721",
+    "collegeName": "广东工商职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014278",
+    "collegeName": "广东第二师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014655",
+    "collegeName": "深圳技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144016412",
+    "collegeName": "香港科技大学（广州）",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144016409",
+    "collegeName": "深圳北理莫斯科大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014851",
+    "collegeName": "香港城市大学（东莞）",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144011113",
+    "collegeName": "深圳职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014880",
+    "collegeName": "深圳理工大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013810",
+    "collegeName": "肇庆医学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144010831",
+    "collegeName": "顺德职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012046",
+    "collegeName": "广州职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012957",
+    "collegeName": "深圳信息职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014942",
+    "collegeName": "大湾区大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144010861",
+    "collegeName": "广东交通职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144010862",
+    "collegeName": "广东水利电力职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144010965",
+    "collegeName": "潮汕职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012060",
+    "collegeName": "广东松山职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012322",
+    "collegeName": "广东农工商职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012325",
+    "collegeName": "广东新安职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012327",
+    "collegeName": "佛山职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012572",
+    "collegeName": "广东科学技术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012573",
+    "collegeName": "广东食品药品职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012575",
+    "collegeName": "广州康大职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012577",
+    "collegeName": "广东行政职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012578",
+    "collegeName": "广东体育职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012741",
+    "collegeName": "广东建设职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012742",
+    "collegeName": "广东女子职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012743",
+    "collegeName": "广东机电职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012749",
+    "collegeName": "广东岭南职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012765",
+    "collegeName": "汕尾职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012770",
+    "collegeName": "罗定职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012771",
+    "collegeName": "阳江职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012772",
+    "collegeName": "河源职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012953",
+    "collegeName": "广东邮电职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012954",
+    "collegeName": "汕头职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012956",
+    "collegeName": "揭阳职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012958",
+    "collegeName": "清远职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012959",
+    "collegeName": "广东工贸职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012960",
+    "collegeName": "广东司法警官职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144012962",
+    "collegeName": "广东省外语艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013707",
+    "collegeName": "广东文艺职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013708",
+    "collegeName": "广州体育职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013709",
+    "collegeName": "广州工程技术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013710",
+    "collegeName": "中山火炬职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013711",
+    "collegeName": "江门职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013712",
+    "collegeName": "茂名职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013713",
+    "collegeName": "珠海城市职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013715",
+    "collegeName": "广州涉外经济职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013912",
+    "collegeName": "广州现代信息工程职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013919",
+    "collegeName": "广东理工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013929",
+    "collegeName": "广州城市职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144013930",
+    "collegeName": "广东工程职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014065",
+    "collegeName": "广州科技贸易职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014066",
+    "collegeName": "中山职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014123",
+    "collegeName": "广州珠江职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014125",
+    "collegeName": "广州松田职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014126",
+    "collegeName": "广东文理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014136",
+    "collegeName": "广州城建职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014263",
+    "collegeName": "东莞职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014265",
+    "collegeName": "广东南方职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014266",
+    "collegeName": "广州华商职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014268",
+    "collegeName": "广州华夏职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014311",
+    "collegeName": "广东环境保护工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014361",
+    "collegeName": "广东青年职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014362",
+    "collegeName": "广州东华职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014407",
+    "collegeName": "广东艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014509",
+    "collegeName": "广东生态工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014510",
+    "collegeName": "惠州城市职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014511",
+    "collegeName": "广东碧桂园职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014556",
+    "collegeName": "广东茂名健康职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014592",
+    "collegeName": "广州卫生职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014609",
+    "collegeName": "惠州工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014610",
+    "collegeName": "广东江门中医药职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014638",
+    "collegeName": "广东茂名农林科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014664",
+    "collegeName": "广东江门幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014667",
+    "collegeName": "广东财贸职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014756",
+    "collegeName": "广州幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014757",
+    "collegeName": "广东汕头幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014758",
+    "collegeName": "广东梅州职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014760",
+    "collegeName": "广东云浮中医药职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014761",
+    "collegeName": "广东肇庆航空职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014798",
+    "collegeName": "珠海格力职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4144014845",
+    "collegeName": "深圳城市职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145010605",
+    "collegeName": "河池学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145013520",
+    "collegeName": "广西警察学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145016205",
+    "collegeName": "广西农业职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145013642",
+    "collegeName": "南宁师范大学师园学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145013890",
+    "collegeName": "北京航空航天大学北海学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145014684",
+    "collegeName": "广西职业师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145011355",
+    "collegeName": "南宁职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145011671",
+    "collegeName": "桂林师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145010035",
+    "collegeName": "桂林生命与健康职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145011350",
+    "collegeName": "广西体育高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145011608",
+    "collegeName": "广西水利电力职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145011773",
+    "collegeName": "广西职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145012344",
+    "collegeName": "广西生态工程职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145012356",
+    "collegeName": "广西交通职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145012392",
+    "collegeName": "柳州铁道职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145013138",
+    "collegeName": "广西建设职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145013522",
+    "collegeName": "广西现代职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145013523",
+    "collegeName": "北海职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145013827",
+    "collegeName": "广西经贸职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145013828",
+    "collegeName": "广西工商职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145014067",
+    "collegeName": "柳州城市职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145014068",
+    "collegeName": "百色职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145014171",
+    "collegeName": "梧州职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145014220",
+    "collegeName": "广西幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145014313",
+    "collegeName": "广西卫生职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145014546",
+    "collegeName": "广西中远职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145014573",
+    "collegeName": "玉柴职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145014722",
+    "collegeName": "广西制造工程职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145014762",
+    "collegeName": "防城港职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145014763",
+    "collegeName": "广西信息职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145014821",
+    "collegeName": "广西质量工程职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145014822",
+    "collegeName": "桂林信息工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145014868",
+    "collegeName": "玉林职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4145014869",
+    "collegeName": "广西智能制造职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4146014829",
+    "collegeName": "海南比勒费尔德应用科学大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4146014944",
+    "collegeName": "海南警察学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4146014948",
+    "collegeName": "海南洛桑旅游大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4146013931",
+    "collegeName": "三亚航空旅游职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4146014575",
+    "collegeName": "海南体育职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4146014612",
+    "collegeName": "三亚中瑞酒店管理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4146014846",
+    "collegeName": "海南东方新丝路职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4146014890",
+    "collegeName": "海口旅游职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4146014891",
+    "collegeName": "海南艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4146014893",
+    "collegeName": "三亚护理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150012607",
+    "collegeName": "重庆机电职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014388",
+    "collegeName": "重庆第二师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014830",
+    "collegeName": "重庆中医药学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150012609",
+    "collegeName": "重庆电子科技职业大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150011848",
+    "collegeName": "重庆电力高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150012605",
+    "collegeName": "重庆三峡职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150012606",
+    "collegeName": "重庆工贸职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150013735",
+    "collegeName": "重庆水利电力职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014128",
+    "collegeName": "重庆财经职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014183",
+    "collegeName": "重庆建筑工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014237",
+    "collegeName": "重庆电讯职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014238",
+    "collegeName": "重庆能源职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014315",
+    "collegeName": "重庆化工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014316",
+    "collegeName": "重庆旅游职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014365",
+    "collegeName": "重庆安全技术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014366",
+    "collegeName": "重庆公共运输职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014370",
+    "collegeName": "重庆经贸职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014482",
+    "collegeName": "重庆文化艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014576",
+    "collegeName": "重庆护理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014725",
+    "collegeName": "重庆理工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014766",
+    "collegeName": "重庆工信职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014776",
+    "collegeName": "重庆五一职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014838",
+    "collegeName": "重庆数字产业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014870",
+    "collegeName": "重庆现代制造职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014935",
+    "collegeName": "重庆农业职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4150014936",
+    "collegeName": "重庆安防职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151010628",
+    "collegeName": "西昌学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151010644",
+    "collegeName": "四川文理学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151010646",
+    "collegeName": "阿坝师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151011552",
+    "collegeName": "四川旅游学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151011661",
+    "collegeName": "四川民族学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151012212",
+    "collegeName": "四川警察学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151013816",
+    "collegeName": "四川工业科技学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014045",
+    "collegeName": "绵阳城市学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014262",
+    "collegeName": "西南交通大学希望学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014389",
+    "collegeName": "成都师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151011553",
+    "collegeName": "成都纺织高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151012065",
+    "collegeName": "四川电力职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151012635",
+    "collegeName": "成都职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151012637",
+    "collegeName": "四川化工职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151012638",
+    "collegeName": "四川水利职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151012639",
+    "collegeName": "南充职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151012640",
+    "collegeName": "内江职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151012751",
+    "collegeName": "四川机电职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151012762",
+    "collegeName": "四川工商职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151012767",
+    "collegeName": "达州职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151012968",
+    "collegeName": "眉山职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151012970",
+    "collegeName": "四川职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151013048",
+    "collegeName": "乐山职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151013049",
+    "collegeName": "雅安职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151013812",
+    "collegeName": "四川商务职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151013813",
+    "collegeName": "四川司法警官职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151013814",
+    "collegeName": "广安职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151013815",
+    "collegeName": "四川信息职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014004",
+    "collegeName": "四川文化传媒职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014010",
+    "collegeName": "四川中医药高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014091",
+    "collegeName": "四川财经职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014176",
+    "collegeName": "四川现代职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014221",
+    "collegeName": "四川幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014386",
+    "collegeName": "四川三河职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014393",
+    "collegeName": "川北幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014409",
+    "collegeName": "四川卫生康复职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014485",
+    "collegeName": "四川电子机械职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014486",
+    "collegeName": "四川文轩职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014496",
+    "collegeName": "川南幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014514",
+    "collegeName": "成都工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014547",
+    "collegeName": "成都工贸职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014548",
+    "collegeName": "四川应用技术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014629",
+    "collegeName": "西昌民族幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014647",
+    "collegeName": "阿坝职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014670",
+    "collegeName": "内江卫生与健康职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014672",
+    "collegeName": "攀枝花攀西职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014728",
+    "collegeName": "南充文化旅游职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014732",
+    "collegeName": "泸州医疗器械职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014767",
+    "collegeName": "甘孜职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014768",
+    "collegeName": "自贡职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4251051351",
+    "collegeName": "四川体育职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014834",
+    "collegeName": "遂宁能源职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014835",
+    "collegeName": "遂宁工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014836",
+    "collegeName": "遂宁职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014871",
+    "collegeName": "西昌医学高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014872",
+    "collegeName": "成都轨道交通职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014937",
+    "collegeName": "宜宾工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4151014938",
+    "collegeName": "宜宾医药健康职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152010664",
+    "collegeName": "遵义师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152010665",
+    "collegeName": "铜仁学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152010666",
+    "collegeName": "兴义民族师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152010667",
+    "collegeName": "安顺学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152010669",
+    "collegeName": "凯里学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152010672",
+    "collegeName": "贵州民族大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152010976",
+    "collegeName": "贵阳学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152010977",
+    "collegeName": "六盘水师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152011731",
+    "collegeName": "贵州商学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152012107",
+    "collegeName": "贵州警察学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152013647",
+    "collegeName": "贵州中医药大学时珍学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152013648",
+    "collegeName": "贵州黔南经济学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152013651",
+    "collegeName": "贵阳人文科技学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152016206",
+    "collegeName": "贵阳康养职业大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152013653",
+    "collegeName": "遵义医科大学医学与科技学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152013676",
+    "collegeName": "贵州医科大学神奇民族医药学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014625",
+    "collegeName": "茅台学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152012222",
+    "collegeName": "贵州交通职业大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152013055",
+    "collegeName": "铜仁职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152013818",
+    "collegeName": "贵州轻工职业大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152011663",
+    "collegeName": "黔南民族医学高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152012223",
+    "collegeName": "贵州航天职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152012822",
+    "collegeName": "黔东南民族职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152012823",
+    "collegeName": "黔南民族职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152012824",
+    "collegeName": "遵义职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152012850",
+    "collegeName": "贵州城市职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152013052",
+    "collegeName": "贵州工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152013053",
+    "collegeName": "贵州电力职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152013054",
+    "collegeName": "六盘水职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152013817",
+    "collegeName": "黔西南民族职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014011",
+    "collegeName": "遵义医药高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014129",
+    "collegeName": "贵阳职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014198",
+    "collegeName": "毕节职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014252",
+    "collegeName": "贵州职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014371",
+    "collegeName": "贵州盛华职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014412",
+    "collegeName": "贵州工商职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014469",
+    "collegeName": "贵阳幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014470",
+    "collegeName": "铜仁幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014497",
+    "collegeName": "黔南民族幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014499",
+    "collegeName": "毕节医学高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014516",
+    "collegeName": "贵州建设职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014538",
+    "collegeName": "毕节幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014549",
+    "collegeName": "贵州农业职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014558",
+    "collegeName": "贵州工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014577",
+    "collegeName": "贵州水利水电职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014578",
+    "collegeName": "贵州电子商务职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014579",
+    "collegeName": "贵州应用技术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014580",
+    "collegeName": "贵州电子科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014613",
+    "collegeName": "贵州装备制造职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014615",
+    "collegeName": "贵州食品工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014616",
+    "collegeName": "贵州经贸职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014617",
+    "collegeName": "贵州护理职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014630",
+    "collegeName": "六盘水幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014648",
+    "collegeName": "毕节工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014733",
+    "collegeName": "贵州机电职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014734",
+    "collegeName": "贵州财经职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014735",
+    "collegeName": "贵州民用航空职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014769",
+    "collegeName": "贵州文化旅游职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4252050963",
+    "collegeName": "贵州航空职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014799",
+    "collegeName": "贵州体育职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014800",
+    "collegeName": "贵州铜仁数据职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014848",
+    "collegeName": "贵州传媒职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014849",
+    "collegeName": "贵州生态能源职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4152014850",
+    "collegeName": "黔东南理工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153013329",
+    "collegeName": "昆明理工大学津桥学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153013331",
+    "collegeName": "昆明文理学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014623",
+    "collegeName": "滇西应用技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014016",
+    "collegeName": "德宏师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014012",
+    "collegeName": "曲靖健康医学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153011557",
+    "collegeName": "昆明冶金高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153012349",
+    "collegeName": "云南国土资源职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153012357",
+    "collegeName": "云南交通职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153012555",
+    "collegeName": "云南农业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153012556",
+    "collegeName": "云南司法警官职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153012558",
+    "collegeName": "云南文化艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153012559",
+    "collegeName": "云南体育运动职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153012825",
+    "collegeName": "云南科技信息职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153012826",
+    "collegeName": "西双版纳职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153012971",
+    "collegeName": "玉溪农业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153013756",
+    "collegeName": "云南国防工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153013757",
+    "collegeName": "云南机电职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153013758",
+    "collegeName": "云南林业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153013759",
+    "collegeName": "云南城市建设职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014013",
+    "collegeName": "楚雄医药高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014130",
+    "collegeName": "云南锡业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014239",
+    "collegeName": "云南三鑫职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014253",
+    "collegeName": "德宏职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014373",
+    "collegeName": "云南现代职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014381",
+    "collegeName": "云南旅游职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014413",
+    "collegeName": "红河卫生职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014415",
+    "collegeName": "云南外事外语职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014487",
+    "collegeName": "大理农林职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014534",
+    "collegeName": "公安消防部队高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014550",
+    "collegeName": "云南财经职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014581",
+    "collegeName": "昆明铁道职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014582",
+    "collegeName": "昭通卫生职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014583",
+    "collegeName": "大理护理职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014584",
+    "collegeName": "云南水利水电职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014618",
+    "collegeName": "云南轻纺职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014619",
+    "collegeName": "云南特殊教育职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014620",
+    "collegeName": "云南工贸职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014621",
+    "collegeName": "云南交通运输职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014631",
+    "collegeName": "昆明幼儿师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014675",
+    "collegeName": "云南理工职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014676",
+    "collegeName": "曲靖职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014736",
+    "collegeName": "红河职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014782",
+    "collegeName": "玉溪职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014783",
+    "collegeName": "保山职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014784",
+    "collegeName": "昭通职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014801",
+    "collegeName": "文山职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014802",
+    "collegeName": "丽江职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014803",
+    "collegeName": "香格里拉职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014873",
+    "collegeName": "怒江职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014874",
+    "collegeName": "临沧职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014875",
+    "collegeName": "云南工业信息职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4153014939",
+    "collegeName": "昆明航空职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4154010695",
+    "collegeName": "西藏民族大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4154010692",
+    "collegeName": "西藏警官高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4154014940",
+    "collegeName": "日喀则职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161011395",
+    "collegeName": "榆林学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161011397",
+    "collegeName": "安康学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161013685",
+    "collegeName": "西安电子科技大学长安学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161014034",
+    "collegeName": "长安大学兴华学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161014390",
+    "collegeName": "陕西学前师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161010966",
+    "collegeName": "陕西农林职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161010828",
+    "collegeName": "陕西工业职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161014945",
+    "collegeName": "西安戏剧学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161011826",
+    "collegeName": "西安电力高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161012828",
+    "collegeName": "西安航空职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161013122",
+    "collegeName": "西安高新科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161013566",
+    "collegeName": "陕西铁路工程职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161013568",
+    "collegeName": "陕西航空职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161013570",
+    "collegeName": "陕西电子信息职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161013739",
+    "collegeName": "西安健康工程职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161013932",
+    "collegeName": "陕西经济管理职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161013947",
+    "collegeName": "西安职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161013950",
+    "collegeName": "延安职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161013951",
+    "collegeName": "渭南职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161013952",
+    "collegeName": "安康职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161013953",
+    "collegeName": "铜川职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161014029",
+    "collegeName": "陕西工商职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161014222",
+    "collegeName": "西安医学高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4161014488",
+    "collegeName": "陕西艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4261050084",
+    "collegeName": "陕西机电职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162010735",
+    "collegeName": "甘肃中医药大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162010740",
+    "collegeName": "河西学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162011561",
+    "collegeName": "甘肃民族师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162011562",
+    "collegeName": "兰州文理学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162011805",
+    "collegeName": "甘肃医学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162016209",
+    "collegeName": "兰州石化职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162016208",
+    "collegeName": "兰州资源环境职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162011806",
+    "collegeName": "陇南师范学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162012834",
+    "collegeName": "甘肃警察学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162012835",
+    "collegeName": "甘肃林业职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162012539",
+    "collegeName": "酒泉职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162012836",
+    "collegeName": "甘肃工业职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162013518",
+    "collegeName": "武威职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162011808",
+    "collegeName": "定西师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162012511",
+    "collegeName": "甘肃建筑职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162012832",
+    "collegeName": "兰州外语职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162012833",
+    "collegeName": "兰州职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162013519",
+    "collegeName": "甘肃交通职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162013954",
+    "collegeName": "甘肃农业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162013955",
+    "collegeName": "甘肃畜牧工程职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162014131",
+    "collegeName": "甘肃钢铁职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162014375",
+    "collegeName": "甘肃有色冶金职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162014376",
+    "collegeName": "白银矿冶职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162014517",
+    "collegeName": "甘肃卫生职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162014518",
+    "collegeName": "兰州科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162014551",
+    "collegeName": "庆阳职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162014552",
+    "collegeName": "临夏现代职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162014594",
+    "collegeName": "兰州现代职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162014595",
+    "collegeName": "平凉职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162014738",
+    "collegeName": "培黎职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162014771",
+    "collegeName": "兰州航空职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162014772",
+    "collegeName": "白银希望职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4262051378",
+    "collegeName": "甘肃财贸职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4162014823",
+    "collegeName": "定西职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4163013674",
+    "collegeName": "青海大学昆仑学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4163014881",
+    "collegeName": "青海理工学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4163012973",
+    "collegeName": "青海职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4163012562",
+    "collegeName": "青海卫生职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4163012852",
+    "collegeName": "青海警官职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4163012972",
+    "collegeName": "青海农牧科技职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4163012974",
+    "collegeName": "青海建筑职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4163014519",
+    "collegeName": "西宁城市职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4163014520",
+    "collegeName": "青海高等职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4163014521",
+    "collegeName": "青海柴达木职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4164013820",
+    "collegeName": "银川能源学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4164013086",
+    "collegeName": "宁夏职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4164013087",
+    "collegeName": "宁夏工商职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4164012716",
+    "collegeName": "宁夏民族职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4164012837",
+    "collegeName": "宁夏工业职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4164013088",
+    "collegeName": "宁夏财经职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4164013089",
+    "collegeName": "宁夏警官职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4164013151",
+    "collegeName": "宁夏建设职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4164014377",
+    "collegeName": "宁夏葡萄酒与防沙治沙职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4164014522",
+    "collegeName": "宁夏艺术职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4164014624",
+    "collegeName": "宁夏体育职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4164014739",
+    "collegeName": "石嘴山工贸职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4164014804",
+    "collegeName": "宁夏卫生健康职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4164014847",
+    "collegeName": "宁夏交通职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165010997",
+    "collegeName": "昌吉学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165013559",
+    "collegeName": "新疆农业大学科学技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165013727",
+    "collegeName": "新疆天山职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165010765",
+    "collegeName": "新疆和田学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165010995",
+    "collegeName": "新疆农业职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014897",
+    "collegeName": "新疆工业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165011565",
+    "collegeName": "乌鲁木齐职业大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165013926",
+    "collegeName": "新疆交通职业技术大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014946",
+    "collegeName": "塔里木理工学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014947",
+    "collegeName": "新疆理工职业大学",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165012482",
+    "collegeName": "克拉玛依职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165012513",
+    "collegeName": "新疆机电职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165012514",
+    "collegeName": "新疆轻工职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165012570",
+    "collegeName": "新疆能源职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165012838",
+    "collegeName": "昌吉职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165012975",
+    "collegeName": "伊犁职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165013093",
+    "collegeName": "阿克苏职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165013562",
+    "collegeName": "新疆建设职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165013726",
+    "collegeName": "新疆现代职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165013956",
+    "collegeName": "新疆石河子职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014416",
+    "collegeName": "新疆体育职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014417",
+    "collegeName": "新疆应用职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014421",
+    "collegeName": "新疆师范高等专科学校",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014489",
+    "collegeName": "新疆铁道职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014523",
+    "collegeName": "新疆生产建设兵团兴新职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014524",
+    "collegeName": "哈密职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014525",
+    "collegeName": "新疆科技职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014585",
+    "collegeName": "吐鲁番职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014622",
+    "collegeName": "博尔塔拉职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014652",
+    "collegeName": "和田职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014661",
+    "collegeName": "石河子工程职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014677",
+    "collegeName": "喀什职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014678",
+    "collegeName": "克孜勒苏职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014679",
+    "collegeName": "新疆科信职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014680",
+    "collegeName": "阿勒泰职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014740",
+    "collegeName": "塔城职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4265051060",
+    "collegeName": "新疆工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014805",
+    "collegeName": "新疆司法警官职业学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014806",
+    "collegeName": "阿克苏工业职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014824",
+    "collegeName": "喀什理工职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014825",
+    "collegeName": "图木舒克职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014826",
+    "collegeName": "可克达拉职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014827",
+    "collegeName": "新星职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014828",
+    "collegeName": "昆玉职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014876",
+    "collegeName": "乌鲁木齐职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014877",
+    "collegeName": "双河职业技术学院",
+    "error": "Request failed with status code 404"
+  },
+  {
+    "collegeId": "4165014941",
+    "collegeName": "阜康职业技术学院",
+    "error": "Request failed with status code 404"
+  }
+]
