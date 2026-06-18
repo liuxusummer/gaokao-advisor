@@ -20,6 +20,12 @@ export default function Chat() {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [chatMessages])
 
+  useEffect(() => {
+    return () => {
+      abortRef.current?.abort()
+    }
+  }, [])
+
   const handleSend = async (text: string) => {
     if (!text.trim() || loading) return
     addChatMessage({ role: 'user', content: text })
@@ -28,12 +34,19 @@ export default function Chat() {
 
     // 未配置 → mock 兜底
     if (unconfigured) {
+      abortRef.current = new AbortController()
       await new Promise((r) => setTimeout(r, 800))
+      if (abortRef.current.signal.aborted) {
+        setLoading(false)
+        abortRef.current = null
+        return
+      }
       addChatMessage({
         role: 'assistant',
         content: mockChatReply(text) + '\n\n以上信息仅供参考，请以官方发布为准。',
       })
       setLoading(false)
+      abortRef.current = null
       return
     }
 
@@ -59,7 +72,7 @@ export default function Chat() {
         updateLastAssistantMessage(accumulated + '\n\n以上信息仅供参考，请以官方发布为准。')
       }
     } catch (err) {
-      if (err instanceof Error && err.name === 'AbortError') {
+      if (err && typeof err === 'object' && 'name' in err && err.name === 'AbortError') {
         // 取消不当作错误，保留已收到内容
         const lastMsg = useAppStore.getState().chatMessages.at(-1)
         if (lastMsg && lastMsg.role === 'assistant' && lastMsg.content.trim() === '') {
@@ -129,7 +142,7 @@ export default function Chat() {
             </div>
           </div>
         ))}
-        {loading && (
+        {loading && chatMessages.length > 0 && chatMessages[chatMessages.length - 1]?.role === 'assistant' && chatMessages[chatMessages.length - 1]?.content === '' && (
           <div className="flex justify-start">
             <div className="bg-bg-page text-text-body rounded-2xl rounded-bl-md border border-border-color px-4 py-3">
               <div className="flex gap-1">
