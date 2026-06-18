@@ -1,70 +1,102 @@
 import { describe, it, expect } from 'vitest'
 import fs from 'node:fs'
 import path from 'node:path'
-import { parseScores } from '../gaokao_score'
+import { parseZjToudang } from '../zhejiang'
+import { parseJsToudangExcel } from '../jiangsu'
 import { validateScoreRecord } from '../validate'
-import type { ScoreRecord } from '../../types'
+import type { ScoreRecord, CollegeRecord } from '../../types'
 
-const fixturePath = path.join(__dirname, '..', '__fixtures__', 'gaokao_score_sample.html')
-const fixtureHtml = fs.readFileSync(fixturePath, 'utf-8')
+const zjFixturePath = path.join(__dirname, '..', '__fixtures__', 'zhejiang_sample.xls')
+const zjFixtureBuffer = fs.readFileSync(zjFixturePath)
 
-describe('scores 端到端冒烟测试', () => {
-  it('完整流程：parse → validate → output', () => {
-    // Step 1: 解析阳光高考详情页
-    const records = parseScores({
-      html: fixtureHtml,
-      collegeId: '4111010001',
-      collegeName: '北京大学',
-      years: [2023, 2024, 2025],
-      provinces: ['浙江', '江苏'],
-      sourceUrl: 'https://gaokao.chsi.com.cn/sch/schoolInfo-10001.dhtml',
-    })
+const jsFixturePath = path.join(__dirname, '..', '__fixtures__', 'jiangsu_physics_sample.xls')
+const jsFixtureBuffer = fs.readFileSync(jsFixturePath)
+
+// 模拟 colleges.json 白名单
+const mockColleges = new Map<string, CollegeRecord>([
+  ['4111010001', {
+    id: '4111010001', moeCode: '4111010001', name: '浙江大学',
+    province: '浙江省', city: '杭州市', level: ['本科'], type: '综合',
+    nature: 'public', affiliation: '教育部', officialWebsite: '', gaokaoUrl: '',
+    _meta: { source: 'merged', sourceUrl: '', fetchedAt: '', scraperVersion: '1.0.0', verified: true },
+  }],
+  ['4111010002', {
+    id: '4111010002', moeCode: '4111010002', name: '杭州电子科技大学',
+    province: '浙江省', city: '杭州市', level: ['本科'], type: '理工',
+    nature: 'public', affiliation: '浙江省', officialWebsite: '', gaokaoUrl: '',
+    _meta: { source: 'merged', sourceUrl: '', fetchedAt: '', scraperVersion: '1.0.0', verified: true },
+  }],
+  ['4111010003', {
+    id: '4111010003', moeCode: '4111010003', name: '南京大学',
+    province: '江苏省', city: '南京市', level: ['本科'], type: '综合',
+    nature: 'public', affiliation: '教育部', officialWebsite: '', gaokaoUrl: '',
+    _meta: { source: 'merged', sourceUrl: '', fetchedAt: '', scraperVersion: '1.0.0', verified: true },
+  }],
+])
+
+const mockCollegesByName = new Map<string, CollegeRecord>()
+for (const c of mockColleges.values()) {
+  mockCollegesByName.set(c.name, c)
+}
+
+describe('投档线采集端到端流程', () => {
+  it('浙江: parse → match → validate 完整流程', () => {
+    // Step 1: 解析
+    const records = parseZjToudang(zjFixtureBuffer, 2025, 'https://zjzs.net/test')
     expect(records.length).toBeGreaterThan(0)
 
-    // Step 2: 校验所有记录
-    const validated: ScoreRecord[] = []
-    for (const record of records) {
-      const result = validateScoreRecord(record)
-      expect(result.valid).toBe(true)
-      validated.push(record)
+    // Step 2: 关联白名单（模拟）
+    let matched = 0
+    for (const r of records) {
+      const college = mockCollegesByName.get(r.collegeName)
+      if (college) {
+        r.collegeId = college.id
+        r._meta.verified = true
+        matched++
+      }
     }
+    expect(matched).toBeGreaterThan(0)
 
-    // Step 3: 断言 _meta 字段完整
-    for (const record of validated) {
-      expect(record._meta.source).toBe('gaokao')
-      expect(record._meta.verified).toBe(true)
-      expect(record._meta.scraperVersion).toBeDefined()
-      expect(record._meta.fetchedAt).toMatch(/^\d{4}-\d{2}-\d{2}T/)
-      expect(record._meta.sourceUrl).toMatch(/^https?:\/\//)
-    }
+    // Step 3: 校验
+    const validated = records.filter((r) => validateScoreRecord(r).valid)
+    expect(validated.length).toBe(records.length) // 全部应通过校验
 
-    // Step 4: 断言数据按省份和年份正确筛选
-    const provinces = new Set(validated.map((r) => r.province))
-    const years = new Set(validated.map((r) => r.year))
-    expect(provinces.has('浙江')).toBe(true)
-    expect(provinces.has('江苏')).toBe(true)
-    expect([...years].every((y) => [2023, 2024, 2025].includes(y))).toBe(true)
-
-    // Step 5: 断言不包含目标省份之外的数据
-    expect([...provinces].every((p) => ['浙江', '江苏'].includes(p))).toBe(true)
+    // Step 4: 验证字段
+    const first = validated[0]
+    expect(first.province).toBe('浙江')
+    expect(first.category).toBe('综合')
+    expect(first.batch).toBe('普通类第一段')
+    expect(first._meta.source).toBe('zjzs')
   })
 
-  it('按省/年分组结构正确', () => {
-    const records = parseScores({
-      html: fixtureHtml,
-      collegeId: '4111010001',
-      collegeName: '北京大学',
-      years: [2025],
-      provinces: ['浙江', '江苏'],
-      sourceUrl: 'https://gaokao.chsi.com.cn/test',
-    })
+  it('江苏: parse → match → validate 完整流程', () => {
+    // Step 1: 解析
+    const records = parseJsToudangExcel(jsFixtureBuffer, 2024, '物理类', 'https://jseea.cn/test')
+    expect(records.length).toBeGreaterThan(0)
 
-    const zj2025 = records.filter((r) => r.province === '浙江' && r.year === 2025)
-    const js2025 = records.filter((r) => r.province === '江苏' && r.year === 2025)
+    // Step 2: 关联白名单（模拟）
+    let matched = 0
+    for (const r of records) {
+      const college = mockCollegesByName.get(r.collegeName)
+      if (college) {
+        r.collegeId = college.id
+        r._meta.verified = true
+        matched++
+      }
+    }
+    expect(matched).toBeGreaterThan(0) // 南京大学应匹配
 
-    expect(zj2025.length).toBeGreaterThan(0)
-    expect(js2025.length).toBeGreaterThan(0)
-    expect(zj2025.every((r) => r.province === '浙江' && r.year === 2025)).toBe(true)
-    expect(js2025.every((r) => r.province === '江苏' && r.year === 2025)).toBe(true)
+    // Step 3: 校验
+    const validated = records.filter((r) => validateScoreRecord(r).valid)
+    expect(validated.length).toBe(records.length)
+
+    // Step 4: 验证字段
+    const nj = validated.find((r) => r.collegeName === '南京大学')
+    expect(nj).toBeDefined()
+    expect(nj!.majorGroup).toBe('01')
+    expect(nj!.minScore).toBe(638)
+    expect(nj!.minRank).toBe(0) // 江苏无位次
+    expect(nj!.tieBreakers).toBeDefined()
+    expect(nj!._meta.source).toBe('jseea')
   })
 })
