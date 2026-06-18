@@ -33,6 +33,12 @@ export interface ChatMessage {
   timestamp: number
 }
 
+export interface AiConfig {
+  baseUrl: string
+  apiKey: string
+  model: string
+}
+
 interface AppState {
   darkMode: boolean
   setDarkMode: (v: boolean) => void
@@ -57,6 +63,10 @@ interface AppState {
   chatMessages: ChatMessage[]
   addChatMessage: (msg: Omit<ChatMessage, 'id' | 'timestamp'>) => void
   clearChat: () => void
+
+  aiConfig: AiConfig
+  setAiConfig: (config: Partial<AiConfig>) => void
+  updateLastAssistantMessage: (content: string) => void
 
   assessmentResult: Record<string, number> | null
   setAssessmentResult: (result: Record<string, number> | null) => void
@@ -146,6 +156,21 @@ export const useAppStore = create<AppState>()(
               timestamp: Date.now(),
             },
           ],
+        }),
+
+      aiConfig: { baseUrl: '', apiKey: '', model: '' },
+      setAiConfig: (config) =>
+        set((state) => ({ aiConfig: { ...state.aiConfig, ...config } })),
+      updateLastAssistantMessage: (content) =>
+        set((state) => {
+          const msgs = [...state.chatMessages]
+          for (let i = msgs.length - 1; i >= 0; i--) {
+            if (msgs[i].role === 'assistant') {
+              msgs[i] = { ...msgs[i], content }
+              break
+            }
+          }
+          return { chatMessages: msgs }
         }),
 
       assessmentResult: null,
