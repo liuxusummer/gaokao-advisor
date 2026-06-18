@@ -1,0 +1,19 @@
+{
+  "totalCount": 1661,
+  "undergraduateCount": 875,
+  "vocationalCount": 786,
+  "generatedAt": "2026-06-18T10:11:39.896Z",
+  "scraperVersion": "1.0.0",
+  "sources": [
+    {
+      "name": "阳光高考专业库-本科（普通教育）",
+      "url": "https://gaokao.chsi.com.cn/zyk/zybk/mlCategory/1050",
+      "recordCount": 875
+    },
+    {
+      "name": "阳光高考专业库-高职（专科）",
+      "url": "https://gaokao.chsi.com.cn/zyk/zybk/mlCategory/1060",
+      "recordCount": 786
+    }
+  ]
+}
