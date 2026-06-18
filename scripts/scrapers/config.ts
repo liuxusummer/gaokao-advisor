@@ -193,3 +193,16 @@ export const MAJOR_CATEGORIES = [
   '哲学', '经济学', '法学', '教育学', '文学', '历史学',
   '理学', '工学', '农学', '医学', '管理学', '艺术学', '交叉学科'
 ]
+
+// ===== Phase D: 详细专业目录 API =====
+
+export const MAJOR_DETAIL_API_BASE = 'https://gaokao.chsi.com.cn/zyk/zybk'
+
+export const UNDERGRADUATE_ROOT_KEY = '1050'
+export const VOCATIONAL_ROOT_KEY = '1060'
+
+export const MAJOR_DETAIL_OUTPUT_DIR = path.join(OUTPUT_DIR, 'majors')
+export const MAJOR_DETAIL_OUTPUT_FILE = path.join(MAJOR_DETAIL_OUTPUT_DIR, 'detailed-catalog.json')
+export const MAJOR_DETAIL_META_FILE = path.join(MAJOR_DETAIL_OUTPUT_DIR, 'detailed-catalog.meta.json')
+export const MAJOR_DETAIL_PARTIAL_FILE = path.join(MAJOR_DETAIL_OUTPUT_DIR, 'detailed-catalog.partial.json')
+export const MAJOR_DETAIL_FAILED_FILE = path.join(REPORTS_DIR, 'majors_details_failed.json')
