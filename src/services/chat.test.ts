@@ -53,6 +53,15 @@ describe('buildSystemPrompt', () => {
     const prompt = buildSystemPrompt(profile, [])
     expect(prompt).toContain('以上信息仅供参考')
   })
+
+  it('包含偏好专业方向（categories）', () => {
+    const profileWithCategories: UserProfile = {
+      ...profile,
+      categories: ['工学', '理学'],
+    }
+    const prompt = buildSystemPrompt(profileWithCategories, [])
+    expect(prompt).toContain('工学/理学')
+  })
 })
 
 describe('trimMessages', () => {

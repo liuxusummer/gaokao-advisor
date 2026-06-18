@@ -6,7 +6,7 @@ import type { ChatMessage, UserProfile, VolunteerItem } from '../store'
 export function buildSystemPrompt(profile: UserProfile, volunteerList: VolunteerItem[]): string {
   const subjectsStr = profile.subjects.length > 0 ? profile.subjects.join('+') : '未指定'
   const levelsStr = profile.levels.length > 0 ? profile.levels.join('/') : '未指定'
-  const majorsStr = '未指定'
+  const majorsStr = profile.categories.length > 0 ? profile.categories.join('/') : '未指定'
 
   const volunteerStr =
     volunteerList.length > 0
@@ -41,7 +41,7 @@ export function buildSystemPrompt(profile: UserProfile, volunteerList: Volunteer
 /**
  * 裁剪消息历史：过滤 welcome/空内容，取最近 20 条，只保留 role+content
  */
-export function trimMessages(messages: ChatMessage[]): Array<{ role: string; content: string }> {
+export function trimMessages(messages: ChatMessage[]): Array<{ role: ChatMessage['role']; content: string }> {
   const filtered = messages.filter(
     (m) => m.id !== 'welcome' && m.content.trim() !== ''
   )
