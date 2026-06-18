@@ -226,3 +226,60 @@ export interface ScoreWarningRecord {
   type: 'missing_data' | 'parse_error' | 'year_missing'
   detail: string
 }
+
+// === 专业目录 ===
+
+export interface MajorCatalogRecord {
+  majorCode: string         // 专业代码，如 "080901"（含 K/T 后缀，如 "080910TK"）
+  majorName: string         // 专业名称，如 "计算机科学与技术"
+  category: string          // 学科门类，如 "工学"（13 个门类）
+  subCategory: string       // 专业类，如 "计算机类"（93 个专业类）
+  degreeType: string        // 学位类型，如 "工学学士"（部分专业可能为空）
+  duration: string          // 学制，如 "四年"（部分专业可能为空）
+  notes?: string            // 备注，如 "国家控制布点专业"
+  _meta: CatalogMeta
+}
+
+export interface CatalogMeta {
+  source: 'moe'
+  sourceUrl: string
+  fetchedAt: string
+  scraperVersion: string
+  verified: boolean
+}
+
+// === 选科要求 ===
+
+export interface SubjectRequirementRecord {
+  collegeId: string
+  collegeName: string
+  province: string          // "浙江" | "江苏"
+  year: number              // 2024
+  level: string             // "本科" | "专科"
+  majorName: string
+  majorCode?: string
+  subjectRequirement: string
+  requirementType: RequirementType
+  requiredSubjects: string[]
+  subMajors?: string[]
+  majorGroup?: string
+  majorGroupName?: string
+  _meta: SubjectMeta
+}
+
+export type RequirementType =
+  | 'none'
+  | 'one_required'
+  | 'two_required'
+  | 'three_required'
+  | 'any_of_two'
+  | 'any_of_three'
+  | 'unknown'
+
+export interface SubjectMeta {
+  source: 'zjzs' | 'jseea'
+  sourceUrl: string
+  fetchedAt: string
+  scraperVersion: string
+  verified: boolean
+}

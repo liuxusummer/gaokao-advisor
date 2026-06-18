@@ -174,3 +174,22 @@ export const JS_TOUDANG_URLS: Record<number, {
     },
   },
 }
+
+// === 专业目录与选科要求采集配置 ===
+
+// 教育部本科专业目录 PDF（2026 年版）
+export const MOE_CATALOG_PDF_URL = 'https://t4.chei.com.cn/news/getfile/2293468785-2293468784-5b411ed81523254b4ad6ad9cbcb3a6a0.pdf'
+export const MOE_CATALOG_PAGE_URL = 'https://gaokao.chsi.com.cn/gkxx/zcdh/202604/20260428/2293468784.html'
+
+// 浙江省选科要求 URL 模板（{国标码} 替换为 5 位院校国标码）
+export const ZJ_SUBJECTS_URL_TEMPLATE = 'https://www.zjzs.net/col/xk2024/{guobiaoCode}.html'
+
+// 江苏省选科要求 Excel（2024 版，适用于 2024-2025 届）
+export const JS_SUBJECTS_XLSX_URL = 'https://www.jseea.cn/webfile/upload/2022/01-18/13-55-050949-615118096.xlsx'
+export const JS_SUBJECTS_PAGE_URL = 'https://www.jseea.cn/webfile/index/index_zkxx/2022-01-18/27031.html'
+
+// 13 个学科门类
+export const MAJOR_CATEGORIES = [
+  '哲学', '经济学', '法学', '教育学', '文学', '历史学',
+  '理学', '工学', '农学', '医学', '管理学', '艺术学', '交叉学科'
+]
