@@ -39,7 +39,7 @@
     "本科": 1365,
     "专科": 1554
   },
-  "generatedAt": "2026-06-17T13:35:23.744Z",
+  "generatedAt": "2026-06-18T05:29:32.851Z",
   "scraperVersion": "1.0.0",
   "sources": [
     {
@@ -47,6 +47,12 @@
       "url": "https://hudong.moe.gov.cn/jyb_xxgk/s5743/s5744/A03/202506/t20250627_1195683.html",
       "fetchedAt": "2026-06-17T13:34:53.415Z",
       "recordCount": 2919
+    },
+    {
+      "name": "阳光高考院校官网",
+      "url": "https://gaokao.chsi.com.cn/",
+      "fetchedAt": "2026-06-18T05:29:32.851Z",
+      "recordCount": 882
     }
   ],
   "schemaVersion": "1.0.0"
