@@ -2,6 +2,8 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { HttpClient } from '../shared/http'
 import { createLogger } from '../shared/logger'
+import { parsePdf } from '../shared/pdf'
+import { ocrImage } from '../shared/ocr'
 import { parseZjTable } from './zhejiang'
 import { parseJsTable } from './jiangsu'
 import { validateRankRecord, validateRankTableMonotonicity } from './validate'
@@ -52,22 +54,25 @@ async function main() {
   const results: Array<{ province: string; year: number; count: number }> = []
   const errors: Array<{ province: string; year: number; category?: string; error: string }> = []
 
-  // 浙江（综合类单表）
+  // 浙江（综合类单表，PDF 格式）
   for (const year of TARGET_YEARS) {
-    const url = ZJ_RANK_TABLE_URLS[year]
-    if (!url) {
+    const urlConfig = ZJ_RANK_TABLE_URLS[year]
+    if (!urlConfig || !urlConfig.pdfUrl) {
       logger.warn('浙江一分一段表 URL 未配置', { year })
       errors.push({ province: '浙江', year, error: 'URL 未配置' })
       continue
     }
 
     try {
-      logger.info('抓取浙江一分一段表', { year, url })
-      const result = await http.fetch(url, {
+      logger.info('抓取浙江一分一段表 PDF', { year, url: urlConfig.pdfUrl })
+      const result = await http.fetchBinary(urlConfig.pdfUrl, {
         cacheKey: `zj_rank_${year}`,
         forceRefresh: args.force,
       })
-      const records = parseZjTable(result.html, year, url)
+
+      logger.info('解析浙江一分一段表 PDF', { year, bufferSize: result.buffer.length })
+      const text = await parsePdf(result.buffer)
+      const records = parseZjTable(text, year, urlConfig.pageUrl)
 
       // 校验
       const validated = records.filter((r) => validateRankRecord(r).valid)
@@ -77,7 +82,7 @@ async function main() {
       }
 
       // 写入文件
-      await writeRankTableFile('浙江', year, { '综合': validated })
+      await writeRankTableFile('浙江', year, { '综合': validated }, urlConfig.pageUrl)
       results.push({ province: '浙江', year, count: validated.length })
       logger.info('浙江一分一段表完成', { year, count: validated.length })
     } catch (error) {
@@ -86,10 +91,10 @@ async function main() {
     }
   }
 
-  // 江苏（物理类 + 历史类双表）
+  // 江苏（物理类 + 历史类双表，JPG 图片格式，需 OCR）
   for (const year of TARGET_YEARS) {
-    const urls = JS_RANK_TABLE_URLS[year]
-    if (!urls || (!urls['物理类'] && !urls['历史类'])) {
+    const urlConfig = JS_RANK_TABLE_URLS[year]
+    if (!urlConfig || !urlConfig.images) {
       logger.warn('江苏一分一段表 URL 未配置', { year })
       errors.push({ province: '江苏', year, error: 'URL 未配置' })
       continue
@@ -98,23 +103,42 @@ async function main() {
     const categories: Record<string, RankTableRecord[]> = {}
 
     for (const category of ['物理类', '历史类'] as const) {
-      const url = urls[category]
-      if (!url) {
+      const imageUrls = urlConfig.images[category]
+      if (!imageUrls || imageUrls.length === 0) {
         logger.warn('江苏一分一段表 URL 未配置', { year, category })
         errors.push({ province: '江苏', year, category, error: 'URL 未配置' })
         continue
       }
 
       try {
-        logger.info('抓取江苏一分一段表', { year, category, url })
-        const result = await http.fetch(url, {
-          cacheKey: `js_rank_${year}_${category}`,
-          forceRefresh: args.force,
-        })
-        const records = parseJsTable(result.html, year, category, url)
+        // 对每张图片进行 OCR，合并识别结果
+        const allRecords: RankTableRecord[] = []
+
+        for (let i = 0; i < imageUrls.length; i++) {
+          const imageUrl = imageUrls[i]
+          logger.info('抓取江苏一分一段表图片', { year, category, part: `${i + 1}/${imageUrls.length}`, url: imageUrl })
+          const result = await http.fetchBinary(imageUrl, {
+            cacheKey: `js_rank_${year}_${category}_${i + 1}`,
+            forceRefresh: args.force,
+          })
+
+          logger.info('OCR 识别江苏一分一段表', { year, category, part: `${i + 1}/${imageUrls.length}` })
+          const text = await ocrImage(result.buffer)
+          const records = parseJsTable(text, year, category, urlConfig.pageUrl)
+          allRecords.push(...records)
+        }
+
+        // 合并后按分数降序排序，重新计算 rank
+        allRecords.sort((a, b) => b.score - a.score)
+        const deduped = dedupByScore(allRecords)
+
+        // 重新计算 rank
+        for (let i = 0; i < deduped.length; i++) {
+          deduped[i].rank = i === 0 ? 1 : deduped[i - 1].cumulativeCount + 1
+        }
 
         // 校验
-        const validated = records.filter((r) => validateRankRecord(r).valid)
+        const validated = deduped.filter((r) => validateRankRecord(r).valid)
         const monotonicity = validateRankTableMonotonicity(validated)
         if (!monotonicity.valid) {
           logger.warn('江苏一分一段表单调性校验失败', {
@@ -123,6 +147,7 @@ async function main() {
         }
 
         categories[category] = validated
+        logger.info('江苏一分一段表 OCR 完成', { year, category, count: validated.length })
       } catch (error) {
         logger.error('江苏一分一段表抓取失败', {
           year, category, error: (error as Error).message,
@@ -133,7 +158,7 @@ async function main() {
 
     const totalCount = Object.values(categories).reduce((sum, arr) => sum + arr.length, 0)
     if (totalCount > 0) {
-      await writeRankTableFile('江苏', year, categories)
+      await writeRankTableFile('江苏', year, categories, urlConfig.pageUrl)
       results.push({ province: '江苏', year, count: totalCount })
       logger.info('江苏一分一段表完成', { year, count: totalCount })
     }
@@ -158,10 +183,27 @@ async function main() {
   fs.writeFileSync(logPath, report, 'utf-8')
 }
 
+/**
+ * 按分数去重（OCR 多张图片可能有重叠区域）。
+ * 保留第一次出现的记录（即较高分数的记录）。
+ */
+function dedupByScore(records: RankTableRecord[]): RankTableRecord[] {
+  const seen = new Set<number>()
+  const result: RankTableRecord[] = []
+  for (const r of records) {
+    if (!seen.has(r.score)) {
+      seen.add(r.score)
+      result.push(r)
+    }
+  }
+  return result
+}
+
 async function writeRankTableFile(
   province: string,
   year: number,
-  categories: Record<string, RankTableRecord[]>
+  categories: Record<string, RankTableRecord[]>,
+  sourceUrl: string
 ): Promise<void> {
   const provinceDir = path.join(SCORES_OUTPUT_DIR, province)
   fs.mkdirSync(provinceDir, { recursive: true })
@@ -175,9 +217,7 @@ async function writeRankTableFile(
       generatedAt: new Date().toISOString(),
       scraperVersion: SCRAPER_VERSION,
       source: province === '浙江' ? 'zjzs' : 'jseea',
-      sourceUrl: province === '浙江'
-        ? ZJ_RANK_TABLE_URLS[year] || ''
-        : (JS_RANK_TABLE_URLS[year]?.['物理类'] || ''),
+      sourceUrl,
       recordCount: totalCount,
     },
   }

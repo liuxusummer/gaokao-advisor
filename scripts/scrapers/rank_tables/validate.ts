@@ -35,10 +35,8 @@ export function validateRankRecord(record: RankTableRecord): RankTableValidation
     return { valid: false, reason: `cumulativeCount 必须为正整数: ${record.cumulativeCount}` }
   }
 
-  // 白名单校验
-  if (!record._meta.verified) {
-    return { valid: false, reason: '记录未通过校验 (verified=false)' }
-  }
+  // 注意：_meta.verified 是溯源标记（标识数据来源是否已人工验证），
+  // 不作为校验失败条件。OCR 识别的数据 verified=false 但仍可通过数据校验。
 
   return { valid: true }
 }

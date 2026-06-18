@@ -7,11 +7,15 @@ import { validateRankRecord, validateRankTableMonotonicity } from '../validate'
 import type { RankTableRecord, RankTableFile } from '../../types'
 
 const zjFixture = fs.readFileSync(
-  path.join(__dirname, '..', '__fixtures__', 'zhejiang_sample.html'),
+  path.join(__dirname, '..', '__fixtures__', 'zhejiang_sample.txt'),
   'utf-8'
 )
-const jsFixture = fs.readFileSync(
-  path.join(__dirname, '..', '__fixtures__', 'jiangsu_sample.html'),
+const jsPhysicsFixture = fs.readFileSync(
+  path.join(__dirname, '..', '__fixtures__', 'jiangsu_physics_sample.txt'),
+  'utf-8'
+)
+const jsHistoryFixture = fs.readFileSync(
+  path.join(__dirname, '..', '__fixtures__', 'jiangsu_history_sample.txt'),
   'utf-8'
 )
 
@@ -46,8 +50,8 @@ describe('rank_tables 端到端冒烟测试', () => {
   })
 
   it('江苏完整流程：parse → validate → output（物理类+历史类）', () => {
-    const physicsRecords = parseJsTable(jsFixture, 2025, '物理类', 'https://jseea.cn/test')
-    const historyRecords = parseJsTable(jsFixture, 2025, '历史类', 'https://jseea.cn/test')
+    const physicsRecords = parseJsTable(jsPhysicsFixture, 2025, '物理类', 'https://jseea.cn/test')
+    const historyRecords = parseJsTable(jsHistoryFixture, 2025, '历史类', 'https://jseea.cn/test')
 
     expect(physicsRecords.length).toBeGreaterThan(0)
     expect(historyRecords.length).toBeGreaterThan(0)

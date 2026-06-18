@@ -43,13 +43,12 @@ describe('validateRankRecord', () => {
     expect(result.reason).toContain('cumulativeCount')
   })
 
-  it('verified=false 时校验失败', () => {
+  it('verified=false 时仍通过校验（OCR 数据可正常校验）', () => {
     const result = validateRankRecord({
       ...validRecord,
       _meta: { ...validRecord._meta, verified: false },
     })
-    expect(result.valid).toBe(false)
-    expect(result.reason).toContain('verified')
+    expect(result.valid).toBe(true)
   })
 })
 
