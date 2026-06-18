@@ -94,7 +94,7 @@ describe('matchCollege', () => {
   it('精确匹配', () => {
     const result = matchCollege('北京大学', collegesByName)
     expect(result).not.toBeNull()
-    expect(result!.collegeId).toBe('4111010001')
+    expect(result!.college.id).toBe('4111010001')
     expect(result!.matchType).toBe('exact')
   })
 
@@ -102,14 +102,14 @@ describe('matchCollege', () => {
     // 列表页是全角括号，colleges.json 是半角括号
     const result = matchCollege('中国矿业大学（北京）', collegesByName)
     expect(result).not.toBeNull()
-    expect(result!.collegeId).toBe('4111010054')
+    expect(result!.college.id).toBe('4111010054')
   })
 
   it('去括号后缀匹配', () => {
     // 列表页带括号后缀，colleges.json 无括号
     const result = matchCollege('浙江大学(中外合作办学)', collegesByName)
     expect(result).not.toBeNull()
-    expect(result!.collegeId).toBe('4133010001')
+    expect(result!.college.id).toBe('4133010001')
   })
 
   it('包含匹配', () => {

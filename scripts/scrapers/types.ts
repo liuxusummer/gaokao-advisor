@@ -97,6 +97,7 @@ export interface FetchOptions {
   forceRefresh?: boolean
   timeout?: number
   rateLimit?: { perSecond: number }
+  headers?: Record<string, string>
 }
 
 export interface FetchResult {

@@ -23,6 +23,7 @@ export class HttpClient {
       cacheKey,
       forceRefresh = false,
       timeout = HTTP_TIMEOUT,
+      headers,
     } = options
 
     if (cacheKey && !forceRefresh && this.cache.has(cacheKey)) {
@@ -36,7 +37,7 @@ export class HttpClient {
       }
     }
 
-    const html = await this.fetchWithRetry(url, timeout)
+    const html = await this.fetchWithRetry(url, timeout, headers)
 
     if (cacheKey) {
       this.cache.set(cacheKey, html)
@@ -91,7 +92,7 @@ export class HttpClient {
     }
   }
 
-  private async fetchWithRetry(url: string, timeout: number): Promise<string> {
+  private async fetchWithRetry(url: string, timeout: number, headers?: Record<string, string>): Promise<string> {
     let lastError: unknown
 
     for (let attempt = 1; attempt <= HTTP_MAX_RETRIES; attempt++) {
@@ -102,6 +103,7 @@ export class HttpClient {
             'User-Agent': USER_AGENT,
             'Accept': 'text/html,application/xhtml+xml',
             'Accept-Language': 'zh-CN,zh;q=0.9',
+            ...headers,
           },
           responseType: 'text',
         })

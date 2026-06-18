@@ -29,7 +29,7 @@ interface SchDetailResponse {
 }
 
 export interface MatchResult {
-  collegeId: string
+  college: CollegeRecord
   matchType: 'exact' | 'stripped' | 'contains'
 }
 
@@ -90,7 +90,7 @@ export function normalizeName(name: string): string {
 
 /**
  * 三级院校名匹配：精确 → 去括号 → 包含。
- * 返回匹配的 collegeId 和匹配类型，未匹配返回 null。
+ * 返回匹配的 college 对象和匹配类型，未匹配返回 null。
  */
 export function matchCollege(
   name: string,
@@ -99,7 +99,7 @@ export function matchCollege(
   // 1. 精确匹配
   const exact = collegesByName.get(name)
   if (exact) {
-    return { collegeId: exact.id, matchType: 'exact' }
+    return { college: exact, matchType: 'exact' }
   }
 
   // 2. 标准化后匹配（全角转半角 + 去括号后缀）
@@ -108,7 +108,7 @@ export function matchCollege(
     // 先尝试标准化后的精确匹配
     for (const [collegeName, college] of collegesByName) {
       if (normalizeName(collegeName) === normalized) {
-        return { collegeId: college.id, matchType: 'stripped' }
+        return { college, matchType: 'stripped' }
       }
     }
   }
@@ -118,12 +118,12 @@ export function matchCollege(
     const cn = normalizeName(collegeName)
     // 子串包含
     if (cn.includes(normalized) || normalized.includes(cn)) {
-      return { collegeId: college.id, matchType: 'contains' }
+      return { college, matchType: 'contains' }
     }
     // 子序列包含（处理"浙大"→"浙江大学"等简称场景：
     // 短串字符按顺序出现在长串中，但不要求连续）
     if (isSubsequence(normalized, cn) || isSubsequence(cn, normalized)) {
-      return { collegeId: college.id, matchType: 'contains' }
+      return { college, matchType: 'contains' }
     }
   }
 
@@ -289,6 +289,10 @@ async function fetchSchDetailWithLimit(
     const result = await http.fetch(url, {
       cacheKey: `sch_detail_${schId}.json`,
       forceRefresh: force,
+      headers: {
+        'Accept': 'application/json',
+        'Referer': 'https://gaokao.chsi.com.cn/sch/',
+      },
     })
 
     const detail = parseSchDetail(result.html)
@@ -354,10 +358,9 @@ async function main() {
   for (const mapping of mappings) {
     const result = matchCollege(mapping.collegeName, collegesByName)
     if (result) {
-      const college = collegesByName.get(result.collegeId)!
       matchedPairs.push({
         schId: mapping.schId,
-        college,
+        college: result.college,
         matchType: result.matchType,
       })
     } else {
