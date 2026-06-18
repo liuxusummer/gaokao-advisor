@@ -115,6 +115,15 @@ export interface FetchBinaryResult {
 
 // === 分数线采集类型 ===
 
+export interface TieBreakers {
+  chineseMathSum?: number       // (一) 语数成绩之和
+  chineseMathMax?: number       // (二) 语数最高成绩
+  foreignLanguage?: number      // (三) 外语成绩
+  preferredSubject?: number     // (四) 首选科目成绩（物理/历史）
+  reselectSubjectMax?: number   // (五) 再选科目最高成绩
+  volunteerOrder?: number       // (六) 志愿号
+}
+
 export interface ScoreRecord {
   collegeId: string
   collegeName: string
@@ -132,11 +141,12 @@ export interface ScoreRecord {
   maxScore?: number
   planCount?: number
   actualCount?: number
+  tieBreakers?: TieBreakers
   _meta: ScoreRecordMeta
 }
 
 export interface ScoreRecordMeta {
-  source: 'gaokao'
+  source: 'gaokao' | 'zjzs' | 'jseea'
   sourceUrl: string
   fetchedAt: string
   scraperVersion: string
