@@ -1,0 +1,32 @@
+{
+  "zydm": "410101",
+  "zymc": "种子生产与经营",
+  "ml": "农林牧渔",
+  "mlCode": "41",
+  "xk": "农业类",
+  "xkCode": "4101",
+  "xlcc": "高职（专科）",
+  "specId": "73385468",
+  "xsgm": "1000-2000",
+  "boyPercent": 55,
+  "girlPercent": 45,
+  "zyjs": {
+    "desc": "本专业培养具备作物遗传育种、种子生产与经营等方面的基本理论和基本知识，能在种子生产、加工、经营等相关领域从事技术与管理工作的高素质技术技能人才。主干课程：作物栽培学、作物育种学、种子生产技术。",
+    "zymx": null
+  },
+  "jyfxInfo": {
+    "jyfxList": [
+      { "jyfx": "种子公司技术员", "url4Xzpt": "" },
+      { "jyfx": "农业技术推广", "url4Xzpt": "" }
+    ]
+  },
+  "zymyd": [
+    { "type": "3", "typeDesc": "综合满意度", "rank": 4.2, "count": 120 }
+  ],
+  "kyfx": [],
+  "zytjzsList": [
+    { "schId": "73395000", "yxmc": "某农业大学", "count": 200, "rank": 4.0 }
+  ],
+  "simileZyList": [],
+  "year": "2025"
+}
