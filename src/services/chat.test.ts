@@ -210,4 +210,50 @@ describe('streamChat 成功路径', () => {
 
     expect(result).toBe('')
   })
+
+  it('跨 chunk 的不完整行能正确拼接', async () => {
+    // 一个 SSE 行被拆成两个 chunk
+    const sseChunks = [
+      'data: {"choices":[{"delta":{"content":"hel',  // 不完整
+      'lo"}}]}\n\n',  // 补全
+      'data: {"choices":[{"delta":{"content":"world"}}]}\n\n',
+      'data: [DONE]\n\n',
+    ]
+    ;(global.fetch as ReturnType<typeof vi.fn>).mockResolvedValueOnce(
+      makeSseResponse(makeSseStream(sseChunks))
+    )
+
+    const receivedChunks: string[] = []
+    const result = await streamChat({
+      messages: [{ id: 'u1', role: 'user', content: '问', timestamp: 1 }],
+      aiConfig,
+      profile,
+      volunteerList: [],
+      onChunk: (text) => receivedChunks.push(text),
+    })
+
+    expect(result).toBe('helloworld')
+    expect(receivedChunks).toEqual(['hello', 'world'])
+  })
+
+  it('流自然结束（无 [DONE]）时处理残留 buffer', async () => {
+    // 流结束但没有 [DONE]，最后一条 data 行没有尾随换行
+    const sseChunks = [
+      'data: {"choices":[{"delta":{"content":"A"}}]}\n\n',
+      'data: {"choices":[{"delta":{"content":"B"}}]}',  // 无换行，无 [DONE]
+    ]
+    ;(global.fetch as ReturnType<typeof vi.fn>).mockResolvedValueOnce(
+      makeSseResponse(makeSseStream(sseChunks))
+    )
+
+    const result = await streamChat({
+      messages: [{ id: 'u1', role: 'user', content: '问', timestamp: 1 }],
+      aiConfig,
+      profile,
+      volunteerList: [],
+      onChunk: () => {},
+    })
+
+    expect(result).toBe('AB')
+  })
 })

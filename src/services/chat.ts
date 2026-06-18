@@ -144,5 +144,28 @@ export async function streamChat(params: ChatParams): Promise<string> {
     }
   }
 
+  // Flush any remaining bytes in the decoder
+  buffer += decoder.decode()
+
+  // 处理流结束时残留的最后一行
+  if (buffer.trim()) {
+    const trimmedLine = buffer.trim()
+    if (trimmedLine.startsWith('data:')) {
+      const data = trimmedLine.slice(5).trim()
+      if (data !== '[DONE]') {
+        try {
+          const parsed = JSON.parse(data)
+          const delta = parsed.choices?.[0]?.delta?.content
+          if (typeof delta === 'string' && delta) {
+            accumulated += delta
+            onChunk(delta)
+          }
+        } catch {
+          // 跳过无法解析的行
+        }
+      }
+    }
+  }
+
   return accumulated
 }
