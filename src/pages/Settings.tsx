@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Button, Input, Switch, Card, message } from 'antd'
 import { LeftOutlined, MoonOutlined, SunOutlined, DeleteOutlined, ExportOutlined } from '@ant-design/icons'
@@ -6,10 +5,7 @@ import { useAppStore } from '../store'
 
 export default function Settings() {
   const navigate = useNavigate()
-  const { darkMode, setDarkMode, profile, resetProfile, clearVolunteerList, clearChat } = useAppStore()
-  const [apiKey, setApiKey] = useState('')
-  const [baseUrl, setBaseUrl] = useState('')
-  const [model, setModel] = useState('')
+  const { darkMode, setDarkMode, profile, resetProfile, clearVolunteerList, clearChat, aiConfig, setAiConfig } = useAppStore()
 
   const clearAll = () => {
     resetProfile()
@@ -64,30 +60,30 @@ export default function Settings() {
             <div>
               <label className="block text-sm text-text-secondary mb-1">Base URL</label>
               <Input
-                value={baseUrl}
-                onChange={(e) => setBaseUrl(e.target.value)}
+                value={aiConfig.baseUrl}
+                onChange={(e) => setAiConfig({ baseUrl: e.target.value })}
                 placeholder="https://open.bigmodel.cn/api/paas/v4"
               />
             </div>
             <div>
               <label className="block text-sm text-text-secondary mb-1">API Key</label>
               <Input.Password
-                value={apiKey}
-                onChange={(e) => setApiKey(e.target.value)}
+                value={aiConfig.apiKey}
+                onChange={(e) => setAiConfig({ apiKey: e.target.value })}
                 placeholder="仅存储在本地浏览器"
               />
             </div>
             <div>
               <label className="block text-sm text-text-secondary mb-1">模型名称</label>
               <Input
-                value={model}
-                onChange={(e) => setModel(e.target.value)}
+                value={aiConfig.model}
+                onChange={(e) => setAiConfig({ model: e.target.value })}
                 placeholder="glm-4-plus"
               />
             </div>
-            <Button type="primary" className="bg-primary border-0" onClick={() => message.info('原型演示：配置仅本地保存')}>
-              保存配置
-            </Button>
+            <p className="text-xs text-text-secondary">
+              配置保存后立即生效。未配置时 AI 助手将使用模拟回复。
+            </p>
           </div>
         </Card>
 
