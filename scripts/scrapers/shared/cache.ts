@@ -1,5 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
+import crypto from 'node:crypto'
 
 export class Cache {
   constructor(private readonly dir: string) {
@@ -9,7 +10,15 @@ export class Cache {
   }
 
   private filePath(key: string): string {
-    const safeKey = key.replace(/[^a-zA-Z0-9_]/g, '_')
+    // 如果 key 包含非 ASCII 字符（如中文），使用 hash 作为文件名避免冲突
+    const hasNonAscii = /[^\x00-\x7F]/.test(key)
+    let safeKey: string
+    if (hasNonAscii) {
+      const hash = crypto.createHash('md5').update(key).digest('hex').substring(0, 16)
+      safeKey = `cache_${hash}`
+    } else {
+      safeKey = key.replace(/[^a-zA-Z0-9_]/g, '_')
+    }
     return path.join(this.dir, `${safeKey}.html`)
   }
 
