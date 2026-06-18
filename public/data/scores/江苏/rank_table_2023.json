@@ -1,0 +1,6433 @@
+{
+  "province": "江苏",
+  "year": 2023,
+  "categories": {
+    "物理类": [
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 687,
+        "rank": 1,
+        "count": 116,
+        "cumulativeCount": 116,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 686,
+        "rank": 117,
+        "count": 26,
+        "cumulativeCount": 142,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 685,
+        "rank": 143,
+        "count": 33,
+        "cumulativeCount": 175,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 684,
+        "rank": 176,
+        "count": 34,
+        "cumulativeCount": 209,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 683,
+        "rank": 210,
+        "count": 27,
+        "cumulativeCount": 236,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 682,
+        "rank": 237,
+        "count": 36,
+        "cumulativeCount": 272,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 681,
+        "rank": 273,
+        "count": 319,
+        "cumulativeCount": 641,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 680,
+        "rank": 642,
+        "count": 56,
+        "cumulativeCount": 375,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 679,
+        "rank": 376,
+        "count": 55,
+        "cumulativeCount": 430,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 678,
+        "rank": 431,
+        "count": 63,
+        "cumulativeCount": 493,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 677,
+        "rank": 494,
+        "count": 557,
+        "cumulativeCount": 637,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 676,
+        "rank": 638,
+        "count": 67,
+        "cumulativeCount": 624,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 675,
+        "rank": 625,
+        "count": 688,
+        "cumulativeCount": 635,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 674,
+        "rank": 636,
+        "count": 762,
+        "cumulativeCount": 634,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 673,
+        "rank": 635,
+        "count": 100,
+        "cumulativeCount": 862,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 672,
+        "rank": 863,
+        "count": 85,
+        "cumulativeCount": 947,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 671,
+        "rank": 948,
+        "count": 101,
+        "cumulativeCount": 1048,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 670,
+        "rank": 1049,
+        "count": 114,
+        "cumulativeCount": 1162,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 669,
+        "rank": 1163,
+        "count": 129,
+        "cumulativeCount": 1291,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 668,
+        "rank": 1292,
+        "count": 121,
+        "cumulativeCount": 1412,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 667,
+        "rank": 1413,
+        "count": 135,
+        "cumulativeCount": 1547,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 666,
+        "rank": 1548,
+        "count": 144,
+        "cumulativeCount": 1691,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 665,
+        "rank": 1692,
+        "count": 156,
+        "cumulativeCount": 1847,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 664,
+        "rank": 1848,
+        "count": 172,
+        "cumulativeCount": 2019,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 663,
+        "rank": 2020,
+        "count": 164,
+        "cumulativeCount": 2183,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 662,
+        "rank": 2184,
+        "count": 188,
+        "cumulativeCount": 2371,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 661,
+        "rank": 2372,
+        "count": 206,
+        "cumulativeCount": 2577,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 660,
+        "rank": 2578,
+        "count": 177,
+        "cumulativeCount": 2754,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 659,
+        "rank": 2755,
+        "count": 195,
+        "cumulativeCount": 2949,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 658,
+        "rank": 2950,
+        "count": 216,
+        "cumulativeCount": 3165,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 657,
+        "rank": 3166,
+        "count": 233,
+        "cumulativeCount": 3398,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 656,
+        "rank": 3399,
+        "count": 227,
+        "cumulativeCount": 3625,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 655,
+        "rank": 3626,
+        "count": 2,
+        "cumulativeCount": 4,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 654,
+        "rank": 5,
+        "count": 2,
+        "cumulativeCount": 4,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 653,
+        "rank": 5,
+        "count": 283,
+        "cumulativeCount": 4396,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 652,
+        "rank": 4397,
+        "count": 246,
+        "cumulativeCount": 4642,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 651,
+        "rank": 4643,
+        "count": 277,
+        "cumulativeCount": 4919,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 650,
+        "rank": 4920,
+        "count": 319,
+        "cumulativeCount": 5238,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 649,
+        "rank": 5239,
+        "count": 304,
+        "cumulativeCount": 5542,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 648,
+        "rank": 5543,
+        "count": 351,
+        "cumulativeCount": 5893,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 647,
+        "rank": 5894,
+        "count": 360,
+        "cumulativeCount": 6253,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 646,
+        "rank": 6254,
+        "count": 336,
+        "cumulativeCount": 6589,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 645,
+        "rank": 6590,
+        "count": 309,
+        "cumulativeCount": 6898,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 644,
+        "rank": 6899,
+        "count": 367,
+        "cumulativeCount": 7265,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 643,
+        "rank": 7266,
+        "count": 390,
+        "cumulativeCount": 7655,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 642,
+        "rank": 7656,
+        "count": 375,
+        "cumulativeCount": 8030,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 640,
+        "rank": 8031,
+        "count": 381,
+        "cumulativeCount": 8828,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 639,
+        "rank": 8829,
+        "count": 415,
+        "cumulativeCount": 9243,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 638,
+        "rank": 9244,
+        "count": 413,
+        "cumulativeCount": 9656,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 636,
+        "rank": 9657,
+        "count": 458,
+        "cumulativeCount": 10611,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 633,
+        "rank": 10612,
+        "count": 457,
+        "cumulativeCount": 12049,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 632,
+        "rank": 12050,
+        "count": 522,
+        "cumulativeCount": 12571,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 631,
+        "rank": 12572,
+        "count": 529,
+        "cumulativeCount": 13100,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 630,
+        "rank": 13101,
+        "count": 486,
+        "cumulativeCount": 13586,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 629,
+        "rank": 13587,
+        "count": 510,
+        "cumulativeCount": 14096,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 628,
+        "rank": 14097,
+        "count": 520,
+        "cumulativeCount": 14616,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 627,
+        "rank": 14617,
+        "count": 516,
+        "cumulativeCount": 15132,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 626,
+        "rank": 15133,
+        "count": 519,
+        "cumulativeCount": 15651,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 625,
+        "rank": 15652,
+        "count": 561,
+        "cumulativeCount": 16212,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 624,
+        "rank": 16213,
+        "count": 535,
+        "cumulativeCount": 16747,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 623,
+        "rank": 16748,
+        "count": 587,
+        "cumulativeCount": 17334,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 622,
+        "rank": 17335,
+        "count": 573,
+        "cumulativeCount": 17907,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 621,
+        "rank": 17908,
+        "count": 595,
+        "cumulativeCount": 18502,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 620,
+        "rank": 18503,
+        "count": 600,
+        "cumulativeCount": 19102,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 619,
+        "rank": 19103,
+        "count": 592,
+        "cumulativeCount": 19694,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 618,
+        "rank": 19695,
+        "count": 597,
+        "cumulativeCount": 20291,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 617,
+        "rank": 20292,
+        "count": 611,
+        "cumulativeCount": 20902,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 616,
+        "rank": 20903,
+        "count": 687,
+        "cumulativeCount": 21589,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 613,
+        "rank": 21590,
+        "count": 711,
+        "cumulativeCount": 23567,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 612,
+        "rank": 23568,
+        "count": 627,
+        "cumulativeCount": 24194,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 611,
+        "rank": 24195,
+        "count": 646,
+        "cumulativeCount": 24840,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 610,
+        "rank": 24841,
+        "count": 655,
+        "cumulativeCount": 25495,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 609,
+        "rank": 25496,
+        "count": 665,
+        "cumulativeCount": 26160,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 608,
+        "rank": 26161,
+        "count": 697,
+        "cumulativeCount": 26857,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 607,
+        "rank": 26858,
+        "count": 687,
+        "cumulativeCount": 27544,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 606,
+        "rank": 27545,
+        "count": 723,
+        "cumulativeCount": 28267,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 605,
+        "rank": 28268,
+        "count": 694,
+        "cumulativeCount": 28961,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 604,
+        "rank": 28962,
+        "count": 754,
+        "cumulativeCount": 29715,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 603,
+        "rank": 29716,
+        "count": 661,
+        "cumulativeCount": 30376,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 602,
+        "rank": 30377,
+        "count": 758,
+        "cumulativeCount": 31134,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 600,
+        "rank": 31135,
+        "count": 756,
+        "cumulativeCount": 32621,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 599,
+        "rank": 32622,
+        "count": 7,
+        "cumulativeCount": 5,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 598,
+        "rank": 6,
+        "count": 7,
+        "cumulativeCount": 34106,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 596,
+        "rank": 34107,
+        "count": 797,
+        "cumulativeCount": 35650,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 593,
+        "rank": 35651,
+        "count": 753,
+        "cumulativeCount": 37931,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 592,
+        "rank": 37932,
+        "count": 836,
+        "cumulativeCount": 38767,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 591,
+        "rank": 38768,
+        "count": 751,
+        "cumulativeCount": 39518,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 590,
+        "rank": 39519,
+        "count": 803,
+        "cumulativeCount": 40321,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 589,
+        "rank": 40322,
+        "count": 837,
+        "cumulativeCount": 41158,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 588,
+        "rank": 41159,
+        "count": 850,
+        "cumulativeCount": 42008,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 587,
+        "rank": 42009,
+        "count": 819,
+        "cumulativeCount": 42827,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 586,
+        "rank": 42828,
+        "count": 829,
+        "cumulativeCount": 43656,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 585,
+        "rank": 43657,
+        "count": 859,
+        "cumulativeCount": 44515,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 584,
+        "rank": 44516,
+        "count": 894,
+        "cumulativeCount": 45409,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 583,
+        "rank": 45410,
+        "count": 848,
+        "cumulativeCount": 46257,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 582,
+        "rank": 46258,
+        "count": 856,
+        "cumulativeCount": 47113,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 581,
+        "rank": 47114,
+        "count": 841,
+        "cumulativeCount": 47954,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 580,
+        "rank": 47955,
+        "count": 877,
+        "cumulativeCount": 48831,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 579,
+        "rank": 48832,
+        "count": 924,
+        "cumulativeCount": 49755,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 578,
+        "rank": 49756,
+        "count": 839,
+        "cumulativeCount": 50594,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 577,
+        "rank": 50595,
+        "count": 861,
+        "cumulativeCount": 51455,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 576,
+        "rank": 51456,
+        "count": 894,
+        "cumulativeCount": 52349,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 573,
+        "rank": 52350,
+        "count": 992,
+        "cumulativeCount": 55137,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 572,
+        "rank": 55138,
+        "count": 883,
+        "cumulativeCount": 56020,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 571,
+        "rank": 56021,
+        "count": 948,
+        "cumulativeCount": 56968,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 570,
+        "rank": 56969,
+        "count": 960,
+        "cumulativeCount": 57928,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 569,
+        "rank": 57929,
+        "count": 879,
+        "cumulativeCount": 58807,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 568,
+        "rank": 58808,
+        "count": 991,
+        "cumulativeCount": 59798,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 567,
+        "rank": 59799,
+        "count": 926,
+        "cumulativeCount": 60724,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 566,
+        "rank": 60725,
+        "count": 104,
+        "cumulativeCount": 61773,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 565,
+        "rank": 61774,
+        "count": 919,
+        "cumulativeCount": 62692,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 564,
+        "rank": 62693,
+        "count": 961,
+        "cumulativeCount": 63653,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 563,
+        "rank": 63654,
+        "count": 847,
+        "cumulativeCount": 64500,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 562,
+        "rank": 64501,
+        "count": 951,
+        "cumulativeCount": 65451,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 561,
+        "rank": 65452,
+        "count": 1000,
+        "cumulativeCount": 66451,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 560,
+        "rank": 66452,
+        "count": 940,
+        "cumulativeCount": 67391,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 559,
+        "rank": 67392,
+        "count": 939,
+        "cumulativeCount": 68330,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 558,
+        "rank": 68331,
+        "count": 943,
+        "cumulativeCount": 69273,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 557,
+        "rank": 69274,
+        "count": 927,
+        "cumulativeCount": 70200,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 556,
+        "rank": 70201,
+        "count": 947,
+        "cumulativeCount": 71147,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 555,
+        "rank": 71148,
+        "count": 1020,
+        "cumulativeCount": 72167,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 554,
+        "rank": 72168,
+        "count": 985,
+        "cumulativeCount": 73152,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 553,
+        "rank": 73153,
+        "count": 959,
+        "cumulativeCount": 74111,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 552,
+        "rank": 74112,
+        "count": 991,
+        "cumulativeCount": 75102,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 551,
+        "rank": 75103,
+        "count": 1014,
+        "cumulativeCount": 76116,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 550,
+        "rank": 76117,
+        "count": 966,
+        "cumulativeCount": 77082,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 549,
+        "rank": 77083,
+        "count": 1002,
+        "cumulativeCount": 78084,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 548,
+        "rank": 78085,
+        "count": 914,
+        "cumulativeCount": 78998,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 547,
+        "rank": 78999,
+        "count": 958,
+        "cumulativeCount": 79956,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 546,
+        "rank": 79957,
+        "count": 978,
+        "cumulativeCount": 80934,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 545,
+        "rank": 80935,
+        "count": 992,
+        "cumulativeCount": 81926,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 544,
+        "rank": 81927,
+        "count": 1036,
+        "cumulativeCount": 82962,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 543,
+        "rank": 82963,
+        "count": 1015,
+        "cumulativeCount": 83977,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 542,
+        "rank": 83978,
+        "count": 990,
+        "cumulativeCount": 84967,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 541,
+        "rank": 84968,
+        "count": 994,
+        "cumulativeCount": 85961,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 540,
+        "rank": 85962,
+        "count": 975,
+        "cumulativeCount": 86936,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 539,
+        "rank": 86937,
+        "count": 10,
+        "cumulativeCount": 87985,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 538,
+        "rank": 87986,
+        "count": 10,
+        "cumulativeCount": 89031,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 537,
+        "rank": 89032,
+        "count": 10,
+        "cumulativeCount": 90080,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 536,
+        "rank": 90081,
+        "count": 1018,
+        "cumulativeCount": 91098,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 535,
+        "rank": 91099,
+        "count": 980,
+        "cumulativeCount": 92078,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 534,
+        "rank": 92079,
+        "count": 10,
+        "cumulativeCount": 93121,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 533,
+        "rank": 93122,
+        "count": 972,
+        "cumulativeCount": 94093,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 532,
+        "rank": 94094,
+        "count": 1004,
+        "cumulativeCount": 95097,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 531,
+        "rank": 95098,
+        "count": 1026,
+        "cumulativeCount": 96123,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 530,
+        "rank": 96124,
+        "count": 1021,
+        "cumulativeCount": 97144,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 529,
+        "rank": 97145,
+        "count": 1035,
+        "cumulativeCount": 98179,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 528,
+        "rank": 98180,
+        "count": 1041,
+        "cumulativeCount": 99220,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 527,
+        "rank": 99221,
+        "count": 1013,
+        "cumulativeCount": 100233,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 526,
+        "rank": 100234,
+        "count": 1035,
+        "cumulativeCount": 101268,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 525,
+        "rank": 101269,
+        "count": 972,
+        "cumulativeCount": 102240,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 524,
+        "rank": 102241,
+        "count": 1058,
+        "cumulativeCount": 103298,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 523,
+        "rank": 103299,
+        "count": 1029,
+        "cumulativeCount": 483,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 522,
+        "rank": 484,
+        "count": 1045,
+        "cumulativeCount": 105372,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 521,
+        "rank": 105373,
+        "count": 1003,
+        "cumulativeCount": 106375,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 520,
+        "rank": 106376,
+        "count": 1011,
+        "cumulativeCount": 107386,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 519,
+        "rank": 107387,
+        "count": 1005,
+        "cumulativeCount": 108391,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 518,
+        "rank": 108392,
+        "count": 1001,
+        "cumulativeCount": 109392,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 517,
+        "rank": 109393,
+        "count": 956,
+        "cumulativeCount": 110348,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 516,
+        "rank": 110349,
+        "count": 991,
+        "cumulativeCount": 111339,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 515,
+        "rank": 111340,
+        "count": 1032,
+        "cumulativeCount": 112371,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 514,
+        "rank": 112372,
+        "count": 1041,
+        "cumulativeCount": 474,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 513,
+        "rank": 475,
+        "count": 1050,
+        "cumulativeCount": 114462,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 512,
+        "rank": 114463,
+        "count": 957,
+        "cumulativeCount": 115419,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 511,
+        "rank": 115420,
+        "count": 1044,
+        "cumulativeCount": 116463,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 510,
+        "rank": 116464,
+        "count": 990,
+        "cumulativeCount": 117453,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 509,
+        "rank": 117454,
+        "count": 1031,
+        "cumulativeCount": 469,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 508,
+        "rank": 470,
+        "count": 1011,
+        "cumulativeCount": 119495,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 507,
+        "rank": 119496,
+        "count": 991,
+        "cumulativeCount": 120486,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 506,
+        "rank": 120487,
+        "count": 11117,
+        "cumulativeCount": 595,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 505,
+        "rank": 596,
+        "count": 1047,
+        "cumulativeCount": 122563,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 504,
+        "rank": 122564,
+        "count": 950,
+        "cumulativeCount": 123513,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 503,
+        "rank": 123514,
+        "count": 992,
+        "cumulativeCount": 124505,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 502,
+        "rank": 124506,
+        "count": 1036,
+        "cumulativeCount": 125541,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 501,
+        "rank": 125542,
+        "count": 1047,
+        "cumulativeCount": 126588,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 500,
+        "rank": 126589,
+        "count": 950,
+        "cumulativeCount": 127538,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 499,
+        "rank": 127539,
+        "count": 997,
+        "cumulativeCount": 128535,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 498,
+        "rank": 128536,
+        "count": 1017,
+        "cumulativeCount": 129552,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 497,
+        "rank": 129553,
+        "count": 10153,
+        "cumulativeCount": 597,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 496,
+        "rank": 598,
+        "count": 971,
+        "cumulativeCount": 131452,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 495,
+        "rank": 131453,
+        "count": 981,
+        "cumulativeCount": 132433,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 494,
+        "rank": 132434,
+        "count": 1008,
+        "cumulativeCount": 133441,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 493,
+        "rank": 133442,
+        "count": 995,
+        "cumulativeCount": 134436,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 492,
+        "rank": 134437,
+        "count": 1018,
+        "cumulativeCount": 135454,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 491,
+        "rank": 135455,
+        "count": 955,
+        "cumulativeCount": 136409,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 490,
+        "rank": 136410,
+        "count": 945,
+        "cumulativeCount": 137354,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 489,
+        "rank": 137355,
+        "count": 920,
+        "cumulativeCount": 138274,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 488,
+        "rank": 138275,
+        "count": 934,
+        "cumulativeCount": 139208,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 487,
+        "rank": 139209,
+        "count": 942,
+        "cumulativeCount": 140150,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 486,
+        "rank": 140151,
+        "count": 974,
+        "cumulativeCount": 141124,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 485,
+        "rank": 141125,
+        "count": 935,
+        "cumulativeCount": 142059,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 484,
+        "rank": 142060,
+        "count": 915,
+        "cumulativeCount": 142974,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 482,
+        "rank": 142975,
+        "count": 932,
+        "cumulativeCount": 144814,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 481,
+        "rank": 144815,
+        "count": 948,
+        "cumulativeCount": 145762,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 480,
+        "rank": 145763,
+        "count": 985,
+        "cumulativeCount": 146747,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 479,
+        "rank": 146748,
+        "count": 969,
+        "cumulativeCount": 147716,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 478,
+        "rank": 147717,
+        "count": 953,
+        "cumulativeCount": 148669,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 477,
+        "rank": 148670,
+        "count": 896,
+        "cumulativeCount": 149565,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 476,
+        "rank": 149566,
+        "count": 904,
+        "cumulativeCount": 150469,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 475,
+        "rank": 150470,
+        "count": 11592,
+        "cumulativeCount": 594,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 473,
+        "rank": 595,
+        "count": 869,
+        "cumulativeCount": 153184,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 472,
+        "rank": 153185,
+        "count": 873,
+        "cumulativeCount": 154057,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 471,
+        "rank": 154058,
+        "count": 874,
+        "cumulativeCount": 154931,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 470,
+        "rank": 154932,
+        "count": 854,
+        "cumulativeCount": 155785,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 468,
+        "rank": 155786,
+        "count": 839,
+        "cumulativeCount": 157548,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 467,
+        "rank": 157549,
+        "count": 938,
+        "cumulativeCount": 158486,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 466,
+        "rank": 158487,
+        "count": 862,
+        "cumulativeCount": 159348,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 465,
+        "rank": 159349,
+        "count": 863,
+        "cumulativeCount": 160211,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 463,
+        "rank": 160212,
+        "count": 803,
+        "cumulativeCount": 161813,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 462,
+        "rank": 161814,
+        "count": 807,
+        "cumulativeCount": 162620,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 461,
+        "rank": 162621,
+        "count": 799,
+        "cumulativeCount": 163419,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 460,
+        "rank": 163420,
+        "count": 821,
+        "cumulativeCount": 164240,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 459,
+        "rank": 164241,
+        "count": 801,
+        "cumulativeCount": 165041,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 458,
+        "rank": 165042,
+        "count": 835,
+        "cumulativeCount": 165876,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 457,
+        "rank": 165877,
+        "count": 788,
+        "cumulativeCount": 166664,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 456,
+        "rank": 166665,
+        "count": 799,
+        "cumulativeCount": 167463,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 455,
+        "rank": 167464,
+        "count": 798,
+        "cumulativeCount": 168261,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 454,
+        "rank": 168262,
+        "count": 773,
+        "cumulativeCount": 169034,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 453,
+        "rank": 169035,
+        "count": 803,
+        "cumulativeCount": 169837,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 452,
+        "rank": 169838,
+        "count": 757,
+        "cumulativeCount": 170594,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 451,
+        "rank": 170595,
+        "count": 768,
+        "cumulativeCount": 171362,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 450,
+        "rank": 171363,
+        "count": 707,
+        "cumulativeCount": 172069,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 449,
+        "rank": 172070,
+        "count": 706,
+        "cumulativeCount": 172775,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 448,
+        "rank": 172776,
+        "count": 7,
+        "cumulativeCount": 173523,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:13.104Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "物理类",
+        "score": 417,
+        "rank": 173524,
+        "count": 8447,
+        "cumulativeCount": 601,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:10.779Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      }
+    ],
+    "历史类": [
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 654,
+        "rank": 1,
+        "count": 104,
+        "cumulativeCount": 104,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 653,
+        "rank": 105,
+        "count": 12,
+        "cumulativeCount": 116,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 652,
+        "rank": 117,
+        "count": 15,
+        "cumulativeCount": 131,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 651,
+        "rank": 132,
+        "count": 12,
+        "cumulativeCount": 143,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 650,
+        "rank": 144,
+        "count": 20,
+        "cumulativeCount": 163,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 649,
+        "rank": 164,
+        "count": 17,
+        "cumulativeCount": 180,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 648,
+        "rank": 181,
+        "count": 20,
+        "cumulativeCount": 200,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 647,
+        "rank": 201,
+        "count": 24,
+        "cumulativeCount": 224,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 646,
+        "rank": 225,
+        "count": 19,
+        "cumulativeCount": 243,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 645,
+        "rank": 244,
+        "count": 23,
+        "cumulativeCount": 266,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 644,
+        "rank": 267,
+        "count": 27,
+        "cumulativeCount": 293,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 643,
+        "rank": 294,
+        "count": 8,
+        "cumulativeCount": 328,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 642,
+        "rank": 329,
+        "count": 28,
+        "cumulativeCount": 356,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 641,
+        "rank": 357,
+        "count": 33,
+        "cumulativeCount": 389,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 640,
+        "rank": 390,
+        "count": 430,
+        "cumulativeCount": 600,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 639,
+        "rank": 601,
+        "count": 472,
+        "cumulativeCount": 599,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 638,
+        "rank": 600,
+        "count": 5,
+        "cumulativeCount": 504,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 637,
+        "rank": 505,
+        "count": 34,
+        "cumulativeCount": 538,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 636,
+        "rank": 539,
+        "count": 586,
+        "cumulativeCount": 596,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 635,
+        "rank": 597,
+        "count": 630,
+        "cumulativeCount": 595,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 634,
+        "rank": 596,
+        "count": 57,
+        "cumulativeCount": 687,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 633,
+        "rank": 688,
+        "count": 53,
+        "cumulativeCount": 74,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 632,
+        "rank": 75,
+        "count": 789,
+        "cumulativeCount": 592,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 631,
+        "rank": 593,
+        "count": 52,
+        "cumulativeCount": 841,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 630,
+        "rank": 842,
+        "count": 58,
+        "cumulativeCount": 899,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 629,
+        "rank": 900,
+        "count": 60,
+        "cumulativeCount": 959,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 628,
+        "rank": 960,
+        "count": 65,
+        "cumulativeCount": 1024,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 627,
+        "rank": 1025,
+        "count": 56,
+        "cumulativeCount": 1080,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 626,
+        "rank": 1081,
+        "count": 85,
+        "cumulativeCount": 1165,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 625,
+        "rank": 1166,
+        "count": 77,
+        "cumulativeCount": 1242,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 624,
+        "rank": 1243,
+        "count": 80,
+        "cumulativeCount": 1322,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 623,
+        "rank": 1323,
+        "count": 85,
+        "cumulativeCount": 1407,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 622,
+        "rank": 1408,
+        "count": 100,
+        "cumulativeCount": 1507,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 621,
+        "rank": 1508,
+        "count": 57,
+        "cumulativeCount": 1604,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 620,
+        "rank": 1605,
+        "count": 57,
+        "cumulativeCount": 1701,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 619,
+        "rank": 1702,
+        "count": 110,
+        "cumulativeCount": 1811,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 618,
+        "rank": 1812,
+        "count": 95,
+        "cumulativeCount": 1906,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 617,
+        "rank": 1907,
+        "count": 57,
+        "cumulativeCount": 2003,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 616,
+        "rank": 2004,
+        "count": 110,
+        "cumulativeCount": 2113,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 615,
+        "rank": 2114,
+        "count": 116,
+        "cumulativeCount": 2229,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 614,
+        "rank": 2230,
+        "count": 100,
+        "cumulativeCount": 2329,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 613,
+        "rank": 2330,
+        "count": 118,
+        "cumulativeCount": 2447,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 612,
+        "rank": 2448,
+        "count": 121,
+        "cumulativeCount": 2568,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 611,
+        "rank": 2569,
+        "count": 102,
+        "cumulativeCount": 2670,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 610,
+        "rank": 2671,
+        "count": 123,
+        "cumulativeCount": 2793,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 609,
+        "rank": 2794,
+        "count": 135,
+        "cumulativeCount": 2928,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 608,
+        "rank": 2929,
+        "count": 134,
+        "cumulativeCount": 3062,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 607,
+        "rank": 3063,
+        "count": 142,
+        "cumulativeCount": 3204,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 606,
+        "rank": 3205,
+        "count": 143,
+        "cumulativeCount": 3347,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 605,
+        "rank": 3348,
+        "count": 142,
+        "cumulativeCount": 3489,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 604,
+        "rank": 3490,
+        "count": 150,
+        "cumulativeCount": 3639,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 603,
+        "rank": 3640,
+        "count": 147,
+        "cumulativeCount": 3786,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 602,
+        "rank": 3787,
+        "count": 154,
+        "cumulativeCount": 3940,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 601,
+        "rank": 3941,
+        "count": 151,
+        "cumulativeCount": 4091,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 598,
+        "rank": 4092,
+        "count": 195,
+        "cumulativeCount": 4597,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 597,
+        "rank": 4598,
+        "count": 205,
+        "cumulativeCount": 4802,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 594,
+        "rank": 4803,
+        "count": 183,
+        "cumulativeCount": 5381,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 593,
+        "rank": 5382,
+        "count": 206,
+        "cumulativeCount": 5587,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 591,
+        "rank": 5588,
+        "count": 193,
+        "cumulativeCount": 5997,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 590,
+        "rank": 5998,
+        "count": 202,
+        "cumulativeCount": 6199,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 589,
+        "rank": 6200,
+        "count": 232,
+        "cumulativeCount": 6431,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 588,
+        "rank": 6432,
+        "count": 197,
+        "cumulativeCount": 6628,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 587,
+        "rank": 6629,
+        "count": 236,
+        "cumulativeCount": 6864,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 586,
+        "rank": 6865,
+        "count": 229,
+        "cumulativeCount": 7093,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 585,
+        "rank": 7094,
+        "count": 222,
+        "cumulativeCount": 7315,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 584,
+        "rank": 7316,
+        "count": 226,
+        "cumulativeCount": 7541,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 583,
+        "rank": 7542,
+        "count": 242,
+        "cumulativeCount": 7783,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 582,
+        "rank": 7784,
+        "count": 232,
+        "cumulativeCount": 8015,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 581,
+        "rank": 8016,
+        "count": 240,
+        "cumulativeCount": 8255,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 580,
+        "rank": 8256,
+        "count": 274,
+        "cumulativeCount": 8529,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 579,
+        "rank": 8530,
+        "count": 282,
+        "cumulativeCount": 8811,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 578,
+        "rank": 8812,
+        "count": 272,
+        "cumulativeCount": 9083,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 577,
+        "rank": 9084,
+        "count": 253,
+        "cumulativeCount": 9336,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 576,
+        "rank": 9337,
+        "count": 265,
+        "cumulativeCount": 9601,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 575,
+        "rank": 9602,
+        "count": 261,
+        "cumulativeCount": 9862,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 574,
+        "rank": 9863,
+        "count": 290,
+        "cumulativeCount": 10152,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 573,
+        "rank": 10153,
+        "count": 280,
+        "cumulativeCount": 10432,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 572,
+        "rank": 10433,
+        "count": 304,
+        "cumulativeCount": 10736,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 571,
+        "rank": 10737,
+        "count": 299,
+        "cumulativeCount": 11035,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 570,
+        "rank": 11036,
+        "count": 258,
+        "cumulativeCount": 11293,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 569,
+        "rank": 11294,
+        "count": 302,
+        "cumulativeCount": 11595,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 568,
+        "rank": 11596,
+        "count": 320,
+        "cumulativeCount": 11915,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 567,
+        "rank": 11916,
+        "count": 292,
+        "cumulativeCount": 12207,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 566,
+        "rank": 12208,
+        "count": 332,
+        "cumulativeCount": 12539,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 565,
+        "rank": 12540,
+        "count": 309,
+        "cumulativeCount": 12848,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 564,
+        "rank": 12849,
+        "count": 307,
+        "cumulativeCount": 13155,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 563,
+        "rank": 13156,
+        "count": 85,
+        "cumulativeCount": 13510,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 562,
+        "rank": 13511,
+        "count": 81,
+        "cumulativeCount": 13841,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 561,
+        "rank": 13842,
+        "count": 338,
+        "cumulativeCount": 14179,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 558,
+        "rank": 14180,
+        "count": 85,
+        "cumulativeCount": 15174,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 557,
+        "rank": 15175,
+        "count": 334,
+        "cumulativeCount": 15508,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 554,
+        "rank": 15509,
+        "count": 354,
+        "cumulativeCount": 16579,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 553,
+        "rank": 16580,
+        "count": 380,
+        "cumulativeCount": 16959,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 551,
+        "rank": 16960,
+        "count": 325,
+        "cumulativeCount": 17663,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 550,
+        "rank": 17664,
+        "count": 397,
+        "cumulativeCount": 18060,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 549,
+        "rank": 18061,
+        "count": 335,
+        "cumulativeCount": 18395,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 548,
+        "rank": 18396,
+        "count": 380,
+        "cumulativeCount": 18775,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 547,
+        "rank": 18776,
+        "count": 392,
+        "cumulativeCount": 19167,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 546,
+        "rank": 19168,
+        "count": 404,
+        "cumulativeCount": 19571,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 545,
+        "rank": 19572,
+        "count": 382,
+        "cumulativeCount": 19953,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 544,
+        "rank": 19954,
+        "count": 87,
+        "cumulativeCount": 20328,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 543,
+        "rank": 20329,
+        "count": 439,
+        "cumulativeCount": 20767,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 542,
+        "rank": 20768,
+        "count": 397,
+        "cumulativeCount": 21164,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 541,
+        "rank": 21165,
+        "count": 419,
+        "cumulativeCount": 21583,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 540,
+        "rank": 21584,
+        "count": 452,
+        "cumulativeCount": 22035,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 539,
+        "rank": 22036,
+        "count": 409,
+        "cumulativeCount": 22444,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 538,
+        "rank": 22445,
+        "count": 434,
+        "cumulativeCount": 22878,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 537,
+        "rank": 22879,
+        "count": 408,
+        "cumulativeCount": 23286,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 536,
+        "rank": 23287,
+        "count": 425,
+        "cumulativeCount": 23711,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 535,
+        "rank": 23712,
+        "count": 404,
+        "cumulativeCount": 24115,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 534,
+        "rank": 24116,
+        "count": 408,
+        "cumulativeCount": 24523,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 533,
+        "rank": 24524,
+        "count": 448,
+        "cumulativeCount": 24971,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 532,
+        "rank": 24972,
+        "count": 406,
+        "cumulativeCount": 25377,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 531,
+        "rank": 25378,
+        "count": 446,
+        "cumulativeCount": 25823,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 530,
+        "rank": 25824,
+        "count": 461,
+        "cumulativeCount": 26284,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 529,
+        "rank": 26285,
+        "count": 454,
+        "cumulativeCount": 26738,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 528,
+        "rank": 26739,
+        "count": 444,
+        "cumulativeCount": 27182,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 527,
+        "rank": 27183,
+        "count": 444,
+        "cumulativeCount": 27626,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 526,
+        "rank": 27627,
+        "count": 457,
+        "cumulativeCount": 28083,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 525,
+        "rank": 28084,
+        "count": 474,
+        "cumulativeCount": 28557,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 524,
+        "rank": 28558,
+        "count": 478,
+        "cumulativeCount": 29035,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 523,
+        "rank": 29036,
+        "count": 487,
+        "cumulativeCount": 29522,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 522,
+        "rank": 29523,
+        "count": 474,
+        "cumulativeCount": 29996,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 521,
+        "rank": 29997,
+        "count": 456,
+        "cumulativeCount": 30452,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 520,
+        "rank": 30453,
+        "count": 496,
+        "cumulativeCount": 30948,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 519,
+        "rank": 30949,
+        "count": 517,
+        "cumulativeCount": 31465,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 518,
+        "rank": 31466,
+        "count": 456,
+        "cumulativeCount": 31921,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 517,
+        "rank": 31922,
+        "count": 486,
+        "cumulativeCount": 32407,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 516,
+        "rank": 32408,
+        "count": 507,
+        "cumulativeCount": 32914,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 515,
+        "rank": 32915,
+        "count": 483,
+        "cumulativeCount": 33397,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 514,
+        "rank": 33398,
+        "count": 481,
+        "cumulativeCount": 33878,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 513,
+        "rank": 33879,
+        "count": 504,
+        "cumulativeCount": 34382,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 512,
+        "rank": 34383,
+        "count": 497,
+        "cumulativeCount": 34879,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 511,
+        "rank": 34880,
+        "count": 486,
+        "cumulativeCount": 35365,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 510,
+        "rank": 35366,
+        "count": 500,
+        "cumulativeCount": 35865,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 509,
+        "rank": 35866,
+        "count": 503,
+        "cumulativeCount": 36368,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 508,
+        "rank": 36369,
+        "count": 481,
+        "cumulativeCount": 36849,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 507,
+        "rank": 36850,
+        "count": 441,
+        "cumulativeCount": 37290,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 506,
+        "rank": 37291,
+        "count": 473,
+        "cumulativeCount": 37763,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 505,
+        "rank": 37764,
+        "count": 473,
+        "cumulativeCount": 38236,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 504,
+        "rank": 38237,
+        "count": 528,
+        "cumulativeCount": 38764,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 503,
+        "rank": 38765,
+        "count": 505,
+        "cumulativeCount": 39269,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 502,
+        "rank": 39270,
+        "count": 493,
+        "cumulativeCount": 39762,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 501,
+        "rank": 39763,
+        "count": 474,
+        "cumulativeCount": 40236,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 500,
+        "rank": 40237,
+        "count": 508,
+        "cumulativeCount": 40744,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 499,
+        "rank": 40745,
+        "count": 449,
+        "cumulativeCount": 41193,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 498,
+        "rank": 41194,
+        "count": 516,
+        "cumulativeCount": 41709,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 497,
+        "rank": 41710,
+        "count": 512,
+        "cumulativeCount": 42221,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 496,
+        "rank": 42222,
+        "count": 501,
+        "cumulativeCount": 42722,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 495,
+        "rank": 42723,
+        "count": 512,
+        "cumulativeCount": 43234,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 494,
+        "rank": 43235,
+        "count": 493,
+        "cumulativeCount": 43727,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 493,
+        "rank": 43728,
+        "count": 540,
+        "cumulativeCount": 44267,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 492,
+        "rank": 44268,
+        "count": 453,
+        "cumulativeCount": 44720,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 491,
+        "rank": 44721,
+        "count": 521,
+        "cumulativeCount": 45241,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 490,
+        "rank": 45242,
+        "count": 5,
+        "cumulativeCount": 45758,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 489,
+        "rank": 45759,
+        "count": 527,
+        "cumulativeCount": 46285,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 488,
+        "rank": 46286,
+        "count": 496,
+        "cumulativeCount": 46781,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 487,
+        "rank": 46782,
+        "count": 482,
+        "cumulativeCount": 47263,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 486,
+        "rank": 47264,
+        "count": 487,
+        "cumulativeCount": 47750,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 485,
+        "rank": 47751,
+        "count": 532,
+        "cumulativeCount": 48282,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 484,
+        "rank": 48283,
+        "count": 560,
+        "cumulativeCount": 48842,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 483,
+        "rank": 48843,
+        "count": 500,
+        "cumulativeCount": 49342,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 482,
+        "rank": 49343,
+        "count": 497,
+        "cumulativeCount": 49839,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 481,
+        "rank": 49840,
+        "count": 461,
+        "cumulativeCount": 50300,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 480,
+        "rank": 50301,
+        "count": 516,
+        "cumulativeCount": 50816,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 479,
+        "rank": 50817,
+        "count": 482,
+        "cumulativeCount": 51298,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 478,
+        "rank": 51299,
+        "count": 448,
+        "cumulativeCount": 51746,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 477,
+        "rank": 51747,
+        "count": 531,
+        "cumulativeCount": 52277,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 476,
+        "rank": 52278,
+        "count": 479,
+        "cumulativeCount": 52756,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 475,
+        "rank": 52757,
+        "count": 505,
+        "cumulativeCount": 53261,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 474,
+        "rank": 53262,
+        "count": 506,
+        "cumulativeCount": 53767,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:16.768Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 232,
+        "rank": 53768,
+        "count": 5034,
+        "cumulativeCount": 556,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 217,
+        "rank": 557,
+        "count": 5804,
+        "cumulativeCount": 552,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 164,
+        "rank": 553,
+        "count": 5198,
+        "cumulativeCount": 555,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 158,
+        "rank": 556,
+        "count": 4402,
+        "cumulativeCount": 559,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "江苏",
+        "year": 2023,
+        "category": "历史类",
+        "score": 153,
+        "rank": 560,
+        "count": 4244,
+        "cumulativeCount": 560,
+        "_meta": {
+          "source": "jseea",
+          "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+          "fetchedAt": "2026-06-18T01:01:15.218Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      }
+    ]
+  },
+  "_meta": {
+    "generatedAt": "2026-06-18T01:01:16.768Z",
+    "scraperVersion": "1.0.0",
+    "source": "jseea",
+    "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-06-24/7078350479809318912.html",
+    "recordCount": 401
+  }
+}
