@@ -257,3 +257,90 @@ describe('streamChat 成功路径', () => {
     expect(result).toBe('AB')
   })
 })
+
+describe('streamChat 错误处理', () => {
+  beforeEach(() => {
+    vi.stubGlobal('fetch', vi.fn())
+  })
+
+  afterEach(() => {
+    vi.unstubAllGlobals()
+    vi.restoreAllMocks()
+  })
+
+  it('HTTP 401 抛出包含状态码的 ChatError', async () => {
+    ;(global.fetch as ReturnType<typeof vi.fn>).mockResolvedValueOnce(
+      new Response(JSON.stringify({ error: { message: 'Invalid API key' } }), {
+        status: 401,
+        headers: { 'Content-Type': 'application/json' },
+      })
+    )
+
+    await expect(
+      streamChat({
+        messages: [{ id: 'u1', role: 'user', content: '问', timestamp: 1 }],
+        aiConfig,
+        profile,
+        volunteerList: [],
+        onChunk: () => {},
+      })
+    ).rejects.toMatchObject({ name: 'ChatError', status: 401, message: 'Invalid API key' })
+  })
+
+  it('HTTP 429 抛出 ChatError 状态码 429', async () => {
+    ;(global.fetch as ReturnType<typeof vi.fn>).mockResolvedValueOnce(
+      new Response('rate limited', { status: 429 })
+    )
+
+    await expect(
+      streamChat({
+        messages: [{ id: 'u1', role: 'user', content: '问', timestamp: 1 }],
+        aiConfig,
+        profile,
+        volunteerList: [],
+        onChunk: () => {},
+      })
+    ).rejects.toMatchObject({ name: 'ChatError', status: 429 })
+  })
+
+  it('网络错误（fetch 抛 TypeError）原样抛出', async () => {
+    ;(global.fetch as ReturnType<typeof vi.fn>).mockRejectedValueOnce(
+      new TypeError('Failed to fetch')
+    )
+
+    await expect(
+      streamChat({
+        messages: [{ id: 'u1', role: 'user', content: '问', timestamp: 1 }],
+        aiConfig,
+        profile,
+        volunteerList: [],
+        onChunk: () => {},
+      })
+    ).rejects.toThrow(TypeError)
+  })
+
+  it('AbortSignal 已取消时抛出 AbortError', async () => {
+    ;(global.fetch as ReturnType<typeof vi.fn>).mockImplementationOnce(
+      (_url: string, init: RequestInit) =>
+        new Promise((_resolve, reject) => {
+          init.signal?.addEventListener('abort', () => {
+            const err = new DOMException('The user aborted a request.', 'AbortError')
+            reject(err)
+          })
+        })
+    )
+
+    const controller = new AbortController()
+    const promise = streamChat({
+      messages: [{ id: 'u1', role: 'user', content: '问', timestamp: 1 }],
+      aiConfig,
+      profile,
+      volunteerList: [],
+      onChunk: () => {},
+      signal: controller.signal,
+    })
+    controller.abort()
+
+    await expect(promise).rejects.toMatchObject({ name: 'AbortError' })
+  })
+})
