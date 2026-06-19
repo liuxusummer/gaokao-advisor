@@ -88,6 +88,8 @@ describe('store subjectAssessment + integratedAssessment', () => {
       topSubjects: ['math', 'computer', 'physics'],
       agreedCategories: ['计算机类', '数学类'],
       confidence: 'high' as const,
+      mbtiType: null,
+      mbtiCategories: [],
       timestamp: Date.now(),
     }
     useAppStore.getState().setIntegratedAssessment(result)
