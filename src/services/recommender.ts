@@ -1,89 +1,162 @@
 import {
-  colleges,
-  majors,
-  scoreRecords,
+  colleges as mockColleges,
+  majors as mockMajors,
+  scoreRecords as mockScoreRecords,
+  provinces,
   type RecommendationItem,
   type College,
+  type Major,
+  type ScoreRecord,
 } from '../data/mock'
 import type { UserProfile } from '../store'
+import { loadMbtiMapping } from '../features/assessment/services/mbtiMapper'
+import {
+  loadProvinceData,
+  isRealDataAvailable,
+  checkSubjectRequirement,
+  type RealDataCache,
+} from './dataLoader'
 
-export function generateRecommendations(profile: UserProfile): RecommendationItem[] {
-  const userRank = profile.rank || 5000
+export async function generateRecommendations(
+  profile: UserProfile,
+  cache?: RealDataCache
+): Promise<RecommendationItem[]> {
+  const useReal = isRealDataAvailable(profile.provinceId)
+  const data = useReal ? cache || (await loadProvinceData(profile.provinceId)) : undefined
+
+  const colleges = data?.colleges || mockColleges
+  const majors = data?.majors || mockMajors
+  const scoreRecords = data?.scoreRecords || mockScoreRecords
+  const subjectRequirements = data?.subjectRequirements
+
+  const userRank = profile.rank || estimateRankFromScore(profile.score)
   const userSubjects = new Set(profile.subjects)
   const maxTuition = profile.maxTuition || Infinity
 
+  const mbtiMapping = profile.mbtiType ? await loadMbtiMapping() : null
+  const mbtiCategories = mbtiMapping?.[profile.mbtiType]?.categories ?? []
+  const mbtiMatch = (category: string) => (mbtiCategories.includes(category) ? 1 : 0)
+
+  const collegeMap = new Map(colleges.map((c) => [c.id, c]))
+  const majorMap = new Map(majors.map((m) => [m.id, m]))
+
   const candidates: RecommendationItem[] = []
 
-  colleges.forEach((college) => {
-    majors.forEach((major) => {
-      if (major.tuition > maxTuition) return
-      if (major.subjects.length > 0 && !major.subjects.every((s) => userSubjects.has(s))) return
-      if (profile.categories.length > 0 && !profile.categories.includes(major.category)) return
-      if (profile.regions.length > 0 && !profile.regions.includes(college.province)) return
-      if (profile.levels.length > 0 && !college.level.some((l) => profile.levels.includes(l))) return
-      if (profile.physicalExam === 'colorWeak' && major.colorBlind) return
-      if (profile.physicalExam === 'colorBlind' && major.colorBlind) return
+  // Group score records by (collegeId, majorId) for multi-year lookup
+  const recordMap = new Map<string, ScoreRecord[]>()
+  for (const r of scoreRecords) {
+    const key = `${r.collegeId}-${r.majorId}`
+    if (!recordMap.has(key)) recordMap.set(key, [])
+    recordMap.get(key)!.push(r)
+  }
 
-      const records = scoreRecords
-        .filter((r) => r.collegeId === college.id && r.majorId === major.id)
-        .sort((a, b) => b.year - a.year)
-      if (records.length === 0) return
+  // 投档线中的专业代码多为各省本地编码，可能与教育部目录不一致；
+  // 先用代码查，再用专业名称查，再尝试子串匹配，都找不到时用投档线中的专业名称和科类生成合成专业对象
+  const majorByNameMap = new Map(majors.map((m) => [m.name, m]))
+  const findMajorByName = (name?: string): Major | undefined => {
+    if (!name) return undefined
+    const exact = majorByNameMap.get(name)
+    if (exact) return exact
+    // 投档线常见“类/试验班”名称，尝试用目录中单个专业名作为子串匹配门类
+    for (const m of majors) {
+      if (name.includes(m.name)) return m
+    }
+    return undefined
+  }
+  const getOrCreateMajor = (record: ScoreRecord): Major => {
+    const byCode = majorMap.get(record.majorId)
+    if (byCode) return byCode
+    const byName = findMajorByName(record.majorName)
+    if (byName) return { ...byName, id: record.majorId }
+    return {
+      id: record.majorId,
+      name: record.majorName || record.majorId,
+      category: record.category || '未知门类',
+      subjects: [],
+    }
+  }
 
-      const weights = [0.5, 0.3, 0.2]
-      const recent = records.slice(0, 3)
-      const avgRank =
-        recent.reduce((sum, r, i) => sum + r.minRank * (weights[i] || 0), 0) /
-        recent.reduce((sum, _, i) => sum + (weights[i] || 0), 0)
+  for (const [, records] of recordMap) {
+    const college = collegeMap.get(records[0].collegeId)
+    const major = getOrCreateMajor(records[0])
+    if (!college) continue
 
-      const deviation = (userRank - avgRank) / avgRank
-      let tier: 'rush' | 'stable' | 'safe'
-      let probability: number
+    if (major.tuition && major.tuition > maxTuition) continue
+    if (profile.categories.length > 0 && !profile.categories.includes(major.category)) continue
+    if (profile.regions.length > 0 && !profile.regions.includes(college.province)) continue
+    if (profile.levels.length > 0 && !college.tags?.some((l) => profile.levels.includes(l))) continue
+    if (profile.physicalExam === 'colorWeak' && major.colorBlind) continue
+    if (profile.physicalExam === 'colorBlind' && major.colorBlind) continue
 
-      if (deviation < -0.15) {
-        tier = 'safe'
-        probability = 90 + Math.random() * 6
-      } else if (deviation < -0.05) {
-        tier = 'safe'
-        probability = 80 + Math.random() * 10
-      } else if (deviation <= 0.05) {
-        tier = 'stable'
-        probability = 60 + Math.random() * 20
-      } else if (deviation <= 0.15) {
-        tier = 'rush'
-        probability = 20 + Math.random() * 20
-      } else {
-        return
-      }
+    // Check subject requirement from real data first, then fallback to major.subjects
+    const subjectReq = subjectRequirements?.get(`${college.id}-${records[0].majorName}`)
+    if (subjectReq) {
+      if (!checkSubjectRequirement(subjectReq, profile.subjects)) continue
+    } else if (major.subjects && major.subjects.length > 0) {
+      if (!major.subjects.every((s) => userSubjects.has(s))) continue
+    }
 
-      const reasonParts = [
-        `你的位次 ${userRank}，近三年录取平均位次 ${Math.round(avgRank)}`,
-        `属于"${tier === 'rush' ? '冲' : tier === 'stable' ? '稳' : '保'}"档`,
-      ]
-      if (major.subjects.length > 0) {
-        reasonParts.push(`选科要求 ${major.subjects.join('+')}，你已满足`)
-      }
-      if (profile.categories.includes(major.category)) {
-        reasonParts.push(`专业方向匹配你的偏好`)
-      }
+    const sorted = records.sort((a, b) => b.year - a.year)
+    const recent = sorted.slice(0, 3)
+    if (recent.length === 0) continue
 
-      candidates.push({
-        id: `${college.id}-${major.id}`,
-        college,
-        major,
-        tier,
-        probability: Math.min(99, Math.round(probability)),
-        minRanks: recent.map((r) => ({ year: r.year, rank: r.minRank })),
-        reason: reasonParts.join('；'),
-        source: `${college.name}本科招生网 · 阳光高考网`,
-      })
+    const weights = [0.5, 0.3, 0.2]
+    const avgRank =
+      recent.reduce((sum, r, i) => sum + r.minRank * (weights[i] || 0), 0) /
+      recent.reduce((sum, _, i) => sum + (weights[i] || 0), 0)
+
+    const deviation = (userRank - avgRank) / avgRank
+    let tier: 'rush' | 'stable' | 'safe'
+    let probability: number
+
+    if (deviation < -0.15) {
+      tier = 'safe'
+      probability = 90 + Math.random() * 6
+    } else if (deviation < -0.05) {
+      tier = 'safe'
+      probability = 80 + Math.random() * 10
+    } else if (deviation <= 0.05) {
+      tier = 'stable'
+      probability = 60 + Math.random() * 20
+    } else if (deviation <= 0.15) {
+      tier = 'rush'
+      probability = 20 + Math.random() * 20
+    } else {
+      continue
+    }
+
+    const reasonParts = [
+      `你的位次 ${userRank}，近三年录取平均位次 ${Math.round(avgRank)}`,
+      `属于"${tier === 'rush' ? '冲' : tier === 'stable' ? '稳' : '保'}"档`,
+    ]
+    if (subjectReq) {
+      reasonParts.push(`选科要求 ${subjectReq.rawText}，你已满足`)
+    } else if (major.subjects && major.subjects.length > 0) {
+      reasonParts.push(`选科要求 ${major.subjects.join('+')}，你已满足`)
+    }
+    if (profile.categories.includes(major.category)) {
+      reasonParts.push(`专业方向匹配你的偏好`)
+    }
+    if (mbtiCategories.includes(major.category)) {
+      reasonParts.push(`与你的 MBTI 人格(${profile.mbtiType})匹配`)
+    }
+
+    candidates.push({
+      id: `${college.id}-${major.id}`,
+      college,
+      major,
+      tier,
+      probability: Math.min(99, Math.round(probability)),
+      minRanks: recent.map((r) => ({ year: r.year, rank: r.minRank })),
+      reason: reasonParts.join('；'),
+      source: `${college.name}本科招生网 · 阳光高考网 · 各省教育考试院`,
     })
-  })
+  }
 
-  // Sort within each tier: higher probability first, then by college level weight
   const levelWeight = (college: College) => {
-    if (college.level.includes('985')) return 3
-    if (college.level.includes('211')) return 2
-    if (college.level.includes('双一流')) return 1
+    if (college.tags?.includes('985')) return 3
+    if (college.tags?.includes('211')) return 2
+    if (college.tags?.includes('双一流')) return 1
     return 0
   }
 
@@ -93,11 +166,12 @@ export function generateRecommendations(profile: UserProfile): RecommendationIte
       return order[a.tier] - order[b.tier]
     }
     if (b.probability !== a.probability) return b.probability - a.probability
-    return levelWeight(b.college) - levelWeight(a.college)
+    const levelDiff = levelWeight(b.college) - levelWeight(a.college)
+    if (levelDiff !== 0) return levelDiff
+    return mbtiMatch(b.major.category) - mbtiMatch(a.major.category)
   })
 
-  // Limit per tier based on profile risk preference and province total
-  const provinceTotal = 96
+  const provinceTotal = provinces.find((p) => p.id === profile.provinceId)?.total ?? 96
   let rushCount = Math.round(provinceTotal * 0.25)
   let stableCount = Math.round(provinceTotal * 0.5)
   let safeCount = Math.round(provinceTotal * 0.25)
@@ -128,4 +202,9 @@ export function generateRecommendations(profile: UserProfile): RecommendationIte
   })
 
   return result
+}
+
+function estimateRankFromScore(score: number | null): number {
+  if (!score) return 50000
+  return Math.round((750 - score) * 100 + 500)
 }
