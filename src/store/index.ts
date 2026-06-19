@@ -1,6 +1,8 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { type RecommendationItem, type RiskItem, type College, type Major } from '../data/mock'
+import { type RealDataCache, loadProvinceData } from '../services/dataLoader'
+import { type SubjectAssessmentResult, type IntegratedAssessment } from '../features/assessment/types'
 
 export interface UserProfile {
   provinceId: string
@@ -23,6 +25,7 @@ export interface VolunteerItem {
   major: Major
   tier: 'rush' | 'stable' | 'safe'
   probability: number
+  minRank?: number
   obeyAdjust?: boolean
 }
 
@@ -70,6 +73,17 @@ interface AppState {
 
   assessmentResult: Record<string, number> | null
   setAssessmentResult: (result: Record<string, number> | null) => void
+
+  subjectAssessmentResult: SubjectAssessmentResult | null
+  setSubjectAssessmentResult: (result: SubjectAssessmentResult | null) => void
+
+  integratedAssessment: IntegratedAssessment | null
+  setIntegratedAssessment: (result: IntegratedAssessment | null) => void
+
+  dataCache: RealDataCache | null
+  dataLoading: boolean
+  dataError: string | null
+  loadProvinceData: (provinceId: string) => Promise<RealDataCache | null>
 }
 
 const defaultProfile: UserProfile = {
@@ -89,7 +103,7 @@ const defaultProfile: UserProfile = {
 
 export const useAppStore = create<AppState>()(
   persist(
-    (set) => ({
+    (set): AppState => ({
       darkMode: false,
       setDarkMode: (v) => {
         set({ darkMode: v })
@@ -134,7 +148,7 @@ export const useAppStore = create<AppState>()(
       chatMessages: [
         {
           id: 'welcome',
-          role: 'assistant',
+          role: 'assistant' as const,
           content: '你好！我是智填助手。你可以问我关于志愿推荐、院校专业、填报规则的问题。',
           timestamp: Date.now(),
         },
@@ -175,9 +189,39 @@ export const useAppStore = create<AppState>()(
 
       assessmentResult: null,
       setAssessmentResult: (result) => set({ assessmentResult: result }),
+
+      subjectAssessmentResult: null,
+      setSubjectAssessmentResult: (result) => set({ subjectAssessmentResult: result }),
+
+      integratedAssessment: null,
+      setIntegratedAssessment: (result) => set({ integratedAssessment: result }),
+
+      dataCache: null,
+      dataLoading: false,
+      dataError: null,
+      loadProvinceData: async (provinceId) => {
+        const state = useAppStore.getState()
+        if (state.dataCache?.province === provinceId) return state.dataCache
+        set({ dataLoading: true, dataError: null })
+        try {
+          const cache = await loadProvinceData(provinceId)
+          set({ dataCache: cache, dataLoading: false, dataError: null })
+          return cache
+        } catch (err) {
+          const message = err instanceof Error ? err.message : '数据加载失败'
+          set({ dataLoading: false, dataError: message, dataCache: null })
+          return null
+        }
+      },
     }),
     {
       name: 'volunteer-assistant-store',
+      partialize: (state) =>
+        Object.fromEntries(
+          Object.entries(state).filter(
+            ([key]) => !['dataCache', 'dataLoading', 'dataError'].includes(key)
+          )
+        ) as Partial<AppState>,
     }
   )
 )

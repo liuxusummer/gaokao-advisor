@@ -53,3 +53,44 @@ describe('store aiConfig', () => {
     expect(() => useAppStore.getState().updateLastAssistantMessage('x')).not.toThrow()
   })
 })
+
+describe('store subjectAssessment + integratedAssessment', () => {
+  beforeEach(() => {
+    useAppStore.setState({
+      subjectAssessmentResult: null,
+      integratedAssessment: null,
+    })
+  })
+
+  it('默认 subjectAssessmentResult 为 null', () => {
+    expect(useAppStore.getState().subjectAssessmentResult).toBeNull()
+  })
+
+  it('setSubjectAssessmentResult 设置结果', () => {
+    const result = {
+      subjectScores: { math: 5, physics: 4 },
+      behaviorScores: { theory_practice: 3 },
+      topSubjects: ['math', 'physics'],
+      recommendedCategories: ['数学类', '计算机类'],
+      timestamp: Date.now(),
+    }
+    useAppStore.getState().setSubjectAssessmentResult(result)
+    expect(useAppStore.getState().subjectAssessmentResult).toEqual(result)
+  })
+
+  it('默认 integratedAssessment 为 null', () => {
+    expect(useAppStore.getState().integratedAssessment).toBeNull()
+  })
+
+  it('setIntegratedAssessment 设置结果', () => {
+    const result = {
+      hollandCode: 'RIA',
+      topSubjects: ['math', 'computer', 'physics'],
+      agreedCategories: ['计算机类', '数学类'],
+      confidence: 'high' as const,
+      timestamp: Date.now(),
+    }
+    useAppStore.getState().setIntegratedAssessment(result)
+    expect(useAppStore.getState().integratedAssessment).toEqual(result)
+  })
+})
