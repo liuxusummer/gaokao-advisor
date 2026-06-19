@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { integrateResults } from './resultIntegrator'
-import type { SubjectAssessmentResult } from '../types'
+import type { SubjectAssessmentResult, MbtiMappingRecord } from '../types'
 
 const subjectResult: SubjectAssessmentResult = {
   subjectScores: { math: 5, physics: 4, computer: 5, chemistry: 3 },
@@ -59,5 +59,38 @@ describe('integrateResults', () => {
     const hollandScores = { E: 10, C: 8, R: 6, S: 2, I: 2, A: 2 }
     const result = integrateResults(hollandScores, humanitiesResult, majorMapping)
     expect(result.confidence).toBe('low')
+  })
+
+  const mbtiMapping: MbtiMappingRecord = {
+    INTJ: { name: '建筑师', categories: ['工学', '理学', '经济学'], description: 'desc' },
+    ENFP: { name: '竞选者', categories: ['艺术学', '文学', '教育学'], description: 'desc' },
+  }
+
+  it('传入 mbtiType 和 mbtiMapping 时写入 MBTI 字段', () => {
+    const hollandScores = { R: 10, I: 8, A: 6, S: 4, E: 2, C: 2 }
+    const result = integrateResults(hollandScores, subjectResult, majorMapping, 'INTJ', mbtiMapping)
+    expect(result.mbtiType).toBe('INTJ')
+    expect(result.mbtiCategories).toEqual(['工学', '理学', '经济学'])
+  })
+
+  it('mbtiType 为 null 时 mbtiCategories 为空数组', () => {
+    const hollandScores = { R: 10, I: 8, A: 6, S: 4, E: 2, C: 2 }
+    const result = integrateResults(hollandScores, subjectResult, majorMapping, null, mbtiMapping)
+    expect(result.mbtiType).toBeNull()
+    expect(result.mbtiCategories).toEqual([])
+  })
+
+  it('mbtiMapping 为 null 时 mbtiCategories 为空数组', () => {
+    const hollandScores = { R: 10, I: 8, A: 6, S: 4, E: 2, C: 2 }
+    const result = integrateResults(hollandScores, subjectResult, majorMapping, 'INTJ', null)
+    expect(result.mbtiType).toBe('INTJ')
+    expect(result.mbtiCategories).toEqual([])
+  })
+
+  it('置信度计算不受 MBTI 影响', () => {
+    const hollandScores = { R: 10, I: 8, A: 6, S: 4, E: 2, C: 2 }
+    const resultWithoutMbti = integrateResults(hollandScores, subjectResult, majorMapping, null, null)
+    const resultWithMbti = integrateResults(hollandScores, subjectResult, majorMapping, 'INTJ', mbtiMapping)
+    expect(resultWithoutMbti.confidence).toBe(resultWithMbti.confidence)
   })
 })
