@@ -16,6 +16,7 @@ const profile: UserProfile = {
   maxTuition: null,
   physicalExam: 'normal',
   riskPreference: 'balanced',
+  mbtiType: null,
 }
 
 describe('buildSystemPrompt', () => {

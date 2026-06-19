@@ -17,6 +17,7 @@ export interface UserProfile {
   maxTuition: number | null
   physicalExam: 'normal' | 'colorWeak' | 'colorBlind' | 'vision' | 'height' | 'other'
   riskPreference: 'conservative' | 'balanced' | 'aggressive'
+  mbtiType: string | null
 }
 
 export interface VolunteerItem {
@@ -99,6 +100,7 @@ const defaultProfile: UserProfile = {
   maxTuition: null,
   physicalExam: 'normal',
   riskPreference: 'balanced',
+  mbtiType: null,
 }
 
 export const useAppStore = create<AppState>()(

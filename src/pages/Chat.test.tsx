@@ -35,6 +35,7 @@ describe('Chat 未配置时', () => {
         maxTuition: null,
         physicalExam: 'normal',
         riskPreference: 'balanced',
+        mbtiType: null,
       },
       volunteerList: [],
     })
@@ -107,6 +108,7 @@ describe('Chat 已配置时', () => {
         maxTuition: null,
         physicalExam: 'normal',
         riskPreference: 'balanced',
+        mbtiType: null,
       },
       volunteerList: [],
     })
