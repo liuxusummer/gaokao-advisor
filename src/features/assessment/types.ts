@@ -24,6 +24,8 @@ export interface IntegratedAssessment {
   topSubjects: string[]
   agreedCategories: string[]
   confidence: ConfidenceLevel
+  mbtiType: string | null
+  mbtiCategories: string[]
   timestamp: number
 }
 
@@ -33,3 +35,11 @@ export interface HollandResult {
   scores: Record<HollandDimension, number>
   code: string
 }
+
+export interface MbtiMapping {
+  name: string
+  categories: string[]
+  description: string
+}
+
+export type MbtiMappingRecord = Record<string, MbtiMapping>
