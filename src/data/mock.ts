@@ -34,43 +34,51 @@ export interface College {
   city: string
   level: string[]
   type: string
+  nature?: string
+  affiliation?: string
+  website?: string
+  gaokaoUrl?: string
+  admissionUrl?: string
+  tags?: string[]
 }
 
 export const colleges: College[] = [
-  { id: '1001', name: '清华大学', province: '北京', city: '北京', level: ['985', '211', '双一流'], type: '综合' },
-  { id: '1002', name: '北京大学', province: '北京', city: '北京', level: ['985', '211', '双一流'], type: '综合' },
-  { id: '1003', name: '浙江大学', province: '浙江', city: '杭州', level: ['985', '211', '双一流'], type: '综合' },
-  { id: '1004', name: '复旦大学', province: '上海', city: '上海', level: ['985', '211', '双一流'], type: '综合' },
-  { id: '1005', name: '南京大学', province: '江苏', city: '南京', level: ['985', '211', '双一流'], type: '综合' },
-  { id: '1006', name: '上海交通大学', province: '上海', city: '上海', level: ['985', '211', '双一流'], type: '理工' },
-  { id: '1007', name: '中国科学技术大学', province: '安徽', city: '合肥', level: ['985', '211', '双一流'], type: '理工' },
-  { id: '1008', name: '华中科技大学', province: '湖北', city: '武汉', level: ['985', '211', '双一流'], type: '理工' },
-  { id: '1009', name: '武汉大学', province: '湖北', city: '武汉', level: ['985', '211', '双一流'], type: '综合' },
-  { id: '1010', name: '西安交通大学', province: '陕西', city: '西安', level: ['985', '211', '双一流'], type: '理工' },
-  { id: '1011', name: '中山大学', province: '广东', city: '广州', level: ['985', '211', '双一流'], type: '综合' },
-  { id: '1012', name: '四川大学', province: '四川', city: '成都', level: ['985', '211', '双一流'], type: '综合' },
-  { id: '1013', name: '哈尔滨工业大学', province: '黑龙江', city: '哈尔滨', level: ['985', '211', '双一流'], type: '理工' },
-  { id: '1014', name: '北京航空航天大学', province: '北京', city: '北京', level: ['985', '211', '双一流'], type: '理工' },
-  { id: '1015', name: '同济大学', province: '上海', city: '上海', level: ['985', '211', '双一流'], type: '理工' },
-  { id: '1016', name: '东南大学', province: '江苏', city: '南京', level: ['985', '211', '双一流'], type: '理工' },
-  { id: '1017', name: '中国人民大学', province: '北京', city: '北京', level: ['985', '211', '双一流'], type: '综合' },
-  { id: '1018', name: '北京师范大学', province: '北京', city: '北京', level: ['985', '211', '双一流'], type: '师范' },
-  { id: '1019', name: '南开大学', province: '天津', city: '天津', level: ['985', '211', '双一流'], type: '综合' },
-  { id: '1020', name: '天津大学', province: '天津', city: '天津', level: ['985', '211', '双一流'], type: '理工' },
-  { id: '1021', name: '北京理工大学', province: '北京', city: '北京', level: ['985', '211', '双一流'], type: '理工' },
-  { id: '1022', name: '厦门大学', province: '福建', city: '厦门', level: ['985', '211', '双一流'], type: '综合' },
-  { id: '1023', name: '华南理工大学', province: '广东', city: '广州', level: ['985', '211', '双一流'], type: '理工' },
-  { id: '1024', name: '电子科技大学', province: '四川', city: '成都', level: ['985', '211', '双一流'], type: '理工' },
-  { id: '1025', name: '西北工业大学', province: '陕西', city: '西安', level: ['985', '211', '双一流'], type: '理工' },
+  { id: '1001', name: '清华大学', province: '北京', city: '北京', level: ['本科'], type: '综合', tags: ['985', '211', '双一流'], website: 'https://www.tsinghua.edu.cn' },
+  { id: '1002', name: '北京大学', province: '北京', city: '北京', level: ['本科'], type: '综合', tags: ['985', '211', '双一流'], website: 'https://www.pku.edu.cn' },
+  { id: '1003', name: '浙江大学', province: '浙江', city: '杭州', level: ['本科'], type: '综合', tags: ['985', '211', '双一流'], website: 'https://www.zju.edu.cn' },
+  { id: '1004', name: '复旦大学', province: '上海', city: '上海', level: ['本科'], type: '综合', tags: ['985', '211', '双一流'], website: 'https://www.fudan.edu.cn' },
+  { id: '1005', name: '南京大学', province: '江苏', city: '南京', level: ['本科'], type: '综合', tags: ['985', '211', '双一流'], website: 'https://www.nju.edu.cn' },
+  { id: '1006', name: '上海交通大学', province: '上海', city: '上海', level: ['本科'], type: '理工', tags: ['985', '211', '双一流'], website: 'https://www.sjtu.edu.cn' },
+  { id: '1007', name: '中国科学技术大学', province: '安徽', city: '合肥', level: ['本科'], type: '理工', tags: ['985', '211', '双一流'], website: 'https://www.ustc.edu.cn' },
+  { id: '1008', name: '华中科技大学', province: '湖北', city: '武汉', level: ['本科'], type: '理工', tags: ['985', '211', '双一流'], website: 'https://www.hust.edu.cn' },
+  { id: '1009', name: '武汉大学', province: '湖北', city: '武汉', level: ['本科'], type: '综合', tags: ['985', '211', '双一流'], website: 'https://www.whu.edu.cn' },
+  { id: '1010', name: '西安交通大学', province: '陕西', city: '西安', level: ['本科'], type: '理工', tags: ['985', '211', '双一流'], website: 'https://www.xjtu.edu.cn' },
+  { id: '1011', name: '中山大学', province: '广东', city: '广州', level: ['本科'], type: '综合', tags: ['985', '211', '双一流'], website: 'https://www.sysu.edu.cn' },
+  { id: '1012', name: '四川大学', province: '四川', city: '成都', level: ['本科'], type: '综合', tags: ['985', '211', '双一流'], website: 'https://www.scu.edu.cn' },
+  { id: '1013', name: '哈尔滨工业大学', province: '黑龙江', city: '哈尔滨', level: ['本科'], type: '理工', tags: ['985', '211', '双一流'], website: 'https://www.hit.edu.cn' },
+  { id: '1014', name: '北京航空航天大学', province: '北京', city: '北京', level: ['本科'], type: '理工', tags: ['985', '211', '双一流'], website: 'https://www.buaa.edu.cn' },
+  { id: '1015', name: '同济大学', province: '上海', city: '上海', level: ['本科'], type: '理工', tags: ['985', '211', '双一流'], website: 'https://www.tongji.edu.cn' },
+  { id: '1016', name: '东南大学', province: '江苏', city: '南京', level: ['本科'], type: '理工', tags: ['985', '211', '双一流'], website: 'https://www.seu.edu.cn' },
+  { id: '1017', name: '中国人民大学', province: '北京', city: '北京', level: ['本科'], type: '综合', tags: ['985', '211', '双一流'], website: 'https://www.ruc.edu.cn' },
+  { id: '1018', name: '北京师范大学', province: '北京', city: '北京', level: ['本科'], type: '师范', tags: ['985', '211', '双一流'], website: 'https://www.bnu.edu.cn' },
+  { id: '1019', name: '南开大学', province: '天津', city: '天津', level: ['本科'], type: '综合', tags: ['985', '211', '双一流'], website: 'https://www.nankai.edu.cn' },
+  { id: '1020', name: '天津大学', province: '天津', city: '天津', level: ['本科'], type: '理工', tags: ['985', '211', '双一流'], website: 'https://www.tju.edu.cn' },
+  { id: '1021', name: '北京理工大学', province: '北京', city: '北京', level: ['本科'], type: '理工', tags: ['985', '211', '双一流'], website: 'https://www.bit.edu.cn' },
+  { id: '1022', name: '厦门大学', province: '福建', city: '厦门', level: ['本科'], type: '综合', tags: ['985', '211', '双一流'], website: 'https://www.xmu.edu.cn' },
+  { id: '1023', name: '华南理工大学', province: '广东', city: '广州', level: ['本科'], type: '理工', tags: ['985', '211', '双一流'], website: 'https://www.scut.edu.cn' },
+  { id: '1024', name: '电子科技大学', province: '四川', city: '成都', level: ['本科'], type: '理工', tags: ['985', '211', '双一流'], website: 'https://www.uestc.edu.cn' },
+  { id: '1025', name: '西北工业大学', province: '陕西', city: '西安', level: ['本科'], type: '理工', tags: ['985', '211', '双一流'], website: 'https://www.nwpu.edu.cn' },
 ]
 
 export interface Major {
   id: string
   name: string
   category: string
-  duration: number
-  subjects: string[]
-  tuition: number
+  discipline?: string
+  duration?: number
+  degreeType?: string
+  subjects?: string[]
+  tuition?: number
   colorBlind?: boolean
 }
 
@@ -98,10 +106,16 @@ export const majors: Major[] = [
 export interface ScoreRecord {
   collegeId: string
   majorId: string
+  collegeName?: string
+  majorName?: string
   year: number
+  province?: string
+  batch?: string
+  category?: string
   minScore: number
-  avgScore: number
+  avgScore?: number
   minRank: number
+  planCount?: number
 }
 
 function generateScores(): ScoreRecord[] {
@@ -119,13 +133,16 @@ function generateScores(): ScoreRecord[] {
       const majorRankOffset = parseInt(m.id.slice(-3), 10) * 30
       for (let year = 2022; year <= 2025; year++) {
         const fluctuation = Math.floor(Math.random() * 200) - 100
+        const rank = base + majorRankOffset + fluctuation
         records.push({
           collegeId: c.id,
           majorId: m.id,
+          collegeName: c.name,
+          majorName: m.name,
           year,
-          minScore: 750 - Math.floor((base + majorRankOffset + fluctuation) / 100),
-          avgScore: 755 - Math.floor((base + majorRankOffset + fluctuation) / 100),
-          minRank: base + majorRankOffset + fluctuation,
+          minScore: 750 - Math.floor(rank / 100),
+          avgScore: 755 - Math.floor(rank / 100),
+          minRank: rank,
         })
       }
     })
@@ -171,6 +188,24 @@ export const hollandQuestions = [
   { id: 10, text: '我有较强的说服力和影响力', dimension: 'E' },
   { id: 11, text: '我喜欢按规则整理资料和数据', dimension: 'C' },
   { id: 12, text: '我做事细心、注重细节', dimension: 'C' },
+]
+
+export const subjectQuestions = [
+  { id: 1, text: '我喜欢用数学方法解决实际问题', dimension: 'math', type: 'subject' as const },
+  { id: 2, text: '我对机械设备的运作原理感到好奇', dimension: 'physics', type: 'subject' as const },
+  { id: 3, text: '我喜欢做化学实验，观察物质反应', dimension: 'chemistry', type: 'subject' as const },
+  { id: 4, text: '我对生命的奥秘和生物体结构感兴趣', dimension: 'biology', type: 'subject' as const },
+  { id: 5, text: '我喜欢阅读文学作品或进行写作', dimension: 'chinese', type: 'subject' as const },
+  { id: 6, text: '我对历史事件和文明演变感兴趣', dimension: 'history', type: 'subject' as const },
+  { id: 7, text: '我喜欢研究地理环境与气候现象', dimension: 'geography', type: 'subject' as const },
+  { id: 8, text: '我关注社会问题和公共政策', dimension: 'politics', type: 'subject' as const },
+  { id: 9, text: '我喜欢学习外语和跨文化交流', dimension: 'foreign_lang', type: 'subject' as const },
+  { id: 10, text: '我对音乐、绘画或设计有浓厚兴趣', dimension: 'art', type: 'subject' as const },
+  { id: 11, text: '我喜欢编程或探索计算机技术', dimension: 'computer', type: 'subject' as const },
+  { id: 12, text: '我对商业运作和经济规律感兴趣', dimension: 'economics', type: 'subject' as const },
+  { id: 13, text: '我更倾向于学习理论知识而非动手实践', dimension: 'theory_practice', type: 'behavior' as const },
+  { id: 14, text: '我更喜欢独立完成工作而非团队协作', dimension: 'individual_team', type: 'behavior' as const },
+  { id: 15, text: '我更喜欢自由创造而非按规范执行', dimension: 'creative_structured', type: 'behavior' as const },
 ]
 
 export const chatSuggestions = [
