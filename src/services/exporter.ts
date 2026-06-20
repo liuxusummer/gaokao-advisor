@@ -14,3 +14,19 @@ export function buildFileName(extension: string): string {
   const time = `${pad(now.getHours())}${pad(now.getMinutes())}`
   return `志愿表_${date}_${time}.${extension}`
 }
+
+/** 构建行数据数组（用于 Excel），顺序与表头一致 */
+export function buildRows(volunteerList: VolunteerItem[]): Record<string, string | number>[] {
+  return volunteerList.map((item, index) => ({
+    '志愿序号': index + 1,
+    '院校名称': item.college.name,
+    '专业名称': item.major.name,
+    '梯度': tierText[item.tier],
+    '录取概率': `${item.probability}%`,
+    '选科要求': item.major.subjects && item.major.subjects.length > 0
+      ? item.major.subjects.join('+')
+      : '-',
+    '学费(元/年)': item.major.tuition ?? '-',
+    '服从调剂': item.obeyAdjust === false ? '否' : '是',
+  }))
+}
