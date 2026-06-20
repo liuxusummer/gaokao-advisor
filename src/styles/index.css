@@ -120,6 +120,71 @@
   .dark .ant-pagination-item-active a {
     color: var(--color-primary);
   }
+
+  /* Dark mode cards, inputs and buttons */
+  .dark .ant-card {
+    background: var(--bg-card);
+    border-color: var(--border-color);
+  }
+
+  .dark .ant-card-head {
+    border-bottom-color: var(--border-color);
+  }
+
+  .dark .ant-card-head-title {
+    color: var(--text-primary);
+  }
+
+  .dark .ant-card-body {
+    color: var(--text-body);
+  }
+
+  .dark .ant-input,
+  .dark .ant-input-affix-wrapper,
+  .dark .ant-input-password {
+    background: var(--bg-page);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+  }
+
+  .dark .ant-input::placeholder,
+  .dark .ant-input-affix-wrapper input::placeholder {
+    color: var(--text-placeholder);
+  }
+
+  .dark .ant-btn-default {
+    background: var(--bg-card);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+  }
+
+  .dark .ant-btn-default:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  .dark .ant-select-selector {
+    background: var(--bg-page) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+  }
+
+  .dark .ant-select-arrow {
+    color: var(--text-secondary);
+  }
+
+  .dark .ant-select-dropdown {
+    background: var(--bg-card);
+  }
+
+  .dark .ant-select-item {
+    color: var(--text-body);
+  }
+
+  .dark .ant-select-item-option-active,
+  .dark .ant-select-item-option-selected {
+    background: var(--bg-hover);
+  }
 }
 
 /* Custom scrollbar */
@@ -139,4 +204,38 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-placeholder);
+}
+
+/* 志愿表导出打印样式 */
+@media print {
+  body.printing-export > *:not(#print-container) {
+    display: none !important;
+  }
+  #print-container {
+    display: block !important;
+    padding: 20px;
+  }
+  #print-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  #print-container th,
+  #print-container td {
+    border: 1px solid #333;
+    padding: 6px 10px;
+    text-align: left;
+    font-size: 12px;
+  }
+  #print-container th {
+    background: #f0f0f0;
+  }
+  #print-container h1 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  #print-container .info {
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #666;
+  }
 }
