@@ -109,3 +109,15 @@ export function exportToExcel(volunteerList: VolunteerItem[], profile: UserProfi
   XLSX.utils.book_append_sheet(wb, ws, '志愿表')
   XLSX.writeFile(wb, buildFileName('xlsx'))
 }
+
+/** 复制志愿表到剪贴板（TSV 格式），返回是否成功 */
+export async function copyToClipboard(volunteerList: VolunteerItem[], profile: UserProfile): Promise<boolean> {
+  if (volunteerList.length === 0) return false
+  try {
+    const tsv = buildTsv(volunteerList, profile)
+    await navigator.clipboard.writeText(tsv)
+    return true
+  } catch {
+    return false
+  }
+}

@@ -1,5 +1,5 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { buildFileName, buildRows, buildTsv, buildPrintHtml, exportToExcel } from './exporter'
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
+import { buildFileName, buildRows, buildTsv, buildPrintHtml, exportToExcel, copyToClipboard } from './exporter'
 import type { VolunteerItem, UserProfile } from '../store'
 import type { College, Major } from '../data/mock'
 
@@ -199,5 +199,37 @@ describe('exportToExcel', () => {
     expect(arg[4]).toEqual(['志愿序号', '院校名称', '专业名称', '梯度', '录取概率', '选科要求', '学费(元/年)', '服从调剂'])
     // 第 6 行起：数据
     expect(arg[5][1]).toBe('浙江大学')
+  })
+})
+
+describe('copyToClipboard', () => {
+  beforeEach(() => {
+    vi.stubGlobal('navigator', {
+      clipboard: { writeText: vi.fn().mockResolvedValue(undefined) },
+    })
+  })
+
+  afterEach(() => {
+    vi.unstubAllGlobals()
+  })
+
+  it('空列表返回 false', async () => {
+    const ok = await copyToClipboard([], mockProfile)
+    expect(ok).toBe(false)
+  })
+
+  it('成功复制返回 true 并调用 clipboard.writeText', async () => {
+    const ok = await copyToClipboard([mockItem], mockProfile)
+    expect(ok).toBe(true)
+    expect(navigator.clipboard.writeText).toHaveBeenCalled()
+    const text = (navigator.clipboard.writeText as ReturnType<typeof vi.fn>).mock.calls[0][0]
+    expect(text).toContain('浙江大学')
+    expect(text).toContain('志愿序号')
+  })
+
+  it('clipboard 不可用时返回 false', async () => {
+    vi.stubGlobal('navigator', { clipboard: { writeText: vi.fn().mockRejectedValue(new Error('denied')) } })
+    const ok = await copyToClipboard([mockItem], mockProfile)
+    expect(ok).toBe(false)
   })
 })
