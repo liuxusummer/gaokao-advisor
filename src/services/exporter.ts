@@ -30,3 +30,28 @@ export function buildRows(volunteerList: VolunteerItem[]): Record<string, string
     '服从调剂': item.obeyAdjust === false ? '否' : '是',
   }))
 }
+
+/** 构建 TSV 字符串（用于剪贴板），Tab 分隔，Excel 可直接粘贴 */
+export function buildTsv(volunteerList: VolunteerItem[], profile: UserProfile): string {
+  const headers = ['志愿序号', '院校名称', '专业名称', '梯度', '录取概率', '选科要求', '学费(元/年)', '服从调剂']
+  const lines = [
+    `# 志愿表 - ${profile.provinceName || '未填写'} ${profile.score ?? '未填写'}分 位次${profile.rank ?? '未填写'}`,
+    `# 导出时间：${new Date().toLocaleString('zh-CN')}`,
+    headers.join('\t'),
+  ]
+  for (const [i, item] of volunteerList.entries()) {
+    lines.push([
+      i + 1,
+      item.college.name,
+      item.major.name,
+      tierText[item.tier],
+      `${item.probability}%`,
+      item.major.subjects && item.major.subjects.length > 0
+        ? item.major.subjects.join('+')
+        : '-',
+      item.major.tuition ?? '-',
+      item.obeyAdjust === false ? '否' : '是',
+    ].join('\t'))
+  }
+  return lines.join('\n')
+}

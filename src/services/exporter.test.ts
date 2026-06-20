@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
-import { buildFileName, buildRows } from './exporter'
-import type { VolunteerItem } from '../store'
+import { buildFileName, buildRows, buildTsv } from './exporter'
+import type { VolunteerItem, UserProfile } from '../store'
 import type { College, Major } from '../data/mock'
 
 const mockCollege: College = {
@@ -17,6 +17,13 @@ const mockMajor: Major = {
 const mockItem: VolunteerItem = {
   id: 'c1-m1-1', college: mockCollege, major: mockMajor,
   tier: 'stable', probability: 75, minRank: 5000, obeyAdjust: true,
+}
+
+const mockProfile: UserProfile = {
+  provinceId: 'zhejiang', provinceName: '浙江', subjectType: 'physics',
+  subjects: ['物理', '化学', '生物'], score: 650, rank: 10000,
+  regions: [], levels: [], categories: [], maxTuition: null,
+  physicalExam: 'normal', riskPreference: 'balanced', mbtiType: null,
 }
 
 describe('buildFileName', () => {
@@ -81,5 +88,37 @@ describe('buildRows', () => {
     ]
     const rows = buildRows(items)
     expect(rows.map((r) => r['志愿序号'])).toEqual([1, 2, 3])
+  })
+})
+
+describe('buildTsv', () => {
+  it('生成含信息行、表头、数据行的 TSV 字符串', () => {
+    const tsv = buildTsv([mockItem], mockProfile)
+    const lines = tsv.split('\n')
+
+    // 信息行
+    expect(lines[0]).toContain('浙江')
+    expect(lines[0]).toContain('650')
+    expect(lines[0]).toContain('10000')
+    expect(lines[1]).toContain('导出时间')
+
+    // 表头
+    expect(lines[2]).toBe('志愿序号\t院校名称\t专业名称\t梯度\t录取概率\t选科要求\t学费(元/年)\t服从调剂')
+
+    // 数据行
+    expect(lines[3]).toBe('1\t浙江大学\t计算机科学与技术\t稳\t75%\t物理+化学\t6000\t是')
+  })
+
+  it('空列表仍生成信息行和表头', () => {
+    const tsv = buildTsv([], mockProfile)
+    const lines = tsv.split('\n')
+    expect(lines).toHaveLength(3) // 信息行 + 表头 + (无数据)
+    expect(lines[2]).toContain('志愿序号')
+  })
+
+  it('profile 字段为 null 时显示 "未填写"', () => {
+    const profile: UserProfile = { ...mockProfile, score: null, rank: null, provinceName: '' }
+    const tsv = buildTsv([mockItem], profile)
+    expect(tsv).toContain('未填写')
   })
 })
