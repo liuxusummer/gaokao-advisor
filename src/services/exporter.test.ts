@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { buildFileName, buildRows, buildTsv } from './exporter'
+import { buildFileName, buildRows, buildTsv, buildPrintHtml } from './exporter'
 import type { VolunteerItem, UserProfile } from '../store'
 import type { College, Major } from '../data/mock'
 
@@ -120,5 +120,39 @@ describe('buildTsv', () => {
     const profile: UserProfile = { ...mockProfile, score: null, rank: null, provinceName: '' }
     const tsv = buildTsv([mockItem], profile)
     expect(tsv).toContain('未填写')
+  })
+})
+
+describe('buildPrintHtml', () => {
+  it('生成含标题、信息、table 的 HTML 字符串', () => {
+    const html = buildPrintHtml([mockItem], mockProfile)
+    expect(html).toContain('<h1>志愿表</h1>')
+    expect(html).toContain('浙江')
+    expect(html).toContain('650')
+    expect(html).toContain('<table>')
+    expect(html).toContain('<th>志愿序号</th>')
+    expect(html).toContain('<th>院校名称</th>')
+    expect(html).toContain('<td>浙江大学</td>')
+    expect(html).toContain('<td>计算机科学与技术</td>')
+    expect(html).toContain('<td>稳</td>')
+    expect(html).toContain('</table>')
+  })
+
+  it('多个志愿生成多行 tr', () => {
+    const items: VolunteerItem[] = [
+      mockItem,
+      { ...mockItem, id: 'c2-m2-2', college: { ...mockCollege, name: '清华大学' } },
+    ]
+    const html = buildPrintHtml(items, mockProfile)
+    const trCount = (html.match(/<tr>/g) || []).length
+    // 1 表头 + 2 数据行 = 3
+    expect(trCount).toBe(3)
+    expect(html).toContain('清华大学')
+  })
+
+  it('profile 字段为 null 时显示 "未填写"', () => {
+    const profile: UserProfile = { ...mockProfile, score: null, rank: null }
+    const html = buildPrintHtml([mockItem], profile)
+    expect(html).toContain('未填写')
   })
 })

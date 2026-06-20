@@ -55,3 +55,33 @@ export function buildTsv(volunteerList: VolunteerItem[], profile: UserProfile): 
   }
   return lines.join('\n')
 }
+
+/** 构建打印用 HTML 字符串（用于 PDF 导出） */
+export function buildPrintHtml(volunteerList: VolunteerItem[], profile: UserProfile): string {
+  const info = `省份：${profile.provinceName || '未填写'}　成绩：${profile.score ?? '未填写'}　位次：${profile.rank ?? '未填写'}　导出时间：${new Date().toLocaleString('zh-CN')}`
+  const headers = ['志愿序号', '院校名称', '专业名称', '梯度', '录取概率', '选科要求', '学费(元/年)', '服从调剂']
+  const ths = headers.map((h) => `<th>${h}</th>`).join('')
+  const trs = volunteerList.map((item, i) => {
+    const tds = [
+      i + 1,
+      item.college.name,
+      item.major.name,
+      tierText[item.tier],
+      `${item.probability}%`,
+      item.major.subjects && item.major.subjects.length > 0
+        ? item.major.subjects.join('+')
+        : '-',
+      item.major.tuition ?? '-',
+      item.obeyAdjust === false ? '否' : '是',
+    ].map((v) => `<td>${v}</td>`).join('')
+    return `<tr>${tds}</tr>`
+  }).join('')
+  return `
+    <h1>志愿表</h1>
+    <div class="info">${info}</div>
+    <table>
+      <thead><tr>${ths}</tr></thead>
+      <tbody>${trs}</tbody>
+    </table>
+  `
+}
