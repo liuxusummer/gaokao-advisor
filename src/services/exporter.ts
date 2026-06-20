@@ -121,3 +121,24 @@ export async function copyToClipboard(volunteerList: VolunteerItem[], profile: U
     return false
   }
 }
+
+/** 导出志愿表为 PDF（通过浏览器打印对话框，用户选"另存为 PDF"） */
+export function exportToPdf(volunteerList: VolunteerItem[], profile: UserProfile): void {
+  if (volunteerList.length === 0) throw new Error('志愿表为空，无法导出')
+
+  const html = buildPrintHtml(volunteerList, profile)
+  const container = document.createElement('div')
+  container.id = 'print-container'
+  container.innerHTML = html
+  document.body.appendChild(container)
+  document.body.classList.add('printing-export')
+
+  const cleanup = () => {
+    document.body.removeChild(container)
+    document.body.classList.remove('printing-export')
+    window.removeEventListener('afterprint', cleanup)
+  }
+  window.addEventListener('afterprint', cleanup)
+
+  window.print()
+}

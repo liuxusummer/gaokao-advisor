@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
-import { buildFileName, buildRows, buildTsv, buildPrintHtml, exportToExcel, copyToClipboard } from './exporter'
+import { buildFileName, buildRows, buildTsv, buildPrintHtml, exportToExcel, copyToClipboard, exportToPdf } from './exporter'
 import type { VolunteerItem, UserProfile } from '../store'
 import type { College, Major } from '../data/mock'
 
@@ -231,5 +231,40 @@ describe('copyToClipboard', () => {
     vi.stubGlobal('navigator', { clipboard: { writeText: vi.fn().mockRejectedValue(new Error('denied')) } })
     const ok = await copyToClipboard([mockItem], mockProfile)
     expect(ok).toBe(false)
+  })
+})
+
+describe('exportToPdf', () => {
+  beforeEach(() => {
+    vi.stubGlobal('window', {
+      print: vi.fn(),
+      addEventListener: vi.fn(),
+      removeEventListener: vi.fn(),
+    })
+    vi.stubGlobal('document', {
+      createElement: vi.fn(() => ({ id: '', innerHTML: '' })),
+      body: {
+        appendChild: vi.fn(),
+        removeChild: vi.fn(),
+        classList: { add: vi.fn(), remove: vi.fn() },
+      },
+    })
+  })
+
+  afterEach(() => {
+    vi.unstubAllGlobals()
+  })
+
+  it('空列表抛错', () => {
+    expect(() => exportToPdf([], mockProfile)).toThrow('志愿表为空')
+  })
+
+  it('创建打印容器并调用 window.print', () => {
+    exportToPdf([mockItem], mockProfile)
+    expect(document.createElement).toHaveBeenCalledWith('div')
+    expect(document.body.appendChild).toHaveBeenCalled()
+    expect(document.body.classList.add).toHaveBeenCalledWith('printing-export')
+    expect(window.print).toHaveBeenCalled()
+    expect(window.addEventListener).toHaveBeenCalledWith('afterprint', expect.any(Function))
   })
 })
