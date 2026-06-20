@@ -1,7 +1,18 @@
-import { describe, it, expect } from 'vitest'
-import { buildFileName, buildRows, buildTsv, buildPrintHtml } from './exporter'
+import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { buildFileName, buildRows, buildTsv, buildPrintHtml, exportToExcel } from './exporter'
 import type { VolunteerItem, UserProfile } from '../store'
 import type { College, Major } from '../data/mock'
+
+vi.mock('xlsx', () => ({
+  utils: {
+    aoa_to_sheet: vi.fn(() => ({ '!cols': [] })),
+    book_new: vi.fn(() => ({})),
+    book_append_sheet: vi.fn(),
+  },
+  writeFile: vi.fn(),
+}))
+
+import * as XLSX from 'xlsx'
 
 const mockCollege: College = {
   id: 'c1', name: '浙江大学', province: '浙江省', city: '杭州市',
@@ -154,5 +165,39 @@ describe('buildPrintHtml', () => {
     const profile: UserProfile = { ...mockProfile, score: null, rank: null }
     const html = buildPrintHtml([mockItem], profile)
     expect(html).toContain('未填写')
+  })
+})
+
+describe('exportToExcel', () => {
+  beforeEach(() => {
+    vi.clearAllMocks()
+  })
+
+  it('空列表抛错', () => {
+    expect(() => exportToExcel([], mockProfile)).toThrow('志愿表为空')
+  })
+
+  it('调用 xlsx 生成文件', () => {
+    exportToExcel([mockItem], mockProfile)
+    expect(XLSX.utils.aoa_to_sheet).toHaveBeenCalled()
+    expect(XLSX.utils.book_new).toHaveBeenCalled()
+    expect(XLSX.utils.book_append_sheet).toHaveBeenCalled()
+    expect(XLSX.writeFile).toHaveBeenCalled()
+    const fileName = (XLSX.writeFile as ReturnType<typeof vi.fn>).mock.calls[0][1]
+    expect(fileName).toMatch(/^志愿表_\d{4}-\d{2}-\d{2}_\d{4}\.xlsx$/)
+  })
+
+  it('aoa_to_sheet 入参包含信息行和表头', () => {
+    exportToExcel([mockItem], mockProfile)
+    const arg = (XLSX.utils.aoa_to_sheet as ReturnType<typeof vi.fn>).mock.calls[0][0]
+    // 前 4 行：信息行 x3 + 空行
+    expect(arg[0][0]).toContain('浙江')
+    expect(arg[1][0]).toContain('650')
+    expect(arg[2][0]).toContain('导出时间')
+    expect(arg[3]).toEqual([])
+    // 第 5 行：表头
+    expect(arg[4]).toEqual(['志愿序号', '院校名称', '专业名称', '梯度', '录取概率', '选科要求', '学费(元/年)', '服从调剂'])
+    // 第 6 行起：数据
+    expect(arg[5][1]).toBe('浙江大学')
   })
 })

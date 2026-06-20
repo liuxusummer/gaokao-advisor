@@ -1,4 +1,5 @@
 import type { VolunteerItem, UserProfile } from '../store'
+import * as XLSX from 'xlsx'
 
 const tierText: Record<VolunteerItem['tier'], string> = {
   rush: '冲',
@@ -84,4 +85,27 @@ export function buildPrintHtml(volunteerList: VolunteerItem[], profile: UserProf
       <tbody>${trs}</tbody>
     </table>
   `
+}
+
+/** 导出志愿表为 Excel (.xlsx) 文件，自动下载 */
+export function exportToExcel(volunteerList: VolunteerItem[], profile: UserProfile): void {
+  if (volunteerList.length === 0) throw new Error('志愿表为空，无法导出')
+
+  const ws = XLSX.utils.aoa_to_sheet([
+    [`省份：${profile.provinceName || '未填写'}`],
+    [`成绩：${profile.score ?? '未填写'}  位次：${profile.rank ?? '未填写'}`],
+    [`导出时间：${new Date().toLocaleString('zh-CN')}`],
+    [],
+    ['志愿序号', '院校名称', '专业名称', '梯度', '录取概率', '选科要求', '学费(元/年)', '服从调剂'],
+    ...buildRows(volunteerList).map((r) => Object.values(r)),
+  ])
+
+  ws['!cols'] = [
+    { wch: 8 }, { wch: 24 }, { wch: 28 }, { wch: 6 },
+    { wch: 10 }, { wch: 16 }, { wch: 12 }, { wch: 10 },
+  ]
+
+  const wb = XLSX.utils.book_new()
+  XLSX.utils.book_append_sheet(wb, ws, '志愿表')
+  XLSX.writeFile(wb, buildFileName('xlsx'))
 }
