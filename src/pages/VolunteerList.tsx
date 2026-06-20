@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Button, Empty, Switch, Tag, message, Modal } from 'antd'
+import { Button, Empty, Switch, Tag, message, Modal, Dropdown } from 'antd'
 import {
   DeleteOutlined,
   UpOutlined,
@@ -10,9 +10,14 @@ import {
   CheckCircleOutlined,
   SafetyOutlined,
   ExportOutlined,
+  FileExcelOutlined,
+  FilePdfOutlined,
+  CopyOutlined,
 } from '@ant-design/icons'
 import { useAppStore } from '../store'
 import { detectRisks } from '../services/riskDetector'
+import { exportToExcel, exportToPdf, copyToClipboard } from '../services/exporter'
+import CollegeNameLink from '../components/CollegeNameLink'
 
 const tierLabels = {
   rush: { text: '冲', color: 'text-tier-rush', bg: 'bg-tier-rush/10' },
@@ -22,12 +27,12 @@ const tierLabels = {
 
 export default function VolunteerList() {
   const navigate = useNavigate()
-  const { profile, volunteerList, removeVolunteer, moveVolunteer, updateVolunteer, setRiskReport, riskReport, clearVolunteerList } = useAppStore()
+  const { profile, volunteerList, removeVolunteer, moveVolunteer, updateVolunteer, setRiskReport, riskReport, clearVolunteerList, dataCache } = useAppStore()
 
   useEffect(() => {
-    const risks = detectRisks(volunteerList, profile)
+    const risks = detectRisks(volunteerList, profile, dataCache?.subjectRequirements)
     setRiskReport(risks)
-  }, [volunteerList, profile, setRiskReport])
+  }, [volunteerList, profile, setRiskReport, dataCache?.subjectRequirements])
 
   const highCount = riskReport.filter((r) => r.level === 'high').length
   const mediumCount = riskReport.filter((r) => r.level === 'medium').length
@@ -46,6 +51,36 @@ export default function VolunteerList() {
     }
   }
 
+  const handleExport = async ({ key }: { key: string }) => {
+    if (volunteerList.length === 0) {
+      message.warning('志愿表为空')
+      return
+    }
+    try {
+      if (key === 'excel') {
+        exportToExcel(volunteerList, profile)
+        message.success('Excel 已下载')
+      } else if (key === 'pdf') {
+        exportToPdf(volunteerList, profile)
+      } else if (key === 'copy') {
+        const ok = await copyToClipboard(volunteerList, profile)
+        if (ok) message.success('已复制到剪贴板')
+        else message.error('复制失败，请检查浏览器权限')
+      }
+    } catch (err) {
+      message.error('导出失败：' + (err instanceof Error ? err.message : '未知错误'))
+    }
+  }
+
+  const exportMenu = {
+    items: [
+      { key: 'excel', label: '导出 Excel', icon: <FileExcelOutlined /> },
+      { key: 'pdf', label: '导出 PDF', icon: <FilePdfOutlined /> },
+      { key: 'copy', label: '复制到剪贴板', icon: <CopyOutlined /> },
+    ],
+    onClick: handleExport,
+  }
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-6 md:py-8">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-5">
@@ -54,7 +89,9 @@ export default function VolunteerList() {
           <p className="text-sm text-text-secondary mt-1">已添加 {volunteerList.length} 个志愿</p>
         </div>
         <div className="flex gap-2">
-          <Button icon={<ExportOutlined />} onClick={() => message.info('导出功能演示')}>导出</Button>
+          <Dropdown.Button menu={exportMenu} icon={<ExportOutlined />}>
+            导出
+          </Dropdown.Button>
           <Button type="primary" icon={<SafetyOutlined />} onClick={() => navigate('/risk')} className="bg-primary border-0">
             风险报告
           </Button>
@@ -113,7 +150,7 @@ export default function VolunteerList() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
                         <span className="text-sm text-text-secondary font-mono">{index + 1}</span>
-                        <h3 className="font-bold text-text-primary text-base">{item.college.name}</h3>
+                        <CollegeNameLink college={item.college} className="text-base" />
                         <span className="text-text-secondary">·</span>
                         <span className="font-semibold text-text-primary">{item.major.name}</span>
                         <span className={`px-2 py-0.5 rounded-full text-xs font-bold ${tier.bg} ${tier.color}`}>
@@ -121,13 +158,13 @@ export default function VolunteerList() {
                         </span>
                       </div>
                       <div className="flex flex-wrap items-center gap-2 mt-2">
-                        {item.college.level.map((l) => (
+                        {item.college.tags?.map((l) => (
                           <Tag key={l} color={l === '985' ? 'success' : l === '211' ? 'blue' : 'default'} className="m-0">
                             {l}
                           </Tag>
                         ))}
                         <span className="text-xs text-text-secondary">{item.college.province}{item.college.city}</span>
-                        <span className="text-xs text-text-secondary">学费 {item.major.tuition}/年</span>
+                        {item.major.tuition && <span className="text-xs text-text-secondary">学费 {item.major.tuition}/年</span>}
                       </div>
                       {itemRisks.length > 0 && (
                         <div className="mt-2 space-y-1">
