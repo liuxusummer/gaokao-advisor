@@ -59,7 +59,7 @@ export function buildTsv(volunteerList: VolunteerItem[], profile: UserProfile): 
 
 /** 构建打印用 HTML 字符串（用于 PDF 导出） */
 export function buildPrintHtml(volunteerList: VolunteerItem[], profile: UserProfile): string {
-  const info = `省份：${profile.provinceName || '未填写'}　成绩：${profile.score ?? '未填写'}　位次：${profile.rank ?? '未填写'}　导出时间：${new Date().toLocaleString('zh-CN')}`
+  const info = `省份：${profile.provinceName || '未填写'}  成绩：${profile.score ?? '未填写'}  位次：${profile.rank ?? '未填写'}  导出时间：${new Date().toLocaleString('zh-CN')}`
   const headers = ['志愿序号', '院校名称', '专业名称', '梯度', '录取概率', '选科要求', '学费(元/年)', '服从调剂']
   const ths = headers.map((h) => `<th>${h}</th>`).join('')
   const trs = volunteerList.map((item, i) => {
