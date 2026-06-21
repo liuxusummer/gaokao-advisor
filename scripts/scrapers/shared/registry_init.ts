@@ -1,10 +1,13 @@
 import { registerProvince } from './province_registry'
 import { zhejiangScoreScraper } from '../scores/adapters/zhejiang'
 import { jiangsuScoreScraper } from '../scores/adapters/jiangsu'
+import { shandongScoreScraper } from '../scores/adapters/shandong'
 import { zhejiangSubjectScraper } from '../subjects/adapters/zhejiang'
 import { jiangsuSubjectScraper } from '../subjects/adapters/jiangsu'
+import { shandongSubjectScraper } from '../subjects/adapters/shandong'
 import { zhejiangRankTableScraper } from '../rank_tables/adapters/zhejiang'
 import { jiangsuRankTableScraper } from '../rank_tables/adapters/jiangsu'
+import { shandongRankTableScraper } from '../rank_tables/adapters/shandong'
 
 let initialized = false
 
@@ -40,6 +43,21 @@ export function ensureRegistryInitialized(): void {
     scoreScraper: jiangsuScoreScraper,
     subjectScraper: jiangsuSubjectScraper,
     rankTableScraper: jiangsuRankTableScraper,
+  })
+
+  // 山东（3+3，专业+院校，综合）
+  registerProvince({
+    meta: {
+      name: '山东',
+      pinyinId: 'shandong',
+      examMode: '3+3',
+      volunteerMode: 'major+college',
+      categories: ['综合'],
+      batchSize: '普通类常规批第1次',
+    },
+    scoreScraper: shandongScoreScraper,
+    subjectScraper: shandongSubjectScraper,
+    rankTableScraper: shandongRankTableScraper,
   })
 
   initialized = true
