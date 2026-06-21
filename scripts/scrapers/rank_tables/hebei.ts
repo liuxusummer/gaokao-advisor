@@ -25,42 +25,55 @@ export function parseHbTable(
     const trimmed = line.trim()
     if (!trimmed) continue
 
-    // 跳过表头行
-    if (/分数|人数|累计|score|count|cumulative/i.test(trimmed)) continue
+    // 跳过表头行和噪声行
+    if (/分数|人数|累计|score|count|cumulative|第.*页|共.*页|河北|普通|高考|统计|注:|本次|公布/i.test(trimmed)) continue
 
-    // 匹配 "分数 人数 累计人数" 格式
-    const match = trimmed.match(/^(\d+)\s+(\d+)\s+(\d+)/)
-    if (!match) continue
+    // 全角数字转半角，全角空格转半角
+    const normalized = trimmed
+      .replace(/[\u3000\uff00-\uffef]/g, (ch) => {
+        const code = ch.charCodeAt(0)
+        if (code >= 0xff10 && code <= 0xff19) return String.fromCharCode(code - 0xff10 + 0x30)
+        if (code === 0x3000) return ' '
+        return ch
+      })
+      .replace(/\s+/g, ' ')
+      .trim()
 
-    const score = parseInt(match[1], 10)
-    const count = parseInt(match[2], 10)
-    const cumulativeCount = parseInt(match[3], 10)
+    // 提取所有数字
+    const numbers = normalized.split(' ').filter((s) => /^\d+$/.test(s))
 
-    if (isNaN(score) || isNaN(count) || isNaN(cumulativeCount)) continue
-    if (score < 0 || score > 750) continue
-    if (count < 0 || cumulativeCount < 0) continue
+    // 每 3 个数字为一组 (score, count, cumulativeCount)
+    for (let i = 0; i + 2 < numbers.length; i += 3) {
+      const score = parseInt(numbers[i], 10)
+      const count = parseInt(numbers[i + 1], 10)
+      const cumulativeCount = parseInt(numbers[i + 2], 10)
 
-    // rank = 上一分数的累计人数 + 1（即该分数段的最高位次）
-    const rank = records.length > 0
-      ? records[records.length - 1].cumulativeCount + 1
-      : 1
+      if (isNaN(score) || isNaN(count) || isNaN(cumulativeCount)) continue
+      if (score < 0 || score > 750) continue
+      if (count < 0 || cumulativeCount < 0) continue
 
-    records.push({
-      province: '河北',
-      year,
-      category,
-      score,
-      rank,
-      count,
-      cumulativeCount,
-      _meta: {
-        source: 'gaokao',
-        sourceUrl,
-        fetchedAt: new Date().toISOString(),
-        scraperVersion: SCRAPER_VERSION,
-        verified: false,
-      },
-    })
+      // rank = 上一分数的累计人数 + 1（即该分数段的最高位次）
+      const rank = records.length > 0
+        ? records[records.length - 1].cumulativeCount + 1
+        : 1
+
+      records.push({
+        province: '河北',
+        year,
+        category,
+        score,
+        rank,
+        count,
+        cumulativeCount,
+        _meta: {
+          source: 'gaokao',
+          sourceUrl,
+          fetchedAt: new Date().toISOString(),
+          scraperVersion: SCRAPER_VERSION,
+          verified: false,
+        },
+      })
+    }
   }
 
   return records
