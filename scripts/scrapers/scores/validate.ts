@@ -1,3 +1,4 @@
+import { PROVINCES } from '../config'
 import type { ScoreRecord, ScoreValidationResult, TieBreakers } from '../types'
 
 export function validateScoreRecord(record: ScoreRecord): ScoreValidationResult {
@@ -34,17 +35,21 @@ export function validateScoreRecord(record: ScoreRecord): ScoreValidationResult 
     return { valid: false, reason: `year 不合理: ${record.year}` }
   }
 
-  // province 白名单
-  if (!['浙江', '江苏'].includes(record.province)) {
+  // province 白名单（31 省全量白名单）
+  if (!PROVINCES.includes(record.province)) {
     return { valid: false, reason: `province 不在白名单: ${record.province}` }
   }
 
-  // category 合法性
-  if (record.province === '浙江' && record.category !== '综合') {
-    return { valid: false, reason: `浙江 category 必须为 综合: ${record.category}` }
+  // category 合法性（按考试模式校验）
+  const COMPREHENSIVE_PROVINCES = ['浙江', '山东', '北京', '上海']
+  const PHYSICAL_HISTORY_PROVINCES = ['江苏', '河北', '辽宁', '湖北', '湖南', '广东']
+
+  if (COMPREHENSIVE_PROVINCES.includes(record.province) && record.category !== '综合') {
+    return { valid: false, reason: `${record.province} category 必须为 综合: ${record.category}` }
   }
-  if (record.province === '江苏' && !['物理类', '历史类'].includes(record.category)) {
-    return { valid: false, reason: `江苏 category 必须为 物理类/历史类: ${record.category}` }
+  if (PHYSICAL_HISTORY_PROVINCES.includes(record.province) &&
+      !['物理类', '历史类'].includes(record.category)) {
+    return { valid: false, reason: `${record.province} category 必须为 物理类/历史类: ${record.category}` }
   }
 
   // tieBreakers 可选校验
