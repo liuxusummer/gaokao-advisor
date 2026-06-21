@@ -29,8 +29,8 @@ export function parseHnTable(
     const cumulativeCount = Number(cells[2])
 
     if (isNaN(score) || isNaN(count) || isNaN(cumulativeCount)) return
-    if (score < 0 || score > 750) continue
-    if (count < 0 || cumulativeCount < 0) continue
+    if (score < 0 || score > 750) return
+    if (count < 0 || cumulativeCount < 0) return
 
     // rank = 上一分数的累计人数 + 1（即该分数段的最高位次）
     const rank = records.length > 0
