@@ -1,3 +1,4 @@
+import { PROVINCES } from '../config'
 import type {
   RankTableRecord,
   RankTableValidationResult,
@@ -13,6 +14,10 @@ export function validateRankRecord(record: RankTableRecord): RankTableValidation
     if (value === '' || value === undefined || value === null) {
       return { valid: false, reason: `必填字段 ${String(field)} 为空` }
     }
+  }
+
+  if (!PROVINCES.includes(record.province)) {
+    return { valid: false, reason: `province 不在白名单: ${record.province}` }
   }
 
   // score 范围校验：0-750

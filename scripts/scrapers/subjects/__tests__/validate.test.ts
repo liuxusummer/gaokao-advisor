@@ -31,7 +31,7 @@ describe('validateSubjectRecord', () => {
   })
 
   it('province 非白名单 → 失败', () => {
-    const result = validateSubjectRecord(makeRecord({ province: '上海' }))
+    const result = validateSubjectRecord(makeRecord({ province: '香港' }))
     expect(result.valid).toBe(false)
   })
 
