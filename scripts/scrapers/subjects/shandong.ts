@@ -27,6 +27,7 @@ export function parseSdSubjects(
     const majorName = cells[1] || cells[0]
     const subjectText = cells.find((c) => c.includes('选考') || c.includes('科目')) || ''
     if (!majorName) return
+    if (!subjectText) return
 
     const { type, subjects } = parseRequirement(subjectText)
 

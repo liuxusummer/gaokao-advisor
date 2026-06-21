@@ -37,13 +37,20 @@ export function parseSdTable(
     const cumulativeCount = Number(row[2])
 
     if (!score || isNaN(score)) continue
+    if (score < 0 || score > 750) continue
+    if (count < 0 || cumulativeCount < 0) continue
+
+    // rank = 上一分数的累计人数 + 1（即该分数段的最高位次）
+    const rank = records.length > 0
+      ? records[records.length - 1].cumulativeCount + 1
+      : 1
 
     records.push({
       province: '山东',
       year,
       category: '综合',
       score,
-      rank: cumulativeCount,
+      rank,
       count: count || 0,
       cumulativeCount: cumulativeCount || 0,
       _meta: { ...meta },
