@@ -5,6 +5,7 @@ import { SendOutlined, BookOutlined, ClearOutlined, UserOutlined, RobotOutlined,
 import { useAppStore } from '../store'
 import { chatSuggestions, mockChatReply } from '../data/mock'
 import { streamChat, ChatError } from '../services/chat'
+import MarkdownRenderer from '../components/MarkdownRenderer'
 
 export default function Chat() {
   const navigate = useNavigate()
@@ -138,7 +139,7 @@ export default function Chat() {
                 {msg.role === 'user' ? <UserOutlined /> : <RobotOutlined />}
                 <span>{msg.role === 'user' ? '你' : '智填助手'}</span>
               </div>
-              <p className="text-sm whitespace-pre-line">{msg.content}</p>
+              <MarkdownRenderer content={msg.content} />
             </div>
           </div>
         ))}
