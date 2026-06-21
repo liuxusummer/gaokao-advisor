@@ -58,7 +58,7 @@ export function parseGdTable(
         sourceUrl,
         fetchedAt: new Date().toISOString(),
         scraperVersion: SCRAPER_VERSION,
-        verified: true,
+        verified: false,
       },
     })
   }
