@@ -17,39 +17,16 @@
         "2024": 0,
         "2025": 0
       }
-    },
-    {
-      "name": "江苏",
-      "years": [
-        2023,
-        2024,
-        2025
-      ],
-      "scoreRecordCount": {
-        "2023": 3663,
-        "2024": 3968,
-        "2025": 4201
-      },
-      "rankTableRecordCount": {
-        "2023": 0,
-        "2024": 0,
-        "2025": 0
-      }
     }
   ],
-  "generatedAt": "2026-06-18T03:32:00.839Z",
+  "generatedAt": "2026-06-21T16:15:02.253Z",
   "scraperVersion": "1.0.0",
   "schemaVersion": "1.0.0",
   "sources": [
     {
-      "name": "浙江省教育考试院",
-      "url": "https://www.zjzs.net/",
-      "coverage": "专业级投档线 2023-2025"
-    },
-    {
-      "name": "江苏省教育考试院",
-      "url": "https://www.jseea.cn/",
-      "coverage": "院校专业组级投档线 2023-2025"
+      "name": "各省教育考试院",
+      "url": "",
+      "coverage": "投档线 2023-2025"
     }
   ]
 }
