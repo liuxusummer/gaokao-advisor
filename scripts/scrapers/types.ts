@@ -168,7 +168,7 @@ export interface RankTableRecord {
 }
 
 export interface RankTableRecordMeta {
-  source: 'zjzs' | 'jseea'
+  source: 'zjzs' | 'jseea' | 'gaokao'
   sourceUrl: string
   fetchedAt: string
   scraperVersion: string
@@ -277,7 +277,7 @@ export type RequirementType =
   | 'unknown'
 
 export interface SubjectMeta {
-  source: 'zjzs' | 'jseea'
+  source: 'zjzs' | 'jseea' | 'gaokao'
   sourceUrl: string
   fetchedAt: string
   scraperVersion: string
