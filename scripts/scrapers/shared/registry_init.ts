@@ -2,12 +2,15 @@ import { registerProvince } from './province_registry'
 import { zhejiangScoreScraper } from '../scores/adapters/zhejiang'
 import { jiangsuScoreScraper } from '../scores/adapters/jiangsu'
 import { shandongScoreScraper } from '../scores/adapters/shandong'
+import { hebeiScoreScraper } from '../scores/adapters/hebei'
 import { zhejiangSubjectScraper } from '../subjects/adapters/zhejiang'
 import { jiangsuSubjectScraper } from '../subjects/adapters/jiangsu'
 import { shandongSubjectScraper } from '../subjects/adapters/shandong'
+import { hebeiSubjectScraper } from '../subjects/adapters/hebei'
 import { zhejiangRankTableScraper } from '../rank_tables/adapters/zhejiang'
 import { jiangsuRankTableScraper } from '../rank_tables/adapters/jiangsu'
 import { shandongRankTableScraper } from '../rank_tables/adapters/shandong'
+import { hebeiRankTableScraper } from '../rank_tables/adapters/hebei'
 
 let initialized = false
 
@@ -58,6 +61,21 @@ export function ensureRegistryInitialized(): void {
     scoreScraper: shandongScoreScraper,
     subjectScraper: shandongSubjectScraper,
     rankTableScraper: shandongRankTableScraper,
+  })
+
+  // 河北（3+1+2，专业+院校，物理类+历史类）
+  registerProvince({
+    meta: {
+      name: '河北',
+      pinyinId: 'hebei',
+      examMode: '3+1+2',
+      volunteerMode: 'major+college',
+      categories: ['物理类', '历史类'],
+      batchSize: '本科批',
+    },
+    scoreScraper: hebeiScoreScraper,
+    subjectScraper: hebeiSubjectScraper,
+    rankTableScraper: hebeiRankTableScraper,
   })
 
   initialized = true
