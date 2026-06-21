@@ -89,9 +89,9 @@ export default function VolunteerList() {
           <p className="text-sm text-text-secondary mt-1">已添加 {volunteerList.length} 个志愿</p>
         </div>
         <div className="flex gap-2">
-          <Dropdown.Button menu={exportMenu} icon={<ExportOutlined />}>
-            导出
-          </Dropdown.Button>
+          <Dropdown menu={exportMenu} trigger={['click']}>
+            <Button icon={<ExportOutlined />}>导出</Button>
+          </Dropdown>
           <Button type="primary" icon={<SafetyOutlined />} onClick={() => navigate('/risk')} className="bg-primary border-0">
             风险报告
           </Button>
