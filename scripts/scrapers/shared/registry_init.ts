@@ -6,6 +6,7 @@ import { hebeiScoreScraper } from '../scores/adapters/hebei'
 import { hunanScoreScraper } from '../scores/adapters/hunan'
 import { hubeiScoreScraper } from '../scores/adapters/hubei'
 import { guangdongScoreScraper } from '../scores/adapters/guangdong'
+import { beijingScoreScraper } from '../scores/adapters/beijing'
 import { zhejiangSubjectScraper } from '../subjects/adapters/zhejiang'
 import { jiangsuSubjectScraper } from '../subjects/adapters/jiangsu'
 import { shandongSubjectScraper } from '../subjects/adapters/shandong'
@@ -13,6 +14,7 @@ import { hebeiSubjectScraper } from '../subjects/adapters/hebei'
 import { hunanSubjectScraper } from '../subjects/adapters/hunan'
 import { hubeiSubjectScraper } from '../subjects/adapters/hubei'
 import { guangdongSubjectScraper } from '../subjects/adapters/guangdong'
+import { beijingSubjectScraper } from '../subjects/adapters/beijing'
 import { zhejiangRankTableScraper } from '../rank_tables/adapters/zhejiang'
 import { jiangsuRankTableScraper } from '../rank_tables/adapters/jiangsu'
 import { shandongRankTableScraper } from '../rank_tables/adapters/shandong'
@@ -20,6 +22,7 @@ import { hebeiRankTableScraper } from '../rank_tables/adapters/hebei'
 import { hunanRankTableScraper } from '../rank_tables/adapters/hunan'
 import { hubeiRankTableScraper } from '../rank_tables/adapters/hubei'
 import { guangdongRankTableScraper } from '../rank_tables/adapters/guangdong'
+import { beijingRankTableScraper } from '../rank_tables/adapters/beijing'
 
 let initialized = false
 
@@ -130,6 +133,21 @@ export function ensureRegistryInitialized(): void {
     scoreScraper: guangdongScoreScraper,
     subjectScraper: guangdongSubjectScraper,
     rankTableScraper: guangdongRankTableScraper,
+  })
+
+  // 北京（3+3，院校专业组，综合）
+  registerProvince({
+    meta: {
+      name: '北京',
+      pinyinId: 'beijing',
+      examMode: '3+3',
+      volunteerMode: 'college-group',
+      categories: ['综合'],
+      batchSize: '本科批',
+    },
+    scoreScraper: beijingScoreScraper,
+    subjectScraper: beijingSubjectScraper,
+    rankTableScraper: beijingRankTableScraper,
   })
 
   initialized = true
