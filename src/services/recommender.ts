@@ -83,7 +83,7 @@ export async function generateRecommendations(
 
     if (major.tuition && major.tuition > maxTuition) continue
     if (profile.categories.length > 0 && !profile.categories.includes(major.category)) continue
-    if (profile.regions.length > 0 && !profile.regions.includes(college.province)) continue
+    if (profile.regions.length > 0 && !profile.regions.includes(normalizeProvince(college.province))) continue
     if (profile.levels.length > 0 && !college.tags?.some((l) => profile.levels.includes(l))) continue
     if (profile.physicalExam === 'colorWeak' && major.colorBlind) continue
     if (profile.physicalExam === 'colorBlind' && major.colorBlind) continue
@@ -207,4 +207,11 @@ export async function generateRecommendations(
 function estimateRankFromScore(score: number | null): number {
   if (!score) return 50000
   return Math.round((750 - score) * 100 + 500)
+}
+
+// 真实院校数据中 province 字段带"省/市/自治区/特别行政区"后缀，
+// 而用户偏好中的地域选项使用短名（如"浙江"），需要归一化后比较
+function normalizeProvince(province: string): string {
+  return province
+    .replace(/(省|市|自治区|壮族自治区|回族自治区|维吾尔自治区|特别行政区)$/, '')
 }

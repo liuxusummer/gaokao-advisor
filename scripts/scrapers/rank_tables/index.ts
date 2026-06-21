@@ -9,7 +9,6 @@ import { parseJsTable } from './jiangsu'
 import { validateRankRecord, validateRankTableMonotonicity } from './validate'
 import {
   SCRAPER_VERSION,
-  SCHEMA_VERSION,
   ZJ_RANK_TABLE_URLS,
   JS_RANK_TABLE_URLS,
   SCORES_OUTPUT_DIR,

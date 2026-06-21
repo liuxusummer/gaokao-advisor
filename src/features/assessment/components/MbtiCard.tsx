@@ -5,7 +5,7 @@ import { useAppStore } from '../../../store'
 import { loadMbtiMapping } from '../services/mbtiMapper'
 import type { MbtiMappingRecord } from '../types'
 
-const MBTI_TEST_URL = 'https://www.16personalities.com/chinese-personality-test'
+const MBTI_TEST_URL = 'https://www.16personalities.com/free-personality-test'
 
 export default function MbtiCard() {
   const { profile, updateProfile } = useAppStore()

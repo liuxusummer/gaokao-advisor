@@ -26,7 +26,7 @@ describe('MbtiCard', () => {
     render(<MbtiCard />)
     expect(screen.getByText('MBTI 人格测评')).toBeInTheDocument()
     const link = screen.getByText(/不知道自己的人格？点击测评/).closest('a')
-    expect(link).toHaveAttribute('href', 'https://www.16personalities.com/chinese-personality-test')
+    expect(link).toHaveAttribute('href', 'https://www.16personalities.com/free-personality-test')
     expect(link).toHaveAttribute('target', '_blank')
   })
 

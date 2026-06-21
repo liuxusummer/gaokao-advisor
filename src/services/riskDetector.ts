@@ -1,7 +1,13 @@
 import type { VolunteerItem, UserProfile } from '../store'
 import type { RiskItem } from '../data/mock'
+import type { SubjectRequirement } from './dataLoader'
+import { checkSubjectRequirement } from './dataLoader'
 
-export function detectRisks(volunteerList: VolunteerItem[], profile: UserProfile): RiskItem[] {
+export function detectRisks(
+  volunteerList: VolunteerItem[],
+  profile: UserProfile,
+  subjectRequirements?: Map<string, SubjectRequirement>
+): RiskItem[] {
   const risks: RiskItem[] = []
   const userRank = profile.rank || 0
 
@@ -44,8 +50,8 @@ export function detectRisks(volunteerList: VolunteerItem[], profile: UserProfile
   // 2. 保底院校位次差
   if (safeCount > 0 && userRank > 0) {
     const lastSafe = volunteerList.filter((v) => v.tier === 'safe').pop()
-    if (lastSafe) {
-      const gap = (userRank - lastSafe.probability) / userRank // rough proxy
+    if (lastSafe?.minRank) {
+      const gap = (lastSafe.minRank - userRank) / userRank
       if (gap < 0.05) {
         risks.push({
           id: 'safe-gap',
@@ -121,7 +127,25 @@ export function detectRisks(volunteerList: VolunteerItem[], profile: UserProfile
   // 6. 退档风险：选科不匹配（兜底检查）
   const userSubjects = new Set(profile.subjects)
   volunteerList.forEach((item, index) => {
-    if (item.major.subjects.length > 0 && !item.major.subjects.every((s) => userSubjects.has(s))) {
+    // 优先使用真实数据中的选科要求
+    const subjectReq = subjectRequirements?.get(`${item.college.id}-${item.major.name}`)
+    if (subjectReq && !checkSubjectRequirement(subjectReq, profile.subjects)) {
+      risks.push({
+        id: `subject-${index}`,
+        type: 'reject',
+        level: 'high',
+        category: '选科匹配',
+        title: `${item.college.name} · ${item.major.name} 选科不符`,
+        description: `该专业要求${subjectReq.rawText || subjectReq.requiredSubjects.join('+')}，你的选科不满足。`,
+        reason: '新高考下选科不符合要求将被退档。',
+        suggestion: '删除该志愿或更换为选科要求匹配的专业。',
+        affectedIndexes: [index + 1],
+      })
+      return
+    }
+
+    // 无真实选科要求时，回退到专业基础 subjects
+    if (item.major.subjects && item.major.subjects.length > 0 && !item.major.subjects.every((s) => userSubjects.has(s))) {
       risks.push({
         id: `subject-${index}`,
         type: 'reject',

@@ -4,7 +4,7 @@ import path from 'node:path'
 import { parseZjToudang } from '../zhejiang'
 import { parseJsToudangExcel } from '../jiangsu'
 import { validateScoreRecord } from '../validate'
-import type { ScoreRecord, CollegeRecord } from '../../types'
+import type { CollegeRecord } from '../../types'
 
 const zjFixturePath = path.join(__dirname, '..', '__fixtures__', 'zhejiang_sample.xls')
 const zjFixtureBuffer = fs.readFileSync(zjFixturePath)

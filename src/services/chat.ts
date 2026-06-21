@@ -89,13 +89,23 @@ export async function streamChat(params: ChatParams): Promise<string> {
   const systemPrompt = buildSystemPrompt(profile, volunteerList)
   const trimmed = trimMessages(messages)
 
-  const url = `${aiConfig.baseUrl.replace(/\/$/, '')}/chat/completions`
+  // 开发环境通过 Vite proxy 转发，绕过浏览器 CORS 限制
+  // 生产环境（vite build 部署后）需自行配置反向代理或使用支持 CORS 的 API
+  const baseUrl = aiConfig.baseUrl.replace(/\/$/, '')
+  const isDev = import.meta.env.DEV
+  const url = isDev ? '/llm-proxy/chat/completions' : `${baseUrl}/chat/completions`
+
+  const headers: Record<string, string> = {
+    'Content-Type': 'application/json',
+    Authorization: `Bearer ${aiConfig.apiKey}`,
+  }
+  if (isDev) {
+    headers['X-Target-Base-URL'] = baseUrl
+  }
+
   const response = await fetch(url, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${aiConfig.apiKey}`,
-    },
+    headers,
     body: JSON.stringify({
       model: aiConfig.model,
       messages: [{ role: 'system', content: systemPrompt }, ...trimmed],

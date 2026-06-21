@@ -11,7 +11,7 @@ export class Cache {
 
   private filePath(key: string): string {
     // 如果 key 包含非 ASCII 字符（如中文），使用 hash 作为文件名避免冲突
-    const hasNonAscii = /[^\x00-\x7F]/.test(key)
+    const hasNonAscii = /[\u0080-\uFFFF]/.test(key)
     let safeKey: string
     if (hasNonAscii) {
       const hash = crypto.createHash('md5').update(key).digest('hex').substring(0, 16)

@@ -10,7 +10,7 @@ const { Step } = Steps
 
 export default function Profile() {
   const navigate = useNavigate()
-  const { profile, setRecommendations, setRiskReport } = useAppStore()
+  const { profile, setRecommendations, setRiskReport, loadProvinceData } = useAppStore()
   const [current, setCurrent] = useState(0)
   const [loading, setLoading] = useState(false)
 
@@ -36,12 +36,17 @@ export default function Profile() {
 
   const handleGenerate = async () => {
     setLoading(true)
-    await new Promise((resolve) => setTimeout(resolve, 1200))
-    const recs = generateRecommendations(profile)
-    setRecommendations(recs)
-    setRiskReport([])
-    setLoading(false)
-    navigate('/recommend')
+    try {
+      const cache = await loadProvinceData(profile.provinceId)
+      const recs = await generateRecommendations(profile, cache || undefined)
+      setRecommendations(recs)
+      setRiskReport([])
+      navigate('/recommend')
+    } catch (err) {
+      message.error('生成推荐失败：' + (err instanceof Error ? err.message : '未知错误'))
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -86,7 +91,7 @@ export default function Profile() {
 }
 
 function Step1Province() {
-  const { profile, updateProfile } = useAppStore()
+  const { profile, updateProfile, loadProvinceData, dataLoading, dataError } = useAppStore()
   const province = provinces.find((p) => p.id === profile.provinceId)
 
   return (
@@ -98,18 +103,21 @@ function Step1Province() {
           showSearch
           placeholder="请选择省份"
           value={profile.provinceId || undefined}
-          onChange={(v) => {
+          onChange={async (v) => {
             const p = provinces.find((x) => x.id === v)
             updateProfile({
               provinceId: v,
               provinceName: p?.name || '',
               subjects: [],
             })
+            await loadProvinceData(v)
           }}
           options={provinces.map((p) => ({ value: p.id, label: `${p.name}（${p.mode === 'major+college' ? '专业+院校' : '院校专业组'} · ${p.total}个）` }))}
           className="w-full"
         />
       </div>
+      {dataLoading && <p className="text-sm text-primary">正在加载该省真实录取数据…</p>}
+      {dataError && <p className="text-sm text-error">数据加载失败：{dataError}</p>}
 
       {province && (
         <>

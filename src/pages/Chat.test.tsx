@@ -146,8 +146,9 @@ describe('Chat 已配置时', () => {
     await waitFor(() => {
       expect(screen.getByText(/你好同学/)).toBeInTheDocument()
     })
+    // 开发环境通过 Vite proxy 转发，URL 为 /llm-proxy/chat/completions
     expect(global.fetch).toHaveBeenCalledWith(
-      'https://api.test.com/v1/chat/completions',
+      '/llm-proxy/chat/completions',
       expect.objectContaining({ method: 'POST' })
     )
   })
