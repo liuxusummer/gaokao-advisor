@@ -4,16 +4,19 @@ import { jiangsuScoreScraper } from '../scores/adapters/jiangsu'
 import { shandongScoreScraper } from '../scores/adapters/shandong'
 import { hebeiScoreScraper } from '../scores/adapters/hebei'
 import { hunanScoreScraper } from '../scores/adapters/hunan'
+import { hubeiScoreScraper } from '../scores/adapters/hubei'
 import { zhejiangSubjectScraper } from '../subjects/adapters/zhejiang'
 import { jiangsuSubjectScraper } from '../subjects/adapters/jiangsu'
 import { shandongSubjectScraper } from '../subjects/adapters/shandong'
 import { hebeiSubjectScraper } from '../subjects/adapters/hebei'
 import { hunanSubjectScraper } from '../subjects/adapters/hunan'
+import { hubeiSubjectScraper } from '../subjects/adapters/hubei'
 import { zhejiangRankTableScraper } from '../rank_tables/adapters/zhejiang'
 import { jiangsuRankTableScraper } from '../rank_tables/adapters/jiangsu'
 import { shandongRankTableScraper } from '../rank_tables/adapters/shandong'
 import { hebeiRankTableScraper } from '../rank_tables/adapters/hebei'
 import { hunanRankTableScraper } from '../rank_tables/adapters/hunan'
+import { hubeiRankTableScraper } from '../rank_tables/adapters/hubei'
 
 let initialized = false
 
@@ -94,6 +97,21 @@ export function ensureRegistryInitialized(): void {
     scoreScraper: hunanScoreScraper,
     subjectScraper: hunanSubjectScraper,
     rankTableScraper: hunanRankTableScraper,
+  })
+
+  // 湖北（3+1+2，院校专业组，物理类+历史类）
+  registerProvince({
+    meta: {
+      name: '湖北',
+      pinyinId: 'hubei',
+      examMode: '3+1+2',
+      volunteerMode: 'college-group',
+      categories: ['物理类', '历史类'],
+      batchSize: '本科批',
+    },
+    scoreScraper: hubeiScoreScraper,
+    subjectScraper: hubeiSubjectScraper,
+    rankTableScraper: hubeiRankTableScraper,
   })
 
   initialized = true
