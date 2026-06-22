@@ -3,6 +3,7 @@ import { persist } from 'zustand/middleware'
 import { type RecommendationItem, type RiskItem, type College, type Major } from '../data/mock'
 import { type RealDataCache, loadProvinceData } from '../services/dataLoader'
 import { type SubjectAssessmentResult, type IntegratedAssessment } from '../features/assessment/types'
+import { type RecommendWeights, DEFAULT_WEIGHTS } from '../services/rankScorer'
 
 export interface UserProfile {
   provinceId: string
@@ -80,6 +81,10 @@ interface AppState {
 
   integratedAssessment: IntegratedAssessment | null
   setIntegratedAssessment: (result: IntegratedAssessment | null) => void
+
+  recommendWeights: RecommendWeights
+  setRecommendWeights: (w: Partial<RecommendWeights>) => void
+  resetRecommendWeights: () => void
 
   dataCache: RealDataCache | null
   dataLoading: boolean
@@ -197,6 +202,12 @@ export const useAppStore = create<AppState>()(
 
       integratedAssessment: null,
       setIntegratedAssessment: (result) => set({ integratedAssessment: result }),
+
+      recommendWeights: DEFAULT_WEIGHTS,
+      setRecommendWeights: (w) => set((state) => ({
+        recommendWeights: { ...state.recommendWeights, ...w },
+      })),
+      resetRecommendWeights: () => set({ recommendWeights: DEFAULT_WEIGHTS }),
 
       dataCache: null,
       dataLoading: false,
