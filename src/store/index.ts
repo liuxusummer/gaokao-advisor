@@ -29,6 +29,7 @@ export interface VolunteerItem {
   probability: number
   minRank?: number
   obeyAdjust?: boolean
+  locked?: boolean
 }
 
 export interface ChatMessage {
@@ -61,6 +62,7 @@ interface AppState {
   moveVolunteer: (from: number, to: number) => void
   updateVolunteer: (id: string, patch: Partial<VolunteerItem>) => void
   clearVolunteerList: () => void
+  setVolunteerList: (items: VolunteerItem[]) => void
 
   riskReport: RiskItem[]
   setRiskReport: (items: RiskItem[]) => void
@@ -148,6 +150,7 @@ export const useAppStore = create<AppState>()(
           volunteerList: state.volunteerList.map((v) => (v.id === id ? { ...v, ...patch } : v)),
         })),
       clearVolunteerList: () => set({ volunteerList: [] }),
+      setVolunteerList: (items) => set({ volunteerList: items }),
 
       riskReport: [],
       setRiskReport: (items) => set({ riskReport: items }),
