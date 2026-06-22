@@ -16,6 +16,7 @@ const { mockEntries } = vi.hoisted(() => ({
 vi.mock('../../../services/dataLoader', () => ({
   probeRankTableYears: vi.fn().mockResolvedValue([2025, 2024]),
   loadRankTable: vi.fn().mockResolvedValue(mockEntries),
+  getProvinceName: vi.fn((id: string) => ({ '11': '北京' }[id])),
 }))
 
 const renderComponent = (props = {}) => {
@@ -31,7 +32,7 @@ describe('RankTableSearch', () => {
 
   it('渲染年份和科类选择器', async () => {
     renderComponent()
-    await waitFor(() => expect(screen.getByText('一分一段表')).toBeInTheDocument())
+    await waitFor(() => expect(screen.getByText('北京 一分一段表')).toBeInTheDocument())
     expect(screen.getByText('年份')).toBeInTheDocument()
     expect(screen.getByText('科类')).toBeInTheDocument()
   })
@@ -46,7 +47,7 @@ describe('RankTableSearch', () => {
   it('搜索框输入分数后过滤表格', async () => {
     renderComponent()
     await waitFor(() => expect(screen.getByText('600')).toBeInTheDocument())
-    const input = screen.getByPlaceholderText('搜索分数或位次')
+    const input = screen.getByPlaceholderText('输入分数、位次、同分人数或累计人数过滤')
     fireEvent.change(input, { target: { value: '600' } })
     expect(screen.getByText('600')).toBeInTheDocument()
     expect(screen.queryByText('599')).not.toBeInTheDocument()
@@ -56,6 +57,11 @@ describe('RankTableSearch', () => {
     vi.mocked(loadRankTable).mockResolvedValueOnce([])
     vi.mocked(probeRankTableYears).mockResolvedValueOnce([])
     renderComponent({ provinceName: 'unknown' })
-    await waitFor(() => expect(screen.getByText('暂无数据')).toBeInTheDocument())
+    await waitFor(() => expect(screen.getByText('该省份暂无可查年份的一分一段表数据')).toBeInTheDocument())
+  })
+
+  it('未选择省份时显示提示', () => {
+    renderComponent({ provinceName: '' })
+    expect(screen.getByText('请先完善省份信息')).toBeInTheDocument()
   })
 })

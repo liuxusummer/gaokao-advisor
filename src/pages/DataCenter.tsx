@@ -26,7 +26,7 @@ export default function DataCenter() {
           <ScoreSearch />
         </TabPane>
         <TabPane tab="一分一段表" key="rankTable">
-          <RankTableSearch provinceId={profile.provinceId} provinceName={profile.provinceName} />
+          <RankTableSearch key={profile.provinceId} provinceId={profile.provinceId} provinceName={profile.provinceName} />
         </TabPane>
       </Tabs>
     </div>

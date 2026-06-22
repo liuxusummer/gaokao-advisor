@@ -354,10 +354,29 @@ export async function loadSubjects(provinceName: string, year: number): Promise<
   return map
 }
 
+function isValidRankTableResponse(raw: unknown): raw is RawRankTable {
+  return (
+    typeof raw === 'object' &&
+    raw !== null &&
+    'categories' in raw &&
+    typeof (raw as RawRankTable).categories === 'object' &&
+    (raw as RawRankTable).categories !== null
+  )
+}
+
 export async function loadRankTable(provinceName: string, year: number): Promise<RankTableEntry[]> {
+  if (!provinceName) throw new Error('Province name is required')
   const res = await fetch(`/data/scores/${encodeURIComponent(provinceName)}/rank_table_${year}.json`)
   if (!res.ok) throw new Error(`Failed to load rank table for ${provinceName} ${year}: ${res.status}`)
-  const raw: RawRankTable = await res.json()
+  // Vite dev server may return index.html for missing assets; validate content type and shape.
+  const contentType = res.headers.get('content-type') || ''
+  if (!contentType.includes('application/json')) {
+    throw new Error(`Invalid content type for rank table ${provinceName} ${year}: ${contentType}`)
+  }
+  const raw: unknown = await res.json()
+  if (!isValidRankTableResponse(raw)) {
+    throw new Error(`Invalid rank table data for ${provinceName} ${year}`)
+  }
   const entries: RankTableEntry[] = []
   for (const category of Object.keys(raw.categories)) {
     for (const e of raw.categories[category]) {
@@ -463,6 +482,7 @@ export function checkSubjectRequirement(
 const rankTableYearsCache = new Map<string, number[]>()
 
 export async function probeRankTableYears(provinceName: string): Promise<number[]> {
+  if (!provinceName) return []
   if (rankTableYearsCache.has(provinceName)) {
     return rankTableYearsCache.get(provinceName)!
   }
@@ -471,7 +491,11 @@ export async function probeRankTableYears(provinceName: string): Promise<number[
     years.map(async (year) => {
       try {
         const response = await fetch(`/data/scores/${encodeURIComponent(provinceName)}/rank_table_${year}.json`)
-        return response.ok ? year : null
+        if (!response.ok) return null
+        const contentType = response.headers.get('content-type') || ''
+        if (!contentType.includes('application/json')) return null
+        const raw: unknown = await response.json()
+        return isValidRankTableResponse(raw) ? year : null
       } catch {
         return null
       }
