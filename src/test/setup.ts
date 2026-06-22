@@ -26,3 +26,23 @@ Object.defineProperty(globalThis, 'localStorage', {
   writable: true,
   configurable: true,
 })
+
+// jsdom 未实现 window.matchMedia，Ant Design 的 responsiveObserver（Table/Grid 等组件使用）
+// 在挂载时会调用 matchMedia，缺少该 API 会导致组件抛错。这里提供一个最小化实现。
+// 注意：部分测试（如 scraper 测试）使用 node 环境运行，没有 window 对象，需要先判断。
+if (typeof window !== 'undefined') {
+  Object.defineProperty(window, 'matchMedia', {
+    writable: true,
+    configurable: true,
+    value: (query: string) => ({
+      matches: false,
+      media: query,
+      onchange: null,
+      addListener: () => {},
+      removeListener: () => {},
+      addEventListener: () => {},
+      removeEventListener: () => {},
+      dispatchEvent: () => false,
+    }),
+  })
+}
