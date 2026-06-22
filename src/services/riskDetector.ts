@@ -1,5 +1,6 @@
 import type { VolunteerItem, UserProfile } from '../store'
 import type { RiskItem } from '../data/mock'
+import { provinces } from '../data/mock'
 import type { SubjectRequirement } from './dataLoader'
 import { checkSubjectRequirement } from './dataLoader'
 
@@ -106,7 +107,8 @@ export function detectRisks(
   })
 
   // 5. 退档风险：未服从调剂（院校专业组模式）
-  if (profile.provinceId !== 'zhejiang' && profile.provinceId !== 'shandong' && profile.provinceId !== 'liaoning') {
+  const provinceConfig = provinces.find(p => p.id === profile.provinceId)
+  if (provinceConfig?.mode === 'college-group') {
     volunteerList.forEach((item, index) => {
       if (item.obeyAdjust === false) {
         risks.push({
