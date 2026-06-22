@@ -3,10 +3,19 @@ import type { HollandResult, HollandDimension } from '../types'
 
 const DIMENSIONS: HollandDimension[] = ['R', 'I', 'A', 'S', 'E', 'C']
 
-export function calculateHolland(answers: Record<number, number>): HollandResult {
+interface Question {
+  id: number
+  text: string
+  dimension: string
+}
+
+export function calculateHolland(
+  answers: Record<number, number>,
+  questions: Question[] = hollandQuestions
+): HollandResult {
   const scores: Record<HollandDimension, number> = { R: 0, I: 0, A: 0, S: 0, E: 0, C: 0 }
 
-  hollandQuestions.forEach((q) => {
+  questions.forEach((q) => {
     const dim = q.dimension as HollandDimension
     if (DIMENSIONS.includes(dim)) {
       scores[dim] += answers[q.id] || 0
