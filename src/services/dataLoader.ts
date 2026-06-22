@@ -459,3 +459,25 @@ export function checkSubjectRequirement(
   }
   return true
 }
+
+const rankTableYearsCache = new Map<string, number[]>()
+
+export async function probeRankTableYears(provinceName: string): Promise<number[]> {
+  if (rankTableYearsCache.has(provinceName)) {
+    return rankTableYearsCache.get(provinceName)!
+  }
+  const years = [2023, 2024, 2025]
+  const results = await Promise.all(
+    years.map(async (year) => {
+      try {
+        const response = await fetch(`/data/scores/${provinceName}/rank_table_${year}.json`)
+        return response.ok ? year : null
+      } catch {
+        return null
+      }
+    })
+  )
+  const available = results.filter((y): y is number => y !== null).sort((a, b) => b - a)
+  rankTableYearsCache.set(provinceName, available)
+  return available
+}
