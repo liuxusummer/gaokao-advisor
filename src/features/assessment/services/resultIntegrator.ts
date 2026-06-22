@@ -1,6 +1,6 @@
 import type { IntegratedAssessment, SubjectAssessmentResult, SubjectMajorMapping, HollandDimension, MbtiMappingRecord } from '../types'
 
-const HOLLAND_TO_SUBJECTS: Record<string, string[]> = {
+export const HOLLAND_TO_SUBJECTS: Record<string, string[]> = {
   R: ['physics', 'computer'],
   I: ['math', 'biology', 'chemistry', 'computer'],
   A: ['art', 'chinese'],
