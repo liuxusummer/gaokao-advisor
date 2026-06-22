@@ -470,7 +470,7 @@ export async function probeRankTableYears(provinceName: string): Promise<number[
   const results = await Promise.all(
     years.map(async (year) => {
       try {
-        const response = await fetch(`/data/scores/${provinceName}/rank_table_${year}.json`)
+        const response = await fetch(`/data/scores/${encodeURIComponent(provinceName)}/rank_table_${year}.json`)
         return response.ok ? year : null
       } catch {
         return null
