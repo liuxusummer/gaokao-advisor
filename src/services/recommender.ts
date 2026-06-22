@@ -176,7 +176,7 @@ export async function generateRecommendations(
   const assessmentInput: AssessmentInput = options?.assessment ?? {
     hollandCategories: [],
     subjectCategories: [],
-    mbtiCategories: [],
+    mbtiCategories: mbtiCategories,
   }
 
   const scoredCandidates = candidates.map((c) => ({
