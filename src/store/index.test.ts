@@ -96,3 +96,54 @@ describe('store subjectAssessment + integratedAssessment', () => {
     expect(useAppStore.getState().integratedAssessment).toEqual(result)
   })
 })
+
+describe('schemes actions', () => {
+  beforeEach(() => {
+    useAppStore.setState({ schemes: [], volunteerList: [] })
+  })
+
+  it('saveScheme 新增方案并返回 id', () => {
+    const id = useAppStore.getState().saveScheme('方案A', [])
+    const schemes = useAppStore.getState().schemes
+    expect(schemes).toHaveLength(1)
+    expect(schemes[0].id).toBe(id)
+    expect(schemes[0].name).toBe('方案A')
+  })
+
+  it('saveScheme 未传 items 时使用当前 volunteerList', () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    useAppStore.setState({ volunteerList: [{ id: 'v1', college: { id: 'c1', name: 'X' }, major: { id: 'm1', name: 'Y' }, tier: 'rush', probability: 0.5 } as any] })
+    const id = useAppStore.getState().saveScheme('方案B')
+    const scheme = useAppStore.getState().schemes.find(s => s.id === id)
+    expect(scheme?.items).toHaveLength(1)
+  })
+
+  it('saveScheme name 为空时自动命名"方案 N"', () => {
+    useAppStore.getState().saveScheme('', [])
+    useAppStore.getState().saveScheme('', [])
+    const schemes = useAppStore.getState().schemes
+    expect(schemes[0].name).toBe('方案 1')
+    expect(schemes[1].name).toBe('方案 2')
+  })
+
+  it('renameScheme 修改方案名', () => {
+    const id = useAppStore.getState().saveScheme('old', [])
+    useAppStore.getState().renameScheme(id, 'new')
+    expect(useAppStore.getState().schemes[0].name).toBe('new')
+  })
+
+  it('deleteScheme 删除方案', () => {
+    const id = useAppStore.getState().saveScheme('A', [])
+    useAppStore.getState().deleteScheme(id)
+    expect(useAppStore.getState().schemes).toHaveLength(0)
+  })
+
+  it('loadScheme 将方案 items 加载到 volunteerList', () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const mockItem = { id: 'v1', college: { id: 'c1', name: 'X' }, major: { id: 'm1', name: 'Y' }, tier: 'rush', probability: 0.5 } as any
+    const id = useAppStore.getState().saveScheme('A', [mockItem])
+    useAppStore.getState().loadScheme(id)
+    expect(useAppStore.getState().volunteerList).toHaveLength(1)
+    expect(useAppStore.getState().volunteerList[0].id).toBe('v1')
+  })
+})

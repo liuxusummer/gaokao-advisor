@@ -32,6 +32,14 @@ export interface VolunteerItem {
   locked?: boolean
 }
 
+export interface VolunteerScheme {
+  id: string
+  name: string
+  items: VolunteerItem[]
+  createdAt: number
+  updatedAt: number
+}
+
 export interface ChatMessage {
   id: string
   role: 'user' | 'assistant' | 'system'
@@ -63,6 +71,12 @@ interface AppState {
   updateVolunteer: (id: string, patch: Partial<VolunteerItem>) => void
   clearVolunteerList: () => void
   setVolunteerList: (items: VolunteerItem[]) => void
+
+  schemes: VolunteerScheme[]
+  saveScheme: (name: string, items?: VolunteerItem[]) => string
+  renameScheme: (id: string, name: string) => void
+  deleteScheme: (id: string) => void
+  loadScheme: (id: string) => void
 
   riskReport: RiskItem[]
   setRiskReport: (items: RiskItem[]) => void
@@ -151,6 +165,33 @@ export const useAppStore = create<AppState>()(
         })),
       clearVolunteerList: () => set({ volunteerList: [] }),
       setVolunteerList: (items) => set({ volunteerList: items }),
+
+      schemes: [],
+      saveScheme: (name, items) => {
+        const id = `scheme-${Date.now()}`
+        const now = Date.now()
+        const scheme: VolunteerScheme = {
+          id,
+          name: name || `方案 ${useAppStore.getState().schemes.length + 1}`,
+          items: items ?? useAppStore.getState().volunteerList,
+          createdAt: now,
+          updatedAt: now,
+        }
+        set((state) => ({ schemes: [...state.schemes, scheme] }))
+        return id
+      },
+      renameScheme: (id, name) => set((state) => ({
+        schemes: state.schemes.map(s => s.id === id ? { ...s, name, updatedAt: Date.now() } : s),
+      })),
+      deleteScheme: (id) => set((state) => ({
+        schemes: state.schemes.filter(s => s.id !== id),
+      })),
+      loadScheme: (id) => {
+        const scheme = useAppStore.getState().schemes.find(s => s.id === id)
+        if (scheme) {
+          set({ volunteerList: [...scheme.items] })
+        }
+      },
 
       riskReport: [],
       setRiskReport: (items) => set({ riskReport: items }),
