@@ -1,6 +1,6 @@
 [
   {
-    "collegeId": "",
+    "collegeId": "4132010005",
     "collegeName": "陆军工程大学",
     "year": 2023,
     "majorName": "陆军工程大学04专业组(不限)",
@@ -24,11 +24,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.836Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4131010002",
     "collegeName": "海军军医大学",
     "year": 2023,
     "majorName": "海军军医大学04专业组(不限)",
@@ -52,11 +52,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.836Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4131010002",
     "collegeName": "海军军医大学",
     "year": 2023,
     "majorName": "海军军医大学05专业组(化学)",
@@ -80,11 +80,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.836Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4131010002",
     "collegeName": "海军军医大学",
     "year": 2023,
     "majorName": "海军军医大学06专业组(化学或生物)",
@@ -108,7 +108,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.836Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -5936,7 +5936,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4132010333",
     "collegeName": "常熟理工学院",
     "year": 2023,
     "majorName": "常熟理工学院04专业组(不限)",
@@ -5960,11 +5960,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4132010333",
     "collegeName": "常熟理工学院",
     "year": 2023,
     "majorName": "常熟理工学院05专业组(不限)",
@@ -5988,11 +5988,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4132010333",
     "collegeName": "常熟理工学院",
     "year": 2023,
     "majorName": "常熟理工学院06专业组(不限)",
@@ -6016,11 +6016,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4132010333",
     "collegeName": "常熟理工学院",
     "year": 2023,
     "majorName": "常熟理工学院07专业组(不限)",
@@ -6044,11 +6044,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4132010333",
     "collegeName": "常熟理工学院",
     "year": 2023,
     "majorName": "常熟理工学院08专业组(不限)(中外合作办学)",
@@ -6072,11 +6072,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4132010333",
     "collegeName": "常熟理工学院",
     "year": 2023,
     "majorName": "常熟理工学院09专业组(不限)",
@@ -6100,11 +6100,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4132010333",
     "collegeName": "常熟理工学院",
     "year": 2023,
     "majorName": "常熟理工学院10专业组(化学)",
@@ -6128,11 +6128,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4132010333",
     "collegeName": "常熟理工学院",
     "year": 2023,
     "majorName": "常熟理工学院11专业组(化学)",
@@ -6156,11 +6156,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4132010333",
     "collegeName": "常熟理工学院",
     "year": 2023,
     "majorName": "常熟理工学院12专业组(化学或生物)",
@@ -6184,11 +6184,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4132010333",
     "collegeName": "常熟理工学院",
     "year": 2023,
     "majorName": "常熟理工学院13专业组(化学或生物)",
@@ -6212,7 +6212,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -12852,7 +12852,7 @@
     }
   },
   {
-    "collegeId": "4131010248",
+    "collegeId": "4131010249",
     "collegeName": "上海交通大学医学院",
     "year": 2023,
     "majorName": "上海交通大学医学院01专业组(化学或生物)",
@@ -12880,7 +12880,7 @@
     }
   },
   {
-    "collegeId": "4131010248",
+    "collegeId": "4131010249",
     "collegeName": "上海交通大学医学院",
     "year": 2023,
     "majorName": "上海交通大学医学院02专业组(化学或生物)",
@@ -12908,7 +12908,7 @@
     }
   },
   {
-    "collegeId": "4131010248",
+    "collegeId": "4131010249",
     "collegeName": "上海交通大学医学院",
     "year": 2023,
     "majorName": "上海交通大学医学院03专业组(化学或生物)",
@@ -13776,7 +13776,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4133011057",
     "collegeName": "浙江科技学院",
     "year": 2023,
     "majorName": "浙江科技学院02专业组(不限)",
@@ -13800,11 +13800,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4133011057",
     "collegeName": "浙江科技学院",
     "year": 2023,
     "majorName": "浙江科技学院03专业组(不限)(中外合作办学)",
@@ -13828,11 +13828,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4133011057",
     "collegeName": "浙江科技学院",
     "year": 2023,
     "majorName": "浙江科技学院04专业组(化学)",
@@ -13856,7 +13856,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -14364,7 +14364,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4133010354",
     "collegeName": "嘉兴学院",
     "year": 2023,
     "majorName": "嘉兴学院02专业组(不限)",
@@ -14388,11 +14388,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4133010354",
     "collegeName": "嘉兴学院",
     "year": 2023,
     "majorName": "嘉兴学院03专业组(化学)",
@@ -14416,11 +14416,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4133010354",
     "collegeName": "嘉兴学院",
     "year": 2023,
     "majorName": "嘉兴学院04专业组(化学或生物)",
@@ -14444,7 +14444,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -14560,7 +14560,7 @@
     }
   },
   {
-    "collegeId": "4133010335",
+    "collegeId": "4133010336",
     "collegeName": "浙江大学医学院",
     "year": 2023,
     "majorName": "浙江大学医学院01专业组(化学或生物)",
@@ -16184,7 +16184,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4134011059",
     "collegeName": "合肥学院",
     "year": 2023,
     "majorName": "合肥学院02专业组(不限)",
@@ -16208,11 +16208,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4134011059",
     "collegeName": "合肥学院",
     "year": 2023,
     "majorName": "合肥学院03专业组(化学)",
@@ -16236,11 +16236,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4134011059",
     "collegeName": "合肥学院",
     "year": 2023,
     "majorName": "合肥学院04专业组(化学或生物)",
@@ -16264,7 +16264,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -16296,7 +16296,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4134010367",
     "collegeName": "蚌埠医学院",
     "year": 2023,
     "majorName": "蚌埠医学院03专业组(不限)",
@@ -16320,11 +16320,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4134010367",
     "collegeName": "蚌埠医学院",
     "year": 2023,
     "majorName": "蚌埠医学院04专业组(化学)",
@@ -16348,11 +16348,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4134010367",
     "collegeName": "蚌埠医学院",
     "year": 2023,
     "majorName": "蚌埠医学院05专业组(化学或生物)",
@@ -16376,7 +16376,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -19180,7 +19180,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4136013421",
     "collegeName": "南昌工程学院",
     "year": 2023,
     "majorName": "南昌工程学院02专业组(不限)",
@@ -19204,11 +19204,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4136013421",
     "collegeName": "南昌工程学院",
     "year": 2023,
     "majorName": "南昌工程学院03专业组(不限)(中外合作办学)",
@@ -19232,7 +19232,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -19376,7 +19376,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4136010413",
     "collegeName": "赣南医学院",
     "year": 2023,
     "majorName": "赣南医学院02专业组(不限)",
@@ -19400,11 +19400,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4136010413",
     "collegeName": "赣南医学院",
     "year": 2023,
     "majorName": "赣南医学院03专业组(化学)",
@@ -19428,11 +19428,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4136010413",
     "collegeName": "赣南医学院",
     "year": 2023,
     "majorName": "赣南医学院04专业组(生物)",
@@ -19456,7 +19456,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -21308,7 +21308,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4137010442",
     "collegeName": "潍坊医学院",
     "year": 2023,
     "majorName": "潍坊医学院01专业组(不限)",
@@ -21332,11 +21332,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4137010442",
     "collegeName": "潍坊医学院",
     "year": 2023,
     "majorName": "潍坊医学院02专业组(化学)",
@@ -21360,11 +21360,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4137010442",
     "collegeName": "潍坊医学院",
     "year": 2023,
     "majorName": "潍坊医学院03专业组(化学或生物)",
@@ -21388,7 +21388,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -22204,7 +22204,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4137010425",
     "collegeName": "中国石油大学(华东)",
     "year": 2023,
     "majorName": "中国石油大学(华东)01专业组(不限)",
@@ -22228,11 +22228,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4137010425",
     "collegeName": "中国石油大学(华东)",
     "year": 2023,
     "majorName": "中国石油大学(华东)02专业组(化学)",
@@ -22256,11 +22256,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4137010425",
     "collegeName": "中国石油大学(华东)",
     "year": 2023,
     "majorName": "中国石油大学(华东)03专业组(化学或地理)",
@@ -22284,7 +22284,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -22568,7 +22568,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4137010441",
     "collegeName": "滨州学院",
     "year": 2023,
     "majorName": "滨州学院02专业组(不限)",
@@ -22592,7 +22592,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -22736,7 +22736,7 @@
     }
   },
   {
-    "collegeId": "4137010422",
+    "collegeId": "4137010423",
     "collegeName": "山东大学威海分校",
     "year": 2023,
     "majorName": "山东大学威海分校03专业组(不限)",
@@ -22764,7 +22764,7 @@
     }
   },
   {
-    "collegeId": "4137010422",
+    "collegeId": "4137010423",
     "collegeName": "山东大学威海分校",
     "year": 2023,
     "majorName": "山东大学威海分校04专业组(不限)(中外合作办学)",
@@ -24304,7 +24304,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4111011415",
     "collegeName": "中国地质大学(北京)",
     "year": 2023,
     "majorName": "中国地质大学(北京)01专业组(不限)",
@@ -24328,11 +24328,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4111011415",
     "collegeName": "中国地质大学(北京)",
     "year": 2023,
     "majorName": "中国地质大学(北京)02专业组(化学)",
@@ -24356,11 +24356,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4111011415",
     "collegeName": "中国地质大学(北京)",
     "year": 2023,
     "majorName": "中国地质大学(北京)03专业组(地理)",
@@ -24384,7 +24384,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -24696,7 +24696,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4111011414",
     "collegeName": "中国石油大学(北京)",
     "year": 2023,
     "majorName": "中国石油大学(北京)03专业组(不限)",
@@ -24720,11 +24720,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4111011414",
     "collegeName": "中国石油大学(北京)",
     "year": 2023,
     "majorName": "中国石油大学(北京)04专业组(化学)",
@@ -24748,7 +24748,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.837Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -24864,7 +24864,7 @@
     }
   },
   {
-    "collegeId": "4132010290",
+    "collegeId": "4111011413",
     "collegeName": "中国矿业大学(北京)",
     "year": 2023,
     "majorName": "中国矿业大学(北京)02专业组(不限)",
@@ -28476,7 +28476,7 @@
     }
   },
   {
-    "collegeId": "4121010145",
+    "collegeId": "4121010142",
     "collegeName": "东北大学秦皇岛分校",
     "year": 2023,
     "majorName": "东北大学秦皇岛分校02专业组(不限)",
@@ -28504,7 +28504,7 @@
     }
   },
   {
-    "collegeId": "4121010145",
+    "collegeId": "4121010142",
     "collegeName": "东北大学秦皇岛分校",
     "year": 2023,
     "majorName": "东北大学秦皇岛分校03专业组(不限)(中外合作办学)",
@@ -35896,7 +35896,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4122010192",
     "collegeName": "吉林化工学院",
     "year": 2023,
     "majorName": "吉林化工学院03专业组(不限)",
@@ -35920,11 +35920,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4122010192",
     "collegeName": "吉林化工学院",
     "year": 2023,
     "majorName": "吉林化工学院04专业组(化学)",
@@ -35948,11 +35948,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4122010192",
     "collegeName": "吉林化工学院",
     "year": 2023,
     "majorName": "吉林化工学院05专业组(化学或生物)",
@@ -35976,7 +35976,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -37884,7 +37884,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4123011046",
     "collegeName": "牡丹江医学院",
     "year": 2023,
     "majorName": "牡丹江医学院01专业组(化学)",
@@ -37908,11 +37908,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4123011046",
     "collegeName": "牡丹江医学院",
     "year": 2023,
     "majorName": "牡丹江医学院02专业组(化学或生物)",
@@ -37936,11 +37936,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4123011046",
     "collegeName": "牡丹江医学院",
     "year": 2023,
     "majorName": "牡丹江医学院03专业组(化学和生物)",
@@ -37964,7 +37964,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -40824,7 +40824,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4141010472",
     "collegeName": "新乡医学院",
     "year": 2023,
     "majorName": "新乡医学院01专业组(化学或生物)",
@@ -40848,7 +40848,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -41384,7 +41384,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4142010491",
     "collegeName": "中国地质大学(武汉)",
     "year": 2023,
     "majorName": "中国地质大学(武汉)03专业组(不限)",
@@ -41408,11 +41408,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4142010491",
     "collegeName": "中国地质大学(武汉)",
     "year": 2023,
     "majorName": "中国地质大学(武汉)04专业组(化学)",
@@ -41436,7 +41436,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -47600,7 +47600,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4145010601",
     "collegeName": "桂林医学院",
     "year": 2023,
     "majorName": "桂林医学院02专业组(化学)",
@@ -47624,11 +47624,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4145010601",
     "collegeName": "桂林医学院",
     "year": 2023,
     "majorName": "桂林医学院03专业组(化学或生物)",
@@ -47652,7 +47652,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -48972,7 +48972,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4146011810",
     "collegeName": "海南医学院",
     "year": 2023,
     "majorName": "海南医学院02专业组(化学)",
@@ -48996,11 +48996,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4146011810",
     "collegeName": "海南医学院",
     "year": 2023,
     "majorName": "海南医学院03专业组(化学)",
@@ -49024,11 +49024,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4146011810",
     "collegeName": "海南医学院",
     "year": 2023,
     "majorName": "海南医学院04专业组(化学)",
@@ -49052,11 +49052,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4146011810",
     "collegeName": "海南医学院",
     "year": 2023,
     "majorName": "海南医学院05专业组(化学)",
@@ -49080,11 +49080,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4146011810",
     "collegeName": "海南医学院",
     "year": 2023,
     "majorName": "海南医学院06专业组(化学)(中外合作办学)",
@@ -49108,11 +49108,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4146011810",
     "collegeName": "海南医学院",
     "year": 2023,
     "majorName": "海南医学院07专业组(化学)",
@@ -49136,11 +49136,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4146011810",
     "collegeName": "海南医学院",
     "year": 2023,
     "majorName": "海南医学院08专业组(化学)",
@@ -49164,11 +49164,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4146011810",
     "collegeName": "海南医学院",
     "year": 2023,
     "majorName": "海南医学院09专业组(化学或生物)",
@@ -49192,11 +49192,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4146011810",
     "collegeName": "海南医学院",
     "year": 2023,
     "majorName": "海南医学院10专业组(化学或生物)",
@@ -49220,11 +49220,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4146011810",
     "collegeName": "海南医学院",
     "year": 2023,
     "majorName": "海南医学院11专业组(化学或生物)",
@@ -49248,11 +49248,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4146011810",
     "collegeName": "海南医学院",
     "year": 2023,
     "majorName": "海南医学院12专业组(化学或生物)(中外合作办学)",
@@ -49276,11 +49276,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4146011810",
     "collegeName": "海南医学院",
     "year": 2023,
     "majorName": "海南医学院13专业组(生物)",
@@ -49304,7 +49304,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.838Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -52472,7 +52472,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4150011551",
     "collegeName": "重庆科技学院",
     "year": 2023,
     "majorName": "重庆科技学院02专业组(不限)",
@@ -52496,7 +52496,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.839Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -57820,7 +57820,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4162010739",
     "collegeName": "天水师范学院",
     "year": 2023,
     "majorName": "天水师范学院02专业组(不限)",
@@ -57844,11 +57844,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.839Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4162010739",
     "collegeName": "天水师范学院",
     "year": 2023,
     "majorName": "天水师范学院03专业组(化学)",
@@ -57872,7 +57872,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.839Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -59220,7 +59220,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4111011416",
     "collegeName": "中国石油大学(北京)克拉玛依校区",
     "year": 2023,
     "majorName": "中国石油大学(北京)克拉玛依校区01专业组(不限)",
@@ -59244,7 +59244,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.839Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -66248,7 +66248,7 @@
     }
   },
   {
-    "collegeId": "4143010543",
+    "collegeId": "4143010544",
     "collegeName": "湖南理工学院南湖学院",
     "year": 2023,
     "majorName": "湖南理工学院南湖学院03专业组(不限)",
@@ -68712,7 +68712,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "8144000001",
     "collegeName": "香港珠海学院",
     "year": 2023,
     "majorName": "香港珠海学院02专业组(不限)",
@@ -68736,7 +68736,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:58.839Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -71232,7 +71232,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4132010333",
     "collegeName": "常熟理工学院",
     "year": 2023,
     "majorName": "常熟理工学院01专业组(不限)",
@@ -71256,11 +71256,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.148Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4132010333",
     "collegeName": "常熟理工学院",
     "year": 2023,
     "majorName": "常熟理工学院02专业组(不限)",
@@ -71284,11 +71284,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.148Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4132010333",
     "collegeName": "常熟理工学院",
     "year": 2023,
     "majorName": "常熟理工学院03专业组(不限)",
@@ -71312,7 +71312,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.148Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -74676,7 +74676,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4133011057",
     "collegeName": "浙江科技学院",
     "year": 2023,
     "majorName": "浙江科技学院01专业组(不限)",
@@ -74700,7 +74700,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.148Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -74900,7 +74900,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4133010354",
     "collegeName": "嘉兴学院",
     "year": 2023,
     "majorName": "嘉兴学院01专业组(不限)",
@@ -74924,7 +74924,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.148Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -75656,7 +75656,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4134011059",
     "collegeName": "合肥学院",
     "year": 2023,
     "majorName": "合肥学院01专业组(不限)",
@@ -75680,7 +75680,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.148Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -75740,7 +75740,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4134010367",
     "collegeName": "蚌埠医学院",
     "year": 2023,
     "majorName": "蚌埠医学院01专业组(不限)",
@@ -75764,11 +75764,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.148Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4134010367",
     "collegeName": "蚌埠医学院",
     "year": 2023,
     "majorName": "蚌埠医学院02专业组(化学)",
@@ -75792,7 +75792,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.148Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -77140,7 +77140,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4136013421",
     "collegeName": "南昌工程学院",
     "year": 2023,
     "majorName": "南昌工程学院01专业组(不限)",
@@ -77164,7 +77164,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.148Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -77224,7 +77224,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4136010413",
     "collegeName": "赣南医学院",
     "year": 2023,
     "majorName": "赣南医学院01专业组(不限)",
@@ -77248,7 +77248,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.148Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -78568,7 +78568,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4137010441",
     "collegeName": "滨州学院",
     "year": 2023,
     "majorName": "滨州学院01专业组(不限)",
@@ -78592,7 +78592,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.148Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -78708,7 +78708,7 @@
     }
   },
   {
-    "collegeId": "4137010422",
+    "collegeId": "4137010423",
     "collegeName": "山东大学威海分校",
     "year": 2023,
     "majorName": "山东大学威海分校01专业组(不限)",
@@ -78736,7 +78736,7 @@
     }
   },
   {
-    "collegeId": "4137010422",
+    "collegeId": "4137010423",
     "collegeName": "山东大学威海分校",
     "year": 2023,
     "majorName": "山东大学威海分校02专业组(思想政治)",
@@ -79716,7 +79716,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4111011414",
     "collegeName": "中国石油大学(北京)",
     "year": 2023,
     "majorName": "中国石油大学(北京)01专业组(不限)",
@@ -79740,11 +79740,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.148Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4111011414",
     "collegeName": "中国石油大学(北京)",
     "year": 2023,
     "majorName": "中国石油大学(北京)02专业组(思想政治)",
@@ -79768,7 +79768,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.148Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -79856,7 +79856,7 @@
     }
   },
   {
-    "collegeId": "4132010290",
+    "collegeId": "4111011413",
     "collegeName": "中国矿业大学(北京)",
     "year": 2023,
     "majorName": "中国矿业大学(北京)01专业组(不限)",
@@ -81396,7 +81396,7 @@
     }
   },
   {
-    "collegeId": "4121010145",
+    "collegeId": "4121010142",
     "collegeName": "东北大学秦皇岛分校",
     "year": 2023,
     "majorName": "东北大学秦皇岛分校01专业组(不限)",
@@ -84448,7 +84448,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4122010192",
     "collegeName": "吉林化工学院",
     "year": 2023,
     "majorName": "吉林化工学院01专业组(不限)",
@@ -84472,11 +84472,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.148Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4122010192",
     "collegeName": "吉林化工学院",
     "year": 2023,
     "majorName": "吉林化工学院02专业组(化学或生物)",
@@ -84500,7 +84500,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.148Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -86716,7 +86716,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4142010491",
     "collegeName": "中国地质大学(武汉)",
     "year": 2023,
     "majorName": "中国地质大学(武汉)01专业组(不限)",
@@ -86740,11 +86740,11 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.149Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4142010491",
     "collegeName": "中国地质大学(武汉)",
     "year": 2023,
     "majorName": "中国地质大学(武汉)02专业组(思想政治)",
@@ -86768,7 +86768,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.149Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -89628,7 +89628,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4145010601",
     "collegeName": "桂林医学院",
     "year": 2023,
     "majorName": "桂林医学院01专业组(不限)",
@@ -89652,7 +89652,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.149Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -90384,7 +90384,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4146011810",
     "collegeName": "海南医学院",
     "year": 2023,
     "majorName": "海南医学院01专业组(思想政治)",
@@ -90408,7 +90408,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.149Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -92120,7 +92120,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4150011551",
     "collegeName": "重庆科技学院",
     "year": 2023,
     "majorName": "重庆科技学院01专业组(不限)",
@@ -92144,7 +92144,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.152Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -94612,7 +94612,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4162010739",
     "collegeName": "天水师范学院",
     "year": 2023,
     "majorName": "天水师范学院01专业组(不限)",
@@ -94636,7 +94636,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.152Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -100352,7 +100352,7 @@
     }
   },
   {
-    "collegeId": "4143010543",
+    "collegeId": "4143010544",
     "collegeName": "湖南理工学院南湖学院",
     "year": 2023,
     "majorName": "湖南理工学院南湖学院01专业组(不限)",
@@ -100380,7 +100380,7 @@
     }
   },
   {
-    "collegeId": "4143010543",
+    "collegeId": "4143010544",
     "collegeName": "湖南理工学院南湖学院",
     "year": 2023,
     "majorName": "湖南理工学院南湖学院02专业组(不限)",
@@ -102536,7 +102536,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "8144000001",
     "collegeName": "香港珠海学院",
     "year": 2023,
     "majorName": "香港珠海学院01专业组(不限)",
@@ -102560,7 +102560,7 @@
       "sourceUrl": "https://www.jseea.cn/webfile/index/index_zkxx/2023-07-18/7086888854866628608.html",
       "fetchedAt": "2026-06-18T03:31:59.153Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   }
 ]

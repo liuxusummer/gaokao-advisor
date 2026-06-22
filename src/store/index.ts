@@ -3,6 +3,7 @@ import { persist } from 'zustand/middleware'
 import { type RecommendationItem, type RiskItem, type College, type Major } from '../data/mock'
 import { type RealDataCache, loadProvinceData } from '../services/dataLoader'
 import { type SubjectAssessmentResult, type IntegratedAssessment } from '../features/assessment/types'
+import { type RecommendWeights, DEFAULT_WEIGHTS } from '../services/rankScorer'
 
 export interface UserProfile {
   provinceId: string
@@ -17,6 +18,7 @@ export interface UserProfile {
   maxTuition: number | null
   physicalExam: 'normal' | 'colorWeak' | 'colorBlind' | 'vision' | 'height' | 'other'
   riskPreference: 'conservative' | 'balanced' | 'aggressive'
+  mbtiType: string | null
 }
 
 export interface VolunteerItem {
@@ -27,6 +29,15 @@ export interface VolunteerItem {
   probability: number
   minRank?: number
   obeyAdjust?: boolean
+  locked?: boolean
+}
+
+export interface VolunteerScheme {
+  id: string
+  name: string
+  items: VolunteerItem[]
+  createdAt: number
+  updatedAt: number
 }
 
 export interface ChatMessage {
@@ -59,6 +70,13 @@ interface AppState {
   moveVolunteer: (from: number, to: number) => void
   updateVolunteer: (id: string, patch: Partial<VolunteerItem>) => void
   clearVolunteerList: () => void
+  setVolunteerList: (items: VolunteerItem[]) => void
+
+  schemes: VolunteerScheme[]
+  saveScheme: (name: string, items?: VolunteerItem[]) => string
+  renameScheme: (id: string, name: string) => void
+  deleteScheme: (id: string) => void
+  loadScheme: (id: string) => void
 
   riskReport: RiskItem[]
   setRiskReport: (items: RiskItem[]) => void
@@ -80,6 +98,10 @@ interface AppState {
   integratedAssessment: IntegratedAssessment | null
   setIntegratedAssessment: (result: IntegratedAssessment | null) => void
 
+  recommendWeights: RecommendWeights
+  setRecommendWeights: (w: Partial<RecommendWeights>) => void
+  resetRecommendWeights: () => void
+
   dataCache: RealDataCache | null
   dataLoading: boolean
   dataError: string | null
@@ -99,6 +121,7 @@ const defaultProfile: UserProfile = {
   maxTuition: null,
   physicalExam: 'normal',
   riskPreference: 'balanced',
+  mbtiType: null,
 }
 
 export const useAppStore = create<AppState>()(
@@ -141,6 +164,40 @@ export const useAppStore = create<AppState>()(
           volunteerList: state.volunteerList.map((v) => (v.id === id ? { ...v, ...patch } : v)),
         })),
       clearVolunteerList: () => set({ volunteerList: [] }),
+      setVolunteerList: (items) => set({ volunteerList: items }),
+
+      schemes: [],
+      saveScheme: (name, items) => {
+        const id = `scheme-${Date.now()}`
+        const now = Date.now()
+        const existingNums = useAppStore.getState().schemes
+          .map(s => {
+            const match = s.name.match(/^方案 (\d+)$/)
+            return match ? parseInt(match[1], 10) : 0
+          })
+        const nextNum = existingNums.length > 0 ? Math.max(...existingNums) + 1 : 1
+        const scheme: VolunteerScheme = {
+          id,
+          name: name || `方案 ${nextNum}`,
+          items: items ? [...items] : [...useAppStore.getState().volunteerList],
+          createdAt: now,
+          updatedAt: now,
+        }
+        set((state) => ({ schemes: [...state.schemes, scheme] }))
+        return id
+      },
+      renameScheme: (id, name) => set((state) => ({
+        schemes: state.schemes.map(s => s.id === id ? { ...s, name, updatedAt: Date.now() } : s),
+      })),
+      deleteScheme: (id) => set((state) => ({
+        schemes: state.schemes.filter(s => s.id !== id),
+      })),
+      loadScheme: (id) => {
+        const scheme = useAppStore.getState().schemes.find(s => s.id === id)
+        if (scheme) {
+          set({ volunteerList: [...scheme.items] })
+        }
+      },
 
       riskReport: [],
       setRiskReport: (items) => set({ riskReport: items }),
@@ -195,6 +252,12 @@ export const useAppStore = create<AppState>()(
 
       integratedAssessment: null,
       setIntegratedAssessment: (result) => set({ integratedAssessment: result }),
+
+      recommendWeights: DEFAULT_WEIGHTS,
+      setRecommendWeights: (w) => set((state) => ({
+        recommendWeights: { ...state.recommendWeights, ...w },
+      })),
+      resetRecommendWeights: () => set({ recommendWeights: DEFAULT_WEIGHTS }),
 
       dataCache: null,
       dataLoading: false,

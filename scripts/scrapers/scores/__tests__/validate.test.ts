@@ -65,7 +65,7 @@ describe('validateScoreRecord', () => {
   })
 
   it('province 非白名单 → 失败', () => {
-    const result = validateScoreRecord(makeValidRecord({ province: '上海' }))
+    const result = validateScoreRecord(makeValidRecord({ province: '香港' }))
     expect(result.valid).toBe(false)
     expect(result.reason).toContain('province')
   })

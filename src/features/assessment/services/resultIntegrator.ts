@@ -1,6 +1,6 @@
-import type { IntegratedAssessment, SubjectAssessmentResult, SubjectMajorMapping, HollandDimension } from '../types'
+import type { IntegratedAssessment, SubjectAssessmentResult, SubjectMajorMapping, HollandDimension, MbtiMappingRecord } from '../types'
 
-const HOLLAND_TO_SUBJECTS: Record<string, string[]> = {
+export const HOLLAND_TO_SUBJECTS: Record<string, string[]> = {
   R: ['physics', 'computer'],
   I: ['math', 'biology', 'chemistry', 'computer'],
   A: ['art', 'chinese'],
@@ -12,7 +12,9 @@ const HOLLAND_TO_SUBJECTS: Record<string, string[]> = {
 export function integrateResults(
   hollandScores: Record<string, number>,
   subjectResult: SubjectAssessmentResult,
-  majorMapping: SubjectMajorMapping
+  majorMapping: SubjectMajorMapping,
+  mbtiType: string | null = null,
+  mbtiMapping: MbtiMappingRecord | null = null
 ): IntegratedAssessment {
   const dimensions: HollandDimension[] = ['R', 'I', 'A', 'S', 'E', 'C']
   const sortedDims = dimensions.slice().sort((a, b) => {
@@ -49,11 +51,17 @@ export function integrateResults(
     confidence = 'low'
   }
 
+  const mbtiCategories = mbtiType && mbtiMapping
+    ? mbtiMapping[mbtiType]?.categories ?? []
+    : []
+
   return {
     hollandCode,
     topSubjects: subjectResult.topSubjects,
     agreedCategories,
     confidence,
+    mbtiType,
+    mbtiCategories,
     timestamp: Date.now(),
   }
 }

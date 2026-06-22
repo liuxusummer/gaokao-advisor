@@ -1,3 +1,4 @@
+import { PROVINCES } from '../config'
 import type { SubjectRequirementRecord } from '../types'
 
 export interface SubjectValidationResult {
@@ -5,15 +6,13 @@ export interface SubjectValidationResult {
   reason?: string
 }
 
-const VALID_PROVINCES = ['浙江', '江苏']
-
 export function validateSubjectRecord(record: SubjectRequirementRecord): SubjectValidationResult {
   if (!record.collegeName) {
     return { valid: false, reason: 'collegeName 为空' }
   }
 
-  if (!VALID_PROVINCES.includes(record.province)) {
-    return { valid: false, reason: `province 非白名单: ${record.province}` }
+  if (!PROVINCES.includes(record.province)) {
+    return { valid: false, reason: `province 不在白名单: ${record.province}` }
   }
 
   if (!record.majorName) {

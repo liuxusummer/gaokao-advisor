@@ -1,5 +1,6 @@
 export * from './types'
 export { calculateHolland } from './services/hollandEngine'
 export { calculateSubjectScores } from './services/subjectEngine'
-export { matchMajors } from './services/majorMatcher'
+export { matchMajors, loadMajorMapping } from './services/majorMatcher'
 export { integrateResults } from './services/resultIntegrator'
+export { loadMbtiMapping, getMbtiCategories } from './services/mbtiMapper'

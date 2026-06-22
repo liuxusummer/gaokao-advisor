@@ -55,8 +55,6 @@ async function main(): Promise<void> {
   const existingRecords = loadPartial()
   const allRecords: DetailedMajorRecord[] = [...existingRecords]
   const allFailed: FailedMajor[] = []
-  let undergradCount = 0
-  let vocationalCount = 0
 
   // 采集本科
   console.log('\n=== 采集本科（普通教育）专业目录 ===')
@@ -73,7 +71,7 @@ async function main(): Promise<void> {
   )
   allRecords.push(...undergradResult.records)
   allFailed.push(...undergradResult.failed)
-  undergradCount = undergradResult.records.length
+  const undergradCount = undergradResult.records.length
   console.log(`\n[本科] 完成: ${undergradCount} 条记录, ${undergradResult.failed.length} 条失败`)
 
   // 保存 partial
@@ -93,7 +91,7 @@ async function main(): Promise<void> {
   )
   allRecords.push(...vocationalResult.records)
   allFailed.push(...vocationalResult.failed)
-  vocationalCount = vocationalResult.records.length
+  const vocationalCount = vocationalResult.records.length
   console.log(`\n[专科] 完成: ${vocationalCount} 条记录, ${vocationalResult.failed.length} 条失败`)
 
   // 汇总

@@ -38,7 +38,8 @@ export const USER_AGENT =
 // === 分数线与一分一段表采集配置 ===
 
 export const TARGET_YEARS = [2023, 2024, 2025]
-export const TARGET_PROVINCES = ['浙江', '江苏']
+export const TARGET_PROVINCES = (process.env.TARGET_PROVINCES?.split(',') as string[])
+  ?? ['浙江', '江苏', '山东', '河北', '辽宁', '湖北', '湖南', '广东', '北京', '上海']
 
 // 阳光高考详情页 URL 模板
 export const GAOKAO_SCHOOL_DETAIL_URL = 'https://gaokao.chsi.com.cn/sch/schoolInfo-{collegeId}.dhtml'

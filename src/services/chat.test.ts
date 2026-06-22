@@ -16,6 +16,7 @@ const profile: UserProfile = {
   maxTuition: null,
   physicalExam: 'normal',
   riskPreference: 'balanced',
+  mbtiType: null,
 }
 
 describe('buildSystemPrompt', () => {
@@ -177,13 +178,16 @@ describe('streamChat 成功路径', () => {
       onChunk: () => {},
     })
 
+    // 开发环境通过 Vite proxy 转发，URL 为 /llm-proxy/chat/completions
+    // 并通过 X-Target-Base-URL 头部携带真实 baseUrl
     expect(global.fetch).toHaveBeenCalledWith(
-      'https://api.example.com/v1/chat/completions',
+      '/llm-proxy/chat/completions',
       expect.objectContaining({
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           Authorization: 'Bearer sk-test',
+          'X-Target-Base-URL': 'https://api.example.com/v1',
         },
       })
     )

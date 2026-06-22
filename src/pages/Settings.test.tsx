@@ -21,6 +21,7 @@ describe('Settings AI 配置', () => {
         provinceId: '', provinceName: '', subjectType: 'physics', subjects: [],
         score: null, rank: null, regions: [], levels: [], categories: [],
         maxTuition: null, physicalExam: 'normal', riskPreference: 'balanced',
+        mbtiType: null,
       },
       volunteerList: [],
     })

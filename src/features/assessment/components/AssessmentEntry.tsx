@@ -4,6 +4,8 @@ import { StarOutlined, BookOutlined, CheckCircleOutlined, ImportOutlined } from 
 import { useAppStore } from '../../../store'
 import { integrateResults } from '../services/resultIntegrator'
 import { loadMajorMapping } from '../services/majorMatcher'
+import { loadMbtiMapping } from '../services/mbtiMapper'
+import MbtiCard from './MbtiCard'
 
 const subjectNames: Record<string, string> = {
   math: '数学', physics: '物理', chemistry: '化学', biology: '生物',
@@ -29,19 +31,31 @@ export default function AssessmentEntry({ onSelectHolland, onSelectSubject }: As
     integratedAssessment,
     setIntegratedAssessment,
     updateProfile,
+    profile,
   } = useAppStore()
   const [mapping, setMapping] = useState<Record<string, string[]>>({})
+  const [mbtiMapping, setMbtiMapping] = useState<Record<string, { name: string; categories: string[]; description: string }> | null>(null)
 
   useEffect(() => {
     loadMajorMapping().then(setMapping)
   }, [])
 
   useEffect(() => {
+    loadMbtiMapping().then(setMbtiMapping)
+  }, [])
+
+  useEffect(() => {
     if (assessmentResult && subjectAssessmentResult && Object.keys(mapping).length > 0) {
-      const integrated = integrateResults(assessmentResult, subjectAssessmentResult, mapping)
+      const integrated = integrateResults(
+        assessmentResult,
+        subjectAssessmentResult,
+        mapping,
+        profile.mbtiType,
+        mbtiMapping
+      )
       setIntegratedAssessment(integrated)
     }
-  }, [assessmentResult, subjectAssessmentResult, mapping, setIntegratedAssessment])
+  }, [assessmentResult, subjectAssessmentResult, mapping, profile.mbtiType, mbtiMapping, setIntegratedAssessment])
 
   const handleApplyToProfile = () => {
     if (!integratedAssessment) return
@@ -85,6 +99,18 @@ export default function AssessmentEntry({ onSelectHolland, onSelectSubject }: As
               )}
             </div>
           </div>
+          {integratedAssessment.mbtiType && integratedAssessment.mbtiCategories.length > 0 && (
+            <div className="mb-4">
+              <p className="text-xs text-text-secondary mb-2">
+                MBTI 人格匹配专业大类（{integratedAssessment.mbtiType}）
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {integratedAssessment.mbtiCategories.map((cat) => (
+                  <Tag key={cat} color="blue">{cat}</Tag>
+                ))}
+              </div>
+            </div>
+          )}
           <Button
             type="primary"
             icon={<ImportOutlined />}
@@ -96,7 +122,7 @@ export default function AssessmentEntry({ onSelectHolland, onSelectSubject }: As
         </div>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div
           onClick={onSelectHolland}
           className="bg-bg-card rounded-2xl shadow-md p-6 cursor-pointer hover:shadow-lg transition-shadow border-2 border-transparent hover:border-primary/30"
@@ -138,6 +164,8 @@ export default function AssessmentEntry({ onSelectHolland, onSelectSubject }: As
             {subjectAssessmentResult ? '重新测评' : '开始测评'}
           </Button>
         </div>
+
+        <MbtiCard />
       </div>
 
       {!showIntegration && assessmentResult && !subjectAssessmentResult && (
