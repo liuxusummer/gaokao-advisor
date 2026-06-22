@@ -93,7 +93,7 @@ export function parseGdExcel(
   sourceUrl: string
 ): RankTableRecord[] {
   // 动态导入 xlsx 避免循环依赖
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   const xlsx = require('xlsx')
   const workbook = xlsx.read(buffer, { type: 'buffer' })
   const sheet = workbook.Sheets[workbook.SheetNames[0]]

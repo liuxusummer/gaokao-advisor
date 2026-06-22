@@ -62,7 +62,7 @@ export function parseHubTable(
     if (isNaN(count) || isNaN(cumulativeCount)) return
 
     // 处理 "695-750" 区间行（展开为单个分数，按均分方式分配人数）
-    const rangeMatch = scoreStr.match(/^(\d+)[\-~](\d+)$/)
+    const rangeMatch = scoreStr.match(/^(\d+)[-~](\d+)$/)
     if (rangeMatch) {
       const low = parseInt(rangeMatch[1], 10)
       const high = parseInt(rangeMatch[2], 10)

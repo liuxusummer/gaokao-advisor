@@ -77,7 +77,7 @@ export function parseShSubjects(
         province: '上海',
         year: 2024,
         level: '本科',
-        majorName: currentMajorName,
+        majorName: currentMajorName + pendingIncludedMajors,
         subjectRequirement: normalizedSubject,
         requirementType: type,
         requiredSubjects: subjects,

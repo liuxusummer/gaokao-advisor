@@ -85,7 +85,6 @@ export function parseBjSubjects(
     // 格式：01 作战指挥 或 16 管理科学与工程类(含管理科学)
     const majorMatch = line.match(/^(\d{2})\s+(.+)$/)
     if (majorMatch && currentCollegeId && currentSubjectText) {
-      const majorCode = majorMatch[1]
       const majorName = majorMatch[2].trim()
 
       // 将北京 PDF 的 "+" 格式转换为标准格式
