@@ -54,14 +54,65 @@ export const EMPLOYMENT_SCORE_MAP: Record<string, number> = {
   '艺术学': 50,
 }
 
-// 占位，将在后续 Task 实现
 export function scoreCandidate(
-  _candidate: CandidateInput,
-  _weights: RecommendWeights,
-  _assessment: AssessmentInput,
-  _profile: ProfileInput
+  candidate: CandidateInput,
+  weights: RecommendWeights,
+  assessment: AssessmentInput,
+  profile: ProfileInput
 ): number {
-  return 0
+  // 权重归一化：全设 0 时回退到 DEFAULT_WEIGHTS
+  const weightSum = Object.values(weights).reduce((a, b) => a + b, 0)
+  const effectiveWeights = weightSum === 0 ? DEFAULT_WEIGHTS : weights
+  const totalWeight = weightSum === 0 ? 100 : weightSum
+
+  // 1. probability 得分（0-100）
+  const probabilityScore = candidate.probability
+
+  // 2. collegeLevel 得分（0-100）
+  const collegeLevelScore = (candidate.collegeLevel / 3) * 100
+
+  // 3. majorInterest 得分（0-100）
+  let majorInterestScore: number
+  const hollandMatch = assessment.hollandCategories.includes(candidate.majorCategory) ? 1 : 0
+  const subjectMatch = assessment.subjectCategories.includes(candidate.majorCategory) ? 1 : 0
+  const mbtiMatch = assessment.mbtiCategories.includes(candidate.majorCategory) ? 1 : 0
+  const assessmentEmpty =
+    assessment.hollandCategories.length === 0 &&
+    assessment.subjectCategories.length === 0 &&
+    assessment.mbtiCategories.length === 0
+  if (assessmentEmpty) {
+    majorInterestScore = 50
+  } else {
+    majorInterestScore = ((hollandMatch + subjectMatch + mbtiMatch) / 3) * 100
+  }
+
+  // 4. region 得分（0-100）
+  const regionScore =
+    profile.regions.length === 0
+      ? 50
+      : profile.regions.includes(candidate.collegeProvince)
+        ? 100
+        : 0
+
+  // 5. tuition 得分（0-100）
+  const tuitionScore =
+    profile.maxTuition === null
+      ? 50
+      : 100 * (1 - candidate.tuition / profile.maxTuition)
+
+  // 6. employment 得分（0-100）
+  const employmentScore = candidate.employmentScore
+
+  // 加权平均
+  const weightedSum =
+    probabilityScore * effectiveWeights.probability +
+    collegeLevelScore * effectiveWeights.collegeLevel +
+    majorInterestScore * effectiveWeights.majorInterest +
+    regionScore * effectiveWeights.region +
+    tuitionScore * effectiveWeights.tuition +
+    employmentScore * effectiveWeights.employment
+
+  return weightedSum / totalWeight
 }
 
 export function deriveHollandCategories(
