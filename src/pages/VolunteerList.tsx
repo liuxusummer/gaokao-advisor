@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Button, Empty, Switch, Tag, message, Modal, Dropdown } from 'antd'
 import {
@@ -13,10 +13,17 @@ import {
   FileExcelOutlined,
   FilePdfOutlined,
   CopyOutlined,
+  LockOutlined,
+  UnlockOutlined,
+  ReloadOutlined,
 } from '@ant-design/icons'
-import { useAppStore } from '../store'
+import { useAppStore, type VolunteerItem } from '../store'
 import { detectRisks } from '../services/riskDetector'
 import { exportToExcel, exportToPdf, copyToClipboard } from '../services/exporter'
+import { generateRecommendations } from '../services/recommender'
+import { loadProvinceData } from '../services/dataLoader'
+import { loadMajorMapping } from '../features/assessment/services/majorMatcher'
+import { deriveHollandCategories, type AssessmentInput } from '../services/rankScorer'
 import CollegeNameLink from '../components/CollegeNameLink'
 
 const tierLabels = {
@@ -27,7 +34,8 @@ const tierLabels = {
 
 export default function VolunteerList() {
   const navigate = useNavigate()
-  const { profile, volunteerList, removeVolunteer, moveVolunteer, updateVolunteer, setRiskReport, riskReport, clearVolunteerList, dataCache } = useAppStore()
+  const { profile, volunteerList, removeVolunteer, moveVolunteer, updateVolunteer, setRiskReport, riskReport, clearVolunteerList, dataCache, recommendWeights, integratedAssessment, subjectAssessmentResult, setVolunteerList } = useAppStore()
+  const [regenerating, setRegenerating] = useState(false)
 
   useEffect(() => {
     const risks = detectRisks(volunteerList, profile, dataCache?.subjectRequirements)
@@ -81,6 +89,48 @@ export default function VolunteerList() {
     onClick: handleExport,
   }
 
+  const handleRegenerateExcludingLocked = async () => {
+    const lockedItems = volunteerList.filter(v => v.locked)
+    if (lockedItems.length === 0) {
+      message.warning('请先锁定至少一个志愿')
+      return
+    }
+    setRegenerating(true)
+    try {
+      const exclude = lockedItems.map(v => ({ collegeId: v.college.id, majorId: v.major.id }))
+      const cache = await loadProvinceData(profile.provinceId)
+      const majorMapping = await loadMajorMapping()
+      const assessment: AssessmentInput = {
+        hollandCategories: deriveHollandCategories(integratedAssessment?.hollandCode, majorMapping),
+        subjectCategories: subjectAssessmentResult?.recommendedCategories ?? [],
+        mbtiCategories: integratedAssessment?.mbtiCategories ?? [],
+      }
+      const newRecs = await generateRecommendations(profile, cache || undefined, {
+        weights: recommendWeights,
+        assessment,
+        exclude,
+      })
+      const lockedSet = new Set(lockedItems.map(v => v.id))
+      const remainingLocked = volunteerList.filter(v => lockedSet.has(v.id))
+      const newVolunteers: VolunteerItem[] = newRecs.map(r => ({
+        id: `${r.college.id}-${r.major.id}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+        college: r.college,
+        major: r.major,
+        tier: r.tier,
+        probability: r.probability,
+        minRank: r.minRanks[0]?.rank,
+        obeyAdjust: true,
+        locked: false,
+      }))
+      setVolunteerList([...remainingLocked, ...newVolunteers])
+      message.success(`已重新推荐，保留 ${remainingLocked.length} 个锁定志愿，新增 ${newVolunteers.length} 个推荐`)
+    } catch (err) {
+      message.error('重新推荐失败：' + (err instanceof Error ? err.message : '未知错误'))
+    } finally {
+      setRegenerating(false)
+    }
+  }
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-6 md:py-8">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-5">
@@ -92,6 +142,14 @@ export default function VolunteerList() {
           <Dropdown menu={exportMenu} trigger={['click']}>
             <Button icon={<ExportOutlined />}>导出</Button>
           </Dropdown>
+          <Button
+            icon={<ReloadOutlined />}
+            onClick={handleRegenerateExcludingLocked}
+            disabled={!volunteerList.some(v => v.locked)}
+            loading={regenerating}
+          >
+            锁定后重新推荐
+          </Button>
           <Button type="primary" icon={<SafetyOutlined />} onClick={() => navigate('/risk')} className="bg-primary border-0">
             风险报告
           </Button>
@@ -205,6 +263,14 @@ export default function VolunteerList() {
                           <DeleteOutlined className="text-xs" />
                         </button>
                       </div>
+                      <Button
+                        size="small"
+                        icon={item.locked ? <LockOutlined /> : <UnlockOutlined />}
+                        onClick={() => updateVolunteer(item.id, { locked: !item.locked })}
+                        type={item.locked ? 'primary' : 'default'}
+                      >
+                        {item.locked ? '已锁定' : '锁定'}
+                      </Button>
                     </div>
                   </div>
 
