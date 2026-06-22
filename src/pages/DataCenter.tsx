@@ -6,7 +6,7 @@ import { useAppStore } from '../store'
 import { colleges as mockColleges, majors as mockMajors, scoreRecords as mockScoreRecords, provinces } from '../data/mock'
 import type { College, Major, ScoreRecord } from '../data/mock'
 import CollegeNameLink from '../components/CollegeNameLink'
-import RankTableSearch from './components/RankTableSearch'
+import RankTableSearch from './DataCenter/components/RankTableSearch'
 
 const { TabPane } = Tabs
 
