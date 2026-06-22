@@ -49,6 +49,11 @@ describe('rankScorer 常量', () => {
     expect(EMPLOYMENT_SCORE_MAP['哲学']).toBe(40)
     expect(EMPLOYMENT_SCORE_MAP['历史学']).toBe(40)
   })
+
+  it('EMPLOYMENT_SCORE_MAP 已知类别返回得分，未知类别返回 undefined', () => {
+    expect(EMPLOYMENT_SCORE_MAP['工学']).toBe(85)
+    expect(EMPLOYMENT_SCORE_MAP['未知类别']).toBeUndefined()
+  })
 })
 
 describe('scoreCandidate', () => {
@@ -114,14 +119,29 @@ describe('scoreCandidate', () => {
   })
 
   it('三源测评全不匹配时 majorInterest 维度贡献 0 分', () => {
+    const nonMatchingAssessment: AssessmentInput = {
+      hollandCategories: ['理学'],
+      subjectCategories: ['理学'],
+      mbtiCategories: ['理学'],
+    }
     const score = scoreCandidate(
-      maxCandidate,
+      { ...maxCandidate, probability: 0, collegeLevel: 0, tuition: 10000, employmentScore: 0, collegeProvince: '西藏' },
+      { ...DEFAULT_WEIGHTS, probability: 0, collegeLevel: 0, region: 0, tuition: 0, employment: 0 },
+      nonMatchingAssessment,
+      profileNoPrefs
+    )
+    // majorCategory='工学' 不在 ['理学'] 中，三源都不匹配，majorInterest 得分 = 0
+    expect(score).toBeCloseTo(0, 0)
+  })
+
+  it('assessment 三源均为空时 majorInterest 得分 = 50（中性）', () => {
+    const score = scoreCandidate(
+      { ...maxCandidate, probability: 0, collegeLevel: 0, tuition: 10000, employmentScore: 0, collegeProvince: '西藏' },
       { ...DEFAULT_WEIGHTS, probability: 0, collegeLevel: 0, region: 0, tuition: 0, employment: 0 },
       emptyAssessment,
       profileNoPrefs
     )
-    // maxCandidate.majorCategory='工学'，但 emptyAssessment 三源都为空
-    // majorInterest 得分 = 50（中性），权重 20，贡献 = 50 * 20 / 20 = 50
+    // 三源都为空，majorInterest 得分 = 50（中性）
     expect(score).toBeCloseTo(50, 0)
   })
 
@@ -155,16 +175,6 @@ describe('scoreCandidate', () => {
     const score = scoreCandidate(
       { ...maxCandidate, probability: 0, collegeLevel: 0, employmentScore: 0, collegeProvince: '西藏' },
       { ...DEFAULT_WEIGHTS, probability: 0, collegeLevel: 0, majorInterest: 0, region: 0, employment: 0 },
-      emptyAssessment,
-      profileNoPrefs
-    )
-    expect(score).toBeCloseTo(50, 0)
-  })
-
-  it('assessment 三源均为空时 majorInterest 得分 = 50（中性）', () => {
-    const score = scoreCandidate(
-      { ...maxCandidate, probability: 0, collegeLevel: 0, tuition: 10000, employmentScore: 0, collegeProvince: '西藏' },
-      { ...DEFAULT_WEIGHTS, probability: 0, collegeLevel: 0, region: 0, tuition: 0, employment: 0 },
       emptyAssessment,
       profileNoPrefs
     )

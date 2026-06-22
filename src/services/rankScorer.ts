@@ -98,7 +98,7 @@ export function scoreCandidate(
   const tuitionScore =
     profile.maxTuition === null
       ? 50
-      : 100 * (1 - candidate.tuition / profile.maxTuition)
+      : Math.max(0, 100 * (1 - candidate.tuition / profile.maxTuition))
 
   // 6. employment 得分（0-100）
   const employmentScore = candidate.employmentScore
