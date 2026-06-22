@@ -5,16 +5,16 @@ import { parseBjToudang } from '../beijing'
 
 const BJ_TOUDANG_URLS: Record<number, { pageUrl: string; htmlUrl: string }> = {
   2023: {
-    pageUrl: 'https://www.bjeea.cn/',
-    htmlUrl: 'https://www.bjeea.cn/a3/bjtd2023.html',
+    pageUrl: 'https://www.bjeea.cn/html/gkgz/tzgg/2023/0721/84321.html',
+    htmlUrl: 'https://www.bjeea.cn/html/gkgz/tzgg/2023/0721/84321.html',
   },
   2024: {
-    pageUrl: 'https://www.bjeea.cn/',
-    htmlUrl: 'https://www.bjeea.cn/a3/bjtd2024.html',
+    pageUrl: 'https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html',
+    htmlUrl: 'https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html',
   },
   2025: {
-    pageUrl: 'https://www.bjeea.cn/',
-    htmlUrl: 'https://www.bjeea.cn/a3/bjtd2025.html',
+    pageUrl: 'https://www.bjeea.cn/html/gkgz/tzgg/2025/0720/87000.html',
+    htmlUrl: 'https://www.bjeea.cn/html/gkgz/tzgg/2025/0720/87000.html',
   },
 }
 

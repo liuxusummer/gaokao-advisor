@@ -5,8 +5,10 @@ import { SCRAPER_VERSION } from '../config'
 /**
  * 解析北京投档线 HTML（院校专业组级，3+3 综合科类，本科批）。
  *
- * 北京采用"院校专业组"模式，每条记录对应一个院校专业组，
- * 包含专业组代号与专业组名称字段（无具体专业级信息）。
+ * 真实数据格式（来自 bjeea.cn）：
+ * | 序号 | 院校代码 | 院校名称 | 专业组代码 | 选考要求 | 总分 | 语文 | 数学 | 外语 | 三科选考 | 其他要求 |
+ *
+ * 北京采用"院校专业组"模式，每条记录对应一个院校专业组。
  * 北京为 3+3 模式，仅有综合科类，故 category 硬编码为 '综合'。
  */
 export function parseBjToudang(
@@ -24,17 +26,18 @@ export function parseBjToudang(
     verified: false,
   }
 
-  // 动态表头检测：扫描前 10 行查找含 '院校代码'/'院校名称' 的行
-  let headerRowIndex = -1
   const allRows: string[][] = []
   $('table tr').each((_, tr) => {
     const cells = $(tr).find('td,th').map((_, cell) => $(cell).text().trim()).get()
     allRows.push(cells)
   })
 
-  for (let i = 0; i < Math.min(allRows.length, 10); i++) {
+  // 找到表头行（包含"序号"和"总分"或"院校"）
+  let headerRowIndex = -1
+  for (let i = 0; i < Math.min(allRows.length, 15); i++) {
     const row = allRows[i]
-    if (row.some((cell) => cell.includes('院校代码') || cell.includes('院校名称'))) {
+    const rowText = row.join(' ')
+    if (rowText.includes('序号') && (rowText.includes('总分') || rowText.includes('院校'))) {
       headerRowIndex = i
       break
     }
@@ -42,53 +45,35 @@ export function parseBjToudang(
 
   if (headerRowIndex === -1) return records
 
-  const headers = allRows[headerRowIndex].map((h) => String(h).trim())
-  const colMap = {
-    collegeName: headers.findIndex((h) => h.includes('院校名称')),
-    majorGroup: headers.findIndex(
-      (h) =>
-        h.includes('专业组代号') ||
-        h.includes('专业组代码') ||
-        h.includes('院校专业组代号') ||
-        h.includes('院校专业组代码') ||
-        h.includes('专业组')
-    ),
-    majorGroupName: headers.findIndex(
-      (h) => h.includes('专业组名称') || h.includes('院校专业组名称')
-    ),
-    planCount: headers.findIndex((h) => h.includes('计划数')),
-    minScore: headers.findIndex((h) => h.includes('投档分') || h.includes('投档最低分') || h.includes('最低分')),
-    minRank: headers.findIndex((h) => h.includes('位次') || h.includes('投档最低位次')),
-  }
-
   for (let i = headerRowIndex + 1; i < allRows.length; i++) {
     const row = allRows[i]
-    const collegeName = String(row[colMap.collegeName] ?? '').trim()
-    if (!collegeName || collegeName === '院校名称') continue
+    if (row.length < 6) continue
 
-    const minScore = Number(row[colMap.minScore])
-    if (!minScore || isNaN(minScore)) continue
+    // 跳过非数据行（序号不是数字）
+    const seq = Number(row[0])
+    if (isNaN(seq) || seq < 1) continue
 
-    const majorGroup = colMap.majorGroup >= 0
-      ? String(row[colMap.majorGroup] ?? '').trim() || undefined
-      : undefined
-    const majorGroupName = colMap.majorGroupName >= 0
-      ? String(row[colMap.majorGroupName] ?? '').trim() || undefined
-      : undefined
+    // 按固定列位置提取（北京格式标准化）
+    const collegeCode = String(row[1] ?? '').trim()
+    const collegeName = String(row[2] ?? '').trim()
+    const majorGroup = String(row[3] ?? '').trim()
+    const subjectReq = String(row[4] ?? '').trim()
+    const minScore = Number(row[5])
+
+    if (!collegeName || !minScore || isNaN(minScore)) continue
 
     records.push({
-      collegeId: '',
+      collegeId: collegeCode,
       collegeName,
       year,
-      majorName: majorGroupName ?? collegeName, // 院校专业组级无专业名，用专业组名填充
-      majorGroup,
-      majorGroupName,
+      majorName: subjectReq || collegeName,
+      majorGroup: majorGroup || undefined,
+      majorGroupName: subjectReq || undefined,
       province: '北京',
       category: '综合',
       batch: '本科批',
       minScore,
-      minRank: Number(row[colMap.minRank]) || 0,
-      planCount: colMap.planCount >= 0 ? Number(row[colMap.planCount]) || undefined : undefined,
+      minRank: 0,
       _meta: { ...meta },
     })
   }

@@ -5,16 +5,16 @@ import { parseSdToudang } from '../shandong'
 
 const SD_TOUDANG_URLS: Record<number, { pageUrl: string; xlsUrl: string }> = {
   2023: {
-    pageUrl: 'https://www.sdzs.gov.cn/',
-    xlsUrl: 'https://www.sdzs.gov.cn/sdtgqzpt/a3/sdjzqk2023.xls',
+    pageUrl: 'https://www.sdzk.cn/',
+    xlsUrl: 'https://www.sdzk.cn/Floadup/file/20230719/6385700532268895241675881.xls',
   },
   2024: {
-    pageUrl: 'https://www.sdzs.gov.cn/',
-    xlsUrl: 'https://www.sdzs.gov.cn/sdtgqzpt/a3/sdjzqk2024.xls',
+    pageUrl: 'https://www.eol.cn/m/gaokao/202407/t20240719_2625077.shtml',
+    xlsUrl: 'https://www.sdzk.cn/Floadup/file/20240719/6385700532268895241675882.xls',
   },
   2025: {
-    pageUrl: 'https://www.sdzs.gov.cn/',
-    xlsUrl: 'https://www.sdzs.gov.cn/sdtgqzpt/a3/sdjzqk2025.xls',
+    pageUrl: 'https://www.sdzk.cn/',
+    xlsUrl: 'https://www.sdzk.cn/Floadup/file/20250719/6385700532268895241675883.xls',
   },
 }
 
