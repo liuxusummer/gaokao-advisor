@@ -36,3 +36,33 @@ export function findScoreByRank(
   const exactMatch = matched.cumulativeCount === userRank
   return { score: matched.score, exactMatch }
 }
+
+/**
+ * 对一组按年份分组的一分一段表做等效位次换算
+ * @param userRank 用户当年位次
+ * @param entriesByYear 按年份分组的一分一段表数据
+ * @returns 各年等效分列表，按年份降序排列
+ */
+export function convertRankToEquivalentScores(
+  userRank: number,
+  entriesByYear: Map<number, RankTableEntry[]>
+): EquivalentScore[] {
+  if (userRank <= 0) {
+    throw new RangeError('userRank must be positive')
+  }
+
+  const results: EquivalentScore[] = []
+  for (const [year, entries] of entriesByYear) {
+    if (entries.length === 0) continue
+    const { score, exactMatch } = findScoreByRank(userRank, entries)
+    results.push({
+      year,
+      equivalentScore: score,
+      equivalentRank: userRank,
+      exactMatch,
+    })
+  }
+
+  results.sort((a, b) => b.year - a.year)
+  return results
+}
