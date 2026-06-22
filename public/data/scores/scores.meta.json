@@ -1,16 +1,16 @@
 {
   "provinces": [
     {
-      "name": "浙江",
+      "name": "广东",
       "years": [
         2023,
         2024,
         2025
       ],
       "scoreRecordCount": {
-        "2023": 16808,
-        "2024": 17241,
-        "2025": 17890
+        "2023": 0,
+        "2024": 4676,
+        "2025": 0
       },
       "rankTableRecordCount": {
         "2023": 0,
@@ -19,7 +19,7 @@
       }
     }
   ],
-  "generatedAt": "2026-06-21T16:15:02.253Z",
+  "generatedAt": "2026-06-22T03:01:38.904Z",
   "scraperVersion": "1.0.0",
   "schemaVersion": "1.0.0",
   "sources": [

@@ -211,11 +211,12 @@ function matchColleges(
       record._meta.verified = true
       matched++
     } else {
-      record.collegeId = ''
+      // 匹配失败时保留原始 collegeId（parser 阶段提取的源代码）作为兜底
+      // 不再强制清空，避免前端无法关联院校信息
       record._meta.verified = false
       if (!warnings.some((w) => w.collegeName === record.collegeName && w.year === year)) {
         warnings.push({
-          collegeId: '',
+          collegeId: record.collegeId || '',
           collegeName: record.collegeName,
           type: 'missing_data',
           detail: `未在 colleges.json 中找到匹配院校 (${province} ${year})`,
@@ -231,19 +232,74 @@ function matchCollege(
   name: string,
   collegesByName: Map<string, CollegeRecord>
 ): { collegeId: string; matchType: string } {
+  // 1. 精确匹配
   const exact = collegesByName.get(name)
   if (exact) return { collegeId: exact.id, matchType: 'exact' }
 
-  const bracketIndex = name.indexOf('(')
+  // 2. 统一括号后精确匹配（处理半角/全角括号差异）
+  const normalized = name.replace(/（/g, '(').replace(/）/g, ')')
+  if (normalized !== name) {
+    const normMatch = collegesByName.get(normalized)
+    if (normMatch) return { collegeId: normMatch.id, matchType: 'normalized' }
+  }
+  const fullNormalized = name.replace(/\(/g, '（').replace(/\)/g, '）')
+  if (fullNormalized !== name) {
+    const fullNormMatch = collegesByName.get(fullNormalized)
+    if (fullNormMatch) return { collegeId: fullNormMatch.id, matchType: 'full_normalized' }
+  }
+
+  // 3. 去除后缀匹配（处理 "[公办]"、"[民办]" 等后缀）
+  const suffixStripped = name.replace(/\s*\[.*?\]\s*/g, '').trim()
+  if (suffixStripped !== name) {
+    const suffixMatch = collegesByName.get(suffixStripped)
+    if (suffixMatch) return { collegeId: suffixMatch.id, matchType: 'suffix_stripped' }
+    // 递归尝试统一括号
+    const suffixNorm = suffixStripped.replace(/（/g, '(').replace(/）/g, ')')
+    const suffixNormMatch = collegesByName.get(suffixNorm)
+    if (suffixNormMatch) return { collegeId: suffixNormMatch.id, matchType: 'suffix_normalized' }
+  }
+
+  // 4. 去括号匹配（同时处理半角和全角括号）
+  const halfBracketIndex = name.indexOf('(')
+  const fullBracketIndex = name.indexOf('（')
+  let bracketIndex = -1
+  if (halfBracketIndex > 0 && fullBracketIndex > 0) {
+    bracketIndex = Math.min(halfBracketIndex, fullBracketIndex)
+  } else if (halfBracketIndex > 0) {
+    bracketIndex = halfBracketIndex
+  } else if (fullBracketIndex > 0) {
+    bracketIndex = fullBracketIndex
+  }
   if (bracketIndex > 0) {
     const stripped = name.substring(0, bracketIndex).trim()
     const strippedMatch = collegesByName.get(stripped)
     if (strippedMatch) return { collegeId: strippedMatch.id, matchType: 'stripped' }
   }
 
+  // 5. 简称匹配（处理上海交大、华东师大等简称）
+  // 构建"去括号+去后缀"的基础名称用于简称匹配
+  const baseName = (suffixStripped || name).replace(/（.*?）/g, '').replace(/\(.*?\)/g, '').trim()
+  if (baseName && baseName !== name) {
+    const baseMatch = collegesByName.get(baseName)
+    if (baseMatch) return { collegeId: baseMatch.id, matchType: 'base_name' }
+  }
+
+  // 6. 包含匹配（使用统一括号后的名称）
   for (const [collegeName, college] of collegesByName) {
-    if (collegeName.includes(name) || name.includes(collegeName)) {
+    const collegeNorm = collegeName.replace(/（/g, '(').replace(/）/g, ')')
+    if (collegeNorm.includes(normalized) || normalized.includes(collegeNorm)) {
       return { collegeId: college.id, matchType: 'contains' }
+    }
+  }
+
+  // 7. 简称包含匹配（处理简称与全称的包含关系）
+  if (baseName && baseName.length >= 3) {
+    for (const [collegeName, college] of collegesByName) {
+      // 去掉"大学"、"学院"等后缀后比较
+      const collegeShort = collegeName.replace(/（.*?）/g, '').replace(/\(.*?\)/g, '').replace(/(大学|学院|职业学校|职业技术学院)$/g, '').trim()
+      if (collegeShort.length >= 3 && (collegeShort.includes(baseName) || baseName.includes(collegeShort))) {
+        return { collegeId: college.id, matchType: 'short_contains' }
+      }
     }
   }
 

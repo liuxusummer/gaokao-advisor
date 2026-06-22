@@ -1,39 +1,58 @@
-import * as cheerio from 'cheerio'
 import { SCRAPER_VERSION } from '../config'
-import type { RankTableRecord } from '../types'
+import type { RankTableRecord, RankTableRecordMeta } from '../types'
 
 /**
- * 解析辽宁省一分一段表 HTML（cheerio 解析 table）。
+ * 解析辽宁省一分一段表 PDF 文本。
  *
- * HTML 结构：标准 <table> 表格，每行包含 分数 / 人数 / 累计人数 三列。
- * 跳过表头行（含 '分数'/'人数'/'累计' 字样）。
- * 辽宁为 3+1+2 模式，科类由参数传入（物理类/历史类）。
+ * 真实数据格式（来自 lnzsks.com PDF）：
+ * 每行格式（tab 分隔）：
+ *   分数  人数  累计
+ *
+ * 特殊情况：
+ *   - 最高分行可能有"及以上"后缀（如"708  11  11  及以上"）
+ *   - 累计人数可能含逗号（如"1,014"）
+ *   - 每页有页眉（分数/人数/累计），需跳过
  */
 export function parseLnTable(
-  html: string,
+  text: string,
   year: number,
   category: '物理类' | '历史类',
   sourceUrl: string
 ): RankTableRecord[] {
-  const $ = cheerio.load(html)
   const records: RankTableRecord[] = []
+  const meta: RankTableRecordMeta = {
+    source: 'gaokao',
+    sourceUrl,
+    fetchedAt: new Date().toISOString(),
+    scraperVersion: SCRAPER_VERSION,
+    verified: false,
+  }
 
-  $('table tr').each((_, tr) => {
-    const cells = $(tr).find('td').map((_, td) => $(td).text().trim()).get()
-    if (cells.length < 3) return
+  const lines = text.split(/\r?\n/)
 
-    // 跳过表头行
-    if (cells.some((c) => c.includes('分数') || c.includes('人数') || c.includes('累计'))) return
+  for (const line of lines) {
+    const trimmed = line.trim()
+    if (!trimmed) continue
 
-    const score = Number(cells[0])
-    const count = Number(cells[1])
-    const cumulativeCount = Number(cells[2])
+    // 跳过页眉、页脚、标题
+    if (/^(分数|人数|累计|第\s*\d+\s*页|---|^\d+\s+of)/.test(trimmed)) continue
+    if (/^(20\d{2}年|辽宁省)/.test(trimmed)) continue
 
-    if (isNaN(score) || isNaN(count) || isNaN(cumulativeCount)) return
-    if (score < 0 || score > 750) return
-    if (count < 0 || cumulativeCount < 0) return
+    // 按任意空白分割（部分行累计人数前只有 1 个空格，如 "674 60 1,014"）
+    const parts = trimmed.split(/\s+/).filter((p) => p.length > 0)
+    if (parts.length < 3) continue
 
-    // rank = 上一分数的累计人数 + 1（即该分数段的最高位次）
+    // 解析分数
+    const score = Number(parts[0])
+    if (isNaN(score) || score < 0 || score > 750) continue
+
+    // 解析人数和累计人数（可能含逗号，如 "1,014"）
+    const count = Number(parts[1].replace(/,/g, ''))
+    const cumulativeCount = Number(parts[2].replace(/,/g, ''))
+
+    if (isNaN(count) || isNaN(cumulativeCount)) continue
+    if (count < 0 || cumulativeCount < 0) continue
+
     const rank = records.length > 0
       ? records[records.length - 1].cumulativeCount + 1
       : 1
@@ -46,15 +65,9 @@ export function parseLnTable(
       rank,
       count,
       cumulativeCount,
-      _meta: {
-        source: 'gaokao',
-        sourceUrl,
-        fetchedAt: new Date().toISOString(),
-        scraperVersion: SCRAPER_VERSION,
-        verified: false,
-      },
+      _meta: { ...meta },
     })
-  })
+  }
 
   return records
 }

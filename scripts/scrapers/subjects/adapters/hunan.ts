@@ -1,12 +1,20 @@
-import path from 'node:path'
 import type { SubjectScraper } from '../../shared/province_registry'
 import type { HttpClient } from '../../shared/http'
-import type { SubjectRequirementRecord, CollegeRecord, FailedRecord } from '../../types'
-import { loadColleges } from '../../shared/colleges_loader'
+import type { SubjectRequirementRecord, FailedRecord } from '../../types'
 import { parseHnSubjects } from '../hunan'
-import { GAOKAO_QPS, OUTPUT_DIR } from '../../config'
 
-const HN_SUBJECTS_URL_TEMPLATE = 'https://www.hneeb.cn/xkqz/{guobiaoCode}.html'
+// 真实数据：湖南省教育厅 hnedu.cn
+// 选科要求以 Excel 文件发布（本科 + 专科两个文件）
+const HN_SUBJECTS_URLS: Record<
+  number,
+  { pageUrl: string; bachelorUrl: string; vocationalUrl?: string }
+> = {
+  2024: {
+    pageUrl: 'https://www.hneeb.cn/hnxxg/1/37/content_2845.html',
+    bachelorUrl: 'http://govnew.hnedu.cn:8090/zcms/contentcore/resource/download?ID=101131',
+    vocationalUrl: 'http://govnew.hnedu.cn:8090/zcms/contentcore/resource/download?ID=101132',
+  },
+}
 
 export const hunanSubjectScraper: SubjectScraper = {
   province: '湖南',
@@ -15,35 +23,43 @@ export const hunanSubjectScraper: SubjectScraper = {
     const records: SubjectRequirementRecord[] = []
     const failed: FailedRecord[] = []
 
-    const collegesPath = path.join(OUTPUT_DIR, 'colleges.json')
-    const collegesMap = loadColleges(collegesPath)
-    const colleges: CollegeRecord[] = Array.from(collegesMap.values())
+    const urlConfig = HN_SUBJECTS_URLS[year]
+    if (!urlConfig) return { records, failed }
 
-    const requestInterval = 1000 / GAOKAO_QPS
+    // 本科
+    try {
+      const result = await client.fetchBinary(urlConfig.bachelorUrl, {
+        cacheKey: `hn_subjects_${year}_bk.xlsx`,
+        forceRefresh: options?.force,
+        timeout: 60000,
+      })
+      const parsed = parseHnSubjects(result.buffer, urlConfig.pageUrl)
+      records.push(...parsed)
+    } catch (error) {
+      failed.push({
+        url: urlConfig.bachelorUrl,
+        error: (error as Error).message,
+        retryCount: 3,
+        context: `湖南选科要求 ${year} 本科`,
+      })
+    }
 
-    for (let i = 0; i < colleges.length; i++) {
-      const college = colleges[i]
-      const guobiaoCode = college.moeCode.slice(-5)
-      const url = HN_SUBJECTS_URL_TEMPLATE.replace('{guobiaoCode}', guobiaoCode)
-
+    // 专科
+    if (urlConfig.vocationalUrl) {
       try {
-        const result = await client.fetch(url, {
-          cacheKey: `hn_${guobiaoCode}.html`,
+        const result = await client.fetchBinary(urlConfig.vocationalUrl, {
+          cacheKey: `hn_subjects_${year}_zk.xlsx`,
           forceRefresh: options?.force,
+          timeout: 60000,
         })
-
-        const parsed = parseHnSubjects(result.html, college.id, college.name, url)
+        const parsed = parseHnSubjects(result.buffer, urlConfig.pageUrl)
         records.push(...parsed)
-
-        if (!result.fromCache) {
-          await new Promise((resolve) => setTimeout(resolve, requestInterval))
-        }
       } catch (error) {
         failed.push({
-          url,
+          url: urlConfig.vocationalUrl,
           error: (error as Error).message,
-          retryCount: 0,
-          context: `湖南 ${college.name}`,
+          retryCount: 3,
+          context: `湖南选科要求 ${year} 专科`,
         })
       }
     }

@@ -4,22 +4,21 @@ import type { ScoreRecord, FailedRecord } from '../../types'
 import { parseHubToudangPdf } from '../hubei'
 import { parsePdf } from '../../shared/pdf'
 
-// 湖北（huBei）使用 `Hub` 前缀以避免与河北（hebei，`Hb` 前缀）冲突
+// 真实数据：湖北省教育厅 jyt.hubei.gov.cn
+// 物理类和历史类分别在不同的 PDF 文件中
 const HUB_TOUDANG_URLS: Record<
   number,
   Record<'物理类' | '历史类', { pageUrl: string; pdfUrl: string }>
 > = {
-  2023: {
-    '物理类': { pageUrl: 'https://www.hbea.edu.cn/', pdfUrl: 'https://www.hbea.edu.cn/a3/hubwl2023.pdf' },
-    '历史类': { pageUrl: 'https://www.hbea.edu.cn/', pdfUrl: 'https://www.hbea.edu.cn/a3/hubls2023.pdf' },
-  },
   2024: {
-    '物理类': { pageUrl: 'https://www.hbea.edu.cn/', pdfUrl: 'https://www.hbea.edu.cn/a3/hubwl2024.pdf' },
-    '历史类': { pageUrl: 'https://www.hbea.edu.cn/', pdfUrl: 'https://www.hbea.edu.cn/a3/hubls2024.pdf' },
-  },
-  2025: {
-    '物理类': { pageUrl: 'https://www.hbea.edu.cn/', pdfUrl: 'https://www.hbea.edu.cn/a3/hubwl2025.pdf' },
-    '历史类': { pageUrl: 'https://www.hbea.edu.cn/', pdfUrl: 'https://www.hbea.edu.cn/a3/hubls2025.pdf' },
+    '物理类': {
+      pageUrl: 'https://jyt.hubei.gov.cn/bmdt/ztzl/gxzs/zszy/zsfw/202407/t20240721_5274253.shtml',
+      pdfUrl: 'https://jyt.hubei.gov.cn/bmdt/ztzl/gxzs/zszy/zsfw/202407/P020240721672288198677.pdf',
+    },
+    '历史类': {
+      pageUrl: 'https://jyt.hubei.gov.cn/bmdt/ztzl/gxzs/zszy/zsfw/202407/t20240721_5274252.shtml',
+      pdfUrl: 'https://jyt.hubei.gov.cn/bmdt/ztzl/gxzs/zszy/zsfw/202407/P020240721671647870696.pdf',
+    },
   },
 }
 

@@ -8,16 +8,16 @@ const HN_RANK_TABLE_URLS: Record<
   Record<'物理类' | '历史类', { pageUrl: string; htmlUrl: string }>
 > = {
   2023: {
-    '物理类': { pageUrl: 'https://www.hneeb.cn/', htmlUrl: 'https://www.hneeb.cn/a3/yfydbwl2023.html' },
-    '历史类': { pageUrl: 'https://www.hneeb.cn/', htmlUrl: 'https://www.hneeb.cn/a3/yfydbls2023.html' },
+    '物理类': { pageUrl: 'https://www.hneeb.cn/', htmlUrl: 'https://www.hneeb.cn/hnxxg/741/742/content_4023.html' },
+    '历史类': { pageUrl: 'https://www.hneeb.cn/', htmlUrl: 'https://www.hneeb.cn/hnxxg/741/742/content_4022.html' },
   },
   2024: {
-    '物理类': { pageUrl: 'https://www.hneeb.cn/', htmlUrl: 'https://www.hneeb.cn/a3/yfydbwl2024.html' },
-    '历史类': { pageUrl: 'https://www.hneeb.cn/', htmlUrl: 'https://www.hneeb.cn/a3/yfydbls2024.html' },
+    '物理类': { pageUrl: 'https://www.hneeb.cn/', htmlUrl: 'https://www.hneeb.cn/hnxxg/741/742/content_4207.html' },
+    '历史类': { pageUrl: 'https://www.hneeb.cn/', htmlUrl: 'https://www.hneeb.cn/hnxxg/741/742/content_4206.html' },
   },
   2025: {
-    '物理类': { pageUrl: 'https://www.hneeb.cn/', htmlUrl: 'https://www.hneeb.cn/a3/yfydbwl2025.html' },
-    '历史类': { pageUrl: 'https://www.hneeb.cn/', htmlUrl: 'https://www.hneeb.cn/a3/yfydbls2025.html' },
+    '物理类': { pageUrl: 'https://www.hneeb.cn/', htmlUrl: 'https://www.hneeb.cn/hnxxg/741/742/content_4400.html' },
+    '历史类': { pageUrl: 'https://www.hneeb.cn/', htmlUrl: 'https://www.hneeb.cn/hnxxg/741/742/content_4399.html' },
   },
 }
 

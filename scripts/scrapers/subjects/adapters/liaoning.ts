@@ -1,12 +1,21 @@
-import path from 'node:path'
 import type { SubjectScraper } from '../../shared/province_registry'
 import type { HttpClient } from '../../shared/http'
-import type { SubjectRequirementRecord, CollegeRecord, FailedRecord } from '../../types'
-import { loadColleges } from '../../shared/colleges_loader'
+import type { SubjectRequirementRecord, FailedRecord } from '../../types'
 import { parseLnSubjects } from '../liaoning'
-import { GAOKAO_QPS, OUTPUT_DIR } from '../../config'
 
-const LN_SUBJECTS_URL_TEMPLATE = 'https://www.lnzsks.com/xkqz/{guobiaoCode}.html'
+// 真实数据：辽宁省招生考试之窗 lnzsks.com
+// 选科要求以 Excel 文件发布（本科 + 高职专科两个文件）
+// 原始链接已下线，使用营口市教育局镜像
+const LN_SUBJECTS_URLS: Record<
+  number,
+  { pageUrl: string; bachelorUrl: string; vocationalUrl?: string }
+> = {
+  2024: {
+    pageUrl: 'https://jyt.ln.gov.cn/jyt/gk/zxtz/2023082115102399493/index.shtml',
+    bachelorUrl: 'https://jyj.yingkou.gov.cn/EWB_YK/epointtemp/editor/uploadfile/20220325151020948.xlsx',
+    vocationalUrl: 'https://jyj.yingkou.gov.cn/EWB_YK/epointtemp/editor/uploadfile/20220325151040223.xlsx',
+  },
+}
 
 export const liaoningSubjectScraper: SubjectScraper = {
   province: '辽宁',
@@ -15,35 +24,41 @@ export const liaoningSubjectScraper: SubjectScraper = {
     const records: SubjectRequirementRecord[] = []
     const failed: FailedRecord[] = []
 
-    const collegesPath = path.join(OUTPUT_DIR, 'colleges.json')
-    const collegesMap = loadColleges(collegesPath)
-    const colleges: CollegeRecord[] = Array.from(collegesMap.values())
+    const urlConfig = LN_SUBJECTS_URLS[year]
+    if (!urlConfig) return { records, failed }
 
-    const requestInterval = 1000 / GAOKAO_QPS
+    // 本科
+    try {
+      const result = await client.fetchBinary(urlConfig.bachelorUrl, {
+        cacheKey: `ln_subjects_${year}_bk.xlsx`,
+        forceRefresh: options?.force,
+      })
+      const parsed = parseLnSubjects(result.buffer, urlConfig.pageUrl)
+      records.push(...parsed)
+    } catch (error) {
+      failed.push({
+        url: urlConfig.bachelorUrl,
+        error: (error as Error).message,
+        retryCount: 3,
+        context: `辽宁选科要求 ${year} 本科`,
+      })
+    }
 
-    for (let i = 0; i < colleges.length; i++) {
-      const college = colleges[i]
-      const guobiaoCode = college.moeCode.slice(-5)
-      const url = LN_SUBJECTS_URL_TEMPLATE.replace('{guobiaoCode}', guobiaoCode)
-
+    // 高职专科
+    if (urlConfig.vocationalUrl) {
       try {
-        const result = await client.fetch(url, {
-          cacheKey: `ln_${guobiaoCode}.html`,
+        const result = await client.fetchBinary(urlConfig.vocationalUrl, {
+          cacheKey: `ln_subjects_${year}_zk.xlsx`,
           forceRefresh: options?.force,
         })
-
-        const parsed = parseLnSubjects(result.html, college.id, college.name, url)
+        const parsed = parseLnSubjects(result.buffer, urlConfig.pageUrl)
         records.push(...parsed)
-
-        if (!result.fromCache) {
-          await new Promise((resolve) => setTimeout(resolve, requestInterval))
-        }
       } catch (error) {
         failed.push({
-          url,
+          url: urlConfig.vocationalUrl,
           error: (error as Error).message,
-          retryCount: 0,
-          context: `辽宁 ${college.name}`,
+          retryCount: 3,
+          context: `辽宁选科要求 ${year} 高职专科`,
         })
       }
     }

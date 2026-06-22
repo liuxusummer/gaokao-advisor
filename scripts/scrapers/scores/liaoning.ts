@@ -1,21 +1,26 @@
-import * as cheerio from 'cheerio'
+import * as xlsx from 'xlsx'
 import type { ScoreRecord, ScoreRecordMeta } from '../types'
 import { SCRAPER_VERSION } from '../config'
 
 /**
- * 解析辽宁投档线 HTML（专业级，3+1+2 双科类，本科批）。
+ * 解析辽宁投档线 Excel（专业级，3+1+2 双科类，本科批）。
  *
- * 辽宁采用"专业+院校"模式，每条记录对应一个专业，
- * 不包含专业组代号与专业组名称字段（与院校专业组模式不同）。
- * 辽宁为 3+1+2 模式，科类由参数传入（物理类/历史类）。
+ * 真实数据格式（来自 lnzsks.com ZIP 内的 XLSX）：
+ * 表头: 院校编号 | 招生院校 | 专业编号 | 招生专业 | 投档最低分 | [6个同分排序项]
+ *
+ * 表头含换行符（如 "院校\r\n编号"），需规范化后匹配。
+ * 辽宁采用"专业+院校"模式，每条记录对应一个专业。
  */
 export function parseLnToudang(
-  html: string,
+  buffer: Buffer,
   year: number,
   category: '物理类' | '历史类',
   sourceUrl: string
 ): ScoreRecord[] {
-  const $ = cheerio.load(html)
+  const workbook = xlsx.read(buffer, { type: 'buffer' })
+  const sheet = workbook.Sheets[workbook.SheetNames[0]]
+  const rows = xlsx.utils.sheet_to_json(sheet, { header: 1 }) as unknown[][]
+
   const records: ScoreRecord[] = []
   const meta: ScoreRecordMeta = {
     source: 'gaokao',
@@ -25,17 +30,13 @@ export function parseLnToudang(
     verified: false,
   }
 
-  // 动态表头检测：扫描前 10 行查找含 '院校代码'/'院校名称' 的行
+  // 动态表头检测：扫描前 10 行查找含 '院校编号'/'投档最低分' 的行
+  // 注意：辽宁 Excel 表头含换行符（如 "院校\r\n编号"），需规范化后匹配
+  const normalize = (s: string) => s.replace(/[\r\n\s]/g, '')
   let headerRowIndex = -1
-  const allRows: string[][] = []
-  $('table tr').each((_, tr) => {
-    const cells = $(tr).find('td,th').map((_, cell) => $(cell).text().trim()).get()
-    allRows.push(cells)
-  })
-
-  for (let i = 0; i < Math.min(allRows.length, 10); i++) {
-    const row = allRows[i]
-    if (row.some((cell) => cell.includes('院校代码') || cell.includes('院校名称'))) {
+  for (let i = 0; i < Math.min(rows.length, 10); i++) {
+    const row = rows[i]
+    if (row.some((cell) => normalize(String(cell)).includes('院校编号')) && row.some((cell) => normalize(String(cell)).includes('投档最低分'))) {
       headerRowIndex = i
       break
     }
@@ -43,38 +44,38 @@ export function parseLnToudang(
 
   if (headerRowIndex === -1) return records
 
-  const headers = allRows[headerRowIndex].map((h) => String(h).trim())
+  const headers = rows[headerRowIndex].map((h) => normalize(String(h)))
   const colMap = {
-    collegeName: headers.findIndex((h) => h.includes('院校名称')),
-    majorCode: headers.findIndex((h) => h.includes('专业代码')),
-    majorName: headers.findIndex((h) => h.includes('专业名称')),
-    planCount: headers.findIndex((h) => h.includes('计划数')),
-    minScore: headers.findIndex(
-      (h) => h.includes('投档分') || h.includes('投档最低分') || h.includes('最低分')
-    ),
-    minRank: headers.findIndex((h) => h.includes('位次') || h.includes('投档最低位次')),
+    collegeId: headers.findIndex((h) => h.includes('院校编号')),
+    collegeName: headers.findIndex((h) => h.includes('招生院校')),
+    majorCode: headers.findIndex((h) => h.includes('专业编号')),
+    majorName: headers.findIndex((h) => h.includes('招生专业')),
+    minScore: headers.findIndex((h) => h.includes('投档最低分') || h.includes('最低分')),
   }
 
-  for (let i = headerRowIndex + 1; i < allRows.length; i++) {
-    const row = allRows[i]
+  if (colMap.collegeName < 0 || colMap.minScore < 0) return records
+
+  for (let i = headerRowIndex + 1; i < rows.length; i++) {
+    const row = rows[i]
     const collegeName = String(row[colMap.collegeName] ?? '').trim()
-    if (!collegeName || collegeName === '院校名称') continue
+    if (!collegeName || collegeName === '招生院校') continue
 
     const minScore = Number(row[colMap.minScore])
     if (!minScore || isNaN(minScore)) continue
 
+    const majorName = String(row[colMap.majorName] ?? '').trim()
+
     records.push({
-      collegeId: '',
+      collegeId: colMap.collegeId >= 0 ? String(row[colMap.collegeId] ?? '').trim() : '',
       collegeName,
       year,
-      majorName: String(row[colMap.majorName] ?? '').trim(),
+      majorName,
       majorCode: colMap.majorCode >= 0 ? String(row[colMap.majorCode] ?? '').trim() : undefined,
       province: '辽宁',
       category,
       batch: '本科批',
       minScore,
-      minRank: Number(row[colMap.minRank]) || 0,
-      planCount: colMap.planCount >= 0 ? Number(row[colMap.planCount]) || undefined : undefined,
+      minRank: 0,
       _meta: { ...meta },
     })
   }

@@ -3,15 +3,20 @@ import type { ScoreRecord, ScoreRecordMeta } from '../types'
 import { SCRAPER_VERSION } from '../config'
 
 /**
- * 解析湖南投档线 Excel（院校专业组级，3+1+2 双科类，本科批）。
+ * 解析湖南投档线 Excel（院校专业组级，3+1+2，本科批）。
  *
- * 湖南采用"院校专业组"模式，每条记录对应一个院校专业组，
- * 包含专业组代号与专业组名称字段（无具体专业级信息）。
+ * 真实数据格式（来自 hneeb.cn）：
+ * Row 0: 标题行
+ * Row 1: 说明文字
+ * Row 2: 表头 ["批次","计划类别","科类","院校代号","院校名称","专业组编号","专业组名称","投档线",...]
+ * Row 3+: 数据行
+ *
+ * 科类列区分物理类/历史类: "普通类(首选历史)" / "普通类(首选物理)"
+ * 物理类和历史类在同一个 Excel 中。
  */
 export function parseHnToudang(
   buffer: Buffer,
   year: number,
-  category: '物理类' | '历史类',
   sourceUrl: string
 ): ScoreRecord[] {
   const workbook = xlsx.read(buffer, { type: 'buffer' })
@@ -27,11 +32,11 @@ export function parseHnToudang(
     verified: false,
   }
 
-  // 动态表头检测：扫描前 10 行查找含 '院校代码'/'院校名称' 的行
+  // 找到表头行（包含"院校代号"和"投档线"）
   let headerRowIndex = -1
   for (let i = 0; i < Math.min(rows.length, 10); i++) {
     const row = rows[i]
-    if (row.some((cell) => String(cell).includes('院校代码') || String(cell).includes('院校名称'))) {
+    if (row.some((cell) => String(cell).includes('院校代号')) && row.some((cell) => String(cell).includes('投档线'))) {
       headerRowIndex = i
       break
     }
@@ -41,50 +46,49 @@ export function parseHnToudang(
 
   const headers = rows[headerRowIndex].map((h) => String(h).trim())
   const colMap = {
+    category: headers.findIndex((h) => h.includes('科类')),
+    collegeId: headers.findIndex((h) => h.includes('院校代号')),
     collegeName: headers.findIndex((h) => h.includes('院校名称')),
-    majorGroup: headers.findIndex(
-      (h) =>
-        h.includes('专业组代号') ||
-        h.includes('专业组代码') ||
-        h.includes('院校专业组代号') ||
-        h.includes('院校专业组代码')
-    ),
-    majorGroupName: headers.findIndex(
-      (h) => h.includes('专业组名称') || h.includes('院校专业组名称')
-    ),
-    planCount: headers.findIndex((h) => h.includes('计划数')),
-    minScore: headers.findIndex((h) => h.includes('投档最低分') || h.includes('最低分')),
-    minRank: headers.findIndex((h) => h.includes('位次') || h.includes('投档最低位次')),
+    majorGroup: headers.findIndex((h) => h.includes('专业组编号')),
+    majorGroupName: headers.findIndex((h) => h.includes('专业组名称')),
+    minScore: headers.findIndex((h) => h.includes('投档线')),
   }
+
+  if (colMap.collegeId < 0 || colMap.minScore < 0) return records
 
   for (let i = headerRowIndex + 1; i < rows.length; i++) {
     const row = rows[i]
+    const categoryRaw = String(row[colMap.category] ?? '').trim()
+    const collegeId = String(row[colMap.collegeId] ?? '').trim()
     const collegeName = String(row[colMap.collegeName] ?? '').trim()
-    if (!collegeName || collegeName === '院校名称') continue
-
+    const majorGroup = String(row[colMap.majorGroup] ?? '').trim()
+    const majorGroupName = String(row[colMap.majorGroupName] ?? '').trim()
     const minScore = Number(row[colMap.minScore])
-    if (!minScore || isNaN(minScore)) continue
 
-    const majorGroup = colMap.majorGroup >= 0
-      ? String(row[colMap.majorGroup] ?? '').trim() || undefined
-      : undefined
-    const majorGroupName = colMap.majorGroupName >= 0
-      ? String(row[colMap.majorGroupName] ?? '').trim() || undefined
-      : undefined
+    if (!collegeName || !minScore || isNaN(minScore)) continue
+
+    // 从"普通类(首选历史)"/"普通类(首选物理)"提取科类
+    let category: '物理类' | '历史类'
+    if (categoryRaw.includes('历史')) {
+      category = '历史类'
+    } else if (categoryRaw.includes('物理')) {
+      category = '物理类'
+    } else {
+      continue
+    }
 
     records.push({
-      collegeId: '',
+      collegeId,
       collegeName,
       year,
-      majorName: majorGroupName ?? collegeName, // 院校专业组级无专业名，用专业组名填充
-      majorGroup,
-      majorGroupName,
+      majorName: majorGroupName || collegeName,
+      majorGroup: majorGroup || undefined,
+      majorGroupName: majorGroupName || undefined,
       province: '湖南',
       category,
       batch: '本科批',
       minScore,
-      minRank: Number(row[colMap.minRank]) || 0,
-      planCount: colMap.planCount >= 0 ? Number(row[colMap.planCount]) || undefined : undefined,
+      minRank: 0,
       _meta: { ...meta },
     })
   }

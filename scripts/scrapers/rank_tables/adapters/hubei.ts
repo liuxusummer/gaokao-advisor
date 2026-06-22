@@ -8,16 +8,16 @@ const HUB_RANK_TABLE_URLS: Record<
   Record<'物理类' | '历史类', { pageUrl: string; htmlUrl: string }>
 > = {
   2023: {
-    '物理类': { pageUrl: 'https://www.hbea.edu.cn/', htmlUrl: 'https://www.hbea.edu.cn/a3/hubrankwl2023.html' },
-    '历史类': { pageUrl: 'https://www.hbea.edu.cn/', htmlUrl: 'https://www.hbea.edu.cn/a3/hubrankls2023.html' },
+    '物理类': { pageUrl: 'https://www.eol.cn/', htmlUrl: 'https://www.eol.cn/m/gaokao/202306/t20230625_2445234.shtml' },
+    '历史类': { pageUrl: 'https://www.eol.cn/', htmlUrl: 'https://www.eol.cn/m/gaokao/202306/t20230625_2445239.shtml' },
   },
   2024: {
-    '物理类': { pageUrl: 'https://www.hbea.edu.cn/', htmlUrl: 'https://www.hbea.edu.cn/a3/hubrankwl2024.html' },
-    '历史类': { pageUrl: 'https://www.hbea.edu.cn/', htmlUrl: 'https://www.hbea.edu.cn/a3/hubrankls2024.html' },
+    '物理类': { pageUrl: 'https://www.eol.cn/', htmlUrl: 'http://www.eol.cn/m/gaokao/202406/t20240625_2619340.shtml' },
+    '历史类': { pageUrl: 'https://www.eol.cn/', htmlUrl: 'https://www.eol.cn/m/gaokao/202406/t20240625_2619345.shtml' },
   },
   2025: {
-    '物理类': { pageUrl: 'https://www.hbea.edu.cn/', htmlUrl: 'https://www.hbea.edu.cn/a3/hubrankwl2025.html' },
-    '历史类': { pageUrl: 'https://www.hbea.edu.cn/', htmlUrl: 'https://www.hbea.edu.cn/a3/hubrankls2025.html' },
+    '物理类': { pageUrl: 'https://www.eol.cn/', htmlUrl: 'https://www.eol.cn/m/gaokao/202506/t20250625_2800000.shtml' },
+    '历史类': { pageUrl: 'https://www.eol.cn/', htmlUrl: 'https://www.eol.cn/m/gaokao/202506/t20250625_2800005.shtml' },
   },
 }
 

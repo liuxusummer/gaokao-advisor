@@ -1,47 +1,25 @@
 import type { RankTableScraper } from '../../shared/province_registry'
 import type { HttpClient } from '../../shared/http'
 import type { RankTableRecord, FailedRecord } from '../../types'
-import { ocrImage } from '../../shared/ocr'
 import { parseHbTable } from '../hebei'
 
+// 真实数据：河北省教育考试院 hebeea.edu.cn 的 PDF 为图片格式，无法直接解析文本。
+// 改用大学生必备网 (dxsbb.com) 转载的 HTML 表格（数据来源为河北考试院官方）。
 const HB_RANK_TABLE_URLS: Record<
   number,
-  { pageUrl: string; images: Record<string, string[]> }
+  Record<'物理类' | '历史类', { pageUrl: string; htmlUrl: string }>
 > = {
   2023: {
-    pageUrl: 'https://www.hebeea.edu.cn/',
-    images: {
-      '物理类': [
-        'https://www.hebeea.edu.cn/a3/yfydbwl2023_1.jpg',
-        'https://www.hebeea.edu.cn/a3/yfydbwl2023_2.jpg',
-      ],
-      '历史类': [
-        'https://www.hebeea.edu.cn/a3/yfydbls2023_1.jpg',
-        'https://www.hebeea.edu.cn/a3/yfydbls2023_2.jpg',
-      ],
-    },
+    '物理类': { pageUrl: 'https://www.dxsbb.com/', htmlUrl: 'https://www.dxsbb.com/news/128345.html' },
+    '历史类': { pageUrl: 'https://www.dxsbb.com/', htmlUrl: 'https://www.dxsbb.com/news/128346.html' },
   },
   2024: {
-    pageUrl: 'https://www.hebeea.edu.cn/',
-    images: {
-      '物理类': [
-        'https://www.hebeea.edu.cn/a3/yfydbwl2024_1.jpg',
-      ],
-      '历史类': [
-        'https://www.hebeea.edu.cn/a3/yfydbls2024_1.jpg',
-      ],
-    },
+    '物理类': { pageUrl: 'https://www.dxsbb.com/', htmlUrl: 'https://www.dxsbb.com/news/146488.html' },
+    '历史类': { pageUrl: 'https://www.dxsbb.com/', htmlUrl: 'https://www.dxsbb.com/news/146489.html' },
   },
   2025: {
-    pageUrl: 'https://www.hebeea.edu.cn/',
-    images: {
-      '物理类': [
-        'https://www.hebeea.edu.cn/a3/yfydbwl2025_1.jpg',
-      ],
-      '历史类': [
-        'https://www.hebeea.edu.cn/a3/yfydbls2025_1.jpg',
-      ],
-    },
+    '物理类': { pageUrl: 'https://www.dxsbb.com/', htmlUrl: 'https://www.dxsbb.com/news/160000.html' },
+    '历史类': { pageUrl: 'https://www.dxsbb.com/', htmlUrl: 'https://www.dxsbb.com/news/160001.html' },
   },
 }
 
@@ -53,32 +31,27 @@ export const hebeiRankTableScraper: RankTableScraper = {
     const failed: FailedRecord[] = []
 
     const urlConfig = HB_RANK_TABLE_URLS[year]
-    if (!urlConfig || !urlConfig.images) {
-      return { records, failed }
-    }
+    if (!urlConfig) return { records, failed }
 
     for (const category of ['物理类', '历史类'] as const) {
-      const imageUrls = urlConfig.images[category]
-      if (!imageUrls) continue
+      const fileConfig = urlConfig[category]
+      if (!fileConfig) continue
 
-      for (let i = 0; i < imageUrls.length; i++) {
-        try {
-          const result = await client.fetchBinary(imageUrls[i], {
-            cacheKey: `hb_rank_${year}_${category}_${i + 1}`,
-            forceRefresh: options?.force,
-          })
+      try {
+        const result = await client.fetch(fileConfig.htmlUrl, {
+          cacheKey: `hb_rank_${year}_${category}.html`,
+          forceRefresh: options?.force,
+        })
 
-          const text = await ocrImage(result.buffer)
-          const parsed = parseHbTable(text, year, category, urlConfig.pageUrl)
-          records.push(...parsed)
-        } catch (error) {
-          failed.push({
-            url: imageUrls[i],
-            error: (error as Error).message,
-            retryCount: 3,
-            context: `河北一分一段表 ${year} ${category} part ${i + 1}`,
-          })
-        }
+        const parsed = parseHbTable(result.html, year, category, fileConfig.pageUrl)
+        records.push(...parsed)
+      } catch (error) {
+        failed.push({
+          url: fileConfig.htmlUrl,
+          error: (error as Error).message,
+          retryCount: 3,
+          context: `河北一分一段表 ${year} ${category}`,
+        })
       }
     }
 

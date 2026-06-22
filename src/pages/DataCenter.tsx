@@ -233,9 +233,10 @@ function ScoreSearch() {
       title: '院校',
       dataIndex: 'collegeId',
       key: 'collegeId',
-      render: (id: string) => {
+      render: (id: string, record: ScoreRecord) => {
         const college = colleges.find((c) => c.id === id)
-        return college ? <CollegeNameLink college={college} /> : id
+        if (college) return <CollegeNameLink college={college} />
+        return <span className="font-bold text-text-primary">{record.collegeName || id}</span>
       },
     },
     {

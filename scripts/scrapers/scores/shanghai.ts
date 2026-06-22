@@ -1,95 +1,113 @@
-import * as cheerio from 'cheerio'
-import type { ScoreRecord, ScoreRecordMeta } from '../types'
 import { SCRAPER_VERSION } from '../config'
+import type { ScoreRecord, TieBreakers } from '../types'
 
 /**
- * 解析上海投档线 HTML（院校专业组级，3+3 综合科类，本科批）。
+ * 解析上海投档线 PDF 文本（院校专业组级，3+3 综合科类，本科批）。
  *
- * 上海采用"院校专业组"模式，每条记录对应一个院校专业组，
- * 包含专业组代号与专业组名称字段（无具体专业级信息）。
- * 上海为 3+3 模式，仅有综合科类，故 category 硬编码为 '综合'。
+ * 真实数据格式（来自 shmeea.edu.cn PDF）：
+ * 每行格式（tab 分隔）：
+ *   院校专业组代码  院校专业组名称  投档线  [语数合计 语数较高 外语 选考最高 选考次高 选考最低 公示加分]
+ *
+ * 特殊情况：
+ *   - 580分及以上的院校专业组，投档线显示为"580分及以上"，无同分排序项
+ *   - 每页有页眉（院校专业组代码等）和页脚（第X页/共Y页），需跳过
  */
-export function parseShToudang(
-  html: string,
+export function parseShToudangPdf(
+  text: string,
   year: number,
   sourceUrl: string
 ): ScoreRecord[] {
-  const $ = cheerio.load(html)
+  if (!text) return []
+
+  const lines = text.split(/\r?\n/)
   const records: ScoreRecord[] = []
-  const meta: ScoreRecordMeta = {
-    source: 'gaokao',
-    sourceUrl,
-    fetchedAt: new Date().toISOString(),
-    scraperVersion: SCRAPER_VERSION,
-    verified: false,
-  }
 
-  // 动态表头检测：扫描前 10 行查找含 '院校代码'/'院校名称' 的行
-  let headerRowIndex = -1
-  const allRows: string[][] = []
-  $('table tr').each((_, tr) => {
-    const cells = $(tr).find('td,th').map((_, cell) => $(cell).text().trim()).get()
-    allRows.push(cells)
-  })
+  for (const line of lines) {
+    const trimmed = line.trim()
+    if (!trimmed) continue
 
-  for (let i = 0; i < Math.min(allRows.length, 10); i++) {
-    const row = allRows[i]
-    if (row.some((cell) => cell.includes('院校代码') || cell.includes('院校名称'))) {
-      headerRowIndex = i
-      break
+    // 跳过页眉、页脚、标题
+    if (/^(院校专业|组代码|组名称|名称|投档线|末位投档|语文数学|合计成绩|语文或数|学较高分|外语成绩|选考科目|最高分|次高分|最低分|公示加分|第\s*\d+\s*页|湖北省|上海市|微信公众号|HBSZSB|---|^\d+\s*of)/.test(trimmed)) continue
+    if (/^(上海市|20\d{2}年上海市)/.test(trimmed)) continue
+    if (/^\d+\s+of\s+\d+/.test(trimmed)) continue
+
+    // 按 tab 或多个空格分割
+    const parts = trimmed.split(/\t+|\s{2,}/).filter((p) => p.length > 0)
+    if (parts.length < 3) continue
+
+    // 第 1 部分是院校专业组代码（5位数字）
+    if (!/^\d{5}$/.test(parts[0])) continue
+
+    const collegeId = parts[0]
+    const fullName = parts[1]
+    const scoreStr = parts[2]
+
+    if (!fullName) continue
+
+    // 处理"580分及以上"的情况
+    let minScore: number
+    if (/^580分及以上$/.test(scoreStr)) {
+      minScore = 580
+    } else {
+      minScore = Number(scoreStr)
+      if (!minScore || isNaN(minScore)) continue
     }
-  }
 
-  if (headerRowIndex === -1) return records
+    // 拆分"复旦大学(01)" → 院校名 + 专业组代码
+    const match = fullName.match(/^(.+?)\((\d+)\)$/)
+    const collegeName = match ? match[1] : fullName
+    const majorGroup = match ? match[2] : undefined
+    const majorGroupName = fullName
 
-  const headers = allRows[headerRowIndex].map((h) => String(h).trim())
-  const colMap = {
-    collegeName: headers.findIndex((h) => h.includes('院校名称')),
-    majorGroup: headers.findIndex(
-      (h) =>
-        h.includes('专业组代号') ||
-        h.includes('专业组代码') ||
-        h.includes('院校专业组代号') ||
-        h.includes('院校专业组代码') ||
-        h.includes('专业组')
-    ),
-    majorGroupName: headers.findIndex(
-      (h) => h.includes('专业组名称') || h.includes('院校专业组名称')
-    ),
-    planCount: headers.findIndex((h) => h.includes('计划数')),
-    minScore: headers.findIndex((h) => h.includes('投档分') || h.includes('投档最低分') || h.includes('最低分')),
-    minRank: headers.findIndex((h) => h.includes('位次') || h.includes('投档最低位次')),
-  }
+    // 同分排序项（580分及以上时无排序项）
+    let tieBreakers: TieBreakers | undefined
+    if (parts.length >= 9 && !/^580分及以上$/.test(scoreStr)) {
+      const chineseMathSum = Number(parts[3])
+      const chineseMathMax = Number(parts[4])
+      const foreignLanguage = Number(parts[5])
+      const preferredSubject = Number(parts[6])
+      const reselectSubjectMax = Number(parts[7])
+      const volunteerOrder = Number(parts[8])
 
-  for (let i = headerRowIndex + 1; i < allRows.length; i++) {
-    const row = allRows[i]
-    const collegeName = String(row[colMap.collegeName] ?? '').trim()
-    if (!collegeName || collegeName === '院校名称') continue
-
-    const minScore = Number(row[colMap.minScore])
-    if (!minScore || isNaN(minScore)) continue
-
-    const majorGroup = colMap.majorGroup >= 0
-      ? String(row[colMap.majorGroup] ?? '').trim() || undefined
-      : undefined
-    const majorGroupName = colMap.majorGroupName >= 0
-      ? String(row[colMap.majorGroupName] ?? '').trim() || undefined
-      : undefined
+      if (
+        Number.isFinite(chineseMathSum) &&
+        Number.isFinite(chineseMathMax) &&
+        Number.isFinite(foreignLanguage) &&
+        Number.isFinite(preferredSubject) &&
+        Number.isFinite(reselectSubjectMax) &&
+        Number.isFinite(volunteerOrder)
+      ) {
+        tieBreakers = {
+          chineseMathSum,
+          chineseMathMax,
+          foreignLanguage,
+          preferredSubject,
+          reselectSubjectMax,
+          volunteerOrder,
+        }
+      }
+    }
 
     records.push({
-      collegeId: '',
+      collegeId,
       collegeName,
       year,
-      majorName: majorGroupName ?? collegeName, // 院校专业组级无专业名，用专业组名填充
+      majorName: majorGroupName,
       majorGroup,
       majorGroupName,
       province: '上海',
       category: '综合',
       batch: '本科批',
       minScore,
-      minRank: Number(row[colMap.minRank]) || 0,
-      planCount: colMap.planCount >= 0 ? Number(row[colMap.planCount]) || undefined : undefined,
-      _meta: { ...meta },
+      minRank: 0,
+      tieBreakers,
+      _meta: {
+        source: 'gaokao',
+        sourceUrl,
+        fetchedAt: new Date().toISOString(),
+        scraperVersion: SCRAPER_VERSION,
+        verified: false,
+      },
     })
   }
 

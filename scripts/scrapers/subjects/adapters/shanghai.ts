@@ -1,12 +1,17 @@
-import path from 'node:path'
 import type { SubjectScraper } from '../../shared/province_registry'
 import type { HttpClient } from '../../shared/http'
-import type { SubjectRequirementRecord, CollegeRecord, FailedRecord } from '../../types'
-import { loadColleges } from '../../shared/colleges_loader'
+import type { SubjectRequirementRecord, FailedRecord } from '../../types'
 import { parseShSubjects } from '../shanghai'
-import { GAOKAO_QPS, OUTPUT_DIR } from '../../config'
+import { parsePdf } from '../../shared/pdf'
 
-const SH_SUBJECTS_URL_TEMPLATE = 'https://www.shmeea.edu.cn/xkqz/{guobiaoCode}.html'
+// 真实数据：上海市教育考试院 shmeea.edu.cn
+// 选科要求以单一 PDF 文件发布，包含所有高校的选科要求
+const SH_SUBJECTS_URLS: Record<number, { pageUrl: string; pdfUrl: string }> = {
+  2024: {
+    pageUrl: 'http://www.shmeea.edu.cn/page/08000/20211231/25650.html',
+    pdfUrl: 'http://www.shmeea.edu.cn/download/20211231/01.pdf',
+  },
+}
 
 export const shanghaiSubjectScraper: SubjectScraper = {
   province: '上海',
@@ -15,37 +20,26 @@ export const shanghaiSubjectScraper: SubjectScraper = {
     const records: SubjectRequirementRecord[] = []
     const failed: FailedRecord[] = []
 
-    const collegesPath = path.join(OUTPUT_DIR, 'colleges.json')
-    const collegesMap = loadColleges(collegesPath)
-    const colleges: CollegeRecord[] = Array.from(collegesMap.values())
+    const urlConfig = SH_SUBJECTS_URLS[year]
+    if (!urlConfig) return { records, failed }
 
-    const requestInterval = 1000 / GAOKAO_QPS
+    try {
+      const result = await client.fetchBinary(urlConfig.pdfUrl, {
+        cacheKey: `sh_subjects_${year}.pdf`,
+        forceRefresh: options?.force,
+        timeout: 60000,
+      })
 
-    for (let i = 0; i < colleges.length; i++) {
-      const college = colleges[i]
-      const guobiaoCode = college.moeCode.slice(-5)
-      const url = SH_SUBJECTS_URL_TEMPLATE.replace('{guobiaoCode}', guobiaoCode)
-
-      try {
-        const result = await client.fetch(url, {
-          cacheKey: `sh_${guobiaoCode}.html`,
-          forceRefresh: options?.force,
-        })
-
-        const parsed = parseShSubjects(result.html, college.id, college.name, url)
-        records.push(...parsed)
-
-        if (!result.fromCache) {
-          await new Promise((resolve) => setTimeout(resolve, requestInterval))
-        }
-      } catch (error) {
-        failed.push({
-          url,
-          error: (error as Error).message,
-          retryCount: 0,
-          context: `上海 ${college.name}`,
-        })
-      }
+      const text = await parsePdf(result.buffer)
+      const parsed = parseShSubjects(text, urlConfig.pageUrl)
+      records.push(...parsed)
+    } catch (error) {
+      failed.push({
+        url: urlConfig.pdfUrl,
+        error: (error as Error).message,
+        retryCount: 3,
+        context: `上海选科要求 ${year}`,
+      })
     }
 
     return { records, failed }

@@ -3,21 +3,21 @@ import type { HttpClient } from '../../shared/http'
 import type { ScoreRecord, FailedRecord } from '../../types'
 import { parseHbToudang } from '../hebei'
 
+// 真实数据：河北教育考试院 hebeea.edu.cn
+// 物理类和历史类分别在不同的 Excel 文件中
 const HB_TOUDANG_URLS: Record<
   number,
   Record<'物理类' | '历史类', { pageUrl: string; xlsUrl: string }>
 > = {
-  2023: {
-    '物理类': { pageUrl: 'https://www.hebeea.edu.cn/', xlsUrl: 'https://www.hebeea.edu.cn/a3/hbwl2023.xls' },
-    '历史类': { pageUrl: 'https://www.hebeea.edu.cn/', xlsUrl: 'https://www.hebeea.edu.cn/a3/hbls2023.xls' },
-  },
   2024: {
-    '物理类': { pageUrl: 'https://www.hebeea.edu.cn/', xlsUrl: 'https://www.hebeea.edu.cn/a3/hbwl2024.xls' },
-    '历史类': { pageUrl: 'https://www.hebeea.edu.cn/', xlsUrl: 'https://www.hebeea.edu.cn/a3/hbls2024.xls' },
-  },
-  2025: {
-    '物理类': { pageUrl: 'https://www.hebeea.edu.cn/', xlsUrl: 'https://www.hebeea.edu.cn/a3/hbwl2025.xls' },
-    '历史类': { pageUrl: 'https://www.hebeea.edu.cn/', xlsUrl: 'https://www.hebeea.edu.cn/a3/hbls2025.xls' },
+    '物理类': {
+      pageUrl: 'http://www.hebeea.edu.cn/html/xxgl/tzgg/2024/0722-163123-755.html',
+      xlsUrl: 'https://file.hebeea.edu.cn/files/article/2024/07/20240722163024_933.xlsx',
+    },
+    '历史类': {
+      pageUrl: 'http://www.hebeea.edu.cn/html/xxgl/tzgg/2024/0722-163123-755.html',
+      xlsUrl: 'https://file.hebeea.edu.cn/files/article/2024/07/20240722163024_223.xlsx',
+    },
   },
 }
 
@@ -37,7 +37,7 @@ export const hebeiScoreScraper: ScoreScraper = {
 
       try {
         const result = await client.fetchBinary(fileConfig.xlsUrl, {
-          cacheKey: `hb_toudang_${year}_${category}.xls`,
+          cacheKey: `hb_toudang_${year}_${category}.xlsx`,
           forceRefresh: options?.force,
         })
 

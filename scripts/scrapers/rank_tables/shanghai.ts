@@ -1,20 +1,22 @@
-import * as cheerio from 'cheerio'
 import { SCRAPER_VERSION } from '../config'
 import type { RankTableRecord, RankTableRecordMeta } from '../types'
 
 /**
- * 解析上海市一分一段表 HTML（cheerio 解析 table）。
+ * 解析上海市一分一段表 PDF 文本。
  *
- * HTML 结构：标准 <table> 表格，每行包含 分数 / 人数 / 累计人数 三列。
- * 跳过表头行（含 '分数'/'人数'/'累计' 字样）。
- * 上海为 3+3 模式，仅有综合科类，故 category 硬编码为 '综合'。
+ * 真实数据格式（来自 shmeea.edu.cn PDF）：
+ * 每行格式（tab 分隔）：
+ *   分数  人数  累计人数
+ *
+ * 特殊情况：
+ *   - 最高分显示为"619分及以上"
+ *   - 每页有页眉（分数/人数/累计人数）和页脚（第X页/共Y页），需跳过
  */
 export function parseShTable(
-  html: string,
+  text: string,
   year: number,
   sourceUrl: string
 ): RankTableRecord[] {
-  const $ = cheerio.load(html)
   const records: RankTableRecord[] = []
   const meta: RankTableRecordMeta = {
     source: 'gaokao',
@@ -24,22 +26,37 @@ export function parseShTable(
     verified: false,
   }
 
-  $('table tr').each((_, tr) => {
-    const cells = $(tr).find('td').map((_, td) => $(td).text().trim()).get()
-    if (cells.length < 3) return
+  const lines = text.split(/\r?\n/)
 
-    // 跳过表头行
-    if (cells.some((c) => c.includes('分数') || c.includes('人数') || c.includes('累计'))) return
+  for (const line of lines) {
+    const trimmed = line.trim()
+    if (!trimmed) continue
 
-    const score = Number(cells[0])
-    const count = Number(cells[1])
-    const cumulativeCount = Number(cells[2])
+    // 跳过页眉、页脚、标题
+    if (/^(分数|人数|累计|第\s*\d+\s*页|---|^\d+\s+of)/.test(trimmed)) continue
+    if (/^(20\d{2}年|上海市)/.test(trimmed)) continue
 
-    if (isNaN(score) || isNaN(count) || isNaN(cumulativeCount)) return
-    if (score < 0 || score > 750) return
-    if (count < 0 || cumulativeCount < 0) return
+    // 按 tab 或多个空格分割
+    const parts = trimmed.split(/\t+|\s{2,}/).filter((p) => p.length > 0)
+    if (parts.length < 3) continue
 
-    // rank = 上一分数的累计人数 + 1（即该分数段的最高位次）
+    // 解析分数（可能是"619分及以上"或纯数字）
+    let score: number
+    const scoreStr = parts[0]
+    if (/^\d+分及以上$/.test(scoreStr)) {
+      score = parseInt(scoreStr)
+    } else {
+      score = Number(scoreStr)
+    }
+
+    if (isNaN(score) || score < 0 || score > 750) continue
+
+    const count = Number(parts[1])
+    const cumulativeCount = Number(parts[2])
+
+    if (isNaN(count) || isNaN(cumulativeCount)) continue
+    if (count < 0 || cumulativeCount < 0) continue
+
     const rank = records.length > 0
       ? records[records.length - 1].cumulativeCount + 1
       : 1
@@ -54,7 +71,7 @@ export function parseShTable(
       cumulativeCount,
       _meta: { ...meta },
     })
-  })
+  }
 
   return records
 }

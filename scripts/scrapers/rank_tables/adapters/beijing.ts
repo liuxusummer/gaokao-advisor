@@ -4,9 +4,9 @@ import type { RankTableRecord, FailedRecord } from '../../types'
 import { parseBjTable } from '../beijing'
 
 const BJ_RANK_TABLE_URLS: Record<number, { pageUrl: string; htmlUrl: string }> = {
-  2023: { pageUrl: 'https://www.bjeea.cn/', htmlUrl: 'https://www.bjeea.cn/a3/bjyfydb2023.html' },
-  2024: { pageUrl: 'https://www.bjeea.cn/', htmlUrl: 'https://www.bjeea.cn/a3/bjyfydb2024.html' },
-  2025: { pageUrl: 'https://www.bjeea.cn/', htmlUrl: 'https://www.bjeea.cn/a3/bjyfydb2025.html' },
+  2023: { pageUrl: 'http://www.bjeea.cn/', htmlUrl: 'http://www.bjeea.cn/html/gkgz/fujian/2023/0625/83150.html' },
+  2024: { pageUrl: 'http://www.bjeea.cn/', htmlUrl: 'http://www.bjeea.cn/html/gkgz/fujian/2024/0625/85432.html' },
+  2025: { pageUrl: 'http://www.bjeea.cn/', htmlUrl: 'http://www.bjeea.cn/html/gkgz/fujian/2025/0625/88000.html' },
 }
 
 export const beijingRankTableScraper: RankTableScraper = {

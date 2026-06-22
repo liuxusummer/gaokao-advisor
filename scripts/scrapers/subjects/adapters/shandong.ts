@@ -1,12 +1,17 @@
-import path from 'node:path'
 import type { SubjectScraper } from '../../shared/province_registry'
 import type { HttpClient } from '../../shared/http'
-import type { SubjectRequirementRecord, CollegeRecord, FailedRecord } from '../../types'
-import { loadColleges } from '../../shared/colleges_loader'
+import type { SubjectRequirementRecord, FailedRecord } from '../../types'
 import { parseSdSubjects } from '../shandong'
-import { GAOKAO_QPS, OUTPUT_DIR } from '../../config'
+import { parsePdf } from '../../shared/pdf'
 
-const SD_SUBJECTS_URL_TEMPLATE = 'https://www.sdzs.gov.cn/xkqz/{guobiaoCode}.html'
+// 真实数据：山东省教育招生考试院 sdzk.cn
+// 选科要求以 PDF 文件形式发布（2024通用版，适用于2025-2026年高考）
+// 本科和专科分别有独立的 PDF 文件
+const SD_SUBJECTS_BK_URL =
+  'https://www.sdzk.cn/Floadup/file/20250317/6387782010007663213616549.pdf'
+const SD_SUBJECTS_ZK_URL =
+  'https://www.sdzk.cn/Floadup/file/20250317/6387782010723289868336614.pdf'
+const SD_SUBJECTS_PAGE_URL = 'https://www.sdzk.cn/NewsInfo.aspx?NewsID=6819'
 
 export const shandongSubjectScraper: SubjectScraper = {
   province: '山东',
@@ -15,38 +20,57 @@ export const shandongSubjectScraper: SubjectScraper = {
     const records: SubjectRequirementRecord[] = []
     const failed: FailedRecord[] = []
 
-    const collegesPath = path.join(OUTPUT_DIR, 'colleges.json')
-    const collegesMap = loadColleges(collegesPath)
-    const colleges: CollegeRecord[] = Array.from(collegesMap.values())
+    // 下载并解析本科 PDF
+    try {
+      console.log('  山东选科要求：下载本科 PDF...')
+      const bkResult = await client.fetchBinary(SD_SUBJECTS_BK_URL, {
+        cacheKey: `sd_subjects_${year}_bk.pdf`,
+        forceRefresh: options?.force,
+      })
+      console.log(`  山东选科要求：本科 PDF 大小 ${bkResult.buffer.length} bytes`)
 
-    const requestInterval = 1000 / GAOKAO_QPS
+      const bkText = await parsePdf(bkResult.buffer)
+      console.log(`  山东选科要求：本科 PDF 文本长度 ${bkText.length}`)
 
-    for (let i = 0; i < colleges.length; i++) {
-      const college = colleges[i]
-      const guobiaoCode = college.moeCode.slice(-5)
-      const url = SD_SUBJECTS_URL_TEMPLATE.replace('{guobiaoCode}', guobiaoCode)
-
-      try {
-        const result = await client.fetch(url, {
-          cacheKey: `sd_${guobiaoCode}.html`,
-          forceRefresh: options?.force,
-        })
-
-        const parsed = parseSdSubjects(result.html, college.id, college.name, url)
-        records.push(...parsed)
-
-        if (!result.fromCache) {
-          await new Promise((resolve) => setTimeout(resolve, requestInterval))
-        }
-      } catch (error) {
-        failed.push({
-          url,
-          error: (error as Error).message,
-          retryCount: 0,
-          context: `山东 ${college.name}`,
-        })
-      }
+      const bkRecords = parseSdSubjects(bkText, SD_SUBJECTS_PAGE_URL, '本科')
+      console.log(`  山东选科要求：本科解析到 ${bkRecords.length} 条记录`)
+      records.push(...bkRecords)
+    } catch (error) {
+      failed.push({
+        url: SD_SUBJECTS_BK_URL,
+        error: (error as Error).message,
+        retryCount: 3,
+        context: `山东选科要求（本科）${year}`,
+      })
     }
+
+    // 下载并解析专科 PDF
+    try {
+      console.log('  山东选科要求：下载专科 PDF...')
+      const zkResult = await client.fetchBinary(SD_SUBJECTS_ZK_URL, {
+        cacheKey: `sd_subjects_${year}_zk.pdf`,
+        forceRefresh: options?.force,
+      })
+      console.log(`  山东选科要求：专科 PDF 大小 ${zkResult.buffer.length} bytes`)
+
+      const zkText = await parsePdf(zkResult.buffer)
+      console.log(`  山东选科要求：专科 PDF 文本长度 ${zkText.length}`)
+
+      const zkRecords = parseSdSubjects(zkText, SD_SUBJECTS_PAGE_URL, '专科')
+      console.log(`  山东选科要求：专科解析到 ${zkRecords.length} 条记录`)
+      records.push(...zkRecords)
+    } catch (error) {
+      failed.push({
+        url: SD_SUBJECTS_ZK_URL,
+        error: (error as Error).message,
+        retryCount: 3,
+        context: `山东选科要求（专科）${year}`,
+      })
+    }
+
+    console.log(
+      `  山东选科要求完成：共 ${records.length} 条记录，${failed.length} 个失败`
+    )
 
     return { records, failed }
   },

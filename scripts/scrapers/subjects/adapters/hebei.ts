@@ -1,12 +1,16 @@
-import path from 'node:path'
 import type { SubjectScraper } from '../../shared/province_registry'
 import type { HttpClient } from '../../shared/http'
-import type { SubjectRequirementRecord, CollegeRecord, FailedRecord } from '../../types'
-import { loadColleges } from '../../shared/colleges_loader'
+import type { SubjectRequirementRecord, FailedRecord } from '../../types'
 import { parseHbSubjects } from '../hebei'
-import { GAOKAO_QPS, OUTPUT_DIR } from '../../config'
 
-const HB_SUBJECTS_URL_TEMPLATE = 'https://www.hebeea.edu.cn/xkqz/{guobiaoCode}.html'
+// 真实数据：河北省教育考试院 hebeea.edu.cn
+// 选科要求以单一 Excel 文件发布，包含所有高校的选科要求
+const HB_SUBJECTS_URLS: Record<number, { pageUrl: string; xlsxUrl: string }> = {
+  2024: {
+    pageUrl: 'http://www.hebeea.edu.cn/html/ptgk/tzgg/2022/0121-105905-018.html',
+    xlsxUrl: 'https://file.hebeea.edu.cn/files/article/2022/01/20220121105849_631.xlsx',
+  },
+}
 
 export const hebeiSubjectScraper: SubjectScraper = {
   province: '河北',
@@ -15,37 +19,24 @@ export const hebeiSubjectScraper: SubjectScraper = {
     const records: SubjectRequirementRecord[] = []
     const failed: FailedRecord[] = []
 
-    const collegesPath = path.join(OUTPUT_DIR, 'colleges.json')
-    const collegesMap = loadColleges(collegesPath)
-    const colleges: CollegeRecord[] = Array.from(collegesMap.values())
+    const urlConfig = HB_SUBJECTS_URLS[year]
+    if (!urlConfig) return { records, failed }
 
-    const requestInterval = 1000 / GAOKAO_QPS
+    try {
+      const result = await client.fetchBinary(urlConfig.xlsxUrl, {
+        cacheKey: `hb_subjects_${year}.xlsx`,
+        forceRefresh: options?.force,
+      })
 
-    for (let i = 0; i < colleges.length; i++) {
-      const college = colleges[i]
-      const guobiaoCode = college.moeCode.slice(-5)
-      const url = HB_SUBJECTS_URL_TEMPLATE.replace('{guobiaoCode}', guobiaoCode)
-
-      try {
-        const result = await client.fetch(url, {
-          cacheKey: `hb_${guobiaoCode}.html`,
-          forceRefresh: options?.force,
-        })
-
-        const parsed = parseHbSubjects(result.html, college.id, college.name, url)
-        records.push(...parsed)
-
-        if (!result.fromCache) {
-          await new Promise((resolve) => setTimeout(resolve, requestInterval))
-        }
-      } catch (error) {
-        failed.push({
-          url,
-          error: (error as Error).message,
-          retryCount: 0,
-          context: `河北 ${college.name}`,
-        })
-      }
+      const parsed = parseHbSubjects(result.buffer, urlConfig.pageUrl)
+      records.push(...parsed)
+    } catch (error) {
+      failed.push({
+        url: urlConfig.xlsxUrl,
+        error: (error as Error).message,
+        retryCount: 3,
+        context: `河北选科要求 ${year}`,
+      })
     }
 
     return { records, failed }

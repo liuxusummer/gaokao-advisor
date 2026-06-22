@@ -1,12 +1,17 @@
-import path from 'node:path'
 import type { SubjectScraper } from '../../shared/province_registry'
 import type { HttpClient } from '../../shared/http'
-import type { SubjectRequirementRecord, CollegeRecord, FailedRecord } from '../../types'
-import { loadColleges } from '../../shared/colleges_loader'
+import type { SubjectRequirementRecord, FailedRecord } from '../../types'
 import { parseBjSubjects } from '../beijing'
-import { GAOKAO_QPS, OUTPUT_DIR } from '../../config'
+import { parsePdf } from '../../shared/pdf'
 
-const BJ_SUBJECTS_URL_TEMPLATE = 'https://www.bjeea.cn/xkqz/{guobiaoCode}.html'
+// 真实数据：北京教育考试院 bjeea.cn
+// 选科要求以单一 PDF 文件发布，包含所有高校的选科要求
+const BJ_SUBJECTS_URLS: Record<number, { pageUrl: string; pdfUrl: string }> = {
+  2024: {
+    pageUrl: 'https://www.bjeea.cn/html/gkgz/tzgg/2021/1231/80578.html',
+    pdfUrl: 'https://www.bjeea.cn/uploads/soft/220112/120-2201121F019.pdf',
+  },
+}
 
 export const beijingSubjectScraper: SubjectScraper = {
   province: '北京',
@@ -15,37 +20,26 @@ export const beijingSubjectScraper: SubjectScraper = {
     const records: SubjectRequirementRecord[] = []
     const failed: FailedRecord[] = []
 
-    const collegesPath = path.join(OUTPUT_DIR, 'colleges.json')
-    const collegesMap = loadColleges(collegesPath)
-    const colleges: CollegeRecord[] = Array.from(collegesMap.values())
+    const urlConfig = BJ_SUBJECTS_URLS[year]
+    if (!urlConfig) return { records, failed }
 
-    const requestInterval = 1000 / GAOKAO_QPS
+    try {
+      const result = await client.fetchBinary(urlConfig.pdfUrl, {
+        cacheKey: `bj_subjects_${year}.pdf`,
+        forceRefresh: options?.force,
+        timeout: 60000,
+      })
 
-    for (let i = 0; i < colleges.length; i++) {
-      const college = colleges[i]
-      const guobiaoCode = college.moeCode.slice(-5)
-      const url = BJ_SUBJECTS_URL_TEMPLATE.replace('{guobiaoCode}', guobiaoCode)
-
-      try {
-        const result = await client.fetch(url, {
-          cacheKey: `bj_${guobiaoCode}.html`,
-          forceRefresh: options?.force,
-        })
-
-        const parsed = parseBjSubjects(result.html, college.id, college.name, url)
-        records.push(...parsed)
-
-        if (!result.fromCache) {
-          await new Promise((resolve) => setTimeout(resolve, requestInterval))
-        }
-      } catch (error) {
-        failed.push({
-          url,
-          error: (error as Error).message,
-          retryCount: 0,
-          context: `北京 ${college.name}`,
-        })
-      }
+      const text = await parsePdf(result.buffer)
+      const parsed = parseBjSubjects(text, urlConfig.pageUrl)
+      records.push(...parsed)
+    } catch (error) {
+      failed.push({
+        url: urlConfig.pdfUrl,
+        error: (error as Error).message,
+        retryCount: 3,
+        context: `北京选科要求 ${year}`,
+      })
     }
 
     return { records, failed }

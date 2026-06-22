@@ -1,6 +1,6 @@
 [
   {
-    "collegeId": "",
+    "collegeId": "4132010005",
     "collegeName": "陆军工程大学",
     "year": 2024,
     "majorName": "物理",
@@ -16,11 +16,11 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4132010005",
     "collegeName": "陆军工程大学",
     "year": 2024,
     "majorName": "物理＋化学",
@@ -36,11 +36,11 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4133010001",
     "collegeName": "国防科技大学",
     "year": 2024,
     "majorName": "物理＋化学",
@@ -56,7 +56,7 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -2160,7 +2160,7 @@
     }
   },
   {
-    "collegeId": "4132010290",
+    "collegeId": "4111011413",
     "collegeName": "中国矿业大学(北京)",
     "year": 2024,
     "majorName": "不限",
@@ -2180,7 +2180,7 @@
     }
   },
   {
-    "collegeId": "4132010290",
+    "collegeId": "4111011413",
     "collegeName": "中国矿业大学(北京)",
     "year": 2024,
     "majorName": "物理",
@@ -2200,7 +2200,7 @@
     }
   },
   {
-    "collegeId": "4132010290",
+    "collegeId": "4111011413",
     "collegeName": "中国矿业大学(北京)",
     "year": 2024,
     "majorName": "物理＋化学",
@@ -2220,7 +2220,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4111011414",
     "collegeName": "中国石油大学(北京)",
     "year": 2024,
     "majorName": "不限",
@@ -2236,11 +2236,11 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4111011414",
     "collegeName": "中国石油大学(北京)",
     "year": 2024,
     "majorName": "物理",
@@ -2256,11 +2256,11 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4111011414",
     "collegeName": "中国石油大学(北京)",
     "year": 2024,
     "majorName": "物理＋化学",
@@ -2276,11 +2276,11 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4111011414",
     "collegeName": "中国石油大学(北京)",
     "year": 2024,
     "majorName": "思想政治＋历史",
@@ -2296,11 +2296,11 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4111011415",
     "collegeName": "中国地质大学(北京)",
     "year": 2024,
     "majorName": "不限",
@@ -2316,11 +2316,11 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4111011415",
     "collegeName": "中国地质大学(北京)",
     "year": 2024,
     "majorName": "物理",
@@ -2336,11 +2336,11 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4111011415",
     "collegeName": "中国地质大学(北京)",
     "year": 2024,
     "majorName": "物理＋化学",
@@ -2356,7 +2356,7 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -6160,7 +6160,7 @@
     }
   },
   {
-    "collegeId": "4121010145",
+    "collegeId": "4121010142",
     "collegeName": "东北大学秦皇岛分校",
     "year": 2024,
     "majorName": "物理＋化学(中外合办)",
@@ -6180,7 +6180,7 @@
     }
   },
   {
-    "collegeId": "4121010145",
+    "collegeId": "4121010142",
     "collegeName": "东北大学秦皇岛分校",
     "year": 2024,
     "majorName": "不限",
@@ -6200,7 +6200,7 @@
     }
   },
   {
-    "collegeId": "4121010145",
+    "collegeId": "4121010142",
     "collegeName": "东北大学秦皇岛分校",
     "year": 2024,
     "majorName": "物理",
@@ -6220,7 +6220,7 @@
     }
   },
   {
-    "collegeId": "4121010145",
+    "collegeId": "4121010142",
     "collegeName": "东北大学秦皇岛分校",
     "year": 2024,
     "majorName": "物理＋化学",
@@ -11680,7 +11680,7 @@
     }
   },
   {
-    "collegeId": "4131010248",
+    "collegeId": "4131010249",
     "collegeName": "上海交通大学医学院",
     "year": 2024,
     "majorName": "物理＋化学",
@@ -11700,7 +11700,7 @@
     }
   },
   {
-    "collegeId": "4131010248",
+    "collegeId": "4131010249",
     "collegeName": "上海交通大学医学院",
     "year": 2024,
     "majorName": "物理＋化学",
@@ -13880,7 +13880,7 @@
     }
   },
   {
-    "collegeId": "4133010335",
+    "collegeId": "4133010336",
     "collegeName": "浙江大学医学院",
     "year": 2024,
     "majorName": "物理＋化学",
@@ -15560,7 +15560,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4136013421",
     "collegeName": "南昌工程学院",
     "year": 2024,
     "majorName": "不限",
@@ -15576,11 +15576,11 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4136013421",
     "collegeName": "南昌工程学院",
     "year": 2024,
     "majorName": "物理＋化学",
@@ -15596,7 +15596,7 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -16160,7 +16160,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4137010425",
     "collegeName": "中国石油大学(华东)",
     "year": 2024,
     "majorName": "不限",
@@ -16176,11 +16176,11 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4137010425",
     "collegeName": "中国石油大学(华东)",
     "year": 2024,
     "majorName": "物理＋化学",
@@ -16196,11 +16196,11 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "4137010422",
+    "collegeId": "4137010423",
     "collegeName": "山东大学威海分校",
     "year": 2024,
     "majorName": "不限",
@@ -16220,7 +16220,7 @@
     }
   },
   {
-    "collegeId": "4137010422",
+    "collegeId": "4137010423",
     "collegeName": "山东大学威海分校",
     "year": 2024,
     "majorName": "物理＋化学",
@@ -17620,7 +17620,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4141010472",
     "collegeName": "新乡医学院",
     "year": 2024,
     "majorName": "物理＋化学",
@@ -17636,7 +17636,7 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -17980,7 +17980,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4142010491",
     "collegeName": "中国地质大学(武汉)",
     "year": 2024,
     "majorName": "物理＋化学(中外合办)",
@@ -17996,11 +17996,11 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4142010491",
     "collegeName": "中国地质大学(武汉)",
     "year": 2024,
     "majorName": "不限",
@@ -18016,11 +18016,11 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4142010491",
     "collegeName": "中国地质大学(武汉)",
     "year": 2024,
     "majorName": "物理＋化学",
@@ -18036,7 +18036,7 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -19780,7 +19780,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4144014851",
     "collegeName": "香港城市大学(东莞)",
     "year": 2024,
     "majorName": "物理＋化学(中外合办)",
@@ -19796,7 +19796,7 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -24720,7 +24720,7 @@
     }
   },
   {
-    "collegeId": "",
+    "collegeId": "4111011416",
     "collegeName": "中国石油大学(北京)克拉玛依校区",
     "year": 2024,
     "majorName": "物理＋化学",
@@ -24736,7 +24736,7 @@
       "sourceUrl": "https://www.bjeea.cn/html/gkgz/tzgg/2024/0720/85632.html",
       "fetchedAt": "2026-06-22T02:25:40.859Z",
       "scraperVersion": "1.0.0",
-      "verified": false
+      "verified": true
     }
   },
   {

@@ -29,3 +29,5 @@ dist-ssr
 # Scraper raw responses and logs
 raw/
 logs/
+.cache/
+public/data/common/cache/

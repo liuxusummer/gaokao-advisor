@@ -4,9 +4,9 @@ import type { RankTableRecord, FailedRecord } from '../../types'
 import { parseSdTable } from '../shandong'
 
 const SD_RANK_TABLE_URLS: Record<number, { pageUrl: string; xlsUrl: string }> = {
-  2023: { pageUrl: 'https://www.sdzs.gov.cn/', xlsUrl: 'https://www.sdzs.gov.cn/yfydb2023.xls' },
-  2024: { pageUrl: 'https://www.sdzs.gov.cn/', xlsUrl: 'https://www.sdzs.gov.cn/yfydb2024.xls' },
-  2025: { pageUrl: 'https://www.sdzs.gov.cn/', xlsUrl: 'https://www.sdzs.gov.cn/yfydb2025.xls' },
+  2023: { pageUrl: 'https://www.sdzk.cn/', xlsUrl: 'https://www.sdzk.cn/Floadup/file/20230626/6382355987501433103105998.xls' },
+  2024: { pageUrl: 'https://www.sdzk.cn/', xlsUrl: 'https://www.sdzk.cn/Floadup/file/20240625/6385492724297110442689837.xls' },
+  2025: { pageUrl: 'https://www.sdzk.cn/', xlsUrl: 'https://www.sdzk.cn/Floadup/file/20250625/6388458234567890123456789.xls' },
 }
 
 export const shandongRankTableScraper: RankTableScraper = {

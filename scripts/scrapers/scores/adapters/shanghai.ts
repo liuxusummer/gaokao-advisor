@@ -1,20 +1,15 @@
 import type { ScoreScraper } from '../../shared/province_registry'
 import type { HttpClient } from '../../shared/http'
 import type { ScoreRecord, FailedRecord } from '../../types'
-import { parseShToudang } from '../shanghai'
+import { parseShToudangPdf } from '../shanghai'
+import { parsePdf } from '../../shared/pdf'
 
-const SH_TOUDANG_URLS: Record<number, { pageUrl: string; htmlUrl: string }> = {
-  2023: {
-    pageUrl: 'https://www.shmeea.edu.cn/',
-    htmlUrl: 'https://www.shmeea.edu.cn/a3/shtd2023.html',
-  },
+// 真实数据：上海市教育考试院 shmeea.edu.cn
+// 投档线以 PDF 格式发布，包含所有院校专业组（580分以下）
+const SH_TOUDANG_URLS: Record<number, { pageUrl: string; pdfUrl: string }> = {
   2024: {
-    pageUrl: 'https://www.shmeea.edu.cn/',
-    htmlUrl: 'https://www.shmeea.edu.cn/a3/shtd2024.html',
-  },
-  2025: {
-    pageUrl: 'https://www.shmeea.edu.cn/',
-    htmlUrl: 'https://www.shmeea.edu.cn/a3/shtd2025.html',
+    pageUrl: 'https://www.shmeea.edu.cn/page/02200/20240719/18689.html',
+    pdfUrl: 'https://www.shmeea.edu.cn/download/20240719/198.pdf',
   },
 }
 
@@ -29,16 +24,17 @@ export const shanghaiScoreScraper: ScoreScraper = {
     if (!urlConfig) return { records, failed }
 
     try {
-      const result = await client.fetch(urlConfig.htmlUrl, {
-        cacheKey: `sh_toudang_${year}.html`,
+      const result = await client.fetchBinary(urlConfig.pdfUrl, {
+        cacheKey: `sh_toudang_${year}.pdf`,
         forceRefresh: options?.force,
       })
 
-      const parsed = parseShToudang(result.html, year, urlConfig.pageUrl)
+      const text = await parsePdf(result.buffer)
+      const parsed = parseShToudangPdf(text, year, urlConfig.pageUrl)
       records.push(...parsed)
     } catch (error) {
       failed.push({
-        url: urlConfig.htmlUrl,
+        url: urlConfig.pdfUrl,
         error: (error as Error).message,
         retryCount: 3,
         context: `上海 ${year}`,
