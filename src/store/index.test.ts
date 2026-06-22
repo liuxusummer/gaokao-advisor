@@ -146,4 +146,29 @@ describe('schemes actions', () => {
     expect(useAppStore.getState().volunteerList).toHaveLength(1)
     expect(useAppStore.getState().volunteerList[0].id).toBe('v1')
   })
+
+  it('saveScheme 删除后自动命名不重复', () => {
+    // 预置 3 个方案：方案 1, 方案 2, 方案 3（用 setState 避免同一毫秒生成相同 id）
+    const now = Date.now()
+    useAppStore.setState({
+      schemes: [
+        { id: 's1', name: '方案 1', items: [], createdAt: now, updatedAt: now },
+        { id: 's2', name: '方案 2', items: [], createdAt: now, updatedAt: now },
+        { id: 's3', name: '方案 3', items: [], createdAt: now, updatedAt: now },
+      ],
+    })
+
+    // 删除方案 2
+    useAppStore.getState().deleteScheme('s2')
+    expect(useAppStore.getState().schemes).toHaveLength(2)
+
+    // 再创建一个新方案，应命名为"方案 4"而不是"方案 3"
+    useAppStore.getState().saveScheme('', [])
+    const newSchemes = useAppStore.getState().schemes
+    expect(newSchemes).toHaveLength(3)
+    expect(newSchemes[2].name).toBe('方案 4')
+    // 确认没有重名
+    const names = newSchemes.map(s => s.name)
+    expect(new Set(names).size).toBe(names.length)
+  })
 })

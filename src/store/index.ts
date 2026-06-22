@@ -170,10 +170,16 @@ export const useAppStore = create<AppState>()(
       saveScheme: (name, items) => {
         const id = `scheme-${Date.now()}`
         const now = Date.now()
+        const existingNums = useAppStore.getState().schemes
+          .map(s => {
+            const match = s.name.match(/^方案 (\d+)$/)
+            return match ? parseInt(match[1], 10) : 0
+          })
+        const nextNum = existingNums.length > 0 ? Math.max(...existingNums) + 1 : 1
         const scheme: VolunteerScheme = {
           id,
-          name: name || `方案 ${useAppStore.getState().schemes.length + 1}`,
-          items: items ?? useAppStore.getState().volunteerList,
+          name: name || `方案 ${nextNum}`,
+          items: items ? [...items] : [...useAppStore.getState().volunteerList],
           createdAt: now,
           updatedAt: now,
         }
