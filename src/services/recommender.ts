@@ -27,6 +27,7 @@ import {
 export interface RecommendOptions {
   weights?: RecommendWeights
   assessment?: AssessmentInput
+  exclude?: Array<{ collegeId: string; majorId: string }>
 }
 
 export async function generateRecommendations(
@@ -34,6 +35,10 @@ export async function generateRecommendations(
   cache?: RealDataCache,
   options?: RecommendOptions
 ): Promise<RecommendationItem[]> {
+  const excludeSet = options?.exclude
+    ? new Set(options.exclude.map((e) => `${e.collegeId}-${e.majorId}`))
+    : null
+
   const useReal = isRealDataAvailable(profile.provinceId)
   const data = useReal ? cache || (await loadProvinceData(profile.provinceId)) : undefined
 
@@ -92,6 +97,8 @@ export async function generateRecommendations(
     const college = collegeMap.get(records[0].collegeId)
     const major = getOrCreateMajor(records[0])
     if (!college) continue
+
+    if (excludeSet && excludeSet.has(`${college.id}-${major.id}`)) continue
 
     if (major.tuition && major.tuition > maxTuition) continue
     if (profile.categories.length > 0 && !profile.categories.includes(major.category)) continue
