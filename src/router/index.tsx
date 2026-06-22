@@ -10,6 +10,7 @@ import Chat from '../pages/Chat'
 import DataCenter from '../pages/DataCenter'
 import Assessment from '../pages/Assessment'
 import Settings from '../pages/Settings'
+import SchemeCompare from '../pages/SchemeCompare'
 
 export const router = createBrowserRouter(
   [
@@ -27,6 +28,7 @@ export const router = createBrowserRouter(
         { path: 'data', element: <DataCenter /> },
         { path: 'assessment', element: <Assessment /> },
         { path: 'settings', element: <Settings /> },
+        { path: 'schemes', element: <SchemeCompare /> },
       ],
     },
   ],

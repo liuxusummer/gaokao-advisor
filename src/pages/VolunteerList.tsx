@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Button, Empty, Switch, Tag, message, Modal, Dropdown } from 'antd'
+import { Button, Empty, Switch, Tag, message, Modal, Dropdown, Input } from 'antd'
 import {
   DeleteOutlined,
   UpOutlined,
@@ -16,6 +16,8 @@ import {
   LockOutlined,
   UnlockOutlined,
   ReloadOutlined,
+  SaveOutlined,
+  SwapOutlined,
 } from '@ant-design/icons'
 import { useAppStore, type VolunteerItem } from '../store'
 import { detectRisks } from '../services/riskDetector'
@@ -34,7 +36,7 @@ const tierLabels = {
 
 export default function VolunteerList() {
   const navigate = useNavigate()
-  const { profile, volunteerList, removeVolunteer, moveVolunteer, updateVolunteer, setRiskReport, riskReport, clearVolunteerList, dataCache, recommendWeights, integratedAssessment, subjectAssessmentResult, setVolunteerList } = useAppStore()
+  const { profile, volunteerList, removeVolunteer, moveVolunteer, updateVolunteer, setRiskReport, riskReport, clearVolunteerList, dataCache, recommendWeights, integratedAssessment, subjectAssessmentResult, setVolunteerList, schemes, saveScheme } = useAppStore()
   const [regenerating, setRegenerating] = useState(false)
 
   useEffect(() => {
@@ -131,6 +133,22 @@ export default function VolunteerList() {
     }
   }
 
+  const handleSaveScheme = () => {
+    if (volunteerList.length === 0) {
+      message.warning('志愿表为空，无法保存方案')
+      return
+    }
+    let schemeName = ''
+    Modal.confirm({
+      title: '保存方案',
+      content: <Input placeholder="方案名称（可选）" onChange={(e) => { schemeName = e.target.value }} />,
+      onOk: () => {
+        saveScheme(schemeName)
+        message.success('方案已保存')
+      },
+    })
+  }
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-6 md:py-8">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-5">
@@ -149,6 +167,14 @@ export default function VolunteerList() {
             loading={regenerating}
           >
             锁定后重新推荐
+          </Button>
+          <Button icon={<SaveOutlined />} onClick={handleSaveScheme}>保存方案</Button>
+          <Button
+            icon={<SwapOutlined />}
+            onClick={() => navigate('/schemes')}
+            disabled={schemes.length === 0}
+          >
+            方案对比 ({schemes.length})
           </Button>
           <Button type="primary" icon={<SafetyOutlined />} onClick={() => navigate('/risk')} className="bg-primary border-0">
             风险报告
