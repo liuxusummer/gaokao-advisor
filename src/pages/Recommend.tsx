@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Button, Empty, Tag, Select, message } from 'antd'
+import { Button, Empty, Tag, Select, message, Collapse, Slider } from 'antd'
 import {
   PlusOutlined,
   FileTextOutlined,
@@ -10,7 +10,11 @@ import {
 import { useAppStore } from '../store'
 import { generateRecommendations } from '../services/recommender'
 import { type RecommendationItem } from '../data/mock'
+import { loadMajorMapping } from '../features/assessment/services/majorMatcher'
+import { deriveHollandCategories, type AssessmentInput } from '../services/rankScorer'
 import CollegeNameLink from '../components/CollegeNameLink'
+
+const { Panel } = Collapse
 
 const tierLabels = {
   rush: { text: '冲', color: 'text-tier-rush', bg: 'bg-tier-rush/10' },
@@ -20,7 +24,12 @@ const tierLabels = {
 
 export default function Recommend() {
   const navigate = useNavigate()
-  const { profile, recommendations, setRecommendations, addVolunteer, volunteerList, loadProvinceData } = useAppStore()
+  const {
+    profile, recommendations, setRecommendations, addVolunteer, volunteerList,
+    loadProvinceData,
+    recommendWeights, setRecommendWeights, resetRecommendWeights,
+    integratedAssessment, subjectAssessmentResult,
+  } = useAppStore()
   const [activeTier, setActiveTier] = useState<'rush' | 'stable' | 'safe'>('stable')
   const [sortBy, setSortBy] = useState<'probability' | 'rank' | 'tuition'>('probability')
   const [regenerating, setRegenerating] = useState(false)
@@ -54,7 +63,16 @@ export default function Recommend() {
     setRegenerating(true)
     try {
       const cache = await loadProvinceData(profile.provinceId)
-      const recs = await generateRecommendations(profile, cache || undefined)
+      const majorMapping = await loadMajorMapping()
+      const assessment: AssessmentInput = {
+        hollandCategories: deriveHollandCategories(integratedAssessment?.hollandCode, majorMapping),
+        subjectCategories: subjectAssessmentResult?.recommendedCategories ?? [],
+        mbtiCategories: integratedAssessment?.mbtiCategories ?? [],
+      }
+      const recs = await generateRecommendations(profile, cache || undefined, {
+        weights: recommendWeights,
+        assessment,
+      })
       setRecommendations(recs)
       message.success('已重新生成推荐')
     } catch (err) {
@@ -90,17 +108,6 @@ export default function Recommend() {
     )
   }
 
-  if (recommendations.length === 0) {
-    return (
-      <div className="max-w-3xl mx-auto px-4 py-16 text-center">
-        <Empty description="未生成推荐，点击重新生成" />
-        <Button type="primary" className="mt-6 bg-primary" icon={<ReloadOutlined />} onClick={handleRegenerate}>
-          重新生成
-        </Button>
-      </div>
-    )
-  }
-
   return (
     <div className="max-w-3xl mx-auto px-4 py-6 md:py-8">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
@@ -126,6 +133,32 @@ export default function Recommend() {
           </Button>
         </div>
       </div>
+
+      {/* 高级设置：权重调整 */}
+      <Collapse className="mb-4">
+        <Panel header="高级设置（推荐权重调整）" key="weights">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <WeightSlider label="录取概率" value={recommendWeights.probability}
+              onChange={(v) => setRecommendWeights({ probability: v })} />
+            <WeightSlider label="院校层次" value={recommendWeights.collegeLevel}
+              onChange={(v) => setRecommendWeights({ collegeLevel: v })} />
+            <WeightSlider label="专业兴趣" value={recommendWeights.majorInterest}
+              onChange={(v) => setRecommendWeights({ majorInterest: v })} />
+            <WeightSlider label="地域偏好" value={recommendWeights.region}
+              onChange={(v) => setRecommendWeights({ region: v })} />
+            <WeightSlider label="学费" value={recommendWeights.tuition}
+              onChange={(v) => setRecommendWeights({ tuition: v })} />
+            <WeightSlider label="就业前景" value={recommendWeights.employment}
+              onChange={(v) => setRecommendWeights({ employment: v })} />
+          </div>
+          <div className="mt-3 flex items-center justify-between">
+            <span className="text-xs text-text-secondary">
+              当前权重总和：{Object.values(recommendWeights).reduce((a, b) => a + b, 0)}（无需等于 100，系统会自动归一化）
+            </span>
+            <Button size="small" onClick={resetRecommendWeights}>恢复默认</Button>
+          </div>
+        </Panel>
+      </Collapse>
 
       {/* Tier Tabs */}
       <div className="flex gap-2 mb-5">
@@ -163,6 +196,22 @@ export default function Recommend() {
           </p>
         </div>
       </div>
+    </div>
+  )
+}
+
+function WeightSlider({ label, value, onChange }: {
+  label: string
+  value: number
+  onChange: (v: number) => void
+}) {
+  return (
+    <div>
+      <div className="flex justify-between text-sm mb-1">
+        <span className="text-text-body">{label}</span>
+        <span className="text-text-secondary">{value}</span>
+      </div>
+      <Slider min={0} max={50} step={5} value={value} onChange={onChange} />
     </div>
   )
 }
