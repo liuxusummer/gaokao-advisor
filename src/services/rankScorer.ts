@@ -116,8 +116,19 @@ export function scoreCandidate(
 }
 
 export function deriveHollandCategories(
-  _hollandCode?: string,
-  _majorMapping: SubjectMajorMapping = {}
+  hollandCode?: string,
+  majorMapping: SubjectMajorMapping = {}
 ): string[] {
-  return []
+  if (!hollandCode) return []
+  const categories = new Set<string>()
+  for (const dim of hollandCode) {
+    const subjects = HOLLAND_TO_SUBJECTS[dim]
+    if (subjects) {
+      for (const s of subjects) {
+        const majors = majorMapping[s]
+        if (majors) majors.forEach((m) => categories.add(m))
+      }
+    }
+  }
+  return Array.from(categories)
 }

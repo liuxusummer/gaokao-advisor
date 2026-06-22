@@ -3,6 +3,7 @@ import {
   DEFAULT_WEIGHTS,
   EMPLOYMENT_SCORE_MAP,
   scoreCandidate,
+  deriveHollandCategories,
   type RecommendWeights,
   type AssessmentInput,
   type CandidateInput,
@@ -221,5 +222,46 @@ describe('scoreCandidate', () => {
       profileNoPrefs
     )
     expect(score).toBeCloseTo(100 / 3, 1)
+  })
+})
+
+describe('deriveHollandCategories', () => {
+  it('hollandCode 为 undefined 时返回空数组', () => {
+    expect(deriveHollandCategories(undefined)).toEqual([])
+  })
+
+  it('hollandCode 为空字符串时返回空数组', () => {
+    expect(deriveHollandCategories('')).toEqual([])
+  })
+
+  it('hollandCode="RIA" 时返回霍兰德推荐的专业大类集合', () => {
+    const majorMapping = {
+      physics: ['工学', '理学'],
+      computer: ['工学'],
+      math: ['理学'],
+      biology: ['理学', '农学', '医学'],
+      chemistry: ['理学', '工学'],
+      art: ['艺术学', '文学'],
+      chinese: ['文学', '教育学'],
+      politics: ['法学', '教育学'],
+      economics: ['经济学', '管理学'],
+      foreign_lang: ['文学', '经济学'],
+    }
+    const result = deriveHollandCategories('RIA', majorMapping)
+    // R → physics, computer → 工学, 理学
+    // I → math, biology, chemistry, computer → 理学, 农学, 医学, 工学
+    // A → art, chinese → 艺术学, 文学, 教育学
+    expect(result).toEqual(
+      expect.arrayContaining(['工学', '理学', '农学', '医学', '艺术学', '文学', '教育学'])
+    )
+    expect(result).toHaveLength(7)
+  })
+
+  it('majorMapping 为空时返回空数组', () => {
+    expect(deriveHollandCategories('RIA', {})).toEqual([])
+  })
+
+  it('majorMapping 未传入时返回空数组（默认值）', () => {
+    expect(deriveHollandCategories('RIA')).toEqual([])
   })
 })
