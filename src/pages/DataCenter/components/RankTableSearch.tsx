@@ -19,12 +19,18 @@ export default function RankTableSearch({ provinceName }: RankTableSearchProps) 
   useEffect(() => {
     let cancelled = false
     const load = async () => {
-      setLoading(true)
-      const ys = await probeRankTableYears(provinceName)
-      if (cancelled) return
-      setYears(ys)
-      if (ys.length > 0) setSelectedYear(ys[0])
-      else setLoading(false)
+      try {
+        setLoading(true)
+        const ys = await probeRankTableYears(provinceName)
+        if (cancelled) return
+        setYears(ys)
+        if (ys.length > 0) setSelectedYear(ys[0])
+      } catch {
+        if (cancelled) return
+        setYears([])
+      } finally {
+        if (!cancelled) setLoading(false)
+      }
     }
     load()
     return () => { cancelled = true }
@@ -35,13 +41,16 @@ export default function RankTableSearch({ provinceName }: RankTableSearchProps) 
     if (!selectedYear) return
     let cancelled = false
     const load = async () => {
-      setLoading(true)
       try {
+        setLoading(true)
         const entries = await loadRankTable(provinceName, selectedYear)
         if (cancelled) return
         setAllData(entries)
         const cats = Array.from(new Set(entries.map(e => e.category)))
         if (cats.length > 0) setSelectedCategory(cats[0])
+      } catch {
+        if (cancelled) return
+        setAllData([])
       } finally {
         if (!cancelled) setLoading(false)
       }
