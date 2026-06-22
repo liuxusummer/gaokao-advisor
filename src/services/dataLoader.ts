@@ -276,7 +276,10 @@ const PROVINCE_NAME_MAP: Record<string, string> = {
   shanghai: '上海',
 }
 
-const KNOWN_REAL_PROVINCES = new Set(['zhejiang', 'jiangsu'])
+const KNOWN_REAL_PROVINCES = new Set([
+  'zhejiang', 'jiangsu', 'shandong', 'hebei', 'liaoning',
+  'hubei', 'hunan', 'guangdong', 'beijing', 'shanghai'
+])
 
 export function isRealDataAvailable(provinceId: string): boolean {
   return KNOWN_REAL_PROVINCES.has(provinceId)
