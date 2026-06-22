@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { Steps, Select, InputNumber, Checkbox, Radio, Button, message } from 'antd'
 import { LeftOutlined, RightOutlined, ReloadOutlined } from '@ant-design/icons'
 import { provinces, subjectOptions, regionOptions, majorCategories } from '../data/mock'
@@ -178,7 +178,10 @@ function Step2Score() {
         />
       </div>
       <div>
-        <label className="block text-sm font-medium text-text-secondary mb-2">全省位次（从一分一段表查询）</label>
+        <div className="flex items-center justify-between mb-2">
+          <label className="block text-sm font-medium text-text-secondary">全省位次（从一分一段表查询）</label>
+          <Link to="/rank" className="text-xs text-primary hover:underline">查看等效位次 →</Link>
+        </div>
         <InputNumber
           min={1}
           value={profile.rank || undefined}

@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import Layout from '../components/Layout'
 import Home from '../pages/Home'
 import Profile from '../pages/Profile'
+import RankConverter from '../pages/RankConverter'
 import Recommend from '../pages/Recommend'
 import VolunteerList from '../pages/VolunteerList'
 import RiskReport from '../pages/RiskReport'
@@ -18,6 +19,7 @@ export const router = createBrowserRouter(
       children: [
         { index: true, element: <Home /> },
         { path: 'profile', element: <Profile /> },
+        { path: 'rank', element: <RankConverter /> },
         { path: 'recommend', element: <Recommend /> },
         { path: 'volunteer-list', element: <VolunteerList /> },
         { path: 'risk', element: <RiskReport /> },
