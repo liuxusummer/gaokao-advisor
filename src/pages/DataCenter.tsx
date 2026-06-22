@@ -3,7 +3,7 @@ import { Input, Select, Table, Tag, Tabs } from 'antd'
 import { SearchOutlined, BookOutlined } from '@ant-design/icons'
 import { loadColleges, loadMajors, loadScores, getProvinceName, isRealDataAvailable } from '../services/dataLoader'
 import { useAppStore } from '../store'
-import { colleges as mockColleges, majors as mockMajors, scoreRecords as mockScoreRecords } from '../data/mock'
+import { colleges as mockColleges, majors as mockMajors, scoreRecords as mockScoreRecords, provinces } from '../data/mock'
 import type { College, Major, ScoreRecord } from '../data/mock'
 import CollegeNameLink from '../components/CollegeNameLink'
 
@@ -180,10 +180,7 @@ function MajorSearch() {
   )
 }
 
-const PROVINCE_OPTIONS = [
-  { value: 'zhejiang', label: '浙江' },
-  { value: 'jiangsu', label: '江苏' },
-]
+const PROVINCE_OPTIONS = provinces.map(p => ({ value: p.id, label: p.name }))
 
 function useScoreRecords(provinceId: string, year: number) {
   const isReal = useMemo(() => isRealDataAvailable(provinceId), [provinceId])
