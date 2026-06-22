@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Button, Empty, Switch, Tag, message, Modal, Dropdown, Input } from 'antd'
+import { Button, Empty, Switch, Tag, message, Modal, Dropdown, Input, Tooltip } from 'antd'
 import {
   DeleteOutlined,
   UpOutlined,
@@ -18,6 +18,7 @@ import {
   ReloadOutlined,
   SaveOutlined,
   SwapOutlined,
+  MoreOutlined,
 } from '@ant-design/icons'
 import { useAppStore, type VolunteerItem } from '../store'
 import { detectRisks } from '../services/riskDetector'
@@ -82,13 +83,26 @@ export default function VolunteerList() {
     }
   }
 
-  const exportMenu = {
+  const moreMenu = {
     items: [
-      { key: 'excel', label: '导出 Excel', icon: <FileExcelOutlined /> },
-      { key: 'pdf', label: '导出 PDF', icon: <FilePdfOutlined /> },
-      { key: 'copy', label: '复制到剪贴板', icon: <CopyOutlined /> },
+      {
+        key: 'export',
+        label: '导出',
+        icon: <ExportOutlined />,
+        children: [
+          { key: 'excel', label: '导出 Excel', icon: <FileExcelOutlined /> },
+          { key: 'pdf', label: '导出 PDF', icon: <FilePdfOutlined /> },
+          { key: 'copy', label: '复制到剪贴板', icon: <CopyOutlined /> },
+        ],
+      },
+      { key: 'save', label: '保存方案', icon: <SaveOutlined /> },
+      { key: 'compare', label: `方案对比 (${schemes.length})`, icon: <SwapOutlined />, disabled: schemes.length === 0 },
     ],
-    onClick: handleExport,
+    onClick: ({ key }: { key: string }) => {
+      if (key === 'save') handleSaveScheme()
+      else if (key === 'compare') navigate('/schemes')
+      else handleExport({ key })
+    },
   }
 
   const handleRegenerateExcludingLocked = async () => {
@@ -112,10 +126,9 @@ export default function VolunteerList() {
         assessment,
         exclude,
       })
-      const lockedSet = new Set(lockedItems.map(v => v.id))
-      const remainingLocked = volunteerList.filter(v => lockedSet.has(v.id))
+      let seq = 0
       const newVolunteers: VolunteerItem[] = newRecs.map(r => ({
-        id: `${r.college.id}-${r.major.id}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+        id: `${r.college.id}-${r.major.id}-${Date.now()}-${seq++}`,
         college: r.college,
         major: r.major,
         tier: r.tier,
@@ -124,8 +137,8 @@ export default function VolunteerList() {
         obeyAdjust: true,
         locked: false,
       }))
-      setVolunteerList([...remainingLocked, ...newVolunteers])
-      message.success(`已重新推荐，保留 ${remainingLocked.length} 个锁定志愿，新增 ${newVolunteers.length} 个推荐`)
+      setVolunteerList([...lockedItems, ...newVolunteers])
+      message.success(`已重新推荐，保留 ${lockedItems.length} 个锁定志愿，新增 ${newVolunteers.length} 个推荐`)
     } catch (err) {
       message.error('重新推荐失败：' + (err instanceof Error ? err.message : '未知错误'))
     } finally {
@@ -156,26 +169,20 @@ export default function VolunteerList() {
           <h1 className="text-xl md:text-2xl font-bold text-text-primary">我的志愿表</h1>
           <p className="text-sm text-text-secondary mt-1">已添加 {volunteerList.length} 个志愿</p>
         </div>
-        <div className="flex gap-2">
-          <Dropdown menu={exportMenu} trigger={['click']}>
-            <Button icon={<ExportOutlined />}>导出</Button>
+        <div className="flex items-center gap-2 flex-wrap">
+          <Tooltip title="保留已锁定的志愿，其余位置按当前条件重新推荐">
+            <Button
+              icon={<ReloadOutlined />}
+              onClick={handleRegenerateExcludingLocked}
+              disabled={!volunteerList.some(v => v.locked)}
+              loading={regenerating}
+            >
+              重新推荐
+            </Button>
+          </Tooltip>
+          <Dropdown menu={moreMenu} trigger={['click']}>
+            <Button icon={<MoreOutlined />}>更多</Button>
           </Dropdown>
-          <Button
-            icon={<ReloadOutlined />}
-            onClick={handleRegenerateExcludingLocked}
-            disabled={!volunteerList.some(v => v.locked)}
-            loading={regenerating}
-          >
-            锁定后重新推荐
-          </Button>
-          <Button icon={<SaveOutlined />} onClick={handleSaveScheme}>保存方案</Button>
-          <Button
-            icon={<SwapOutlined />}
-            onClick={() => navigate('/schemes')}
-            disabled={schemes.length === 0}
-          >
-            方案对比 ({schemes.length})
-          </Button>
           <Button type="primary" icon={<SafetyOutlined />} onClick={() => navigate('/risk')} className="bg-primary border-0">
             风险报告
           </Button>
@@ -216,7 +223,7 @@ export default function VolunteerList() {
         </Empty>
       ) : (
         <>
-          <div className="space-y-3 mb-24">
+          <div className="space-y-3 mb-28 md:mb-24">
             {volunteerList.map((item, index) => {
               const itemRisks = riskReport.filter((r) => r.affectedIndexes.includes(index + 1))
               const high = itemRisks.some((r) => r.level === 'high')
@@ -226,8 +233,14 @@ export default function VolunteerList() {
               return (
                 <div
                   key={item.id}
-                  className={`bg-bg-card rounded-xl p-4 shadow-md border-l-4 ${
-                    high ? 'border-error' : medium ? 'border-warning' : 'border-success'
+                  className={`rounded-xl p-4 shadow-md border-l-4 ${
+                    item.locked
+                      ? 'bg-orange-50/50 border-orange-400'
+                      : high
+                        ? 'bg-bg-card border-error'
+                        : medium
+                          ? 'bg-bg-card border-warning'
+                          : 'bg-bg-card border-success'
                   }`}
                 >
                   <div className="flex items-start justify-between gap-3">
@@ -240,6 +253,13 @@ export default function VolunteerList() {
                         <span className={`px-2 py-0.5 rounded-full text-xs font-bold ${tier.bg} ${tier.color}`}>
                           {tier.text} {item.probability}%
                         </span>
+                        {item.locked && (
+                          <Tooltip title="该志愿已锁定，重新推荐时会被保留">
+                            <Tag color="orange" className="m-0">
+                              <LockOutlined /> 已锁定
+                            </Tag>
+                          </Tooltip>
+                        )}
                       </div>
                       <div className="flex flex-wrap items-center gap-2 mt-2">
                         {item.college.tags?.map((l) => (
@@ -291,11 +311,12 @@ export default function VolunteerList() {
                       </div>
                       <Button
                         size="small"
-                        icon={item.locked ? <LockOutlined /> : <UnlockOutlined />}
+                        icon={item.locked ? <UnlockOutlined /> : <LockOutlined />}
                         onClick={() => updateVolunteer(item.id, { locked: !item.locked })}
-                        type={item.locked ? 'primary' : 'default'}
+                        type={item.locked ? 'default' : 'dashed'}
+                        danger={item.locked}
                       >
-                        {item.locked ? '已锁定' : '锁定'}
+                        {item.locked ? '解锁' : '锁定'}
                       </Button>
                     </div>
                   </div>
