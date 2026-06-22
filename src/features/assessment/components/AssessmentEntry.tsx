@@ -137,7 +137,7 @@ export default function AssessmentEntry({ onSelectHolland, onSelectSubject }: As
           </div>
           <h3 className="text-base font-bold text-text-primary mb-2">霍兰德兴趣测评</h3>
           <p className="text-sm text-text-secondary mb-4">
-            12 题，约 2 分钟。通过 RIASEC 六维度模型发现你的职业兴趣类型。
+            60 题，约 8 分钟。通过 RIASEC 六维度模型发现你的职业兴趣类型。
           </p>
           <Button type="primary" size="small" className="bg-primary border-0">
             {assessmentResult ? '重新测评' : '开始测评'}
