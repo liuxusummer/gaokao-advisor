@@ -6,10 +6,12 @@ import { useAppStore } from '../store'
 import { colleges as mockColleges, majors as mockMajors, scoreRecords as mockScoreRecords, provinces } from '../data/mock'
 import type { College, Major, ScoreRecord } from '../data/mock'
 import CollegeNameLink from '../components/CollegeNameLink'
+import RankTableSearch from './components/RankTableSearch'
 
 const { TabPane } = Tabs
 
 export default function DataCenter() {
+  const { profile } = useAppStore()
   return (
     <div className="max-w-6xl mx-auto px-4 py-6 md:py-8">
       <h1 className="text-xl md:text-2xl font-bold text-text-primary mb-6">数据中心</h1>
@@ -22,6 +24,9 @@ export default function DataCenter() {
         </TabPane>
         <TabPane tab="分数线查询" key="score">
           <ScoreSearch />
+        </TabPane>
+        <TabPane tab="一分一段表" key="rankTable">
+          <RankTableSearch provinceId={profile.provinceId} provinceName={profile.provinceName} />
         </TabPane>
       </Tabs>
     </div>
