@@ -16,10 +16,23 @@ import {
   checkSubjectRequirement,
   type RealDataCache,
 } from './dataLoader'
+import {
+  scoreCandidate,
+  DEFAULT_WEIGHTS,
+  EMPLOYMENT_SCORE_MAP,
+  type RecommendWeights,
+  type AssessmentInput,
+} from './rankScorer'
+
+export interface RecommendOptions {
+  weights?: RecommendWeights
+  assessment?: AssessmentInput
+}
 
 export async function generateRecommendations(
   profile: UserProfile,
-  cache?: RealDataCache
+  cache?: RealDataCache,
+  options?: RecommendOptions
 ): Promise<RecommendationItem[]> {
   const useReal = isRealDataAvailable(profile.provinceId)
   const data = useReal ? cache || (await loadProvinceData(profile.provinceId)) : undefined
@@ -35,7 +48,6 @@ export async function generateRecommendations(
 
   const mbtiMapping = profile.mbtiType ? await loadMbtiMapping() : null
   const mbtiCategories = mbtiMapping?.[profile.mbtiType]?.categories ?? []
-  const mbtiMatch = (category: string) => (mbtiCategories.includes(category) ? 1 : 0)
 
   const collegeMap = new Map(colleges.map((c) => [c.id, c]))
   const majorMap = new Map(majors.map((m) => [m.id, m]))
@@ -160,16 +172,32 @@ export async function generateRecommendations(
     return 0
   }
 
-  candidates.sort((a, b) => {
-    if (a.tier !== b.tier) {
-      const order = { rush: 0, stable: 1, safe: 2 }
-      return order[a.tier] - order[b.tier]
-    }
-    if (b.probability !== a.probability) return b.probability - a.probability
-    const levelDiff = levelWeight(b.college) - levelWeight(a.college)
-    if (levelDiff !== 0) return levelDiff
-    return mbtiMatch(b.major.category) - mbtiMatch(a.major.category)
-  })
+  const weights = options?.weights ?? DEFAULT_WEIGHTS
+  const assessmentInput: AssessmentInput = options?.assessment ?? {
+    hollandCategories: [],
+    subjectCategories: [],
+    mbtiCategories: [],
+  }
+
+  const scoredCandidates = candidates.map((c) => ({
+    item: c,
+    score: scoreCandidate(
+      {
+        probability: c.probability,
+        collegeLevel: levelWeight(c.college),
+        majorCategory: c.major.category,
+        collegeProvince: normalizeProvince(c.college.province),
+        tuition: c.major.tuition ?? 0,
+        employmentScore: EMPLOYMENT_SCORE_MAP[c.major.category] ?? 50,
+      },
+      weights,
+      assessmentInput,
+      { regions: profile.regions, maxTuition: profile.maxTuition }
+    ),
+  }))
+
+  scoredCandidates.sort((a, b) => b.score - a.score)
+  const sortedCandidates = scoredCandidates.map((s) => s.item)
 
   const provinceTotal = provinces.find((p) => p.id === profile.provinceId)?.total ?? 96
   let rushCount = Math.round(provinceTotal * 0.25)
@@ -188,7 +216,7 @@ export async function generateRecommendations(
 
   const result: RecommendationItem[] = []
   let r = 0, s = 0, g = 0
-  candidates.forEach((item) => {
+  sortedCandidates.forEach((item) => {
     if (item.tier === 'rush' && r < rushCount) {
       result.push(item)
       r++
