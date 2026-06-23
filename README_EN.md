@@ -5,10 +5,6 @@
 </p>
 
 <p align="center">
-  <img src="docs/images/demo.gif" alt="GaoKao Volunteer Assistant real UI demo" width="90%" />
-</p>
-
-<p align="center">
   <a href="#features">Features</a> •
   <a href="#quick-start">Quick Start</a> •
   <a href="#demo">Demo</a> •

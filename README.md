@@ -5,10 +5,6 @@
 </p>
 
 <p align="center">
-  <img src="docs/images/demo.gif" alt="智填志愿真实界面演示" width="90%" />
-</p>
-
-<p align="center">
   <a href="#特性">特性</a> •
   <a href="#快速开始">快速开始</a> •
   <a href="#功能演示">功能演示</a> •
