@@ -12,6 +12,9 @@ import Assessment from '../pages/Assessment'
 import Settings from '../pages/Settings'
 import SchemeCompare from '../pages/SchemeCompare'
 
+const basename =
+  import.meta.env.BASE_URL === '/' ? '/' : import.meta.env.BASE_URL.replace(/\/$/, '')
+
 export const router = createBrowserRouter(
   [
     {
@@ -32,5 +35,5 @@ export const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: '/' }
+  { basename }
 )

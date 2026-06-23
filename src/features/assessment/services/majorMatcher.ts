@@ -1,8 +1,9 @@
 import type { SubjectMajorMapping } from '../types'
+import { publicPath } from '../../../utils/publicPath'
 
 export async function loadMajorMapping(): Promise<SubjectMajorMapping> {
   try {
-    const response = await fetch('/data/assessment/subject_major_mapping.json')
+    const response = await fetch(publicPath('/data/assessment/subject_major_mapping.json'))
     if (!response.ok) return {}
     return await response.json()
   } catch {

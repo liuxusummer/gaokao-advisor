@@ -1,4 +1,5 @@
 import { hollandQuestions as fallbackQuestions } from '../data/mock'
+import { publicPath } from '../utils/publicPath'
 
 export interface HollandQuestion {
   id: number
@@ -6,7 +7,7 @@ export interface HollandQuestion {
   dimension: string
 }
 
-const QUESTION_URL = '/data/assessment/holland_60.json'
+const QUESTION_URL = publicPath('/data/assessment/holland_60.json')
 let cachedQuestions: HollandQuestion[] | null = null
 
 function isValidQuestions(data: unknown): data is HollandQuestion[] {

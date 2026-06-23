@@ -1,4 +1,5 @@
 import type { College, Major, ScoreRecord } from '../data/mock'
+import { publicPath } from '../utils/publicPath'
 
 export interface RealDataCache {
   colleges: College[]
@@ -294,7 +295,7 @@ let globalMajors: Major[] | null = null
 
 export async function loadColleges(): Promise<College[]> {
   if (globalColleges) return globalColleges
-  const res = await fetch('/data/common/colleges.json')
+  const res = await fetch(publicPath('/data/common/colleges.json'))
   if (!res.ok) throw new Error(`Failed to load colleges: ${res.status}`)
   const raw: RawCollege[] = await res.json()
   globalColleges = raw.map(transformCollege)
@@ -303,7 +304,7 @@ export async function loadColleges(): Promise<College[]> {
 
 export async function loadMajors(): Promise<Major[]> {
   if (globalMajors) return globalMajors
-  const res = await fetch('/data/common/majors/catalog.json')
+  const res = await fetch(publicPath('/data/common/majors/catalog.json'))
   if (!res.ok) throw new Error(`Failed to load majors: ${res.status}`)
   const raw: RawMajor[] = await res.json()
   globalMajors = raw.map(transformMajor)
@@ -336,14 +337,14 @@ export async function loadProvinceData(provinceId: string): Promise<RealDataCach
 }
 
 export async function loadScores(provinceName: string, year: number): Promise<ScoreRecord[]> {
-  const res = await fetch(`/data/scores/${encodeURIComponent(provinceName)}/scores_${year}.json`)
+  const res = await fetch(publicPath(`/data/scores/${encodeURIComponent(provinceName)}/scores_${year}.json`))
   if (!res.ok) throw new Error(`Failed to load scores for ${provinceName} ${year}: ${res.status}`)
   const raw: RawScoreRecord[] = await res.json()
   return raw.map(transformScoreRecord)
 }
 
 export async function loadSubjects(provinceName: string, year: number): Promise<Map<string, SubjectRequirement>> {
-  const res = await fetch(`/data/subjects/${encodeURIComponent(provinceName)}/subjects_${year}.json`)
+  const res = await fetch(publicPath(`/data/subjects/${encodeURIComponent(provinceName)}/subjects_${year}.json`))
   if (!res.ok) throw new Error(`Failed to load subjects for ${provinceName} ${year}: ${res.status}`)
   const raw: RawSubjectRecord[] = await res.json()
   const map = new Map<string, SubjectRequirement>()
@@ -366,7 +367,7 @@ function isValidRankTableResponse(raw: unknown): raw is RawRankTable {
 
 export async function loadRankTable(provinceName: string, year: number): Promise<RankTableEntry[]> {
   if (!provinceName) throw new Error('Province name is required')
-  const res = await fetch(`/data/scores/${encodeURIComponent(provinceName)}/rank_table_${year}.json`)
+  const res = await fetch(publicPath(`/data/scores/${encodeURIComponent(provinceName)}/rank_table_${year}.json`))
   if (!res.ok) throw new Error(`Failed to load rank table for ${provinceName} ${year}: ${res.status}`)
   // Vite dev server may return index.html for missing assets; validate content type and shape.
   const contentType = res.headers.get('content-type') || ''
@@ -490,7 +491,7 @@ export async function probeRankTableYears(provinceName: string): Promise<number[
   const results = await Promise.all(
     years.map(async (year) => {
       try {
-        const response = await fetch(`/data/scores/${encodeURIComponent(provinceName)}/rank_table_${year}.json`)
+        const response = await fetch(publicPath(`/data/scores/${encodeURIComponent(provinceName)}/rank_table_${year}.json`))
         if (!response.ok) return null
         const contentType = response.headers.get('content-type') || ''
         if (!contentType.includes('application/json')) return null
