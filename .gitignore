@@ -31,3 +31,5 @@ raw/
 logs/
 .cache/
 public/data/common/cache/
+
+AGENTS.md

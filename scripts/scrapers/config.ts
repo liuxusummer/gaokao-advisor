@@ -33,7 +33,7 @@ export const LOGS_DIR = path.join(ROOT_DIR, 'logs')
 
 // User-Agent
 export const USER_AGENT =
-  'VolunteerAssistant/1.0 (educational project; +https://github.com/your-org/volunteer-assistant)'
+  'VolunteerAssistant/1.0 (educational project; +https://github.com/your-username/gaokao-advisor)'
 
 // === 分数线与一分一段表采集配置 ===
 

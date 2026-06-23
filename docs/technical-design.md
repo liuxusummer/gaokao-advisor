@@ -65,7 +65,7 @@
 采用 **Feature-based + 共享层** 结构：
 
 ```
-volunteer-assistant/
+gaokao-advisor/
 ├── public/
 │   └── data/                          # 静态数据 JSON（随应用打包）
 │       ├── common/                    # 公共数据
@@ -1080,7 +1080,7 @@ worker.onmessage = (e) => setRecommendations(e.data);
 ```typescript
 // vite.config.ts
 export default defineConfig({
-  base: '/volunteer-assistant/',  // GitHub Pages 子路径
+  base: '/gaokao-advisor/',  // GitHub Pages 子路径
   build: {
     rollupOptions: {
       output: {
