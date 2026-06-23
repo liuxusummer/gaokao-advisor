@@ -2,8 +2,9 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-const SCORES_DIR = 'volunteer-assistant/public/data/scores'
-const COLLEGES_FILE = 'volunteer-assistant/public/data/common/colleges.json'
+const PROJECT_ROOT = path.resolve(__dirname, '..')
+const SCORES_DIR = path.join(PROJECT_ROOT, 'public/data/scores')
+const COLLEGES_FILE = path.join(PROJECT_ROOT, 'public/data/common/colleges.json')
 
 interface CollegeRecord {
   id: string
