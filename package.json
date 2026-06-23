@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:file": "tsc -b && VITE_ROUTER_MODE=hash vite build --base=./ --outDir dist-file",
     "lint": "eslint .",
     "preview": "vite preview",
     "scrape:colleges": "tsx scripts/scrapers/colleges/index.ts",

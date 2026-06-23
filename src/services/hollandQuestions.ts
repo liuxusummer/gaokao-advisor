@@ -1,5 +1,5 @@
 import { hollandQuestions as fallbackQuestions } from '../data/mock'
-import { publicPath } from '../utils/publicPath'
+import { fetchPublic } from '../utils/fetchPublic'
 
 export interface HollandQuestion {
   id: number
@@ -7,7 +7,7 @@ export interface HollandQuestion {
   dimension: string
 }
 
-const QUESTION_URL = publicPath('/data/assessment/holland_60.json')
+const QUESTION_URL = '/data/assessment/holland_60.json'
 let cachedQuestions: HollandQuestion[] | null = null
 
 function isValidQuestions(data: unknown): data is HollandQuestion[] {
@@ -31,7 +31,7 @@ export async function loadHollandQuestions(): Promise<HollandQuestion[]> {
   if (cachedQuestions) return cachedQuestions
 
   try {
-    const response = await fetch(QUESTION_URL)
+    const response = await fetchPublic(QUESTION_URL)
     if (!response.ok) throw new Error(`HTTP ${response.status}`)
     const data = await response.json()
     if (!isValidQuestions(data)) throw new Error('Invalid questions format')

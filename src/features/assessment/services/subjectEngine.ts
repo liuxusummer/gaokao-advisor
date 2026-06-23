@@ -1,9 +1,9 @@
 import type { SubjectQuestion } from '../types'
-import { publicPath } from '../../../utils/publicPath'
+import { fetchPublic } from '../../../utils/fetchPublic'
 
 export async function loadSubjectQuestions(): Promise<SubjectQuestion[]> {
   try {
-    const response = await fetch(publicPath('/data/assessment/subject_15.json'))
+    const response = await fetchPublic('/data/assessment/subject_15.json')
     if (!response.ok) return []
     return await response.json()
   } catch {

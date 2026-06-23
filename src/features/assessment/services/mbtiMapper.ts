@@ -1,9 +1,9 @@
 import type { MbtiMappingRecord } from '../types'
-import { publicPath } from '../../../utils/publicPath'
+import { fetchPublic } from '../../../utils/fetchPublic'
 
 export async function loadMbtiMapping(): Promise<MbtiMappingRecord | null> {
   try {
-    const response = await fetch(publicPath('/data/assessment/mbti_category_mapping.json'))
+    const response = await fetchPublic('/data/assessment/mbti_category_mapping.json')
     if (!response.ok) return null
     return await response.json()
   } catch {

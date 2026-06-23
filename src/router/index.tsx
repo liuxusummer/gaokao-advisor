@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter, createHashRouter } from 'react-router-dom'
 import Layout from '../components/Layout'
 import Home from '../pages/Home'
 import Profile from '../pages/Profile'
@@ -15,25 +15,27 @@ import SchemeCompare from '../pages/SchemeCompare'
 const basename =
   import.meta.env.BASE_URL === '/' ? '/' : import.meta.env.BASE_URL.replace(/\/$/, '')
 
-export const router = createBrowserRouter(
-  [
-    {
-      path: '/',
-      element: <Layout />,
-      children: [
-        { index: true, element: <Home /> },
-        { path: 'profile', element: <Profile /> },
-        { path: 'rank', element: <RankConverter /> },
-        { path: 'recommend', element: <Recommend /> },
-        { path: 'volunteer-list', element: <VolunteerList /> },
-        { path: 'risk', element: <RiskReport /> },
-        { path: 'chat', element: <Chat /> },
-        { path: 'data', element: <DataCenter /> },
-        { path: 'assessment', element: <Assessment /> },
-        { path: 'settings', element: <Settings /> },
-        { path: 'schemes', element: <SchemeCompare /> },
-      ],
-    },
-  ],
-  { basename }
-)
+const routes = [
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'profile', element: <Profile /> },
+      { path: 'rank', element: <RankConverter /> },
+      { path: 'recommend', element: <Recommend /> },
+      { path: 'volunteer-list', element: <VolunteerList /> },
+      { path: 'risk', element: <RiskReport /> },
+      { path: 'chat', element: <Chat /> },
+      { path: 'data', element: <DataCenter /> },
+      { path: 'assessment', element: <Assessment /> },
+      { path: 'settings', element: <Settings /> },
+      { path: 'schemes', element: <SchemeCompare /> },
+    ],
+  },
+]
+
+export const router =
+  import.meta.env.VITE_ROUTER_MODE === 'hash'
+    ? createHashRouter(routes)
+    : createBrowserRouter(routes, { basename })
