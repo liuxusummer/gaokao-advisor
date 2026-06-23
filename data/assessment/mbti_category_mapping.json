@@ -1,0 +1,18 @@
+{
+  "INTJ": { "name": "建筑师", "categories": ["工学", "理学", "经济学"], "description": "富有想象力又有战略思维的人，凡事都有计划" },
+  "INTP": { "name": "逻辑学家", "categories": ["理学", "工学", "哲学"], "description": "对知识有着永不满足的渴望，喜欢逻辑分析" },
+  "ENTJ": { "name": "指挥官", "categories": ["经济学", "管理学", "法学"], "description": "天生的领导者，果断且意志坚定" },
+  "ENTP": { "name": "辩论家", "categories": ["法学", "经济学", "文学"], "description": "聪明好奇的思想者，喜欢智力交锋" },
+  "INFJ": { "name": "提倡者", "categories": ["文学", "哲学", "教育学"], "description": "安静而神秘，同时鼓舞人心且不知疲倦的理想主义者" },
+  "INFP": { "name": "调停者", "categories": ["文学", "艺术学", "教育学"], "description": "诗意善良的利他主义者，渴望帮助善因" },
+  "ENFJ": { "name": "主人公", "categories": ["教育学", "文学", "管理学"], "description": "富有魅力和鼓舞力的领导者，能让听众入迷" },
+  "ENFP": { "name": "竞选者", "categories": ["艺术学", "文学", "教育学"], "description": "热情有创意爱社交的自由精神" },
+  "ISTJ": { "name": "物流师", "categories": ["工学", "管理学", "医学"], "description": "实际且注重事实的人，可靠性不容怀疑" },
+  "ISFJ": { "name": "守卫者", "categories": ["医学", "教育学", "管理学"], "description": "非常专注而温暖的守护者，时刻准备保护爱着的人" },
+  "ESTJ": { "name": "总经理", "categories": ["管理学", "经济学", "法学"], "description": "出色的管理者，在管理事情或人的方面无与伦比" },
+  "ESFJ": { "name": "执政官", "categories": ["教育学", "医学", "管理学"], "description": "极有同情心，爱交往受欢迎的人们，总是热心提供帮助" },
+  "ISTP": { "name": "鉴赏家", "categories": ["工学", "理学", "农学"], "description": "大胆而实际的实验家，擅长使用任何形式的工具" },
+  "ISFP": { "name": "探险家", "categories": ["艺术学", "文学", "农学"], "description": "灵活有魅力的艺术家，时刻准备探索发现新事物" },
+  "ESTP": { "name": "企业家", "categories": ["经济学", "管理学", "工学"], "description": "聪明精力充沛的人，真正享受生活在边缘地带" },
+  "ESFP": { "name": "表演者", "categories": ["艺术学", "教育学", "文学"], "description": "自发的精力充沛而热情的表演者，生活在他们周围永不无聊" }
+}

@@ -1,0 +1,13 @@
+{
+  "totalCount": 875,
+  "generatedAt": "2026-06-18T07:08:53.481Z",
+  "scraperVersion": "1.0.0",
+  "sources": [
+    {
+      "name": "教育部普通高等学校本科专业目录",
+      "url": "https://gaokao.chsi.com.cn/gkxx/zcdh/202604/20260428/2293468784.html",
+      "fetchedAt": "2026-06-18T07:08:53.159Z",
+      "recordCount": 875
+    }
+  ]
+}

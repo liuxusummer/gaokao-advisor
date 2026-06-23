@@ -1,0 +1,146 @@
+[
+  {
+    "collegeName": "华北电力大学(北京)",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "华北电力大学(保定)",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "中国石油大学(华东)",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "滨州学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "桂林医学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "天水师范学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "浙江科技学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "南昌工程学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "中国矿业大学(北京)",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "中国石油大学(北京)",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "中国地质大学(北京)",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "重庆科技学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "海南医学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "云南大学滇池学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "安徽师范大学皖江学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "哈尔滨工业大学(深圳)",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "北京大学医学部",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "大连理工大学(盘锦校区)",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "东北大学秦皇岛分校",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "哈尔滨工业大学(威海)",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "复旦大学医学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "上海交通大学医学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "浙江大学医学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "中国石油大学(北京)克拉玛依校区",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "山东大学威海分校",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "电子科技大学(沙河校区)",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "西南大学(荣昌校区)",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "国防科技大学",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "陆军装甲兵学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "陆军边海防学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "陆军军事交通学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "陆军勤务学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "海军工程大学",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "战略支援部队信息工程大学",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "武警工程大学",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  },
+  {
+    "collegeName": "武警警官学院",
+    "reason": "未在 colleges.json 中找到匹配院校"
+  }
+]

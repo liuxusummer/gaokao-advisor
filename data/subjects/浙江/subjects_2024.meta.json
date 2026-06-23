@@ -1,0 +1,14 @@
+{
+  "province": "浙江",
+  "year": 2024,
+  "totalCount": 54085,
+  "generatedAt": "2026-06-18T07:48:13.530Z",
+  "scraperVersion": "1.0.0",
+  "sources": [
+    {
+      "name": "zjzs",
+      "url": "https://www.zjzs.net/",
+      "recordCount": 54085
+    }
+  ]
+}

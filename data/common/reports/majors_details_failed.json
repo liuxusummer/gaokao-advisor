@@ -1,0 +1,102 @@
+[
+  {
+    "specId": "2fcpkudir50by4mh",
+    "majorName": "语言学",
+    "reason": "校验失败: majorCode 格式非法: \"0502100\""
+  },
+  {
+    "specId": "42cees1r3vw7zdbi",
+    "majorName": "塔玛齐格特语",
+    "reason": "校验失败: majorCode 格式非法: \"0502101\""
+  },
+  {
+    "specId": "eym323v73wv8lv49",
+    "majorName": "爪哇语",
+    "reason": "校验失败: majorCode 格式非法: \"0502102\""
+  },
+  {
+    "specId": "4hv7d6elu74sh480",
+    "majorName": "旁遮普语",
+    "reason": "校验失败: majorCode 格式非法: \"0502103\""
+  },
+  {
+    "specId": "ao604aw7eqjj2s90",
+    "majorName": "区域国别学",
+    "reason": "校验失败: majorCode 格式非法: \"0502104\""
+  },
+  {
+    "specId": "19amnt1ox1oq7246",
+    "majorName": "法律英语",
+    "reason": "校验失败: majorCode 格式非法: \"0502105\""
+  },
+  {
+    "specId": "audadl2idwdkkao7",
+    "majorName": "计算语言学",
+    "reason": "校验失败: majorCode 格式非法: \"0502106\""
+  },
+  {
+    "specId": "34xtrt2bbf2bky68",
+    "majorName": "语言智能",
+    "reason": "校验失败: majorCode 格式非法: \"0502107\""
+  },
+  {
+    "specId": "73388669",
+    "majorName": "新闻采编与制作",
+    "reason": "timeout of 30000ms exceeded"
+  },
+  {
+    "specId": "73388657",
+    "majorName": "影视动画",
+    "reason": "getaddrinfo ENOTFOUND gaokao.chsi.com.cn"
+  },
+  {
+    "specId": "73388677",
+    "majorName": "影视制片管理",
+    "reason": "getaddrinfo ENOTFOUND gaokao.chsi.com.cn"
+  },
+  {
+    "specId": "73388653",
+    "majorName": "影视多媒体技术",
+    "reason": "getaddrinfo ENOTFOUND gaokao.chsi.com.cn"
+  },
+  {
+    "specId": "73388697",
+    "majorName": "影视照明技术与艺术",
+    "reason": "getaddrinfo ENOTFOUND gaokao.chsi.com.cn"
+  },
+  {
+    "specId": "73388649",
+    "majorName": "音像技术",
+    "reason": "getaddrinfo ENOTFOUND gaokao.chsi.com.cn"
+  },
+  {
+    "specId": "73388725",
+    "majorName": "录音技术与艺术",
+    "reason": "getaddrinfo ENOTFOUND gaokao.chsi.com.cn"
+  },
+  {
+    "specId": "im5icxnswvesp8tr",
+    "majorName": "传播与策划",
+    "reason": "timeout of 30000ms exceeded"
+  },
+  {
+    "specId": "73388377",
+    "majorName": "现代教育技术",
+    "reason": "timeout of 30000ms exceeded"
+  },
+  {
+    "specId": "73388833",
+    "majorName": "民事执行",
+    "reason": "timeout of 30000ms exceeded"
+  },
+  {
+    "specId": "73388065",
+    "majorName": "社会工作",
+    "reason": "timeout of 30000ms exceeded"
+  },
+  {
+    "specId": "73388145",
+    "majorName": "质量管理与认证",
+    "reason": "timeout of 30000ms exceeded"
+  }
+]

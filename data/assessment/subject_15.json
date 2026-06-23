@@ -1,0 +1,17 @@
+[
+  { "id": 1, "text": "我喜欢用数学方法解决实际问题", "dimension": "math", "type": "subject" },
+  { "id": 2, "text": "我对机械设备的运作原理感到好奇", "dimension": "physics", "type": "subject" },
+  { "id": 3, "text": "我喜欢做化学实验，观察物质反应", "dimension": "chemistry", "type": "subject" },
+  { "id": 4, "text": "我对生命的奥秘和生物体结构感兴趣", "dimension": "biology", "type": "subject" },
+  { "id": 5, "text": "我喜欢阅读文学作品或进行写作", "dimension": "chinese", "type": "subject" },
+  { "id": 6, "text": "我对历史事件和文明演变感兴趣", "dimension": "history", "type": "subject" },
+  { "id": 7, "text": "我喜欢研究地理环境与气候现象", "dimension": "geography", "type": "subject" },
+  { "id": 8, "text": "我关注社会问题和公共政策", "dimension": "politics", "type": "subject" },
+  { "id": 9, "text": "我喜欢学习外语和跨文化交流", "dimension": "foreign_lang", "type": "subject" },
+  { "id": 10, "text": "我对音乐、绘画或设计有浓厚兴趣", "dimension": "art", "type": "subject" },
+  { "id": 11, "text": "我喜欢编程或探索计算机技术", "dimension": "computer", "type": "subject" },
+  { "id": 12, "text": "我对商业运作和经济规律感兴趣", "dimension": "economics", "type": "subject" },
+  { "id": 13, "text": "我更倾向于学习理论知识而非动手实践", "dimension": "theory_practice", "type": "behavior" },
+  { "id": 14, "text": "我更喜欢独立完成工作而非团队协作", "dimension": "individual_team", "type": "behavior" },
+  { "id": 15, "text": "我更喜欢自由创造而非按规范执行", "dimension": "creative_structured", "type": "behavior" }
+]

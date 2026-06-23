@@ -1,0 +1,3487 @@
+{
+  "province": "上海",
+  "year": 2024,
+  "categories": {
+    "综合": [
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 619,
+        "rank": 1,
+        "count": 52,
+        "cumulativeCount": 52,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 618,
+        "rank": 53,
+        "count": 12,
+        "cumulativeCount": 64,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 617,
+        "rank": 65,
+        "count": 11,
+        "cumulativeCount": 75,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 616,
+        "rank": 76,
+        "count": 16,
+        "cumulativeCount": 91,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 615,
+        "rank": 92,
+        "count": 19,
+        "cumulativeCount": 110,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 614,
+        "rank": 111,
+        "count": 18,
+        "cumulativeCount": 128,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 613,
+        "rank": 129,
+        "count": 16,
+        "cumulativeCount": 144,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 612,
+        "rank": 145,
+        "count": 35,
+        "cumulativeCount": 179,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 611,
+        "rank": 180,
+        "count": 22,
+        "cumulativeCount": 201,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 610,
+        "rank": 202,
+        "count": 39,
+        "cumulativeCount": 240,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 609,
+        "rank": 241,
+        "count": 27,
+        "cumulativeCount": 267,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 608,
+        "rank": 268,
+        "count": 32,
+        "cumulativeCount": 299,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 607,
+        "rank": 300,
+        "count": 35,
+        "cumulativeCount": 334,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 606,
+        "rank": 335,
+        "count": 49,
+        "cumulativeCount": 383,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 605,
+        "rank": 384,
+        "count": 49,
+        "cumulativeCount": 432,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 604,
+        "rank": 433,
+        "count": 54,
+        "cumulativeCount": 486,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 603,
+        "rank": 487,
+        "count": 55,
+        "cumulativeCount": 541,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 602,
+        "rank": 542,
+        "count": 54,
+        "cumulativeCount": 595,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 601,
+        "rank": 596,
+        "count": 61,
+        "cumulativeCount": 656,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 600,
+        "rank": 657,
+        "count": 58,
+        "cumulativeCount": 714,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 599,
+        "rank": 715,
+        "count": 61,
+        "cumulativeCount": 775,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 598,
+        "rank": 776,
+        "count": 59,
+        "cumulativeCount": 834,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 597,
+        "rank": 835,
+        "count": 79,
+        "cumulativeCount": 913,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 596,
+        "rank": 914,
+        "count": 83,
+        "cumulativeCount": 996,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 595,
+        "rank": 997,
+        "count": 93,
+        "cumulativeCount": 1089,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 594,
+        "rank": 1090,
+        "count": 86,
+        "cumulativeCount": 1175,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 593,
+        "rank": 1176,
+        "count": 105,
+        "cumulativeCount": 1280,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 592,
+        "rank": 1281,
+        "count": 96,
+        "cumulativeCount": 1376,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 591,
+        "rank": 1377,
+        "count": 77,
+        "cumulativeCount": 1453,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 590,
+        "rank": 1454,
+        "count": 100,
+        "cumulativeCount": 1553,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 589,
+        "rank": 1554,
+        "count": 96,
+        "cumulativeCount": 1649,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 588,
+        "rank": 1650,
+        "count": 101,
+        "cumulativeCount": 1750,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 587,
+        "rank": 1751,
+        "count": 110,
+        "cumulativeCount": 1860,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 586,
+        "rank": 1861,
+        "count": 120,
+        "cumulativeCount": 1980,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 585,
+        "rank": 1981,
+        "count": 109,
+        "cumulativeCount": 2089,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 584,
+        "rank": 2090,
+        "count": 105,
+        "cumulativeCount": 2194,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 583,
+        "rank": 2195,
+        "count": 112,
+        "cumulativeCount": 2306,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 582,
+        "rank": 2307,
+        "count": 118,
+        "cumulativeCount": 2424,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 581,
+        "rank": 2425,
+        "count": 128,
+        "cumulativeCount": 2552,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 580,
+        "rank": 2553,
+        "count": 132,
+        "cumulativeCount": 2684,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 579,
+        "rank": 2685,
+        "count": 147,
+        "cumulativeCount": 2831,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 578,
+        "rank": 2832,
+        "count": 131,
+        "cumulativeCount": 2962,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 577,
+        "rank": 2963,
+        "count": 136,
+        "cumulativeCount": 3098,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 576,
+        "rank": 3099,
+        "count": 152,
+        "cumulativeCount": 3250,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 575,
+        "rank": 3251,
+        "count": 142,
+        "cumulativeCount": 3392,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 574,
+        "rank": 3393,
+        "count": 139,
+        "cumulativeCount": 3531,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 573,
+        "rank": 3532,
+        "count": 145,
+        "cumulativeCount": 3676,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 572,
+        "rank": 3677,
+        "count": 170,
+        "cumulativeCount": 3846,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 571,
+        "rank": 3847,
+        "count": 152,
+        "cumulativeCount": 3998,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 570,
+        "rank": 3999,
+        "count": 160,
+        "cumulativeCount": 4158,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 569,
+        "rank": 4159,
+        "count": 159,
+        "cumulativeCount": 4317,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 568,
+        "rank": 4318,
+        "count": 182,
+        "cumulativeCount": 4499,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 567,
+        "rank": 4500,
+        "count": 163,
+        "cumulativeCount": 4662,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 566,
+        "rank": 4663,
+        "count": 179,
+        "cumulativeCount": 4841,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 565,
+        "rank": 4842,
+        "count": 178,
+        "cumulativeCount": 5019,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 564,
+        "rank": 5020,
+        "count": 161,
+        "cumulativeCount": 5180,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 563,
+        "rank": 5181,
+        "count": 176,
+        "cumulativeCount": 5356,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 562,
+        "rank": 5357,
+        "count": 188,
+        "cumulativeCount": 5544,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 561,
+        "rank": 5545,
+        "count": 187,
+        "cumulativeCount": 5731,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 560,
+        "rank": 5732,
+        "count": 168,
+        "cumulativeCount": 5899,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 559,
+        "rank": 5900,
+        "count": 203,
+        "cumulativeCount": 6102,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 558,
+        "rank": 6103,
+        "count": 183,
+        "cumulativeCount": 6285,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 557,
+        "rank": 6286,
+        "count": 173,
+        "cumulativeCount": 6458,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 556,
+        "rank": 6459,
+        "count": 173,
+        "cumulativeCount": 6631,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 555,
+        "rank": 6632,
+        "count": 201,
+        "cumulativeCount": 6832,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 554,
+        "rank": 6833,
+        "count": 189,
+        "cumulativeCount": 7021,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 553,
+        "rank": 7022,
+        "count": 197,
+        "cumulativeCount": 7218,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 552,
+        "rank": 7219,
+        "count": 194,
+        "cumulativeCount": 7412,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 551,
+        "rank": 7413,
+        "count": 180,
+        "cumulativeCount": 7592,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 550,
+        "rank": 7593,
+        "count": 206,
+        "cumulativeCount": 7798,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 549,
+        "rank": 7799,
+        "count": 177,
+        "cumulativeCount": 7975,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 548,
+        "rank": 7976,
+        "count": 203,
+        "cumulativeCount": 8178,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 547,
+        "rank": 8179,
+        "count": 194,
+        "cumulativeCount": 8372,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 546,
+        "rank": 8373,
+        "count": 189,
+        "cumulativeCount": 8561,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 545,
+        "rank": 8562,
+        "count": 197,
+        "cumulativeCount": 8758,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 544,
+        "rank": 8759,
+        "count": 215,
+        "cumulativeCount": 8973,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 543,
+        "rank": 8974,
+        "count": 213,
+        "cumulativeCount": 9186,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 542,
+        "rank": 9187,
+        "count": 231,
+        "cumulativeCount": 9417,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 541,
+        "rank": 9418,
+        "count": 207,
+        "cumulativeCount": 9624,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 540,
+        "rank": 9625,
+        "count": 224,
+        "cumulativeCount": 9848,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 539,
+        "rank": 9849,
+        "count": 221,
+        "cumulativeCount": 10069,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 538,
+        "rank": 10070,
+        "count": 237,
+        "cumulativeCount": 10306,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 537,
+        "rank": 10307,
+        "count": 232,
+        "cumulativeCount": 10538,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 536,
+        "rank": 10539,
+        "count": 222,
+        "cumulativeCount": 10760,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 535,
+        "rank": 10761,
+        "count": 225,
+        "cumulativeCount": 10985,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 534,
+        "rank": 10986,
+        "count": 249,
+        "cumulativeCount": 11234,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 533,
+        "rank": 11235,
+        "count": 228,
+        "cumulativeCount": 11462,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 532,
+        "rank": 11463,
+        "count": 216,
+        "cumulativeCount": 11678,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 531,
+        "rank": 11679,
+        "count": 241,
+        "cumulativeCount": 11919,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 530,
+        "rank": 11920,
+        "count": 224,
+        "cumulativeCount": 12143,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 529,
+        "rank": 12144,
+        "count": 245,
+        "cumulativeCount": 12388,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 528,
+        "rank": 12389,
+        "count": 239,
+        "cumulativeCount": 12627,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 527,
+        "rank": 12628,
+        "count": 233,
+        "cumulativeCount": 12860,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 526,
+        "rank": 12861,
+        "count": 225,
+        "cumulativeCount": 13085,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 525,
+        "rank": 13086,
+        "count": 191,
+        "cumulativeCount": 13276,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 524,
+        "rank": 13277,
+        "count": 262,
+        "cumulativeCount": 13538,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 523,
+        "rank": 13539,
+        "count": 225,
+        "cumulativeCount": 13763,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 522,
+        "rank": 13764,
+        "count": 263,
+        "cumulativeCount": 14026,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 521,
+        "rank": 14027,
+        "count": 255,
+        "cumulativeCount": 14281,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 520,
+        "rank": 14282,
+        "count": 251,
+        "cumulativeCount": 14532,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 519,
+        "rank": 14533,
+        "count": 221,
+        "cumulativeCount": 14753,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 518,
+        "rank": 14754,
+        "count": 270,
+        "cumulativeCount": 15023,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 517,
+        "rank": 15024,
+        "count": 226,
+        "cumulativeCount": 15249,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 516,
+        "rank": 15250,
+        "count": 236,
+        "cumulativeCount": 15485,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 515,
+        "rank": 15486,
+        "count": 249,
+        "cumulativeCount": 15734,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 514,
+        "rank": 15735,
+        "count": 245,
+        "cumulativeCount": 15979,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 513,
+        "rank": 15980,
+        "count": 271,
+        "cumulativeCount": 16250,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 512,
+        "rank": 16251,
+        "count": 233,
+        "cumulativeCount": 16483,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 511,
+        "rank": 16484,
+        "count": 278,
+        "cumulativeCount": 16761,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 510,
+        "rank": 16762,
+        "count": 288,
+        "cumulativeCount": 17049,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 509,
+        "rank": 17050,
+        "count": 264,
+        "cumulativeCount": 17313,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 508,
+        "rank": 17314,
+        "count": 254,
+        "cumulativeCount": 17567,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 507,
+        "rank": 17568,
+        "count": 228,
+        "cumulativeCount": 17795,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 506,
+        "rank": 17796,
+        "count": 272,
+        "cumulativeCount": 18067,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 505,
+        "rank": 18068,
+        "count": 223,
+        "cumulativeCount": 18290,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 504,
+        "rank": 18291,
+        "count": 249,
+        "cumulativeCount": 18539,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 503,
+        "rank": 18540,
+        "count": 228,
+        "cumulativeCount": 18767,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 502,
+        "rank": 18768,
+        "count": 241,
+        "cumulativeCount": 19008,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 501,
+        "rank": 19009,
+        "count": 235,
+        "cumulativeCount": 19243,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 500,
+        "rank": 19244,
+        "count": 243,
+        "cumulativeCount": 19486,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 499,
+        "rank": 19487,
+        "count": 243,
+        "cumulativeCount": 19729,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 498,
+        "rank": 19730,
+        "count": 231,
+        "cumulativeCount": 19960,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 497,
+        "rank": 19961,
+        "count": 243,
+        "cumulativeCount": 20203,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 496,
+        "rank": 20204,
+        "count": 243,
+        "cumulativeCount": 20446,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 495,
+        "rank": 20447,
+        "count": 247,
+        "cumulativeCount": 20693,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 494,
+        "rank": 20694,
+        "count": 263,
+        "cumulativeCount": 20956,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 493,
+        "rank": 20957,
+        "count": 270,
+        "cumulativeCount": 21226,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 492,
+        "rank": 21227,
+        "count": 247,
+        "cumulativeCount": 21473,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 491,
+        "rank": 21474,
+        "count": 271,
+        "cumulativeCount": 21744,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 490,
+        "rank": 21745,
+        "count": 259,
+        "cumulativeCount": 22003,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 489,
+        "rank": 22004,
+        "count": 267,
+        "cumulativeCount": 22270,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 488,
+        "rank": 22271,
+        "count": 244,
+        "cumulativeCount": 22514,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 487,
+        "rank": 22515,
+        "count": 267,
+        "cumulativeCount": 22781,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 486,
+        "rank": 22782,
+        "count": 259,
+        "cumulativeCount": 23040,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 485,
+        "rank": 23041,
+        "count": 253,
+        "cumulativeCount": 23293,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 484,
+        "rank": 23294,
+        "count": 260,
+        "cumulativeCount": 23553,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 483,
+        "rank": 23554,
+        "count": 261,
+        "cumulativeCount": 23814,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 482,
+        "rank": 23815,
+        "count": 266,
+        "cumulativeCount": 24080,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 481,
+        "rank": 24081,
+        "count": 257,
+        "cumulativeCount": 24337,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 480,
+        "rank": 24338,
+        "count": 225,
+        "cumulativeCount": 24562,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 479,
+        "rank": 24563,
+        "count": 233,
+        "cumulativeCount": 24795,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 478,
+        "rank": 24796,
+        "count": 258,
+        "cumulativeCount": 25053,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 477,
+        "rank": 25054,
+        "count": 246,
+        "cumulativeCount": 25299,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 476,
+        "rank": 25300,
+        "count": 242,
+        "cumulativeCount": 25541,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 475,
+        "rank": 25542,
+        "count": 278,
+        "cumulativeCount": 25819,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 474,
+        "rank": 25820,
+        "count": 215,
+        "cumulativeCount": 26034,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 473,
+        "rank": 26035,
+        "count": 236,
+        "cumulativeCount": 26270,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 472,
+        "rank": 26271,
+        "count": 222,
+        "cumulativeCount": 26492,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 471,
+        "rank": 26493,
+        "count": 256,
+        "cumulativeCount": 26748,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 470,
+        "rank": 26749,
+        "count": 248,
+        "cumulativeCount": 26996,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 469,
+        "rank": 26997,
+        "count": 277,
+        "cumulativeCount": 27273,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 468,
+        "rank": 27274,
+        "count": 252,
+        "cumulativeCount": 27525,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 467,
+        "rank": 27526,
+        "count": 253,
+        "cumulativeCount": 27778,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 466,
+        "rank": 27779,
+        "count": 250,
+        "cumulativeCount": 28028,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 465,
+        "rank": 28029,
+        "count": 266,
+        "cumulativeCount": 28294,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 464,
+        "rank": 28295,
+        "count": 225,
+        "cumulativeCount": 28519,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 463,
+        "rank": 28520,
+        "count": 237,
+        "cumulativeCount": 28756,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 462,
+        "rank": 28757,
+        "count": 258,
+        "cumulativeCount": 29014,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 461,
+        "rank": 29015,
+        "count": 248,
+        "cumulativeCount": 29262,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 460,
+        "rank": 29263,
+        "count": 263,
+        "cumulativeCount": 29525,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 459,
+        "rank": 29526,
+        "count": 230,
+        "cumulativeCount": 29755,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 458,
+        "rank": 29756,
+        "count": 239,
+        "cumulativeCount": 29994,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 457,
+        "rank": 29995,
+        "count": 238,
+        "cumulativeCount": 30232,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 456,
+        "rank": 30233,
+        "count": 241,
+        "cumulativeCount": 30473,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 455,
+        "rank": 30474,
+        "count": 242,
+        "cumulativeCount": 30715,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 454,
+        "rank": 30716,
+        "count": 219,
+        "cumulativeCount": 30934,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 453,
+        "rank": 30935,
+        "count": 245,
+        "cumulativeCount": 31179,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 452,
+        "rank": 31180,
+        "count": 220,
+        "cumulativeCount": 31399,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 451,
+        "rank": 31400,
+        "count": 266,
+        "cumulativeCount": 31665,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 450,
+        "rank": 31666,
+        "count": 239,
+        "cumulativeCount": 31904,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 449,
+        "rank": 31905,
+        "count": 230,
+        "cumulativeCount": 32134,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 448,
+        "rank": 32135,
+        "count": 256,
+        "cumulativeCount": 32390,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 447,
+        "rank": 32391,
+        "count": 251,
+        "cumulativeCount": 32641,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 446,
+        "rank": 32642,
+        "count": 219,
+        "cumulativeCount": 32860,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 445,
+        "rank": 32861,
+        "count": 211,
+        "cumulativeCount": 33071,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 444,
+        "rank": 33072,
+        "count": 215,
+        "cumulativeCount": 33286,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 443,
+        "rank": 33287,
+        "count": 245,
+        "cumulativeCount": 33531,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 442,
+        "rank": 33532,
+        "count": 250,
+        "cumulativeCount": 33781,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 441,
+        "rank": 33782,
+        "count": 218,
+        "cumulativeCount": 33999,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 440,
+        "rank": 34000,
+        "count": 240,
+        "cumulativeCount": 34239,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 439,
+        "rank": 34240,
+        "count": 243,
+        "cumulativeCount": 34482,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 438,
+        "rank": 34483,
+        "count": 227,
+        "cumulativeCount": 34709,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 437,
+        "rank": 34710,
+        "count": 214,
+        "cumulativeCount": 34923,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 436,
+        "rank": 34924,
+        "count": 204,
+        "cumulativeCount": 35127,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 435,
+        "rank": 35128,
+        "count": 214,
+        "cumulativeCount": 35341,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 434,
+        "rank": 35342,
+        "count": 229,
+        "cumulativeCount": 35570,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 433,
+        "rank": 35571,
+        "count": 236,
+        "cumulativeCount": 35806,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 432,
+        "rank": 35807,
+        "count": 227,
+        "cumulativeCount": 36033,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 431,
+        "rank": 36034,
+        "count": 189,
+        "cumulativeCount": 36222,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 430,
+        "rank": 36223,
+        "count": 214,
+        "cumulativeCount": 36436,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 429,
+        "rank": 36437,
+        "count": 193,
+        "cumulativeCount": 36629,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 428,
+        "rank": 36630,
+        "count": 204,
+        "cumulativeCount": 36833,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 427,
+        "rank": 36834,
+        "count": 230,
+        "cumulativeCount": 37063,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 426,
+        "rank": 37064,
+        "count": 196,
+        "cumulativeCount": 37259,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 425,
+        "rank": 37260,
+        "count": 209,
+        "cumulativeCount": 37468,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 424,
+        "rank": 37469,
+        "count": 224,
+        "cumulativeCount": 37692,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 423,
+        "rank": 37693,
+        "count": 190,
+        "cumulativeCount": 37882,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 422,
+        "rank": 37883,
+        "count": 171,
+        "cumulativeCount": 38053,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 421,
+        "rank": 38054,
+        "count": 213,
+        "cumulativeCount": 38266,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 420,
+        "rank": 38267,
+        "count": 177,
+        "cumulativeCount": 38443,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 419,
+        "rank": 38444,
+        "count": 219,
+        "cumulativeCount": 38662,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 418,
+        "rank": 38663,
+        "count": 207,
+        "cumulativeCount": 38869,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 417,
+        "rank": 38870,
+        "count": 210,
+        "cumulativeCount": 39079,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 416,
+        "rank": 39080,
+        "count": 190,
+        "cumulativeCount": 39269,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 415,
+        "rank": 39270,
+        "count": 185,
+        "cumulativeCount": 39454,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 414,
+        "rank": 39455,
+        "count": 187,
+        "cumulativeCount": 39641,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 413,
+        "rank": 39642,
+        "count": 182,
+        "cumulativeCount": 39823,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 412,
+        "rank": 39824,
+        "count": 175,
+        "cumulativeCount": 39998,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 411,
+        "rank": 39999,
+        "count": 212,
+        "cumulativeCount": 40210,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 410,
+        "rank": 40211,
+        "count": 191,
+        "cumulativeCount": 40401,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 409,
+        "rank": 40402,
+        "count": 172,
+        "cumulativeCount": 40573,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 408,
+        "rank": 40574,
+        "count": 179,
+        "cumulativeCount": 40752,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 407,
+        "rank": 40753,
+        "count": 163,
+        "cumulativeCount": 40915,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 406,
+        "rank": 40916,
+        "count": 162,
+        "cumulativeCount": 41077,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 405,
+        "rank": 41078,
+        "count": 194,
+        "cumulativeCount": 41271,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 404,
+        "rank": 41272,
+        "count": 162,
+        "cumulativeCount": 41433,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      },
+      {
+        "province": "上海",
+        "year": 2024,
+        "category": "综合",
+        "score": 403,
+        "rank": 41434,
+        "count": 161,
+        "cumulativeCount": 41594,
+        "_meta": {
+          "source": "gaokao",
+          "sourceUrl": "https://www.shmeea.edu.cn/page/02200/20240623/18612.html",
+          "fetchedAt": "2026-06-22T03:22:06.325Z",
+          "scraperVersion": "1.0.0",
+          "verified": false
+        }
+      }
+    ]
+  },
+  "_meta": {
+    "generatedAt": "2026-06-22T03:22:06.326Z",
+    "scraperVersion": "1.0.0",
+    "source": "shanghai",
+    "sourceUrl": "",
+    "recordCount": 217
+  }
+}
