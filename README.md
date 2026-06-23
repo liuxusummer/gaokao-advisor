@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="docs/images/banner.jpg" alt="智填志愿 Banner" width="100%" />
-</p>
-
 <h1 align="center">🎓 智填志愿 — AI 高考志愿填报助手</h1>
 
 <p align="center">

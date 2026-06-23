@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="docs/images/banner.jpg" alt="Volunteer Assistant Banner" width="100%" />
-</p>
-
 <h1 align="center">🎓 GaoKao Volunteer Assistant</h1>
 
 <p align="center">
