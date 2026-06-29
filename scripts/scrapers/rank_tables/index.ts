@@ -12,32 +12,20 @@ import {
   TARGET_YEARS,
 } from '../config'
 import type { RankTableRecord, RankTableFile } from '../types'
+import { parseRankTableCliArgs, resolveRankTableYears } from './cli'
 
 const logger = createLogger('rank_tables')
 
-interface CliArgs {
-  force: boolean
-  province?: string
-}
-
-function parseArgs(): CliArgs {
-  const args = process.argv.slice(2)
-  const provinceArg = args.find((a) => a.startsWith('--province='))
-  return {
-    force: args.includes('--force'),
-    province: provinceArg ? provinceArg.split('=')[1] : undefined,
-  }
-}
-
 async function main() {
-  const args = parseArgs()
+  const args = parseRankTableCliArgs(process.argv.slice(2))
+  const years = resolveRankTableYears(args, TARGET_YEARS)
   const startTime = Date.now()
 
   ensureRegistryInitialized()
 
   logger.info('开始一分一段表采集', {
     version: SCRAPER_VERSION,
-    years: TARGET_YEARS,
+    years,
     force: args.force,
     province: args.province ?? '全部',
   })
@@ -59,7 +47,7 @@ async function main() {
       continue
     }
 
-    for (const year of TARGET_YEARS) {
+    for (const year of years) {
       try {
         logger.info('采集一分一段表', { province: reg.meta.name, year })
         const { records, failed } = await reg.rankTableScraper.scrape(http, year, {

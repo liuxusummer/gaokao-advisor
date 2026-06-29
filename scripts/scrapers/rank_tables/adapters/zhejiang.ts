@@ -4,6 +4,7 @@ import type { RankTableRecord, FailedRecord } from '../../types'
 import { parsePdf } from '../../shared/pdf'
 import { parseZjTable } from '../zhejiang'
 import { ZJ_RANK_TABLE_URLS } from '../../config'
+import { discoverZjRankTableSource } from '../zhejiang_discovery'
 
 export const zhejiangRankTableScraper: RankTableScraper = {
   province: '浙江',
@@ -12,7 +13,7 @@ export const zhejiangRankTableScraper: RankTableScraper = {
     const records: RankTableRecord[] = []
     const failed: FailedRecord[] = []
 
-    const urlConfig = ZJ_RANK_TABLE_URLS[year]
+    const urlConfig = ZJ_RANK_TABLE_URLS[year] ?? await discoverZjRankTableSource(year)
     if (!urlConfig || !urlConfig.pdfUrl) {
       return { records, failed }
     }

@@ -59,6 +59,10 @@ export const ZJ_RANK_TABLE_URLS: Record<number, { pageUrl: string; pdfUrl: strin
     pageUrl: 'https://www.zjzs.net/art/2025/6/25/art_155_11382.html',
     pdfUrl: 'https://www.zjzs.net/attach/0/a5aea92c4e474db78c43d1a86934dd2e.pdf',
   },
+  2026: {
+    pageUrl: 'https://www.zjzs.net/art/2026/6/26/art_155_12471.html',
+    pdfUrl: 'https://www.zjzs.net/module/download/downfile.jsp?classid=0&showname=%E6%B5%99%E6%B1%9F%E7%9C%812026%E5%B9%B4%E6%99%AE%E9%80%9A%E9%AB%98%E6%A0%A1%E6%8B%9B%E7%94%9F%E6%88%90%E7%BB%A9%E5%88%86%E6%95%B0%E6%AE%B5%E8%A1%A8(%E6%80%BB%E5%88%86).pdf&filename=2af4db3ba885492fa7a607469eb75800.pdf',
+  },
 }
 
 // 江苏省考试院一分一段表 URL（官方发布为 JPG 图片格式）

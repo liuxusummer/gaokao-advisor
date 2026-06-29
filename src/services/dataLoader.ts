@@ -292,6 +292,7 @@ export function getProvinceName(provinceId: string): string | undefined {
 
 let globalColleges: College[] | null = null
 let globalMajors: Major[] | null = null
+export const RANK_TABLE_YEARS = [2026, 2025, 2024, 2023]
 
 export async function loadColleges(): Promise<College[]> {
   if (globalColleges) return globalColleges
@@ -318,12 +319,13 @@ export async function loadProvinceData(provinceId: string): Promise<RealDataCach
   const [colleges, majors] = await Promise.all([loadColleges(), loadMajors()])
 
   const targetYears = [2024, 2023, 2025]
-  const [scoreRecordsByYear, subjectRequirements, rankTable] = await Promise.all([
+  const [scoreRecordsByYear, subjectRequirements, rankTableByYear] = await Promise.all([
     Promise.all(targetYears.map((year) => loadScores(provinceName, year).catch(() => [] as ScoreRecord[]))),
     loadSubjects(provinceName, 2024),
-    loadRankTable(provinceName, 2024),
+    Promise.all(RANK_TABLE_YEARS.map((year) => loadRankTable(provinceName, year).catch(() => [] as RankTableEntry[]))),
   ])
   const scoreRecords = scoreRecordsByYear.flat()
+  const rankTable = rankTableByYear.flat()
 
   return {
     colleges,
@@ -487,7 +489,7 @@ export async function probeRankTableYears(provinceName: string): Promise<number[
   if (rankTableYearsCache.has(provinceName)) {
     return rankTableYearsCache.get(provinceName)!
   }
-  const years = [2023, 2024, 2025]
+  const years = RANK_TABLE_YEARS
   const results = await Promise.all(
     years.map(async (year) => {
       try {

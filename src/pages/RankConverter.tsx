@@ -4,7 +4,7 @@ import { InputNumber, Button } from 'antd'
 import { ArrowLeftOutlined } from '@ant-design/icons'
 import * as echarts from 'echarts'
 import { useAppStore } from '../store'
-import { loadRankTable, type RankTableEntry } from '../services/dataLoader'
+import { loadRankTable, RANK_TABLE_YEARS, type RankTableEntry } from '../services/dataLoader'
 import { convertRankToEquivalentScores, type EquivalentScore } from '../services/rankConverter'
 
 function getCategory(subjectType: 'physics' | 'history' | 'comprehensive'): string {
@@ -34,13 +34,11 @@ export default function RankConverter() {
     if (dataCache?.rankTable && dataCache.rankTable.length > 0) return
     if (!profile.provinceName) return
     let mounted = true
-    Promise.all([
-      loadRankTable(profile.provinceName, 2023).catch(() => []),
-      loadRankTable(profile.provinceName, 2024).catch(() => []),
-      loadRankTable(profile.provinceName, 2025).catch(() => []),
-    ]).then(([a, b, c]) => {
+    Promise.all(
+      RANK_TABLE_YEARS.map((year) => loadRankTable(profile.provinceName, year).catch(() => []))
+    ).then((entriesByYear) => {
       if (mounted) {
-        setLoadedEntries([...a, ...b, ...c])
+        setLoadedEntries(entriesByYear.flat())
       }
     })
     return () => { mounted = false }
